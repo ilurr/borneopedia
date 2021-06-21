@@ -1,0 +1,214 @@
+input[type=submit],
+button,
+.button {
+	@include reset-appearance();
+	@include transition(all .2s ease);
+	position: relative;
+	// display: inline-block;
+	width: 100%;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+	border-radius: 6px;
+	background: #fff;
+	text-align: center;
+	border: 1px solid #dcdcdc;
+	cursor: pointer;
+	@include font-pack(false, 0.875rem, 700, false, #5e5e5e);
+	&:hover {
+		color: inherit;
+		background: #dcdcdc;
+	}
+	@include display-inline-flex();
+	justify-content: center;
+	align-items: center;
+	&.-facebook {
+		border: 1px solid $color-facebook;
+		background: $color-facebook;
+		color: #fff;
+		&:hover {
+			background: darken($color-facebook, 6%);
+		}
+	}
+	// &.-google {
+	// 	border: 1px solid #5e5e5e;
+	// 	background: #fff;
+	// 	color: #5e5e5e;
+	// 	&:hover {
+	// 		background: darken(#fff, 6%);
+	// 	}
+	// }
+	&.-twitter {
+		border: 1px solid $color-twitter;
+		background: $color-twitter;
+		color: #fff;
+		&:hover {
+			background: darken($color-twitter, 6%);
+		}
+	}
+	&.-apple {
+		border: 1px solid $color-apple;
+		background: $color-apple;
+		color: #fff;
+		&:hover {
+			background: lighten($color-apple, 6%);
+		}
+	}
+	&.-transparent {
+		background: transparent;
+		border: 1px solid transparent;
+		&:hover {
+			background: transparent;
+			border: 1px solid transparent;
+		}
+	}
+	&.-interact {
+		border: 1px solid transparent;
+		padding: 0 .5rem;
+		color: #767D87;
+		font-weight: 600;
+		&:hover {
+			background: transparent;
+			color: inherit;
+		}
+		&.active {
+			color: $color-theme;
+		}
+	}
+	&.-filter {
+		border: 1px solid transparent;
+		padding: 0 1rem;
+		color: #000;
+		font-weight: 700;
+		font-size: .938rem;
+		border-radius: 12px;
+		background: #fff;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+		height: 32px;
+		&:hover,
+		&.active {
+			color: $color-theme;
+		}
+		&.-disabled {
+			color: #ccc;
+			border: 1px solid transparent;
+			background: #fff;
+			&:hover {
+				color: #ccc;
+				border: 1px solid transparent;
+				background: #fff;
+			}
+		}
+	}
+	&.-tertiary {
+		background: #E3E5E7;
+		border: 1px solid #E3E5E7;
+		color: #424242;
+		&:hover {
+			border: 1px solid darken(#E3E5E7, 6%);
+			background: darken(#E3E5E7, 6%);
+			// color: #fff;
+		}
+	}
+	&.-secondary {
+		// background: #fff;
+		border: 1px solid #424242;
+		color: #424242;
+		height: auto;
+		padding: .125rem 1rem;
+		&:hover {
+			border: 1px solid lighten(#424242, 6%);
+			background: lighten(#424242, 6%);
+			color: #fff;
+		}
+	}
+	&.-primary {
+		background: $color-theme;
+		border: 1px solid $color-theme;
+		color: $color-button-primary;
+		&:hover {
+			border: 1px solid darken($color-theme, 6%);
+			background: darken($color-theme, 6%);
+		}
+	}
+	&[data-follow] {
+		// width: 72px;
+		// height: 28px;
+		// font-size: 0.688rem;
+		// letter-spacing: 0.13px;
+		border: 1px solid $color-theme;
+		color: #fff;
+		background: $color-theme;
+		&:before {
+			content: attr(data-follow);
+		}
+		// &:hover {
+		// 	border: 1px solid darken($color-theme, 6%);
+		// 	color: darken($color-theme, 6%);
+		// }
+		&.-primary {
+			color: #fff;
+			border: 1px solid $color-primary;
+			background: $color-primary;	
+			&:hover {
+				border: 1px solid darken($color-theme, 6%);
+				background: darken($color-theme, 6%);
+			}
+		}
+	}
+	&[data-follow="Requested"],
+	&[data-follow="Following"] {
+		color: #979797;
+		border: 1px solid #979797;
+		background: #fff;
+		&:hover {
+			&:before {
+				content: "Remove";
+			}
+		}
+		&:focus {
+			&:before {
+				content: "Following";
+			}			
+		}
+		&.-primary {
+			border: 1px solid #979797;
+			color: #979797;
+			background: #fff;
+			&:hover {
+				border: 1px solid #979797;
+				color: #979797;
+				background: #fff;
+			}
+		}
+	}
+	&[data-follow="Requested"] {
+		&:hover {
+			&:before {
+				content: "Cancel";
+			}
+		}
+		&:focus {
+			&:before {
+				content: "Requested";
+			}			
+		}
+	}
+	// override
+	&[disabled="disabled"],
+	&[disabled="true"],
+	&.-disabled {
+		background: $color-disabled;
+		border: 1px solid $color-disabled;
+		color: #ccc;
+		// font-weight: 700;
+		&:hover {
+			border: 1px solid $color-disabled;
+			background: $color-disabled;	
+		}
+	}
+	// & > .icon {
+	// 	position: absolute;
+	// 	left: 12px;
+	// }
+}

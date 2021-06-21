@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true active="News"}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- news detail -->
+					<section class="feed feed-detail box">
+					{{#each people}}
+					{{#gte @index compare=3}}
+					{{#gte @index compare=4}}
+					{{else}}
+					<div class="feed-block -{{type}}">
+						<div class="feed-user">{{first_name}}</div>
+						<div class="feed-time">Jun 13 2021, 08:33 AM</div>
+						<h1 class="feed-title">{{title}}</h1>
+						<div class="feed-content">
+							{{#if img}}
+							{{>component/feed/img timeline=timeline}}
+							{{/if}}
+							{{>component/feed/content timeline=timeline}}
+						</div>
+						{{>component/feed/interact type=type unanswered=unanswered link=link}}
+						{{>component/feed/comment timeline="detail"}}
+						{{>component/feed/footer timeline="detail"}}
+					</div>
+					{{/gte}}
+					{{/gte}}
+					{{/each}}
+					</section>
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+{{>base/js}}
+</body>
+</html>

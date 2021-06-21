@@ -1,0 +1,55 @@
+.trending {
+	position: relative;
+	padding: .5rem .875rem;
+	&-item {
+		padding: .5rem 0;
+		border-bottom: 1px solid rgba(#AEB1BB, .3);
+		@include display-flex();
+		&:last-child {
+			border-bottom: 1px solid transparent;
+		}
+	}
+	&-img {
+		position: relative;
+		border-radius: 5px;
+		width: 70px;
+		height: 70px;
+		flex-basis: 70px;
+		flex-grow: 0;
+		overflow: hidden;
+		margin-right: .75rem;
+		margin-top: .125rem;
+		margin-bottom: .125rem;
+		& + .trending-info {
+			margin-top: .125rem;
+			margin-bottom: .125rem;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+	&-info {
+		position: relative;
+		flex-grow: 1;
+		flex-basis: 0;
+	}
+	&-title {
+		margin: 0 0 .25rem;
+		@include font-pack(false, .875rem, 800, false, #171717);
+		@include transition(all .2s ease);
+		&:hover {
+			color: var(--color-theme);
+		}
+	}
+	&-bio {
+		margin: 0 0 .25rem;
+		@include font-pack(false, .75rem, 400, false, rgba(#161F3D, .7));
+	}
+	&-stat {
+		margin: .125rem 0;
+		@include font-pack(false, .75rem, 400, false, rgba(#161F3D, .7));
+	}
+}

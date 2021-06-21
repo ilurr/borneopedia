@@ -1,0 +1,115 @@
+<div class="feed-block -{{type}}">
+	{{#if header}}
+	<div class="feed-header">
+		<div class="feed-avatar">
+			<a href="profile.html">
+				<img src="{{avatars.[0].url}}" alt="">	
+			</a>
+		</div>
+		<div class="feed-header-col">
+			<div class="feed-user"><a href="profile.html">{{first_name}} {{last_name}}</a></div>
+			<div class="feed-time">{{#if show_answered}}Answered, {{/if}}2 minutes ago</div>
+		</div>
+	</div>
+	{{/if}}
+	<div class="feed-content">
+		{{#or jobs figure}}
+		{{>component/feed/content_col timeline=timeline}}
+		{{/or}}
+		{{#if status}}
+		{{#if enable_status}}
+		<div class="feed-subtitle">{{status}}</div>
+		{{/if}}
+		{{/if}}
+		{{#if qna}}
+		<!-- qna -->
+		{{#if draft}}
+		{{#if unanswered}}
+		<div class="feed-subtitle">Question, Unpublished</div>
+		{{else}}
+		<div class="feed-subtitle">Answer, Unpublished</div>
+		{{/if}}
+		{{else}}
+		{{#if unanswered}}
+		{{#if requestedby}}
+		<div class="feed-requestedby">
+			<div class="feed-avatar">
+				<a href="profile.html">
+					<img src="{{avatars.[0].url}}" alt="">	
+				</a>
+			</div>
+			<div class="feed-header-col">
+				<div class="feed-user"><a href="profile.html">{{first_name}} {{last_name}}</a> requested question for you</div>
+			</div>
+		</div>
+		{{else}}
+		{{#if profile_timeline}}
+		{{else}}
+		<div class="feed-subtitle">Recomendation question for you</div>
+		{{/if}}
+		{{/if}}
+		{{/if}}
+		{{/if}}
+		{{#if disable_question}}
+		{{else}}
+		<h3 class="feed-title">
+			{{#and unanswered mypost}}
+			{{{question}}}
+			{{else}}
+			<a href="{{#if unanswered}}qna-question-empty.html{{else}}qna-question-detail.html{{/if}}" role="link">{{{question}}}</a>
+			{{/and}}
+		</h3>
+		{{/if}}
+		{{#if unanswered}}
+		{{#if mypost}}
+		{{else}}
+		<div class="feed-time">0 Answer, 1 hour ago</div>
+		{{/if}}
+		{{/if}}
+		{{/if}}
+		{{#or answer post}}
+		{{#if limit}}
+		{{>component/feed/content timeline=timeline limit=limit}}
+		{{else}}
+		{{>component/feed/content timeline=timeline limit=30}}
+		{{/if}}
+		{{/or}}
+		{{#if img}}
+		{{#if disable_img}}
+		{{else}}
+		{{>component/feed/img timeline=timeline}}
+		{{/if}}
+		{{/if}}
+		{{#if news}}
+		<h3 class="feed-title">
+			<a href="news-detail.html" role="link">{{{title}}}</a>
+		</h3>
+		{{/if}}
+	</div>
+	{{#or neoblog qna news figure}}
+	{{#if enable_draft}}
+	{{>component/feed/interact_draft type=type mypost=mypost link=link}}
+	{{else}}
+	{{>component/feed/interact type=type unanswered=unanswered mypost=mypost link=link}}
+	{{/if}}
+	{{/or}}
+	{{#if unanswered}}
+	{{>component/feed/inline_form}}
+	{{/if}}
+	{{#if comment}}
+	{{>component/feed/comment timeline=timeline}}
+	{{/if}}
+	{{#or neoblog qna news}}
+	{{#if disable_footer}}
+	{{else}}
+	{{#if unanswered}}
+	{{else}}
+	{{>component/feed/footer timeline=timeline}}
+	{{/if}}
+	{{/if}}
+	{{/or}}
+	{{#if disable_option}}
+	{{else}}
+	{{>component/feed/option}}
+	{{/if}}
+</div>

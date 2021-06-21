@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- pofile edit -->
+					<div class="user-profile box">
+						<form action="profile.html">
+							<div class="user-form">
+								<div class="user-form-row">
+									<div class="user-form-avatar">
+										<div class="user-avatar">
+											<img src="../asset/images/dummy/avatar.jpg" alt="">
+										</div>
+										<span>Change Profile Picture</span>
+										<a href="#modalAvatar" data-toggle="modal" class="user-avatar-button" role="button">
+											<span class="icon-general icon-photo"></span>
+										</a>
+									</div>
+								</div>
+								<div class="user-form-row">
+									{{>component/input type="text" label="Name" name="name" txtVal="Chelsea Islan"}}
+									{{>component/input type="text" label="Birthday" name="birthday" txtVal="12 Mar 1999" function="js-datepicker" parent="js-datepicker-container" readonly="true"}}
+									{{>component/select type="select" label="Gender" name="gender" option="Male,Female,Other" placeholder="-" selected="Male"}}
+									{{>component/input type="text" label="Phone" name="phone" txtVal="0987654321"}}
+									{{>component/input type="text" label="Location" name="location" txtVal="South Jakarta, Indonesia"}}
+									{{>component/input type="text" label="Short Bio" name="short-bio" txtVal="Penulis"}}
+									{{!>component/select type="select" label="Short Bio" name="short-bio" option="Penulis,Bike Addict,Love Swimming" placeholder="-"}}
+								</div>
+								<div class="user-form-action">
+									{{>component/button type="submit" name="btn-save-user" class="-primary" label="Save"}}
+								</div>
+							</div>		
+						</form>
+					</div>
+
+					<!-- modal change avatar -->
+					<form action="profile.html">
+					<div id="modalAvatar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="changeAvatar" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+								<div class="modal-header">
+									<h5 class="modal-title" id="changeAvatar">Preview Avatar</h5>
+								</div>
+								<div class="modal-body">
+									<div class="user-modal-body">
+										<p>Your profile avatar will look like this. Best image ratio should be 1:1 (square)</p>
+										<div class="user-modal-img">
+											<img src="../asset/images/dummy/avatar.jpg" alt="">
+										</div>
+										<p>* Maximum size 2Mb. File type should be .jpg, .jpeg or .png format</p>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="button" data-dismiss="modal">Cancel</button>
+									<button name="btn-avatar-save" class="button -primary">Save</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					</form>
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+{{>base/js}}
+</body>
+</html>

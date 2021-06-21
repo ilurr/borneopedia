@@ -1,0 +1,49 @@
+.search {
+	&-header {
+		position: relative;
+		padding-left: 0.938rem;
+		padding-right: 0.938rem;
+		// width: 100%;
+		//display: none;
+		//@include min-responsive($screen-tablet) {
+			width: 200px;
+			display: block;
+		//}
+		@include min-responsive($screen-desktop) {
+			width: 260px;
+		}
+		.input {
+			height: 32px;
+			border-radius: 8px;
+			border: solid 1px #e6e7ee;
+			background-color: #f7f7fa;	
+			//font-size: 1rem;	  
+			//@include min-responsive($screen-desktop) {
+				font-size: 0.813rem;	  
+			//}
+		}
+		.icon-general {
+			position: absolute;
+			top: calc(50% - .5rem);
+			right: 1.5rem;
+			z-index: 1;
+			opacity: .3;
+		}
+		.button {
+			position: absolute;
+			width: 2rem;
+			height: 2rem;
+			top: 0;
+			right: 0.938rem;
+			z-index: 2;
+			// opacity: 0;
+			text-indent: -200%;
+			background: transparent;
+			border: none;
+			&:hover {
+				background: transparent;
+				border: none;
+			}
+		}
+	}
+}

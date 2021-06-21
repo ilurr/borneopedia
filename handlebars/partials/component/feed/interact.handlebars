@@ -1,0 +1,73 @@
+<div class="feed-action">
+	{{#eq type compare="qna"}}
+	<!-- vote button -->
+	<div class="feed-action-item feed-action-vote">
+		<button type="button" id="btn-feed-like" name="btn-feed-like" class="button btn -interact" data-toggle="button" aria-pressed="false">
+			<span class="icon-general icon-vote"></span>
+			{{!-- <span id="count-vote">2</span> --}}
+			<button data-toggle="modal" data-target="#modalVotedBy" class="feed-stat-button">17</button>
+		</button>
+	</div>
+	{{else}}
+	<!-- like button -->
+	<div class="feed-action-item feed-action-like">
+		<button type="button" id="btn-feed-like" name="btn-feed-like" class="button btn -interact" data-toggle="button" aria-pressed="false">
+			<span class="icon-general icon-like"></span>
+			{{!-- <span id="count-like">59</span> --}}
+		</button>
+		<button data-toggle="modal" data-target="#modalLikedBy" class="feed-stat-button">23</button>
+	</div>
+	{{/eq}}
+
+	<!-- comment button -->
+	<div class="feed-action-item feed-action-comment">
+		<a href="{{link}}" class="button -interact" id="btn-feed-comment" role="link">
+			<span class="icon-general icon-comment"></span>
+			<span id="count-comment">2k</span>
+		</a>
+		{{!-- <button type="button" id="btn-feed-comment" name="btn-feed-comment" class="button -interact">
+			<span class="icon-general icon-comment"></span>
+			<span id="count-comment">2k</span>
+		</button> --}}
+	</div>
+
+	<!-- share button -->
+	<div class="feed-action-item feed-action-share">
+		<div class="dropup">
+			<button type="button" id="btn-feed-share" name="btn-feed-share" class="button -interact dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="icon-general icon-share"></span>
+				<span id="count-share">93</span>
+			</button>
+			<div class="dropdown-menu dropdown-menu-right" aria-labelledby="btn-feed-share">
+				<a class="dropdown-item" href="#"><div class="icon-social -facebook"><span class="icon-general icon-facebook"></span></div> Facebook</a>
+				<a class="dropdown-item" href="#"><div class="icon-social -twitter"><span class="icon-general icon-twitter"></span></div> Twitter</a>
+				<a class="dropdown-item" href="#"><div class="icon-social -whatsapp"><span class="icon-general icon-whatsapp"></span></div> Whatsapp</a>
+				<a class="dropdown-item" href="#"><div class="icon-social -line"><span class="icon-general icon-line"></span></div> Line</a>
+			</div>
+		</div>
+	</div>
+
+	{{#if unanswered}}
+	<!-- answer button -->
+	<div class="feed-action-item feed-action-answer">
+		<button type="button" id="btn-feed-answer" name="btn-feed-answer" class="button -secondary" data-toggle="inline" data-target="{{type}}AnswerForm{{@index}}">
+			Answer
+		</button>
+	</div>
+	{{/if}}
+
+	{{#if mypost}}
+	<!-- edit button -->
+	<div class="feed-action-item feed-action-edit">
+		<button type="button" id="btn-feed-edit" name="btn-feed-edit" class="button -secondary" data-toggle="modal" data-target="#modal{{capitalize type}}Edit" role="button">
+			Edit
+		</button>
+	</div>
+	<!-- delete button -->
+	<div class="feed-action-item feed-action-delete">
+		<button type="button" id="btn-feed-delete" name="btn-feed-delete" class="button -secondary" data-toggle="modal" data-target="#modal{{capitalize type}}Delete" role="button">
+			Delete
+		</button>
+	</div>
+	{{/if}}
+</div>

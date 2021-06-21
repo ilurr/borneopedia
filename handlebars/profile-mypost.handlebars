@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- pofile header -->
+					{{>component/profile/header profile=profile edit=true}}
+
+					<!-- filter -->
+					{{>module/filter type="profile" channel=submenu.profile active="Timeline" position_middle=true}}
+					
+					<!-- feeds -->
+					{{#each people}}
+					{{#gte @index compare=0}}
+					{{#gte @index compare=14}}
+					{{else}}
+					<section class="feed box">
+						{{>module/feed timeline="index"}}
+						{{>component/feed/like}}
+					</section>
+					{{/gte}}
+					{{/gte}}
+					{{/each}}
+
+					{{>component/more label="Load more"}}
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+{{>base/js}}
+</body>
+</html>

@@ -1,0 +1,47 @@
+.title {
+	position: relative;
+	margin: .25rem 0 1rem;
+	@include font-pack(false, 1.250rem, 800, false, false);
+	&-medium {
+		position: relative;
+		margin: 1rem 0 .938rem;
+		padding: 0 .25rem;
+		@include font-pack(false, 1.250rem, 700, false, false);
+	}
+	&-big {
+		font-size: 1.5rem;
+		font-weight: 500;
+		line-height: normal;
+		color: #717171;
+		margin: 1rem 0;
+		@include min-responsive($screen-tablet) {
+			font-size: 2.75rem;
+			font-weight: 700;
+		}
+	}
+	&-aside {
+		position: relative;
+		margin: 0 0 .5rem;
+		padding: .25rem 0;
+		// border-bottom: 1px solid #EDEEEE;
+		@include font-pack(false, 1rem, 800, false, #171717);
+	}
+	&-section {
+		position: relative;
+		margin: 0;
+		padding: .875rem 1rem;
+		background: #fff;
+		@include font-pack(false, 1.188rem, 700, false, $color-theme);
+		@include min-responsive($screen-tablet) {
+			background: transparent;
+			padding: 0;
+			margin: .938rem 0;
+		}
+	}
+}
+// h1.title {
+// 	font-size: 1.188rem;
+// }
+// h2.title {
+// 	font-size: 1.188rem;
+// }

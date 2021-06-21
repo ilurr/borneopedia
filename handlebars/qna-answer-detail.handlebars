@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true active="Q&A"}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- qna answer detail -->
+					<div class="feed-detail">
+						<section class="feed box">
+						{{#each people}}
+						{{#gte @index compare=1}}
+						{{#gte @index compare=2}}
+						{{else}}
+						{{>module/feed timeline="detail"}}
+						{{/gte}}
+						{{/gte}}
+						{{/each}}
+						</section>
+					</div>
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+{{>base/js}}
+</body>
+</html>

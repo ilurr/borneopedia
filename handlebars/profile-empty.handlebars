@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- pofile header -->
+					{{>component/profile/header profile=profile edit=true}}
+
+					<!-- filter -->
+					{{>module/filter type="profile" channel=submenu.profile active="Timeline" position_middle=true}}
+					
+					<!-- no activity -->
+					<section class="feed-empty">
+						<div class="feed-empty-img">
+							<img src="../asset/images/no_activity.png" alt="">
+						</div>
+						<div class="feed-empty-text">
+							You have no activity yet
+						</div>
+					</section>
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+{{>base/js}}
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- image -->
+<div class="feed-img">
+	{{#if (isArray img)}}
+	{{#eq timeline compare="index"}}
+	<div class="feed-img-block">
+	{{else}}
+	<div class="feed-img-block" data-slider="gallery">
+	{{/eq}}
+	{{else}}
+	<div class="feed-img-block">
+	{{/if}}
+		{{#if (isArray img)}}
+		{{#eq timeline compare="index"}}
+		<div class="feed-img-item">
+			<div class="feed-img-object">
+				<span>
+					<img src="{{img.[0]}}" alt="">
+				</span>
+			</div>
+		</div>
+		{{else}}
+		{{#each img as |item|}}
+		<div class="feed-img-item">
+			<div class="feed-img-object">
+				<span>
+					<img src="{{item}}" alt="">
+				</span>
+			</div>
+		</div>
+		{{/each}}
+		{{/eq}}
+		{{else}}
+		<div class="feed-img-item">
+			{{#if news}}
+			{{#eq timeline compare="index"}}
+			<a href="news-detail.html" role="link">
+			{{/eq}}
+			{{/if}}
+			<div class="feed-img-object">
+				<span>
+					<img src="{{img}}" alt="">
+				</span>
+			</div>
+			{{#if news}}
+			{{#eq timeline compare="index"}}
+			</a>
+			{{/eq}}
+			{{/if}}
+		</div>
+		{{/if}}
+	</div>
+</div>

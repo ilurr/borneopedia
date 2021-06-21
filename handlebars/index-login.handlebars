@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav active="Home"}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- feeds -->
+					{{#each people}}
+					{{#gte @index compare=0}}
+					{{#gte @index compare=14}}
+					{{else}}
+					<section class="feed box">
+						{{>module/feed timeline="index"}}
+						{{>component/feed/like}}
+					</section>
+					{{#if people_belt}}
+
+					<!-- belt people -->
+					<section class="feed-belt">
+						{{>component/profile/belt}}
+					</section>
+					{{/if}}
+					{{/gte}}
+					{{/gte}}
+					{{/each}}
+
+					{{>component/more label="Load more"}}
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+	<!-- login -->
+	{{>module/modal_login}}
+
+{{>base/js}}
+<script>
+// dummy alert succes / failed message
+let msg = document.getElementById('success-msg');
+if(!!msg) {
+	setTimeout(function(){
+		$('#success-msg').fadeIn(300).delay(3000).fadeOut(1000);
+	}, 300);
+}
+</script>
+</body>
+</html>

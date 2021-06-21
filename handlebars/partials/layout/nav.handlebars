@@ -1,0 +1,22 @@
+<!-- nav main -->
+<nav class="nav" aria-label="Main Navigation">
+	<ol class="nav-wrap">
+		{{#each navigation}}
+		{{#or login ../logged}}
+		<li class="nav-item">
+			<a href="{{link}}" class="nav-link{{#eq ../active compare=title}} -active{{/eq}}" {{#if modal}}data-toggle="modal" data-target="#modalNav{{capitalize icon}}" role="button"{{else}}role="link"{{/if}} aria-label="{{title}}">
+				<div class="nav-flex">
+					<div class="nav-icon">
+						{{#if badge}}
+						<span class="nav-badge">{{notification}}</span>
+						{{/if}}
+						<span class="icon-general icon-{{icon}}"></span>
+					</div>
+					<div class="nav-text">{{title}}</div>
+				</div>
+			</a>
+		</li>
+		{{/or}}
+		{{/each}}
+	</ol>
+</nav>

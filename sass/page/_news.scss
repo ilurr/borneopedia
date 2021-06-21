@@ -1,0 +1,52 @@
+.news {
+	&-block {
+		position: relative;
+		margin: 1rem 0;
+		padding: 1.438rem;
+	}
+	&-source {
+		@include font-pack(false, .813rem, 800, false, var(--color-theme));
+		letter-spacing: .075rem;
+		text-transform: uppercase;
+		&-link {
+			font-weight: 700;
+			font-size: .938rem;
+		}
+	}
+	&-time {
+		@include font-pack(false, 0.75rem, 400, false, rgba(#000,.5));
+	}
+	&-title {
+		position: relative;
+		margin: 1rem 0;
+		@include font-pack(false, 1.5rem, 800, false, #171717);
+	}
+	&-object {
+		position: relative;
+		span {
+			position: relative;
+			display: block;
+			padding-top: calc(1 / 2 * 100%);
+			overflow: hidden;
+			background: #f0f0f0;
+			border-radius: 5px;
+		}
+		img {
+			@include ratio-flexible(100%, auto);
+			z-index: 2;
+		}
+	}
+	&-body {
+		position: relative;
+		padding-bottom: 1.5rem;
+	}
+	&-content {
+		position: relative;
+		padding: .5rem 0;
+		@include font-pack(false, .938rem, 400, 1.7, rgba(#121212, .9));
+		p {
+			margin: 1rem 0;
+			@include font-pack(false, .938rem, 400, 1.7, rgba(#121212, .9));
+		}
+	}
+}

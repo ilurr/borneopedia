@@ -1,0 +1,37 @@
+{{#each comments}}
+{{#gte @index compare=../co_start}}
+{{#gte @index compare=../co_end}}
+{{else}}
+<div class="comment-item">
+	{{#if reply}}
+	<!-- reply -->
+	<div class="comment-row -reply">
+	{{else}}
+	<!-- comment -->
+	<div class="comment-row">
+	{{/if}}
+		<div class="comment-avatar">
+			<a href="profile.html" role="link">
+				<img src="{{avatars.[0].url}}" alt="">	
+			</a>
+		</div>
+		<div class="comment-col">
+			<div class="comment-content">
+				<div class="comment-user">
+					<a href="profile.html" role="link">{{first_name}} {{last_name}}</a>
+				</div>
+				<div class="comment-text">
+					{{{comment}}}
+					{{{reply}}}
+				</div>
+			</div>
+			<div class="comment-reaction">
+				{{>component/button type="button" name="btn-reply" class="-transparent" label="Reply"}}
+				<div class="comment-time">1{{@index}} minutes ago</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{/gte}}
+{{/gte}}
+{{/each}}

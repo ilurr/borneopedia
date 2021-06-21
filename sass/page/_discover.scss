@@ -1,0 +1,445 @@
+.discover {
+	position: relative;
+	margin: .938rem 0;
+	background: #ebebeb;
+	border: solid 1px #cecece;
+	overflow: hidden;
+	&-block {
+		position: relative;
+		min-height: 80vh;
+		padding: 4rem 0 1.250rem;
+		@include min-responsive($screen-tablet) {
+			padding: 1.250rem 0;
+		}
+	}
+	&-flex {
+		position: relative;
+		@include display-flex();
+		justify-content: center;
+		align-items: center;
+	}
+	&-bg {
+		&:after {
+			content: '';
+			width: 200px;
+			height: 200px;
+			background: #FDF5EE;
+			border: solid 4px #fdeee0;
+			border-radius: 100%;
+			position: absolute;
+			z-index: 1;
+		}
+		&.-animate {
+			&:after {
+				-webkit-animation: pulse 2s infinite;
+				-o-animation: pulse 2s infinite;
+				animation: pulse 2s infinite;
+				// left: 50%;
+				// top: 50%;
+				// @include transform(translate(-50%, -50%));
+			}
+		}
+	}
+	&-user {
+		position: absolute;
+		width: 95px;
+		height: 95px;
+		border-radius: 50px;
+		overflow: hidden;
+		border: 3px solid #fff;
+		z-index: 2;
+		img {
+			@include ratio-flexible(auto, 100%);
+		}
+	}
+	&-card {
+		position: relative;
+		z-index: 3;
+		width: 300px;
+		// min-height: 60vh;
+		// opacity: 1;
+		// visibility: visible;
+		@include transition(all .5s ease);
+		// @include transform(translateY(5%));
+		&.-hide {
+			opacity: 0;
+			visibility: hidden;
+			@include transform(translateY(5%));
+		}
+		&-item {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			@include transition(all .2s ease-in-out);
+			.discover-img {
+				pointer-events: none;
+				* {
+					pointer-events: none;
+				}
+			}
+			&:last-child {
+				z-index: 1;
+				position: relative;
+				* {
+					pointer-events: all;
+				}
+			}
+			will-change: transform;
+			// transition: all .2s ease-in-out;
+			cursor: -webkit-grab;
+			cursor: -moz-grab;
+			cursor: grab;			  
+			&.moving {
+				@include transition(none);
+				cursor: -webkit-grabbing;
+				cursor: -moz-grabbing;
+				cursor: grabbing;			  
+			}
+			&.hide {
+				pointer-events: none;
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+	&-img {
+		position: relative;
+		overflow: hidden;
+		border-radius: 12px;
+		padding-top: calc(4 / 3 * 100%);
+		box-shadow: 0 2px 5px rgba(0,0,0,.2);
+		z-index: 1;
+		background: #f0f0f0;
+		@include transition(all .2s ease);
+		img {
+			@include ratio-flexible(auto, 100%);
+			z-index: 2;
+		}
+	}
+	&-info {
+		position: absolute;
+		z-index: 3;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 70% 15px 20px;
+		background-image: linear-gradient(to bottom, rgba(255, 123, 0, 0) 40%, #df4b01);
+	}
+	&-place {
+		&-name {
+			@include font-pack(false, 1.250rem, 700, false, #fff);
+		}
+		&-address {
+			padding-bottom: 2px;
+			@include font-pack(false, 0.750rem, 500, false, #fff);
+		}
+		&-lead {
+			@include font-pack(false, 0.625rem, 500, false, #fff);
+			@include title-overflow(auto, 28px);
+		}
+	}
+	&-people {
+		&-name {
+			@include font-pack(false, 1.250rem, 700, false, #fff);
+		}
+		&-bio {
+			padding-bottom: 2px;
+			@include font-pack(false, 0.750rem, 500, false, #fff);
+		}
+		&-stat {
+			@include font-pack(false, 0.625rem, 500, false, #fff);
+			span {
+				font-weight: 700;
+			}
+		}
+	}
+	&-action {
+		.form-row {
+			text-align: center;
+			padding-top: 1.5rem;
+			padding-bottom: 0;
+		}
+		.button {
+			width: 160px;
+			border-radius: 21px;
+			font-size: 1rem;
+			font-weight: 500;
+			box-shadow: 0 0 5px rgba(0,0,0,.1);
+		}
+	}
+	&-message {
+		position: relative;
+		overflow: hidden;
+		border-radius: 12px;
+		padding-top: calc(4 / 3 * 100%);
+		// box-shadow: 0 2px 5px rgba(0,0,0,.2);
+		z-index: 1;
+		span {
+			position: absolute;
+			width: 100%;
+			//top: 50%;
+			top: 0;
+			left: 0;
+			padding: 30px;
+			z-index: 1;
+			text-align: center;
+			// @include transform(translateY(-50%));
+			@include font-pack(false, 0.875rem, 600, false, #000);
+		}
+	}
+	&-guide {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		z-index: 3;
+		@include transform(translateY(-215px));
+		&.-hide {
+			display: none;
+		}
+		&-body {
+			position: relative;
+			width: 270px;
+			margin: 0 auto;
+			background: rgba(255,255,255,.7);
+			border-radius: 6px;
+			z-index: 1;
+			span {
+				display: block;
+				position: relative;
+				//top: 50%;
+				// top: 0;
+				// left: 0;
+				padding: .5rem;
+				text-align: center;
+				// @include transform(translateY(-50%));
+				@include font-pack(false, 0.875rem, 500, false, #000);
+			}
+		}
+		button {
+			position: absolute;
+			top: -5px;
+			right: -5px;
+			z-index: 2;
+			padding: 2px;
+			width: 20px;
+			height: 20px;
+			background: rgba(255,255,255,1);
+			border: 1px solid transparent;
+			border-radius: 100%;
+			.icon-close:before, 
+			.icon-close:after {
+				background: #000;
+				// border: 1px solid #888;
+			}
+		}
+	}
+
+	// filter
+	&-filter {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 3;
+		height: 100%;
+		width: 100%;
+		pointer-events: none;
+		@include min-responsive($screen-tablet) {
+			width: auto;
+		}
+		&-trigger {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: auto;
+			padding: 0 1.125rem;
+			background: #fff;
+			color: #2a2a2a;
+			border: 1px solid transparent;
+			font-size: 1.063rem;
+			font-weight: 400;
+			border-radius: 2rem;
+			&:hover {
+				color: #9E9E9E;
+				background: #f9f9f9;
+			}
+		}
+		&-box {
+			pointer-events: all;
+			position: relative;
+			background: #fff;
+			width: 100%;
+			height: 100%;
+			padding: 1rem;
+			border-left: 1px solid #C8C7CC;
+			@include transition(all .2s ease-in-out);
+			@include transform(translate(100%,0));
+			opacity: 0;
+			visibility: hidden;
+			overflow-y: auto;
+			@include min-responsive($screen-tablet) {
+				width: 300px;
+			}
+			&.-show {
+				opacity: 1;
+				visibility: visible;
+				@include transform(translate(0,0));
+			}
+			label {
+				text-transform: inherit;
+				letter-spacing: inherit;
+				font-size: inherit;
+				line-height: inherit;
+				color: inherit;
+				font-weight: inherit;
+				padding: 0;
+			}
+		}
+		&-form {
+			position: relative;
+		}
+		&-row {
+			position: relative;
+			@include display-flex();
+			justify-content: space-between;
+			align-items: center;
+			padding: .875rem 0;
+		}
+		&-text {
+			font-size: 0.875rem;
+			font-weight: 500;
+			padding-right: .5rem;
+		}
+		&-subtext {
+			font-size: 0.875rem;
+			font-weight: 500;
+			color: #D8D8D8;
+		}
+		&-location {
+			flex-grow: 1;
+			button {
+				padding: 0 .313rem;
+				color: #b9b9b9;
+				font-weight: 500;
+				justify-content: flex-end;
+				&:hover {
+					color: #b9b9b9;
+				}
+			}
+			.icon-arrow:after {
+				border-top: 2px solid #b9b9b9;
+				border-left: 2px solid #b9b9b9;
+			}
+		}
+		&-current {
+			position: relative;
+			text-align: right;
+			padding-right: .313rem;
+			span {
+				display: block;
+				font-size: .75rem;
+				@include title-overflow(1rem, auto);
+			}
+		}
+		&-action {
+			padding: 1.125rem 0;
+			text-align: center;
+			.button {
+				width: auto;
+				margin: 0 auto;
+				padding: 0 1.5rem;
+			}
+		}
+		&-range {
+			position: relative;
+			padding-bottom: 1.25rem;
+			padding-left: .5rem;
+			padding-right: .5rem;
+		}
+		&-item {
+			position: relative;
+			border-bottom: 1px solid #e7e7e7;
+			.discover-filter-form > &:first-child {
+				margin-top: -0.5rem;
+			}
+			&:last-child {
+				border-bottom: transparent;
+			}
+			&.-divider {
+				padding-top: 1.688rem;
+				border-bottom: transparent;
+				.discover-filter-text {
+					color: #b9b9b9;
+				}
+			}
+			&.-group {
+				.discover-filter-text {
+					padding-left: 1rem;
+				}
+			}
+			&.-disabled {
+				.discover-filter-text {
+					color: #bbbbbb;
+				}
+			}
+		}
+	}
+
+	// modal loc
+	&-location {
+		&-modal {
+			position: relative;
+			padding: 1rem;
+		}
+		&-search {
+			position: relative;
+			.icon-search {
+				position: absolute;
+				left: 1rem;
+				top: calc(50% - 8px);
+				z-index: 1;
+			}
+			.input {
+				height: 42px;
+				padding: 0 42px;
+				// &:-ms-input-placeholder ~ .clear,
+				// &:-moz-placeholder ~ .clear,
+				&:placeholder-shown ~ .clear {
+					display: none;
+				}
+			}
+			.clear {
+				position: absolute;
+				right: 0;
+				width: 42px;
+				outline: 0;
+				background: transparent;
+				border: 1px solid transparent;
+			}
+			.icon-close {
+				width: 1rem;
+				height: 1rem;
+			}
+			.icon-close:before, 
+			.icon-close:after {
+				background: #000;
+				// border: 1px solid #000;
+			}
+		}
+		&-body {
+			position: relative;
+			padding: .5rem 0;
+			button {
+				padding: 0 1rem;
+				justify-content: flex-start;
+				font-weight: 500;
+				font-size: .75rem;
+				background: transparent;
+				border: 1px solid transparent;
+				&:hover {
+					background: #f9f9f9;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+<section class="feed box">
+	{{>module/feed timeline=timeline channel=channel}}
+</section>
+{{/gte}}
+{{/gte}}
+{{/each}}

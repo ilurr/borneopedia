@@ -1,0 +1,18 @@
+<!-- comment -->
+<div class="feed-comment">
+	<div class="comment">
+		<div class="comment-feed">
+			{{#eq timeline compare="detail"}}
+			<div class="comment-more">
+				{{>component/button type="button" name="btn-comment-load" class="-transparent" label="Load more comments"}}
+			</div>
+			{{>component/feed/comment_list comments=comments co_start=0 co_end=3}}
+			{{else}}
+			<div class="comment-more">
+				{{>component/button type="link" href=link class="-transparent" label="View more comments"}}
+			</div>
+			{{>component/feed/comment_list comments=comments co_start=0 co_end=1}}
+			{{/eq}}
+		</div>
+	</div>
+</div>

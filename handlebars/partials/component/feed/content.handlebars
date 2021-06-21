@@ -1,0 +1,14 @@
+<!-- text -->
+<div class="feed-text">
+	{{#eq timeline compare="index"}}
+	{{{truncateWords (sanitize post) limit "... <a href=\"neoblog-detail.html\" class=\"feed-more\">read more</a>"}}}
+	{{{truncateWords (sanitize answer) limit "... <a href=\"qna-answer-detail.html\" class=\"feed-more\">read more</a>"}}}
+	{{else}}
+	{{{post}}}
+	{{{answer}}}
+	{{{content}}}
+	{{#if news}}
+	<a href="#" target="_blank" class="feed-source-link" role="link">source link</a>
+	{{/if}}
+	{{/eq}}
+</div>

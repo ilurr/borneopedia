@@ -1,0 +1,155 @@
+// .modal-open {
+// }
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+	&-open {
+		overflow: hidden;
+	}
+	.close {
+		width: 26px;
+		height: 26px;
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		z-index: 4;
+		border: 1px solid transparent;
+		// background: rgba(216, 216, 216, .7);
+		// color: #fff;
+		border-radius: 100%;
+		// font-size: 50px;
+		// font-weight: 400;
+		// line-height: 26px;
+		// span {
+		// 	line-height: 26px;
+		// }
+		.icon-close:before, .icon-close:after {
+			background: #575757;
+			width: 80%;
+		}
+	}
+	// &.fade &-dialog {
+	// 	@include transform(translate(0, 10px));
+	// 	@include transition(transform 0.2s ease);
+	// }
+	// &.in &-dialog {
+	// 	@include transform(translate(0, 0));
+	// }
+	&-open & {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	&-dialog {
+		position: relative;
+		width: auto;
+		margin: 10px;
+		@include min-responsive($screen-tablet) {
+			width: 600px;
+			margin: 16vh auto 0;
+		}
+		&.-small {
+			@include min-responsive($screen-tablet) {
+				width: 400px;
+			}
+		}
+		// @include min-responsive($screen-desktop) {
+		// 	width: 500px;
+		// }
+	}
+	&-content {
+		position: relative;
+		background-color: #ffffff;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		//border: 1px solid #999999;
+		//border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: 6px;
+		-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+		box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+		outline: 0;
+		
+		overflow: hidden;
+		@include min-responsive($screen-tablet) {
+			-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+		}
+	}
+	&-backdrop {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1040;
+		background-color: #000000;
+	}
+	
+	&-backdrop.fade {
+		filter: alpha(opacity=0);
+		opacity: 0;
+	}
+	
+	&-backdrop.in {
+		filter: alpha(opacity=70);
+		opacity: 0.7;
+	}
+	
+	&-header {
+		padding: 15px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	
+	&-header .close {
+		margin-top: -2px;
+	}
+	
+	&-title {
+		margin: 0;
+		line-height: 1.42857143;
+	}
+	
+	&-body {
+		position: relative;
+		padding: 0;
+		min-height: 100px;
+		// max-height: 80vh;
+		max-height: 75vh;
+		overflow: auto;
+	}
+	
+	&-footer {
+		padding: 15px;
+		text-align: right;
+		border-top: 1px solid #e5e5e5;
+	}
+	
+	&-footer .btn+.btn {
+		margin-bottom: 0;
+		margin-left: 5px;
+	}
+	
+	&-footer .btn-group .btn+.btn {
+		margin-left: -1px;
+	}
+	
+	&-footer .btn-block+.btn-block {
+		margin-left: 0;
+	}
+	
+	&-scrollbar-measure {
+		position: absolute;
+		top: -9999px;
+		width: 50px;
+		height: 50px;
+		overflow: scroll;
+	}
+}

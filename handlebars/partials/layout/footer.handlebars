@@ -1,0 +1,75 @@
+{{#eq footer compare="small"}}
+<!-- footer aside -->
+<footer class="footer-aside">
+	<nav class="footer-nav" aria-label="Footer">
+		<ul>
+			{{#each static}}
+			<li><a href="{{link}}" role="link" aria-label="{{title}}">{{title}}</a></li>
+			{{/each}}
+		</ul>
+	</nav>
+	<div class="footer-copy">© {{base.footer.year}} {{base.footer.title}}</div>
+	{{>module/app_widget}}
+</footer>
+{{/eq}}
+{{#eq footer compare="big"}}
+<!-- footer -->
+<footer class="footer">
+	<div class="grid grid-flex">
+		<div class="footer-col">
+			<div class="footer-logo">
+				<a href="index.html">
+					<img src="../asset/images/logo-trifekta-footer.png" alt="">
+				</a>
+				<div class="footer-lead">{{base.footer.lead}}</div>
+			</div>
+			<div class="footer-copy">© {{base.footer.year}} {{base.footer.title}}. All rights reserved.</div>
+		</div>
+		<div class="footer-col">
+			<nav class="footer-nav" aria-label="Footer">
+				<ul>
+					{{#each static}}
+					<li><a href="{{link}}" role="link" aria-label="{{title}}">{{title}}</a></li>
+					{{/each}}
+				</ul>
+			</nav>
+		</div>
+		<div class="footer-col">
+			<div class="footer-social">
+				<div class="footer-social-text">Follow us:</div>
+				<div class="footer-social-icon social">
+					<div class="social-item">
+						<a href="#" class="social-link">
+							<span class="icon-general icon-facebook"></span>
+						</a>
+					</div>
+					<div class="social-item">
+						<a href="#" class="social-link">
+							<span class="icon-general icon-instagram"></span>
+						</a>
+					</div>
+					<div class="social-item">
+						<a href="#" class="social-link">
+							<span class="icon-general icon-twitter"></span>
+						</a>
+					</div>
+					<div class="social-item">
+						<a href="#" class="social-link">
+							<span class="icon-general icon-youtube-play"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-subscribe">
+				<div class="footer-subscribe-text">Subscribe:</div>
+				<div class="footer-subscribe-form">
+					<form action="#">
+						<input type="text" class="input" name="subscribe" placeholder="Email">
+						<input type="submit" class="button -primary" name="subscribe-btn" value="Join">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+{{/eq}}

@@ -1,0 +1,18 @@
+<div class="feed-belt-title">People You May Know</div>
+<div class="user-belt" data-slider="belt">
+	{{#each people_belt}}
+	<div class="user-belt-item">
+		<a href="profile.html" role="link">
+			<div class="user-belt-wrap">
+				{{#if verified}}
+				<span class="user-verify"></span>
+				{{/if}}
+				<div class="user-avatar">
+					<img src="{{avatars.[0].url}}" alt="{{first_name}}">	
+				</div>
+				<h1 class="user-name">{{first_name}} {{last_name}}</h1>
+			</div>
+		</a>
+	</div>
+	{{/each}}
+</div>

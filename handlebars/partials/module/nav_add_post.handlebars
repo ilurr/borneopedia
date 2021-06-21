@@ -1,0 +1,36 @@
+<div id="modalNavAdd" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="navAdd" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="nav-modal">
+				{{#each navigation.[0].subnav}}
+				<div class="nav-modal-item">
+					<a class="nav-link" {{#if modal}}data-toggle="modal" data-target="#{{modal_id}}" role="button"{{else}}role="link"{{/if}} aria-label="{{title}}">
+						<div class="nav-flex">
+							<div class="nav-icon">
+								{{#if badge}}
+								<span class="nav-badge">{{notification}}</span>
+								{{/if}}
+								<span class="icon-general icon-{{icon}}"></span>
+							</div>
+							<div class="nav-text">{{title}}</div>
+						</div>
+					</a>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>
+
+{{>module/modal_form modal_page="neoblog" modal_type="add" modal_title="Write Story" modal_draft="Save to draft" modal_action="POST"}}
+
+{{>module/modal_form modal_page="qna" modal_type="add" modal_title="New Question" modal_draft="Save to draft" modal_action="POST"}}
+
+{{#if page}}
+{{#eq page compare="qna"}}
+{{>module/modal_form modal_page="qna" modal_type="edit" modal_title="Edit Question" modal_draft="Save to draft" modal_action="POST"}}
+{{/eq}}
+{{>module/modal_form modal_page=page modal_type="edit" modal_title=modal_title modal_draft=modal_draft modal_action=modal_action}}
+
+{{>module/modal_delete modal_page=page}}
+{{/if}}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true active="Setting"}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- setting list -->
+					<div class="setting box">
+						<div class="setting-block">
+							{{#each setting}}
+							{{#eq title compare="Other"}}
+							<hr>
+							{{else}}
+							<h3 class="setting-subtitle">{{title}}</h3>
+							{{/eq}}
+							{{#each list}}
+							<div class="setting-item">
+								{{#if link}}
+								<a class="setting-link" href="{{link}}">
+								{{else}}
+								<label for="setting-{{hyphenate (lowercase title)}}">
+								{{/if}}
+									<div class="setting-row">
+										<div class="setting-text">{{title}}</div>
+										{{#if toggle}}
+										<div class="setting-toggle form-toggle">
+											<input name="setting-{{hyphenate (lowercase title)}}" id="setting-{{hyphenate (lowercase title)}}" type="checkbox" autocomplete="off"{{#eq toggle_value compare=true}} checked="checked"{{/eq}}>
+											<span></span>
+										</div>
+										{{/if}}
+									</div>
+								{{#if link}}
+								</a>
+								{{else}}
+								</label>
+								{{/if}}
+							</div>
+							{{/each}}
+							{{/each}}
+						</div>
+					</div>
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+{{>base/js}}
+</body>
+</html>

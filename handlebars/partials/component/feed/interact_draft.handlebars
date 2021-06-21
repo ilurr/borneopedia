@@ -1,0 +1,27 @@
+<div class="feed-action -manage">
+	{{#if question_empty}}
+	<!-- answer button -->
+	<div class="feed-action-item">
+		<div class="feed-time">Chelsea, can you answer this question?</div>
+	</div>
+	<div class="feed-action-item feed-action-answer">
+		<button type="button" id="btn-feed-answer" name="btn-feed-answer" class="button -secondary" data-toggle="inline" data-target="{{type}}AnswerForm{{@index}}">
+			Answer
+		</button>
+	</div>
+	{{/if}}
+	{{#if mypost}}
+	<!-- edit button -->
+	<div class="feed-action-item feed-action-edit">
+		<button type="button" id="btn-feed-edit" name="btn-feed-edit" class="button -secondary" data-toggle="modal" data-target="#modal{{capitalize type}}Edit" role="button">
+			Edit
+		</button>
+	</div>
+	<!-- delete button -->
+	<div class="feed-action-item feed-action-delete">
+		<button type="button" id="btn-feed-delete" name="btn-feed-delete" class="button -secondary" data-toggle="modal" data-target="#modal{{capitalize type}}Delete" role="button">
+			Delete
+		</button>
+	</div>
+	{{/if}}
+</div>

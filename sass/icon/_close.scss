@@ -1,0 +1,38 @@
+.icon {
+	&-add,
+	&-close {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 100%;
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			width: 55%;
+			height: 2px;
+			background: #fff;
+			//border-top: 1px solid #fff;
+			top: 50%;
+			left: 50%;
+		}
+	}
+	&-add {
+		background-color: var(--color-theme);
+		border-radius: 22px;
+		&:before {
+			@include transform(translate(-50%, -50%) rotate(90deg));
+		}
+		&:after {
+			@include transform(translate(-50%, -50%) rotate(0deg));
+		}
+	}
+	&-close {
+		&:before {
+			@include transform(translate(-50%, -50%) rotate(45deg));
+		}
+		&:after {
+			@include transform(translate(-50%, -50%) rotate(-45deg));
+		}
+	}
+}

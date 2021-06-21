@@ -1,0 +1,132 @@
+.people {
+	position: relative;
+	padding: 1rem 1.563rem;
+	margin: .938rem 0;
+	&-list {
+		position: relative;
+		padding: 0;
+	}
+	&-item {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		margin: 0;
+		padding: 0.625rem 0;
+		border-bottom: 1px solid #EDEEEE;
+		&:last-child {
+			border-bottom: transparent;
+		}
+		// &:hover {
+		// 	background: lighten($bg-base, 2%);
+		// }
+	}
+	&-col {
+		position: relative;
+	}
+	&-row {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		flex-grow: 1;
+		flex-basis: 0;
+	}
+	&-info {
+		flex-basis: 0;
+		flex-grow: 1;
+		padding-left: 1.125rem;
+		padding-right: .5rem;
+	}
+	&-name {
+		margin: 0 0 4px;
+		@include font-pack(false, 0.875rem, 700, 1.2, #161f3d);
+		@include title-overflow(auto, 33px);
+		@include transition(all .2s ease);
+		// &:hover {
+		// 	color: #000;
+		// }
+	}
+	&-bio {
+		margin: 0;
+		@include font-pack(false, 0.75rem, 500, 1.2, #818488);
+		@include title-overflow(auto, 28px);
+	}
+	&-img {
+		position: relative;
+		flex-grow: 0;
+		flex-basis: 50px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		overflow: hidden;
+		background: #f5f5f5;
+		img {
+			@include ratio-flexible(auto, 100%);
+		}
+	}
+
+	// 
+	&-block {
+		position: relative;
+		a {
+			color: inherit;
+			&:hover {
+				color: $color-theme;
+			}
+		}
+		.button {
+			&[data-follow] {
+				width: 100px;
+				height: auto;
+				font-size: 0.75rem;
+				padding: .438rem 1rem;
+			}		
+		}
+		&.-modal {
+			padding: 0 1.25rem;
+		}
+	}
+	&-aside {
+		position: relative;
+		a {
+			color: inherit;
+			&:hover {
+				color: $color-theme;
+			}
+		}
+		.people-img {
+			flex-basis: 36px;
+			width: 36px;
+			height: 36px;
+			border-radius: 36px;
+		}
+		.people-item {
+			padding: .5rem 0;
+		}
+		.people-info {
+			padding-left: 0.625rem;
+		}
+		.people-name {
+			color: #5a5959;
+		}
+		.button {
+			&[data-follow] {
+				width: 72px;
+				height: 28px;
+				font-size: 0.688rem;
+				letter-spacing: 0.13px;
+				padding: 0;
+			}		
+		}
+		&-footer {
+			text-align: right;
+			padding: 0 10px;
+			a {
+				text-transform: uppercase;
+				@include font-pack(false, 0.688rem, 500, false, #818488);
+				&:hover {
+					color: inherit;
+				}
+			}
+		}
+	}
+}

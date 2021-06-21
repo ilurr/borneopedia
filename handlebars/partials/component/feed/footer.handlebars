@@ -1,0 +1,21 @@
+<div class="feed-footer">
+	<div class="feed-avatar">
+		<img src="../asset/images/dummy/avatar.jpg" alt="">	
+	</div>
+	<div class="feed-reply">
+		{{#eq timeline compare="index"}}
+		<a href="{{link}}" role="link" aria-label="Write comment...">
+			<div class="feed-reply-placeholder">
+				Write comment...
+				<span class="icon-general icon-emoji"></span>
+			</div>
+		</a>
+		{{/eq}}
+		{{#eq timeline compare="detail"}}
+		<input type="text" class="feed-reply-input" placeholder="Write comment...">
+		<button type="button" data-toggle="emoji" data-container="feed-reply" data-target="feed-reply-input" class="button feed-reply-emoji">
+			<span class="icon-general icon-emoji"></span>
+		</button>
+		{{/eq}}
+	</div>
+</div>

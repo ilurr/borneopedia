@@ -1,0 +1,50 @@
+<section class="user-header box">
+	<div class="user-row-top">
+		<div class="user-avatar">
+			<img src="{{profile.avatars.[0].url}}" alt="{{profile.first_name}}">	
+		</div>
+		<div class="user-col">
+			<h1 class="user-name">{{profile.first_name}} {{profile.last_name}} {{#if profile.verified}}<span class="user-verify"></span>{{/if}}</h1>
+			<div class="user-location">{{profile.location}}</div>
+			<div class="user-rewards">
+				<span class="icon-general icon-rewards"></span>
+				{{#eq profile.rewards compare=2}}
+				<span class="icon-general icon-rewards"></span>
+				{{/eq}}
+			</div>
+		</div>
+	</div>
+	<div class="user-row-bio">
+		<div class="user-bio">{{profile.bio}}</div>
+	</div>
+	<div class="user-row-stat">
+		<div class="user-col">
+			<div class="user-stat">21 <span>Activities</span></div>
+		</div>
+		<div class="user-col">
+			<a class="user-stat-link" href="people.html">
+				<div class="user-stat">1234 <span>Followers</span></div>
+			</a>
+		</div>
+		<div class="user-col">
+			<a class="user-stat-link" href="people.html">
+				<div class="user-stat">2 <span>Following</span></div>
+			</a>
+		</div>
+	</div>
+	<div class="user-row-action">
+		{{#if edit}}
+		<div class="user-action">
+			{{>component/button type="link" href="profile-edit.html" name="btn-edit-user" class="" label="Edit Profile"}}
+		</div>
+		{{/if}}
+		{{#if view}}
+		<div class="user-action">
+			{{>component/button type="follow" name="btn-follow" class="-primary" label="Follow" lock=lock}}
+		</div>
+		<div class="user-action">
+			{{>component/button type="link" href="message.html" name="btn-message" class="-tertiary" label="Message"}}
+		</div>
+		{{/if}}
+	</div>
+</section>

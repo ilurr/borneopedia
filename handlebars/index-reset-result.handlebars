@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		<div class="welcome-wrap">
+			<header class="welcome-logo">
+				<h1 class="welcome-img">
+					<a href="index.html" role="link">
+						<img src="../asset/images/logo-{{lowercase base.title}}-red.svg" alt="{{base.title}}" width="447" height="79">
+					</a>
+				</h1>
+			</header>
+			
+			<!-- reset -->
+			<section class="panel">
+				{{>component/title title="Reset Password"}}
+				<div class="panel-body">
+					<div class="sign-text">
+						We have sent you an email. Check your inbox and follow a link with instructions over there.
+						<br><br>
+						<strong><a href="index-login-page.html">Login</a></strong>
+					</div>
+				</div>
+			</section>
+
+			<section class="welcome-download">
+				{{>module/app_widget}}
+			</section>
+
+			<section class="welcome-bg">
+				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
+			</section>
+		</div>
+
+	</div>
+	<!-- e: root -->
+
+{{>base/js}}
+</body>
+</html>

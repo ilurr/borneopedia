@@ -1,0 +1,42 @@
+<!-- modal {{modal_page}} {{modal_type}} -->
+<form action="{{modal_page}}.html">
+	<div id="modal{{capitalize modal_page}}{{capitalize modal_type}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="{{modal_page}}Form" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+				<div class="modal-header">
+					<h5 class="modal-title">{{modal_title}}</h5>
+				</div>
+				<div class="modal-body">
+					<div class="post-modal -{{modal_page}}">
+						{{#eq modal_page compare="qna"}}
+						<div class="post-modal-content">
+							<!-- 
+							<textarea name="{{modal_page}}-textarea" id="{{modal_page}}-textarea-{{modal_type}}" class="post-input js-mentionable" placeholder="Start your question with 'What', 'How', 'Why'"></textarea>
+							-->
+							<article name="{{modal_page}}-contenteditable" id="{{modal_page}}-contenteditable-{{modal_type}}" class="post-contenteditable js-mentionable" placeholder="Start your question with 'What', 'How', 'Why'"></article>
+							<textarea name="{{modal_page}}-textarea" id="{{modal_page}}-textarea-{{modal_type}}" class="post-textarea-hidden"></textarea>
+							<div class="post-footnote">
+								{{>component/checkbox type="checkbox" label="Anonymous" name="anonymous"}}
+								<div class="post-input-counter"><span class="postRemaining">0</span>/<span class="postMax">200</span></div>
+							</div>
+						</div>
+						{{else}}
+						<div class="post-modal-content">
+							<textarea name="{{modal_page}}-textarea" id="{{modal_page}}-textarea-{{modal_type}}" class="tinymce-textarea"></textarea>
+							<div class="post-footnote">
+								<div class="post-input-counter"><span class="postRemaining">0</span>/<span class="postMax">200</span></div>
+							</div>
+						</div>
+						{{/eq}}
+					</div>
+				</div>
+				<div class="modal-footer">
+					{{!-- <button type="button" class="button" data-dismiss="modal">Cancel</button> --}}
+					<button class="button">{{modal_draft}}</button>
+					<button class="button -primary">{{modal_action}}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

@@ -1,0 +1,4353 @@
+{
+	"base": {
+	  "title": "Borneopedia",
+	  "footer": {
+		"year": 2021,
+		"title": "borneopedia.id",
+		"lead": "Everything About Borneo"
+	  }
+	},
+	"profile": {
+	  "avatars": [
+		{
+		  "height": 200,
+		  "size": "small",
+		  "url": "../asset/images/dummy/avatar.jpg",
+		  "width": 200
+		},
+		{
+		  "height": 500,
+		  "size": "medium",
+		  "url": "../asset/images/dummy/avatar.jpg",
+		  "width": 500
+		}
+	  ],
+	  "first_name": "Chelsea",
+	  "bio": "Menjadi Anak tunggal kalau Ayah dan Bunda minta tolong beberes rumah. Sambat kebudayaan everyday. Author and arts researcher, (sometimes) I also do acting 👻",
+	  "last_name": "Amalia",
+	  "verified": 1,
+	  "rewards": 2,
+	  "location": "Pontianak"
+	},
+	"emoji": [
+	  {
+		"cat": "Smileys & People",
+		"icon": "😃",
+		"list": [
+		  {
+			"icon": "😀"
+		  },
+		  {
+			"icon": "😃"
+		  },
+		  {
+			"icon": "😄"
+		  },
+		  {
+			"icon": "😁"
+		  },
+		  {
+			"icon": "😆"
+		  },
+		  {
+			"icon": "😅"
+		  },
+		  {
+			"icon": "🤣"
+		  },
+		  {
+			"icon": "😂"
+		  },
+		  {
+			"icon": "🙂"
+		  },
+		  {
+			"icon": "🙃"
+		  },
+		  {
+			"icon": "😉"
+		  },
+		  {
+			"icon": "😊"
+		  },
+		  {
+			"icon": "😇"
+		  },
+		  {
+			"icon": "🥰"
+		  },
+		  {
+			"icon": "😍"
+		  },
+		  {
+			"icon": "🤩"
+		  },
+		  {
+			"icon": "😘"
+		  },
+		  {
+			"icon": "😗"
+		  },
+		  {
+			"icon": "😚"
+		  },
+		  {
+			"icon": "😙"
+		  },
+		  {
+			"icon": "😋"
+		  },
+		  {
+			"icon": "😛"
+		  },
+		  {
+			"icon": "😜"
+		  },
+		  {
+			"icon": "🤪"
+		  },
+		  {
+			"icon": "😝"
+		  },
+		  {
+			"icon": "🤑"
+		  },
+		  {
+			"icon": "🤗"
+		  },
+		  {
+			"icon": "🤭"
+		  },
+		  {
+			"icon": "🤫"
+		  },
+		  {
+			"icon": "🤔"
+		  },
+		  {
+			"icon": "🤐"
+		  },
+		  {
+			"icon": "🤨"
+		  },
+		  {
+			"icon": "😐"
+		  },
+		  {
+			"icon": "😑"
+		  },
+		  {
+			"icon": "😶"
+		  },
+		  {
+			"icon": "😏"
+		  },
+		  {
+			"icon": "😒"
+		  },
+		  {
+			"icon": "🙄"
+		  },
+		  {
+			"icon": "😬"
+		  },
+		  {
+			"icon": "🤥"
+		  },
+		  {
+			"icon": "😌"
+		  },
+		  {
+			"icon": "😔"
+		  },
+		  {
+			"icon": "😪"
+		  },
+		  {
+			"icon": "🤤"
+		  },
+		  {
+			"icon": "😴"
+		  },
+		  {
+			"icon": "😷"
+		  },
+		  {
+			"icon": "🤒"
+		  },
+		  {
+			"icon": "🤕"
+		  },
+		  {
+			"icon": "🤢"
+		  },
+		  {
+			"icon": "🤮"
+		  },
+		  {
+			"icon": "🤧"
+		  },
+		  {
+			"icon": "🥵"
+		  },
+		  {
+			"icon": "🥶"
+		  },
+		  {
+			"icon": "🥴"
+		  },
+		  {
+			"icon": "😵"
+		  },
+		  {
+			"icon": "🤯"
+		  },
+		  {
+			"icon": "🤠"
+		  },
+		  {
+			"icon": "🥳"
+		  },
+		  {
+			"icon": "😎"
+		  },
+		  {
+			"icon": "🤓"
+		  },
+		  {
+			"icon": "🧐"
+		  },
+		  {
+			"icon": "😕"
+		  },
+		  {
+			"icon": "😟"
+		  },
+		  {
+			"icon": "🙁"
+		  },
+		  {
+			"icon": "😮"
+		  },
+		  {
+			"icon": "😯"
+		  },
+		  {
+			"icon": "😲"
+		  },
+		  {
+			"icon": "😳"
+		  },
+		  {
+			"icon": "🥺"
+		  },
+		  {
+			"icon": "😦"
+		  },
+		  {
+			"icon": "😧"
+		  },
+		  {
+			"icon": "😨"
+		  },
+		  {
+			"icon": "😰"
+		  },
+		  {
+			"icon": "😥"
+		  },
+		  {
+			"icon": "😢"
+		  },
+		  {
+			"icon": "😭"
+		  },
+		  {
+			"icon": "😱"
+		  },
+		  {
+			"icon": "😖"
+		  },
+		  {
+			"icon": "😣"
+		  },
+		  {
+			"icon": "😞"
+		  },
+		  {
+			"icon": "😓"
+		  },
+		  {
+			"icon": "😩"
+		  },
+		  {
+			"icon": "😫"
+		  },
+		  {
+			"icon": "🥱"
+		  },
+		  {
+			"icon": "😤"
+		  },
+		  {
+			"icon": "😡"
+		  },
+		  {
+			"icon": "😠"
+		  },
+		  {
+			"icon": "🤬"
+		  },
+		  {
+			"icon": "😈"
+		  },
+		  {
+			"icon": "👿"
+		  },
+		  {
+			"icon": "💀"
+		  },
+		  {
+			"icon": "☠"
+		  },
+		  {
+			"icon": "💩"
+		  },
+		  {
+			"icon": "🤡"
+		  },
+		  {
+			"icon": "👹"
+		  },
+		  {
+			"icon": "👺"
+		  },
+		  {
+			"icon": "👻"
+		  },
+		  {
+			"icon": "👽"
+		  },
+		  {
+			"icon": "👾"
+		  },
+		  {
+			"icon": "🤖"
+		  },
+		  {
+			"icon": "😺"
+		  },
+		  {
+			"icon": "😸"
+		  },
+		  {
+			"icon": "😹"
+		  },
+		  {
+			"icon": "😻"
+		  },
+		  {
+			"icon": "😼"
+		  },
+		  {
+			"icon": "😽"
+		  },
+		  {
+			"icon": "🙀"
+		  },
+		  {
+			"icon": "😿"
+		  },
+		  {
+			"icon": "😾"
+		  }
+		]
+	  },
+	  {
+		"cat": "Animals & Nature",
+		"icon": "🐻",
+		"list": [
+		  {
+			"icon": "🙈"
+		  },
+		  {
+			"icon": "🙉"
+		  },
+		  {
+			"icon": "🙊"
+		  },
+		  {
+			"icon": "💥"
+		  },
+		  {
+			"icon": "💫"
+		  },
+		  {
+			"icon": "💦"
+		  },
+		  {
+			"icon": "💨"
+		  },
+		  {
+			"icon": "🐵"
+		  },
+		  {
+			"icon": "🐒"
+		  },
+		  {
+			"icon": "🦍"
+		  },
+		  {
+			"icon": "🦧"
+		  },
+		  {
+			"icon": "🐶"
+		  },
+		  {
+			"icon": "🐕"
+		  },
+		  {
+			"icon": "🦮"
+		  },
+		  {
+			"icon": "🐕"
+		  },
+		  {
+			"icon": "🐩"
+		  },
+		  {
+			"icon": "🐺"
+		  },
+		  {
+			"icon": "🦊"
+		  },
+		  {
+			"icon": "🦝"
+		  },
+		  {
+			"icon": "🐱"
+		  },
+		  {
+			"icon": "🐈"
+		  },
+		  {
+			"icon": "🦁"
+		  },
+		  {
+			"icon": "🐯"
+		  },
+		  {
+			"icon": "🐅"
+		  },
+		  {
+			"icon": "🐆"
+		  },
+		  {
+			"icon": "🐴"
+		  },
+		  {
+			"icon": "🐎"
+		  },
+		  {
+			"icon": "🦄"
+		  },
+		  {
+			"icon": "🦓"
+		  },
+		  {
+			"icon": "🦌"
+		  },
+		  {
+			"icon": "🐮"
+		  },
+		  {
+			"icon": "🐂"
+		  },
+		  {
+			"icon": "🐃"
+		  },
+		  {
+			"icon": "🐄"
+		  },
+		  {
+			"icon": "🐷"
+		  },
+		  {
+			"icon": "🐖"
+		  },
+		  {
+			"icon": "🐗"
+		  },
+		  {
+			"icon": "🐽"
+		  },
+		  {
+			"icon": "🐏"
+		  },
+		  {
+			"icon": "🐑"
+		  },
+		  {
+			"icon": "🐐"
+		  },
+		  {
+			"icon": "🐪"
+		  },
+		  {
+			"icon": "🐫"
+		  },
+		  {
+			"icon": "🦙"
+		  },
+		  {
+			"icon": "🦒"
+		  },
+		  {
+			"icon": "🐘"
+		  },
+		  {
+			"icon": "🦏"
+		  },
+		  {
+			"icon": "🦛"
+		  },
+		  {
+			"icon": "🐭"
+		  },
+		  {
+			"icon": "🐁"
+		  },
+		  {
+			"icon": "🐀"
+		  },
+		  {
+			"icon": "🐹"
+		  },
+		  {
+			"icon": "🐰"
+		  },
+		  {
+			"icon": "🐇"
+		  },
+		  {
+			"icon": "🐿"
+		  },
+		  {
+			"icon": "🦔"
+		  },
+		  {
+			"icon": "🦇"
+		  },
+		  {
+			"icon": "🐻"
+		  },
+		  {
+			"icon": "🐨"
+		  },
+		  {
+			"icon": "🐼"
+		  },
+		  {
+			"icon": "🦥"
+		  },
+		  {
+			"icon": "🦦"
+		  },
+		  {
+			"icon": "🦨"
+		  },
+		  {
+			"icon": "🦘"
+		  },
+		  {
+			"icon": "🦡"
+		  },
+		  {
+			"icon": "🐾"
+		  },
+		  {
+			"icon": "🦃"
+		  },
+		  {
+			"icon": "🐔"
+		  },
+		  {
+			"icon": "🐓"
+		  },
+		  {
+			"icon": "🐣"
+		  },
+		  {
+			"icon": "🐤"
+		  },
+		  {
+			"icon": "🐥"
+		  },
+		  {
+			"icon": "🐦"
+		  },
+		  {
+			"icon": "🐧"
+		  },
+		  {
+			"icon": "🕊"
+		  },
+		  {
+			"icon": "🦅"
+		  },
+		  {
+			"icon": "🦆"
+		  },
+		  {
+			"icon": "🦢"
+		  },
+		  {
+			"icon": "🦉"
+		  },
+		  {
+			"icon": "🦩"
+		  },
+		  {
+			"icon": "🦚"
+		  },
+		  {
+			"icon": "🦜"
+		  },
+		  {
+			"icon": "🐸"
+		  },
+		  {
+			"icon": "🐊"
+		  },
+		  {
+			"icon": "🐢"
+		  },
+		  {
+			"icon": "🦎"
+		  },
+		  {
+			"icon": "🐍"
+		  },
+		  {
+			"icon": "🐲"
+		  },
+		  {
+			"icon": "🐉"
+		  },
+		  {
+			"icon": "🦕"
+		  },
+		  {
+			"icon": "🦖"
+		  },
+		  {
+			"icon": "🐳"
+		  },
+		  {
+			"icon": "🐋"
+		  },
+		  {
+			"icon": "🐬"
+		  },
+		  {
+			"icon": "🐟"
+		  },
+		  {
+			"icon": "🐠"
+		  },
+		  {
+			"icon": "🐡"
+		  },
+		  {
+			"icon": "🦈"
+		  },
+		  {
+			"icon": "🐙"
+		  },
+		  {
+			"icon": "🐚"
+		  },
+		  {
+			"icon": "🐌"
+		  },
+		  {
+			"icon": "🦋"
+		  },
+		  {
+			"icon": "🐛"
+		  },
+		  {
+			"icon": "🐜"
+		  },
+		  {
+			"icon": "🐝"
+		  },
+		  {
+			"icon": "🐞"
+		  },
+		  {
+			"icon": "🦗"
+		  },
+		  {
+			"icon": "🕷"
+		  },
+		  {
+			"icon": "🕸"
+		  },
+		  {
+			"icon": "🦂"
+		  },
+		  {
+			"icon": "🦟"
+		  },
+		  {
+			"icon": "🦠"
+		  },
+		  {
+			"icon": "💐"
+		  },
+		  {
+			"icon": "🌸"
+		  },
+		  {
+			"icon": "💮"
+		  },
+		  {
+			"icon": "🏵"
+		  },
+		  {
+			"icon": "🌹"
+		  },
+		  {
+			"icon": "🥀"
+		  },
+		  {
+			"icon": "🌺"
+		  },
+		  {
+			"icon": "🌻"
+		  },
+		  {
+			"icon": "🌼"
+		  },
+		  {
+			"icon": "🌷"
+		  },
+		  {
+			"icon": "🌱"
+		  },
+		  {
+			"icon": "🌲"
+		  },
+		  {
+			"icon": "🌳"
+		  },
+		  {
+			"icon": "🌴"
+		  },
+		  {
+			"icon": "🌵"
+		  },
+		  {
+			"icon": "🌾"
+		  },
+		  {
+			"icon": "🌿"
+		  },
+		  {
+			"icon": "☘"
+		  },
+		  {
+			"icon": "🍀"
+		  },
+		  {
+			"icon": "🍁"
+		  },
+		  {
+			"icon": "🍂"
+		  },
+		  {
+			"icon": "🍃"
+		  },
+		  {
+			"icon": "🍄"
+		  },
+		  {
+			"icon": "🌰"
+		  },
+		  {
+			"icon": "🦀"
+		  },
+		  {
+			"icon": "🦞"
+		  },
+		  {
+			"icon": "🦐"
+		  },
+		  {
+			"icon": "🦑"
+		  },
+		  {
+			"icon": "🌍"
+		  },
+		  {
+			"icon": "🌎"
+		  },
+		  {
+			"icon": "🌏"
+		  },
+		  {
+			"icon": "🌐"
+		  },
+		  {
+			"icon": "🌑"
+		  },
+		  {
+			"icon": "🌒"
+		  },
+		  {
+			"icon": "🌓"
+		  },
+		  {
+			"icon": "🌔"
+		  },
+		  {
+			"icon": "🌕"
+		  },
+		  {
+			"icon": "🌖"
+		  },
+		  {
+			"icon": "🌗"
+		  },
+		  {
+			"icon": "🌘"
+		  },
+		  {
+			"icon": "🌙"
+		  },
+		  {
+			"icon": "🌚"
+		  },
+		  {
+			"icon": "🌛"
+		  },
+		  {
+			"icon": "🌜"
+		  },
+		  {
+			"icon": "☀"
+		  },
+		  {
+			"icon": "🌝"
+		  },
+		  {
+			"icon": "🌞"
+		  },
+		  {
+			"icon": "⭐"
+		  },
+		  {
+			"icon": "🌟"
+		  },
+		  {
+			"icon": "🌠"
+		  },
+		  {
+			"icon": "☁"
+		  },
+		  {
+			"icon": "⛅"
+		  },
+		  {
+			"icon": "⛈"
+		  },
+		  {
+			"icon": "🌤"
+		  },
+		  {
+			"icon": "🌥"
+		  },
+		  {
+			"icon": "🌦"
+		  },
+		  {
+			"icon": "🌧"
+		  },
+		  {
+			"icon": "🌨"
+		  },
+		  {
+			"icon": "🌩"
+		  },
+		  {
+			"icon": "🌪"
+		  },
+		  {
+			"icon": "🌫"
+		  },
+		  {
+			"icon": "🌬"
+		  },
+		  {
+			"icon": "🌈"
+		  },
+		  {
+			"icon": "☂"
+		  },
+		  {
+			"icon": "☔"
+		  },
+		  {
+			"icon": "⚡"
+		  },
+		  {
+			"icon": "❄"
+		  },
+		  {
+			"icon": "☃"
+		  },
+		  {
+			"icon": "⛄"
+		  },
+		  {
+			"icon": "☄"
+		  },
+		  {
+			"icon": "🔥"
+		  },
+		  {
+			"icon": "💧"
+		  },
+		  {
+			"icon": "🌊"
+		  },
+		  {
+			"icon": "🎄"
+		  },
+		  {
+			"icon": "✨"
+		  },
+		  {
+			"icon": "🎋"
+		  },
+		  {
+			"icon": "🎍"
+		  }
+		]
+	  },
+	  {
+		"cat": "Food & Drink",
+		"icon": "🍔",
+		"list": [
+		  {
+			"icon": "🍇"
+		  },
+		  {
+			"icon": "🍈"
+		  },
+		  {
+			"icon": "🍉"
+		  },
+		  {
+			"icon": "🍊"
+		  },
+		  {
+			"icon": "🍋"
+		  },
+		  {
+			"icon": "🍌"
+		  },
+		  {
+			"icon": "🍍"
+		  },
+		  {
+			"icon": "🥭"
+		  },
+		  {
+			"icon": "🍎"
+		  },
+		  {
+			"icon": "🍏"
+		  },
+		  {
+			"icon": "🍐"
+		  },
+		  {
+			"icon": "🍑"
+		  },
+		  {
+			"icon": "🍒"
+		  },
+		  {
+			"icon": "🍓"
+		  },
+		  {
+			"icon": "🥝"
+		  },
+		  {
+			"icon": "🍅"
+		  },
+		  {
+			"icon": "🥥"
+		  },
+		  {
+			"icon": "🥑"
+		  },
+		  {
+			"icon": "🍆"
+		  },
+		  {
+			"icon": "🥔"
+		  },
+		  {
+			"icon": "🥕"
+		  },
+		  {
+			"icon": "🌽"
+		  },
+		  {
+			"icon": "🌶"
+		  },
+		  {
+			"icon": "🥒"
+		  },
+		  {
+			"icon": "🥬"
+		  },
+		  {
+			"icon": "🥦"
+		  },
+		  {
+			"icon": "🧄"
+		  },
+		  {
+			"icon": "🧅"
+		  },
+		  {
+			"icon": "🍄"
+		  },
+		  {
+			"icon": "🥜"
+		  },
+		  {
+			"icon": "🌰"
+		  },
+		  {
+			"icon": "🍞"
+		  },
+		  {
+			"icon": "🥐"
+		  },
+		  {
+			"icon": "🥖"
+		  },
+		  {
+			"icon": "🥨"
+		  },
+		  {
+			"icon": "🥯"
+		  },
+		  {
+			"icon": "🥞"
+		  },
+		  {
+			"icon": "🧇"
+		  },
+		  {
+			"icon": "🧀"
+		  },
+		  {
+			"icon": "🍖"
+		  },
+		  {
+			"icon": "🍗"
+		  },
+		  {
+			"icon": "🥩"
+		  },
+		  {
+			"icon": "🥓"
+		  },
+		  {
+			"icon": "🍔"
+		  },
+		  {
+			"icon": "🍟"
+		  },
+		  {
+			"icon": "🍕"
+		  },
+		  {
+			"icon": "🌭"
+		  },
+		  {
+			"icon": "🥪"
+		  },
+		  {
+			"icon": "🌮"
+		  },
+		  {
+			"icon": "🌯"
+		  },
+		  {
+			"icon": "🥙"
+		  },
+		  {
+			"icon": "🧆"
+		  },
+		  {
+			"icon": "🥚"
+		  },
+		  {
+			"icon": "🍳"
+		  },
+		  {
+			"icon": "🥘"
+		  },
+		  {
+			"icon": "🍲"
+		  },
+		  {
+			"icon": "🥣"
+		  },
+		  {
+			"icon": "🥗"
+		  },
+		  {
+			"icon": "🍿"
+		  },
+		  {
+			"icon": "🧈"
+		  },
+		  {
+			"icon": "🧂"
+		  },
+		  {
+			"icon": "🥫"
+		  },
+		  {
+			"icon": "🍱"
+		  },
+		  {
+			"icon": "🍘"
+		  },
+		  {
+			"icon": "🍙"
+		  },
+		  {
+			"icon": "🍚"
+		  },
+		  {
+			"icon": "🍛"
+		  },
+		  {
+			"icon": "🍜"
+		  },
+		  {
+			"icon": "🍝"
+		  },
+		  {
+			"icon": "🍠"
+		  },
+		  {
+			"icon": "🍢"
+		  },
+		  {
+			"icon": "🍣"
+		  },
+		  {
+			"icon": "🍤"
+		  },
+		  {
+			"icon": "🍥"
+		  },
+		  {
+			"icon": "🥮"
+		  },
+		  {
+			"icon": "🍡"
+		  },
+		  {
+			"icon": "🥟"
+		  },
+		  {
+			"icon": "🥠"
+		  },
+		  {
+			"icon": "🥡"
+		  },
+		  {
+			"icon": "🦪"
+		  },
+		  {
+			"icon": "🍦"
+		  },
+		  {
+			"icon": "🍧"
+		  },
+		  {
+			"icon": "🍨"
+		  },
+		  {
+			"icon": "🍩"
+		  },
+		  {
+			"icon": "🍪"
+		  },
+		  {
+			"icon": "🎂"
+		  },
+		  {
+			"icon": "🍰"
+		  },
+		  {
+			"icon": "🧁"
+		  },
+		  {
+			"icon": "🥧"
+		  },
+		  {
+			"icon": "🍫"
+		  },
+		  {
+			"icon": "🍬"
+		  },
+		  {
+			"icon": "🍭"
+		  },
+		  {
+			"icon": "🍮"
+		  },
+		  {
+			"icon": "🍯"
+		  },
+		  {
+			"icon": "🍼"
+		  },
+		  {
+			"icon": "🥛"
+		  },
+		  {
+			"icon": "☕"
+		  },
+		  {
+			"icon": "🍵"
+		  },
+		  {
+			"icon": "🍶"
+		  },
+		  {
+			"icon": "🍾"
+		  },
+		  {
+			"icon": "🍷"
+		  },
+		  {
+			"icon": "🍸"
+		  },
+		  {
+			"icon": "🍹"
+		  },
+		  {
+			"icon": "🍺"
+		  },
+		  {
+			"icon": "🍻"
+		  },
+		  {
+			"icon": "🥂"
+		  },
+		  {
+			"icon": "🥃"
+		  },
+		  {
+			"icon": "🥤"
+		  },
+		  {
+			"icon": "🧃"
+		  },
+		  {
+			"icon": "🧉"
+		  },
+		  {
+			"icon": "🧊"
+		  },
+		  {
+			"icon": "🥢"
+		  },
+		  {
+			"icon": "🍽"
+		  },
+		  {
+			"icon": "🍴"
+		  },
+		  {
+			"icon": "🥄"
+		  }
+		]
+	  },
+	  {
+		"cat": "Activity",
+		"icon": "⚽",
+		"list": [
+		  {
+			"icon": "🕴"
+		  },
+		  {
+			"icon": "🧗"
+		  },
+		  {
+			"icon": "🧗"
+		  },
+		  {
+			"icon": "🧗"
+		  },
+		  {
+			"icon": "🤺"
+		  },
+		  {
+			"icon": "🏇"
+		  },
+		  {
+			"icon": "⛷"
+		  },
+		  {
+			"icon": "🏂"
+		  },
+		  {
+			"icon": "🏌"
+		  },
+		  {
+			"icon": "🏄"
+		  },
+		  {
+			"icon": "🚣"
+		  },
+		  {
+			"icon": "🏊"
+		  },
+		  {
+			"icon": "⛹"
+		  },
+		  {
+			"icon": "🏋"
+		  },
+		  {
+			"icon": "🚴"
+		  },
+		  {
+			"icon": "🚵"
+		  },
+		  {
+			"icon": "🤸"
+		  },
+		  {
+			"icon": "🤼"
+		  },
+		  {
+			"icon": "🤽"
+		  },
+		  {
+			"icon": "🤾"
+		  },
+		  {
+			"icon": "🤹"
+		  },
+		  {
+			"icon": "🧘"
+		  },
+		  {
+			"icon": "🎪"
+		  },
+		  {
+			"icon": "🛹"
+		  },
+		  {
+			"icon": "🛶"
+		  },
+		  {
+			"icon": "🎗"
+		  },
+		  {
+			"icon": "🎟"
+		  },
+		  {
+			"icon": "🎫"
+		  },
+		  {
+			"icon": "🎖"
+		  },
+		  {
+			"icon": "🏆"
+		  },
+		  {
+			"icon": "🏅"
+		  },
+		  {
+			"icon": "🥇"
+		  },
+		  {
+			"icon": "🥈"
+		  },
+		  {
+			"icon": "🥉"
+		  },
+		  {
+			"icon": "⚽"
+		  },
+		  {
+			"icon": "⚾"
+		  },
+		  {
+			"icon": "🥎"
+		  },
+		  {
+			"icon": "🏀"
+		  },
+		  {
+			"icon": "🏐"
+		  },
+		  {
+			"icon": "🏈"
+		  },
+		  {
+			"icon": "🏉"
+		  },
+		  {
+			"icon": "🎾"
+		  },
+		  {
+			"icon": "🥏"
+		  },
+		  {
+			"icon": "🎳"
+		  },
+		  {
+			"icon": "🏏"
+		  },
+		  {
+			"icon": "🏑"
+		  },
+		  {
+			"icon": "🏒"
+		  },
+		  {
+			"icon": "🥍"
+		  },
+		  {
+			"icon": "🏓"
+		  },
+		  {
+			"icon": "🏸"
+		  },
+		  {
+			"icon": "🥊"
+		  },
+		  {
+			"icon": "🥋"
+		  },
+		  {
+			"icon": "🥅"
+		  },
+		  {
+			"icon": "⛳"
+		  },
+		  {
+			"icon": "⛸"
+		  },
+		  {
+			"icon": "🎣"
+		  },
+		  {
+			"icon": "🎽"
+		  },
+		  {
+			"icon": "🎿"
+		  },
+		  {
+			"icon": "🛷"
+		  },
+		  {
+			"icon": "🥌"
+		  },
+		  {
+			"icon": "🎯"
+		  },
+		  {
+			"icon": "🎱"
+		  },
+		  {
+			"icon": "🎮"
+		  },
+		  {
+			"icon": "🎰"
+		  },
+		  {
+			"icon": "🎲"
+		  },
+		  {
+			"icon": "🧩"
+		  },
+		  {
+			"icon": "🎭"
+		  },
+		  {
+			"icon": "🎨"
+		  },
+		  {
+			"icon": "🧵"
+		  },
+		  {
+			"icon": "🧶"
+		  },
+		  {
+			"icon": "🎼"
+		  },
+		  {
+			"icon": "🎤"
+		  },
+		  {
+			"icon": "🎧"
+		  },
+		  {
+			"icon": "🎷"
+		  },
+		  {
+			"icon": "🎸"
+		  },
+		  {
+			"icon": "🎹"
+		  },
+		  {
+			"icon": "🎺"
+		  },
+		  {
+			"icon": "🎻"
+		  },
+		  {
+			"icon": "🥁"
+		  },
+		  {
+			"icon": "🎬"
+		  },
+		  {
+			"icon": "🏹"
+		  }
+		]
+	  },
+	  {
+		"cat": "Travel & Places",
+		"icon": "🌇",
+		"list": [
+		  {
+			"icon": "🚣"
+		  },
+		  {
+			"icon": "🗾"
+		  },
+		  {
+			"icon": "🏔"
+		  },
+		  {
+			"icon": "⛰"
+		  },
+		  {
+			"icon": "🌋"
+		  },
+		  {
+			"icon": "🗻"
+		  },
+		  {
+			"icon": "🏕"
+		  },
+		  {
+			"icon": "🏖"
+		  },
+		  {
+			"icon": "🏜"
+		  },
+		  {
+			"icon": "🏝"
+		  },
+		  {
+			"icon": "🏞"
+		  },
+		  {
+			"icon": "🏟"
+		  },
+		  {
+			"icon": "🏛"
+		  },
+		  {
+			"icon": "🏗"
+		  },
+		  {
+			"icon": "🏘"
+		  },
+		  {
+			"icon": "🏚"
+		  },
+		  {
+			"icon": "🏠"
+		  },
+		  {
+			"icon": "🏡"
+		  },
+		  {
+			"icon": "🏢"
+		  },
+		  {
+			"icon": "🏣"
+		  },
+		  {
+			"icon": "🏤"
+		  },
+		  {
+			"icon": "🏥"
+		  },
+		  {
+			"icon": "🏦"
+		  },
+		  {
+			"icon": "🏨"
+		  },
+		  {
+			"icon": "🏩"
+		  },
+		  {
+			"icon": "🏪"
+		  },
+		  {
+			"icon": "🏫"
+		  },
+		  {
+			"icon": "🏬"
+		  },
+		  {
+			"icon": "🏭"
+		  },
+		  {
+			"icon": "🏯"
+		  },
+		  {
+			"icon": "🏰"
+		  },
+		  {
+			"icon": "💒"
+		  },
+		  {
+			"icon": "🗼"
+		  },
+		  {
+			"icon": "🗽"
+		  },
+		  {
+			"icon": "⛪"
+		  },
+		  {
+			"icon": "🕌"
+		  },
+		  {
+			"icon": "🛕"
+		  },
+		  {
+			"icon": "🕍"
+		  },
+		  {
+			"icon": "⛩"
+		  },
+		  {
+			"icon": "🕋"
+		  },
+		  {
+			"icon": "⛲"
+		  },
+		  {
+			"icon": "⛺"
+		  },
+		  {
+			"icon": "🌁"
+		  },
+		  {
+			"icon": "🌃"
+		  },
+		  {
+			"icon": "🏙"
+		  },
+		  {
+			"icon": "🌄"
+		  },
+		  {
+			"icon": "🌅"
+		  },
+		  {
+			"icon": "🌆"
+		  },
+		  {
+			"icon": "🌇"
+		  },
+		  {
+			"icon": "🌉"
+		  },
+		  {
+			"icon": "🎠"
+		  },
+		  {
+			"icon": "🎡"
+		  },
+		  {
+			"icon": "🎢"
+		  },
+		  {
+			"icon": "🚂"
+		  },
+		  {
+			"icon": "🚃"
+		  },
+		  {
+			"icon": "🚄"
+		  },
+		  {
+			"icon": "🚅"
+		  },
+		  {
+			"icon": "🚆"
+		  },
+		  {
+			"icon": "🚇"
+		  },
+		  {
+			"icon": "🚈"
+		  },
+		  {
+			"icon": "🚉"
+		  },
+		  {
+			"icon": "🚊"
+		  },
+		  {
+			"icon": "🚝"
+		  },
+		  {
+			"icon": "🚞"
+		  },
+		  {
+			"icon": "🚋"
+		  },
+		  {
+			"icon": "🚌"
+		  },
+		  {
+			"icon": "🚍"
+		  },
+		  {
+			"icon": "🚎"
+		  },
+		  {
+			"icon": "🚐"
+		  },
+		  {
+			"icon": "🚑"
+		  },
+		  {
+			"icon": "🚒"
+		  },
+		  {
+			"icon": "🚓"
+		  },
+		  {
+			"icon": "🚔"
+		  },
+		  {
+			"icon": "🚕"
+		  },
+		  {
+			"icon": "🚖"
+		  },
+		  {
+			"icon": "🚗"
+		  },
+		  {
+			"icon": "🚘"
+		  },
+		  {
+			"icon": "🚙"
+		  },
+		  {
+			"icon": "🚚"
+		  },
+		  {
+			"icon": "🚛"
+		  },
+		  {
+			"icon": "🚜"
+		  },
+		  {
+			"icon": "🏎"
+		  },
+		  {
+			"icon": "🏍"
+		  },
+		  {
+			"icon": "🛵"
+		  },
+		  {
+			"icon": "🛺"
+		  },
+		  {
+			"icon": "🚲"
+		  },
+		  {
+			"icon": "🛴"
+		  },
+		  {
+			"icon": "🚏"
+		  },
+		  {
+			"icon": "🛣"
+		  },
+		  {
+			"icon": "🛤"
+		  },
+		  {
+			"icon": "⛽"
+		  },
+		  {
+			"icon": "🚨"
+		  },
+		  {
+			"icon": "🚥"
+		  },
+		  {
+			"icon": "🚦"
+		  },
+		  {
+			"icon": "🚧"
+		  },
+		  {
+			"icon": "⚓"
+		  },
+		  {
+			"icon": "⛵"
+		  },
+		  {
+			"icon": "🚤"
+		  },
+		  {
+			"icon": "🛳"
+		  },
+		  {
+			"icon": "⛴"
+		  },
+		  {
+			"icon": "🛥"
+		  },
+		  {
+			"icon": "🚢"
+		  },
+		  {
+			"icon": "✈"
+		  },
+		  {
+			"icon": "🛩"
+		  },
+		  {
+			"icon": "🛫"
+		  },
+		  {
+			"icon": "🛬"
+		  },
+		  {
+			"icon": "🪂"
+		  },
+		  {
+			"icon": "💺"
+		  },
+		  {
+			"icon": "🚁"
+		  },
+		  {
+			"icon": "🚟"
+		  },
+		  {
+			"icon": "🚠"
+		  },
+		  {
+			"icon": "🚡"
+		  },
+		  {
+			"icon": "🛰"
+		  },
+		  {
+			"icon": "🚀"
+		  },
+		  {
+			"icon": "🛸"
+		  },
+		  {
+			"icon": "🪐"
+		  },
+		  {
+			"icon": "🌠"
+		  },
+		  {
+			"icon": "🌌"
+		  },
+		  {
+			"icon": "⛱"
+		  },
+		  {
+			"icon": "🎆"
+		  },
+		  {
+			"icon": "🎇"
+		  },
+		  {
+			"icon": "🎑"
+		  },
+		  {
+			"icon": "💴"
+		  },
+		  {
+			"icon": "💵"
+		  },
+		  {
+			"icon": "💶"
+		  },
+		  {
+			"icon": "💷"
+		  },
+		  {
+			"icon": "🗿"
+		  },
+		  {
+			"icon": "🛂"
+		  },
+		  {
+			"icon": "🛃"
+		  },
+		  {
+			"icon": "🛄"
+		  },
+		  {
+			"icon": "🛅"
+		  }
+		]
+	  },
+	  {
+		"cat": "Flags",
+		"icon": "🏳",
+		"list": [
+		  {
+			"icon": "🏁"
+		  },
+		  {
+			"icon": "🚩"
+		  },
+		  {
+			"icon": "🎌"
+		  },
+		  {
+			"icon": "🏴"
+		  },
+		  {
+			"icon": "🏳"
+		  },
+		  {
+			"icon": "🇦🇨"
+		  },
+		  {
+			"icon": "🇦🇩"
+		  },
+		  {
+			"icon": "🇦🇪"
+		  },
+		  {
+			"icon": "🇦🇫"
+		  },
+		  {
+			"icon": "🇦🇬"
+		  },
+		  {
+			"icon": "🇦🇮"
+		  },
+		  {
+			"icon": "🇦🇱"
+		  },
+		  {
+			"icon": "🇦🇲"
+		  },
+		  {
+			"icon": "🇦🇴"
+		  },
+		  {
+			"icon": "🇦🇶"
+		  },
+		  {
+			"icon": "🇦🇷"
+		  },
+		  {
+			"icon": "🇦🇸"
+		  },
+		  {
+			"icon": "🇦🇹"
+		  },
+		  {
+			"icon": "🇦🇺"
+		  },
+		  {
+			"icon": "🇦🇼"
+		  },
+		  {
+			"icon": "🇦🇽"
+		  },
+		  {
+			"icon": "🇦🇿"
+		  },
+		  {
+			"icon": "🇧🇦"
+		  },
+		  {
+			"icon": "🇧🇧"
+		  },
+		  {
+			"icon": "🇧🇩"
+		  },
+		  {
+			"icon": "🇧🇪"
+		  },
+		  {
+			"icon": "🇧🇫"
+		  },
+		  {
+			"icon": "🇧🇬"
+		  },
+		  {
+			"icon": "🇧🇭"
+		  },
+		  {
+			"icon": "🇧🇮"
+		  },
+		  {
+			"icon": "🇧🇯"
+		  },
+		  {
+			"icon": "🇧🇱"
+		  },
+		  {
+			"icon": "🇧🇲"
+		  },
+		  {
+			"icon": "🇧🇳"
+		  },
+		  {
+			"icon": "🇧🇴"
+		  },
+		  {
+			"icon": "🇧🇶"
+		  },
+		  {
+			"icon": "🇧🇷"
+		  },
+		  {
+			"icon": "🇧🇸"
+		  },
+		  {
+			"icon": "🇧🇹"
+		  },
+		  {
+			"icon": "🇧🇻"
+		  },
+		  {
+			"icon": "🇧🇼"
+		  },
+		  {
+			"icon": "🇧🇾"
+		  },
+		  {
+			"icon": "🇧🇿"
+		  },
+		  {
+			"icon": "🇨🇦"
+		  },
+		  {
+			"icon": "🇨🇨"
+		  },
+		  {
+			"icon": "🇨🇩"
+		  },
+		  {
+			"icon": "🇨🇫"
+		  },
+		  {
+			"icon": "🇨🇬"
+		  },
+		  {
+			"icon": "🇨🇭"
+		  },
+		  {
+			"icon": "🇨🇮"
+		  },
+		  {
+			"icon": "🇨🇰"
+		  },
+		  {
+			"icon": "🇨🇱"
+		  },
+		  {
+			"icon": "🇨🇲"
+		  },
+		  {
+			"icon": "🇨🇳"
+		  },
+		  {
+			"icon": "🇨🇴"
+		  },
+		  {
+			"icon": "🇨🇵"
+		  },
+		  {
+			"icon": "🇨🇷"
+		  },
+		  {
+			"icon": "🇨🇺"
+		  },
+		  {
+			"icon": "🇨🇻"
+		  },
+		  {
+			"icon": "🇨🇼"
+		  },
+		  {
+			"icon": "🇨🇽"
+		  },
+		  {
+			"icon": "🇨🇾"
+		  },
+		  {
+			"icon": "🇨🇿"
+		  },
+		  {
+			"icon": "🇩🇪"
+		  },
+		  {
+			"icon": "🇩🇬"
+		  },
+		  {
+			"icon": "🇩🇯"
+		  },
+		  {
+			"icon": "🇩🇰"
+		  },
+		  {
+			"icon": "🇩🇲"
+		  },
+		  {
+			"icon": "🇩🇴"
+		  },
+		  {
+			"icon": "🇩🇿"
+		  },
+		  {
+			"icon": "🇪🇦"
+		  },
+		  {
+			"icon": "🇪🇨"
+		  },
+		  {
+			"icon": "🇪🇪"
+		  },
+		  {
+			"icon": "🇪🇬"
+		  },
+		  {
+			"icon": "🇪🇭"
+		  },
+		  {
+			"icon": "🇪🇷"
+		  },
+		  {
+			"icon": "🇪🇸"
+		  },
+		  {
+			"icon": "🇪🇹"
+		  },
+		  {
+			"icon": "🇪🇺"
+		  },
+		  {
+			"icon": "🇫🇮"
+		  },
+		  {
+			"icon": "🇫🇯"
+		  },
+		  {
+			"icon": "🇫🇰"
+		  },
+		  {
+			"icon": "🇫🇲"
+		  },
+		  {
+			"icon": "🇫🇴"
+		  },
+		  {
+			"icon": "🇫🇷"
+		  },
+		  {
+			"icon": "🇬🇦"
+		  },
+		  {
+			"icon": "🇬🇧"
+		  },
+		  {
+			"icon": "🇬🇩"
+		  },
+		  {
+			"icon": "🇬🇪"
+		  },
+		  {
+			"icon": "🇬🇫"
+		  },
+		  {
+			"icon": "🇬🇬"
+		  },
+		  {
+			"icon": "🇬🇭"
+		  },
+		  {
+			"icon": "🇬🇮"
+		  },
+		  {
+			"icon": "🇬🇱"
+		  },
+		  {
+			"icon": "🇬🇲"
+		  },
+		  {
+			"icon": "🇬🇳"
+		  },
+		  {
+			"icon": "🇬🇵"
+		  },
+		  {
+			"icon": "🇬🇶"
+		  },
+		  {
+			"icon": "🇬🇷"
+		  },
+		  {
+			"icon": "🇬🇸"
+		  },
+		  {
+			"icon": "🇬🇹"
+		  },
+		  {
+			"icon": "🇬🇺"
+		  },
+		  {
+			"icon": "🇬🇼"
+		  },
+		  {
+			"icon": "🇬🇾"
+		  },
+		  {
+			"icon": "🇭🇰"
+		  },
+		  {
+			"icon": "🇭🇲"
+		  },
+		  {
+			"icon": "🇭🇳"
+		  },
+		  {
+			"icon": "🇭🇷"
+		  },
+		  {
+			"icon": "🇭🇹"
+		  },
+		  {
+			"icon": "🇭🇺"
+		  },
+		  {
+			"icon": "🇮🇨"
+		  },
+		  {
+			"icon": "🇮🇩"
+		  },
+		  {
+			"icon": "🇮🇪"
+		  },
+		  {
+			"icon": "🇮🇱"
+		  },
+		  {
+			"icon": "🇮🇲"
+		  },
+		  {
+			"icon": "🇮🇳"
+		  },
+		  {
+			"icon": "🇮🇴"
+		  },
+		  {
+			"icon": "🇮🇶"
+		  },
+		  {
+			"icon": "🇮🇷"
+		  },
+		  {
+			"icon": "🇮🇸"
+		  },
+		  {
+			"icon": "🇮🇹"
+		  },
+		  {
+			"icon": "🇯🇪"
+		  },
+		  {
+			"icon": "🇯🇲"
+		  },
+		  {
+			"icon": "🇯🇴"
+		  },
+		  {
+			"icon": "🇯🇵"
+		  },
+		  {
+			"icon": "🇰🇪"
+		  },
+		  {
+			"icon": "🇰🇬"
+		  },
+		  {
+			"icon": "🇰🇭"
+		  },
+		  {
+			"icon": "🇰🇮"
+		  },
+		  {
+			"icon": "🇰🇲"
+		  },
+		  {
+			"icon": "🇰🇳"
+		  },
+		  {
+			"icon": "🇰🇵"
+		  },
+		  {
+			"icon": "🇰🇷"
+		  },
+		  {
+			"icon": "🇰🇼"
+		  },
+		  {
+			"icon": "🇰🇾"
+		  },
+		  {
+			"icon": "🇰🇿"
+		  },
+		  {
+			"icon": "🇱🇦"
+		  },
+		  {
+			"icon": "🇱🇧"
+		  },
+		  {
+			"icon": "🇱🇨"
+		  },
+		  {
+			"icon": "🇱🇮"
+		  },
+		  {
+			"icon": "🇱🇰"
+		  },
+		  {
+			"icon": "🇱🇷"
+		  },
+		  {
+			"icon": "🇱🇸"
+		  },
+		  {
+			"icon": "🇱🇹"
+		  },
+		  {
+			"icon": "🇱🇺"
+		  },
+		  {
+			"icon": "🇱🇻"
+		  },
+		  {
+			"icon": "🇱🇾"
+		  },
+		  {
+			"icon": "🇲🇦"
+		  },
+		  {
+			"icon": "🇲🇨"
+		  },
+		  {
+			"icon": "🇲🇩"
+		  },
+		  {
+			"icon": "🇲🇪"
+		  },
+		  {
+			"icon": "🇲🇫"
+		  },
+		  {
+			"icon": "🇲🇬"
+		  },
+		  {
+			"icon": "🇲🇭"
+		  },
+		  {
+			"icon": "🇲🇰"
+		  },
+		  {
+			"icon": "🇲🇱"
+		  },
+		  {
+			"icon": "🇲🇲"
+		  },
+		  {
+			"icon": "🇲🇳"
+		  },
+		  {
+			"icon": "🇲🇴"
+		  },
+		  {
+			"icon": "🇲🇵"
+		  },
+		  {
+			"icon": "🇲🇶"
+		  },
+		  {
+			"icon": "🇲🇷"
+		  },
+		  {
+			"icon": "🇲🇸"
+		  },
+		  {
+			"icon": "🇲🇹"
+		  },
+		  {
+			"icon": "🇲🇺"
+		  },
+		  {
+			"icon": "🇲🇻"
+		  },
+		  {
+			"icon": "🇲🇼"
+		  },
+		  {
+			"icon": "🇲🇽"
+		  },
+		  {
+			"icon": "🇲🇾"
+		  },
+		  {
+			"icon": "🇲🇿"
+		  },
+		  {
+			"icon": "🇳🇦"
+		  },
+		  {
+			"icon": "🇳🇨"
+		  },
+		  {
+			"icon": "🇳🇪"
+		  },
+		  {
+			"icon": "🇳🇫"
+		  },
+		  {
+			"icon": "🇳🇬"
+		  },
+		  {
+			"icon": "🇳🇮"
+		  },
+		  {
+			"icon": "🇳🇱"
+		  },
+		  {
+			"icon": "🇳🇴"
+		  },
+		  {
+			"icon": "🇳🇵"
+		  },
+		  {
+			"icon": "🇳🇷"
+		  },
+		  {
+			"icon": "🇳🇺"
+		  },
+		  {
+			"icon": "🇳🇿"
+		  },
+		  {
+			"icon": "🇴🇲"
+		  },
+		  {
+			"icon": "🇵🇦"
+		  },
+		  {
+			"icon": "🇵🇪"
+		  },
+		  {
+			"icon": "🇵🇫"
+		  },
+		  {
+			"icon": "🇵🇬"
+		  },
+		  {
+			"icon": "🇵🇭"
+		  },
+		  {
+			"icon": "🇵🇰"
+		  },
+		  {
+			"icon": "🇵🇱"
+		  },
+		  {
+			"icon": "🇵🇲"
+		  },
+		  {
+			"icon": "🇵🇳"
+		  },
+		  {
+			"icon": "🇵🇷"
+		  },
+		  {
+			"icon": "🇵🇸"
+		  },
+		  {
+			"icon": "🇵🇹"
+		  },
+		  {
+			"icon": "🇵🇼"
+		  },
+		  {
+			"icon": "🇵🇾"
+		  },
+		  {
+			"icon": "🇶🇦"
+		  },
+		  {
+			"icon": "🇷🇪"
+		  },
+		  {
+			"icon": "🇷🇴"
+		  },
+		  {
+			"icon": "🇷🇸"
+		  },
+		  {
+			"icon": "🇷🇺"
+		  },
+		  {
+			"icon": "🇷🇼"
+		  },
+		  {
+			"icon": "🇸🇦"
+		  },
+		  {
+			"icon": "🇸🇧"
+		  },
+		  {
+			"icon": "🇸🇨"
+		  },
+		  {
+			"icon": "🇸🇩"
+		  },
+		  {
+			"icon": "🇸🇪"
+		  },
+		  {
+			"icon": "🇸🇬"
+		  },
+		  {
+			"icon": "🇸🇭"
+		  },
+		  {
+			"icon": "🇸🇮"
+		  },
+		  {
+			"icon": "🇸🇯"
+		  },
+		  {
+			"icon": "🇸🇰"
+		  },
+		  {
+			"icon": "🇸🇱"
+		  },
+		  {
+			"icon": "🇸🇲"
+		  },
+		  {
+			"icon": "🇸🇳"
+		  },
+		  {
+			"icon": "🇸🇴"
+		  },
+		  {
+			"icon": "🇸🇷"
+		  },
+		  {
+			"icon": "🇸🇸"
+		  },
+		  {
+			"icon": "🇸🇹"
+		  },
+		  {
+			"icon": "🇸🇻"
+		  },
+		  {
+			"icon": "🇸🇽"
+		  },
+		  {
+			"icon": "🇸🇾"
+		  },
+		  {
+			"icon": "🇸🇿"
+		  },
+		  {
+			"icon": "🇹🇦"
+		  },
+		  {
+			"icon": "🇹🇨"
+		  },
+		  {
+			"icon": "🇹🇩"
+		  },
+		  {
+			"icon": "🇹🇫"
+		  },
+		  {
+			"icon": "🇹🇬"
+		  },
+		  {
+			"icon": "🇹🇭"
+		  },
+		  {
+			"icon": "🇹🇯"
+		  },
+		  {
+			"icon": "🇹🇰"
+		  },
+		  {
+			"icon": "🇹🇱"
+		  },
+		  {
+			"icon": "🇹🇲"
+		  },
+		  {
+			"icon": "🇹🇳"
+		  },
+		  {
+			"icon": "🇹🇴"
+		  },
+		  {
+			"icon": "🇹🇷"
+		  },
+		  {
+			"icon": "🇹🇹"
+		  },
+		  {
+			"icon": "🇹🇻"
+		  },
+		  {
+			"icon": "🇹🇼"
+		  },
+		  {
+			"icon": "🇹🇿"
+		  },
+		  {
+			"icon": "🇺🇦"
+		  },
+		  {
+			"icon": "🇺🇬"
+		  },
+		  {
+			"icon": "🇺🇲"
+		  },
+		  {
+			"icon": "🇺🇳"
+		  },
+		  {
+			"icon": "🇺🇸"
+		  },
+		  {
+			"icon": "🇺🇾"
+		  },
+		  {
+			"icon": "🇺🇿"
+		  },
+		  {
+			"icon": "🇻🇦"
+		  },
+		  {
+			"icon": "🇻🇨"
+		  },
+		  {
+			"icon": "🇻🇪"
+		  },
+		  {
+			"icon": "🇻🇬"
+		  },
+		  {
+			"icon": "🇻🇮"
+		  },
+		  {
+			"icon": "🇻🇳"
+		  },
+		  {
+			"icon": "🇻🇺"
+		  },
+		  {
+			"icon": "🇼🇫"
+		  },
+		  {
+			"icon": "🇼🇸"
+		  },
+		  {
+			"icon": "🇽🇰"
+		  },
+		  {
+			"icon": "🇾🇪"
+		  },
+		  {
+			"icon": "🇾🇹"
+		  },
+		  {
+			"icon": "🇿🇦"
+		  },
+		  {
+			"icon": "🇿🇲"
+		  },
+		  {
+			"icon": "🇿🇼"
+		  },
+		  {
+			"icon": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+		  },
+		  {
+			"icon": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+		  },
+		  {
+			"icon": "🏴󠁧󠁢󠁷󠁬󠁳󠁿"
+		  },
+		  {
+			"icon": "🏴󠁵󠁳󠁴󠁸󠁿"
+		  }
+		]
+	  }
+	],
+	"navigation": [
+	  {
+		"title": "Add Post",
+		"icon": "add",
+		"link": "#",
+		"modal": 1,
+		"notification": "",
+		"badge": false,
+		"login": "",
+		"subnav": [
+		  {
+			"title": "Ask a Question",
+			"icon": "qna",
+			"link": "qna.html",
+			"modal": 1,
+			"modal_id": "modalQnaAdd",
+			"notification": "",
+			"badge": false,
+			"login": "1"
+		  },
+		  {
+			"title": "Write a Story",
+			"icon": "neoblog",
+			"link": "neoblog.html",
+			"modal": 1,
+			"modal_id": "modalNeoblogAdd",
+			"notification": "",
+			"badge": false,
+			"login": "1"
+		  },
+		  {
+			"title": "Post a Job",
+			"icon": "jobs",
+			"link": "jobs.html",
+			"modal": 1,
+			"modal_id": "modalJobAdd",
+			"notification": "",
+			"badge": false,
+			"login": "1"
+		  },
+		  {
+			"title": "Add Product",
+			"icon": "store",
+			"modal_id": "modalProductAdd",
+			"link": "store.html",
+			"modal": 1,
+			"notification": "",
+			"badge": false,
+			"login": "1"
+		  }
+		]
+	  },
+	  {
+		"title": "Home",
+		"icon": "home",
+		"link": "home.html",
+		"modal": 0,
+		"notification": "",
+		"badge": false,
+		"login": "1"
+	  },
+	  {
+		"title": "News",
+		"icon": "news",
+		"link": "news.html",
+		"modal": 0,
+		"notification": "",
+		"badge": false,
+		"login": "1"
+	  },
+	  {
+		"title": "Q&A",
+		"icon": "qna",
+		"link": "qna.html",
+		"modal": 0,
+		"notification": "",
+		"badge": false,
+		"login": "1"
+	  },
+	  {
+		"title": "Figure",
+		"icon": "figure",
+		"link": "figure.html",
+		"modal": 0,
+		"notification": "",
+		"badge": false,
+		"login": "1"
+	  },
+	  {
+		"title": "Neoblog",
+		"icon": "neoblog",
+		"link": "neoblog.html",
+		"modal": 0,
+		"notification": "",
+		"badge": false,
+		"login": "1"
+	  },
+	  {
+		"title": "Jobs",
+		"icon": "jobs",
+		"link": "jobs.html",
+		"modal": 0,
+		"notification": "",
+		"badge": false,
+		"login": "1"
+	  },
+	  {
+		"title": "Store",
+		"icon": "store",
+		"link": "store.html",
+		"modal": 0,
+		"notification": 9,
+		"badge": true,
+		"login": "1"
+	  },
+	  {
+		"title": "Setting",
+		"icon": "setting",
+		"link": "setting.html",
+		"modal": 0,
+		"notification": "",
+		"badge": false,
+		"login": ""
+	  }
+	],
+	"submenu": {
+	  "news": [
+		[],
+		[
+		  {
+			"title": "Filter",
+			"icon": "filter",
+			"icon_only": 1,
+			"link": "news-filter.html",
+			"badge": ""
+		  }
+		]
+	  ],
+	  "qna": [
+		[
+		  {
+			"title": "Recent",
+			"icon": "",
+			"link": "qna.html",
+			"badge": ""
+		  },
+		  {
+			"title": "Requested",
+			"icon": "",
+			"link": "qna-my-requested.html",
+			"badge": 1
+		  },
+		  {
+			"title": "Index",
+			"icon": "",
+			"link": "qna-my-list.html",
+			"badge": ""
+		  }
+		],
+		[
+		  {
+			"title": "Draft",
+			"icon": "",
+			"link": "qna-my-draft.html",
+			"badge": "",
+			"disabled": 1
+		  }
+		]
+	  ],
+	  "neoblog": [
+		[
+		  {
+			"title": "Recent",
+			"icon": "",
+			"link": "neoblog.html",
+			"badge": ""
+		  }
+		],
+		[
+		  {
+			"title": "My Post",
+			"icon": "",
+			"link": "neoblog-my-post.html",
+			"badge": ""
+		  },
+		  {
+			"title": "Draft",
+			"icon": "",
+			"link": "neoblog-my-draft.html",
+			"badge": 1
+		  }
+		]
+	  ],
+	  "profile": [
+		[
+		  {
+			"title": "Timeline",
+			"icon": "",
+			"link": "profile.html",
+			"badge": ""
+		  },
+		  {
+			"title": "29 Post",
+			"icon": "",
+			"link": "profile-neoblog.html",
+			"badge": ""
+		  },
+		  {
+			"title": "2 Question",
+			"icon": "",
+			"link": "profile-qna-question.html",
+			"badge": ""
+		  },
+		  {
+			"title": "14 Answer",
+			"icon": "",
+			"link": "profile-qna-answer.html",
+			"badge": ""
+		  }
+		],
+		[]
+	  ],
+	  "notification": [
+		[
+		  {
+			"title": "Notification",
+			"icon": "",
+			"link": "notification.html",
+			"badge": ""
+		  },
+		  {
+			"title": "Friend Request",
+			"icon": "",
+			"link": "notification-request.html",
+			"badge": 1
+		  }
+		],
+		[]
+	  ]
+	},
+	"static": [
+	  {
+		"title": "About",
+		"icon": "",
+		"link": "static-about.html",
+		"notification": "",
+		"badge": false
+	  },
+	  {
+		"title": "FAQ",
+		"icon": "",
+		"link": "static-faq.html",
+		"notification": "",
+		"badge": false
+	  },
+	  {
+		"title": "Privacy",
+		"icon": "",
+		"link": "static-privacy.html",
+		"notification": "",
+		"badge": false
+	  },
+	  {
+		"title": "Terms",
+		"icon": "",
+		"link": "static-terms.html",
+		"notification": "",
+		"badge": false
+	  },
+	  {
+		"title": "Contact",
+		"icon": "",
+		"link": "static-contact.html",
+		"notification": "",
+		"badge": false
+	  }
+	],
+	"people": [
+	  {
+		"type": "neoblog",
+		"neoblog": 1,
+		"status": "Unpublished",
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/26CFEFB3-21C8-49FC-8C19-8E6A62B6D2E0-200w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "../asset/images/dummy/26CFEFB3-21C8-49FC-8C19-8E6A62B6D2E0-500w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Chris",
+		"bio": "Kontributor lepas dan peneliti sejarah independen. Peminat sejarah, sosial-budaya, politik, pendidikan, dan humaniora 🌿🏠",
+		"last_name": "Wibisana",
+		"location": "Malinau, Kalimantan Utara",
+		"verified": 1,
+		"rewards": 1,
+		"img": "https://source.unsplash.com/UNqBMVeTXGg/780x390",
+		"header": 1,
+		"post": "<p>Bilamana tenaga kesehatan garda depan itu melawan virus Covid-19 yang terus bermutasi, maka 75 pegawai KPK yang kini nonaktif tersebut telah melawan virus korupsi yang anehnya tidak pernah selesai menjangkiti petinggi negeri kita, generasi ke generasi.</p><p>Apapun ideologi mereka, terlebih wilayah kerjanya yang rawan dan tidak mempersoalkan ideologi, kita seharusnya menaruh perhatian besar pada integritas dan kejujuran serta tadi dan pada keberanian mereka menangkap tikus kantor.</p><p>Karenanya, terhadap mereka pula yang diklaim tidak lulus Tes Wawasan Kebangsaan yang disusun oleh lima instansi negara yang sebagian besar berasal dari TNI matra Angkatan Darat, saya tetap menaruh hormat setinggi-tingginya, persetan dengan apapun pandangan para penghamba kekuasaan yang menebar syakwasangka dan menanam akar pahit di masyarakat bahwa mereka yang tidak lulus terafiliasi kelompok teroris Islam garis keras.</p><p>Catatan kecil ini saya buat, selain sebagai tanda belasungkawa atas tercabutnya cakar-cakar KPK untuk menggaruk koruptor, juga sebagai katarsis dari tanda tanya besar yang menggelayut di benak saya berhari-hari lamanya.</p>",
+		"link": "neoblog-detail.html",
+		"comment": 1,
+		"comments": [
+		  {
+			"avatars": [
+			  {
+				"height": 133,
+				"size": "small",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 333,
+				"size": "medium",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Alexander",
+			"last_name": "Mawardi",
+			"comment": "Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat."
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 500,
+				"size": "medium",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Michelle",
+			"last_name": "Maria",
+			"reply": "Yang pasti karena perubahan itu orang buru-buru berteriak soal pergantian kabinet atau resufle."
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 499,
+				"size": "medium",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Kiki",
+			"last_name": "Rahmadhani",
+			"comment": "Pelanggan juga berhak tau berapa penghasilan yang diperoleh oleh ojek online yang kita gunakan. Jangan sampai kita abai terhadap nasib mereka."
+		  }
+		]
+	  },
+	  {
+		"type": "qna",
+		"qna": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/A7299C8E-CEFC-47D9-939A-3C8CA0EA4D13-200w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "../asset/images/dummy/A7299C8E-CEFC-47D9-939A-3C8CA0EA4D13-500w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Vika",
+		"gender": "female",
+		"bio": "Dokter jantung yang pernah belajar kesehatan masyarakat",
+		"last_name": "Dyahsasanti",
+		"location": "Banjarmasin, Kalimantan Selatan",
+		"header": 1,
+		"post": "",
+		"question": "Apakah mungkin suatu negara memiliki pertumbuhan ekonomi yang tinggi namun tingkat inflasinya rendah?",
+		"answer": "<p>Tiga tahun terakhir tingkat inflasi di tingkat pusat dan daerah selalu di bawah empat persen: 3,35 persen pada 2015, 3,02 persen pada 2016, dan 3,61 persen pada 2017. Ini bisa terjadi berkat sinergi yang baik antara Tim Pengendali Inflasi pusat dan daerah.</p><p>Kendati begitu, di hadapan ratusan kepala daerah dan perwakilan Bank Indonesia dari berbagai wilayah di Indonesia yang menghadiri Rakornas Pengendalian Inflasi tahun 2018 di Jakarta, kemarin, saya tetap berharap inflasi bisa diturunkan lagi hingga menyentuh angka antara 1-2 persen.</p><p>Kepala daerah harus lebih proaktif berupaya menekan inflasi yang terjadi di daerahnya. Contoh, bila inflasi terjadi karena kekurangan pasokan, maka kepala daerah itu harus langsung mengupayakan kelancaran pasokan dengan cara bekerja sama dengan daerah lainnya yang mengalami surplus.</p>",
+		"img": "https://source.unsplash.com/vXjkNagrnhQ/750x889",
+		"link": "qna-answer-detail.html",
+		"comment": 1,
+		"comments": [
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 499,
+				"size": "medium",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Kiki",
+			"last_name": "Rahmadhani",
+			"comment": "Yang pasti karena perubahan itu orang buru-buru berteriak soal pergantian kabinet atau resufle."
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 500,
+				"size": "medium",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Michelle",
+			"last_name": "Maria",
+			"reply": "Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat."
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 133,
+				"size": "small",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 333,
+				"size": "medium",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Alexander",
+			"last_name": "Mawardi",
+			"comment": "Pelanggan juga berhak tau berapa penghasilan yang diperoleh oleh ojek online yang kita gunakan. Jangan sampai kita abai terhadap nasib mereka."
+		  }
+		]
+	  },
+	  {
+		"type": "qna",
+		"qna": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-200w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-500w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Didik",
+		"gender": "male",
+		"bio": "UX Stories from Indonesians Designers. Actively help people get their best fit UI UX Design jobs.",
+		"last_name": "Wicaksono",
+		"header": 1,
+		"lng": 106.8271521,
+		"question": "Apa yang menyebabkan tingkat inflasi di Jepang begitu rendah?",
+		"answer": "<p>Salah satu cara untuk mempercepat ekonomi disana adalah dengan membangun Casino disana, perusahaan tempat saya bekerja sedang menunggu Licence dari pemerintah sana(US company kalau diterjemahkan ke bahasa Indonesia artinya \"Pasir\" corporation dan ada cabang diSingapore.</p><p>Company sudah banyak menghire orang Jepang untuk diberi training sehingga saat Casino sudah buka, mereka sudah ready untuk run casinonya. Teman sy yg orang Jepang memang bilang, ekonomi di negara nya lambat dan salah satu caranya adalah open Casino biar ada perputaran ekonomi yg baik. Orang Jepang memang tipikal hemat, main judi saja, dengan modal $500 saja bisa ga habis habis tuh uang(mereka ga menang sih), cuma mau nikmatin suasana dan gamenya.</p>",
+		"link": "qna-answer-detail.html"
+	  },
+	  {
+		"type": "news",
+		"news": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/ytprayeh.png",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "../asset/images/dummy/ytprayeh.png",
+			"width": 500
+		  }
+		],
+		"first_name": "Ytprayeh.com",
+		"gender": "female",
+		"bio": "Love Swimming",
+		"last_name": "",
+		"header": 1,
+		"title": "Menggagas Borneo Writer’s Festival di Kalimantan Utara",
+		"img": "https://assets.ytprayeh.com/img/2w1597426621283/b1e3b-01%20-%20Borneo%20Writers%20Festival.jpg",
+		"content": "<p>2014, saya menginjakkan kaki untuk pertama kali di Malinau, Kalimantan Utara. Tujuannya satu: membantu proses penulisan buku Bupati Malinau kala itu, Dr. Yansen, TP., MSi. Namun, seiring berjalannya waktu, ternyata semangat literasi sang bupati begitu tinggi, sehingga tergelarlah beberapa kegiatan terkait literasi. Mulai dari lauching buku, bedah buku, sampai pelatihan dan juga lomba menulis.</p>\n<p>Sejak 2014 juga, saya sudah merancang beberapa kegiatan literasi di Malinau, yang sebagian sudah terlaksana namun sisanya belum terwujud. Salah satu yang belum terealisasi adalah suatu festival penulis atau biasa disebut Writer&rsquo;s Festival, yang sudah sangat populer di negara-negara maju. Di Indonesia sendiri, festival semacam ini baru ada di Bali (Ubud Writes&rsquo;s Festival), di Sulawesi Selatan (Makassar International Writer&rsquo;s Festival), dan di Jawa Tengah (Borobudur Writer&rsquo;s and Cultural Festival), dengan ciri khasnya masing-masing.</p>\n<p>Festival penulis merupakan suatu kegiatan literasi tertinggi, yang melibatkan penulis, karya-karyanya, dan para pembaca. Festival penulis bukan sekadar pameran buku, ajang yang paling sering dan banyak diselenggarakan di Indonesia. Selain di Jakarta, pameran buku juga hadir di banyak kota lainnya seperti Bandung, Yogyakarta, Surabaya, Medan, serta berbagai kota lain termasuk kota-kota kecil. Namun, pameran buku lebih banyak hanya menjual buku-buku saja sehingga lebih sebagai ajang para produsen buku dalam hal ini penerbit. Penulis dan pembaca hanya bumbu penyedap. Target utama pameran adalah jumlah penjualan buku. Hal yang berbeda dengan Writer&rsquo;s Festival.</p>\n<p>2021 ini, saya berkesempatan mengunjungi Tanjung Selor ibukota Kalimantan Utara (Kaltara) untuk berkegiatan literasi khususnya penulisan buku Sejarah Kaltara yang digagas oleh Gubernur dan Wakil Gubernur Kaltara. Kesan pertama melihat Tanjung Selor begitu menggoda. Kota ini masih &ldquo;sunyi&rdquo; namun menyimpan sejuta pesona, khususnya aliran sungai Kayan dan sejarah kota yang menyertainya. Meski tidak selengkap Tarakan, kota teramai di Kaltara, Tanjung Selor punya fasilitas cukup memadai. Kota ini berpotensi besar untuk menggelar beragam kegiatan berskala nasional dan internasional termasuk suatu festival penulis.</p>\n<blockquote>Melalui tulisan ini, saya mengusulkan kepada pihak terkait di Kalimantan Utara, untuk menggelar festival penulis dalam rangka menggenjot semangat literasi di sana yang kian hari semakin membuncah. Sebut saja nama acaranya adalah &ldquo;Borneo Writer&rsquo;s Festival.&rdquo;</blockquote>\n<p>Tepian sungai Kayan dapat menjadi lokasi ideal untuk penyelenggaraan festival ini, sekaligus sebagai ajang promosi pariwisata Tanjung Selor dan Bulungan, serta Kalimantan Utara. Banyak efek samping positif dari penyelenggaraan festival penulis ini jika berkaca pada penyelenggaraan acara serupa terutama di Ubud Bali.</p>\n<p><div class=\"read__midimg\"><img src=\"https://assets.ytprayeh.com/img/2w1597426621283/1a727-02 - Borneo Writers Festival.jpg\" alt=\"\"></div></p>\n<p>Penyelenggaraan festival penulis ini bisa dipadukan dengan tawaran paket pariwisata yang menarik. Festival penulis di Ubud lebih banyak dihadiri oleh penulis dan pecinta buku dari mancanegara terutama Australia, Amerika Serikat, dan negara-negara di Eropa. Tarakan, Tanjung Selor atau Bulungan, Tanah Tidung, Nunukan, dan Malinau punya tawaran wisata sejarah yang memukau dan berkaitan dengan negara-negara asing tersebut. Mereka bisa &lsquo;sambil menyelam minum air&rsquo;, mendapatkan pencerahan lewat festival penulis sekaligus menyusuri tempat wisata sejarah, wisata budaya, dan wisata alam.</p>\n<p>Kalimantan Utara punya potensi wisata yang sangat besar (saya tulis dalam serial artikel khusus), dan juga memiliki pegiat literasi yang luar biasa. Dua kelebihan yang dapat berkolaborasi untuk saling melejitkan. Sang Wakil Gubernur Dr. Yansen TP., adalah pegiat literasi yang sudah menghasilkan 7 judul buku, serta pemilik media warga Ytprayeh.com. Semangat literasinya sudah menyebar ke seantero negeri, di samping piawai mengelola pembangungan daerahnya. Selain sang Wakil Gubernur, Kaltara juga mempunyai talenta-talenta literasi yang sangat potensial. Sejumlah penulis buku seperti Muhammad Arbain, Lio Bijumes, Sarinah, Darmawati, dll., begitu aktif berliterasi. Pegiat literasi dari INOVASI &ndash; Handoko Widagdo pasti mengamini hal tersebut.</p>\n<p>Kaltara punya spot-spot wisata yang sangat menarik. Di Tarakan, ada pusat Bekantan &ndash; monyet berhidung mancung (sering disebut monyet Belanda yang hampir punah), ada rumah dan bangunan peninggalan Belanda, sejarah perminyakan masa lalu yang hebat, serta peninggalan budaya kesultanan Tidung yang memukau. Di Malinau, terdapat desa-desa wisata sebagai pusat kebudayaan Dayak, dan taman nasional Kayan Mentarang. Di Nunukan, ada spot wisata pebatasan di pulau Sebatik dan pesona dataran tinggi Borneo di Krayan yang pada masa lalu sudah dikunjungi para misionaris dari Amerika Serikat. Sedangkan di Bulungan, wisata sungai Kayan yang mempesona berpadu dengan wisata sejarah kesultanan Bulungan yang melegenda itu. Kesultanan Bulungan dan Tidung punya kisah menarik terkait dengan Kerajaan Belanda pada masa silam.</p>\n<p>Dengan suatu festival berskala nasional dan internasional, beberapa tujuan dapat diraih. Tingkat literasi masyarakat Kalimantan Utara akan meningkat drastis, IPM (Indek Pembangunan Manusia) juga dipastikan akan terkerek, popularitas Kaltara akan melonjak dengan citra sangat positif, dan denyut ekonomi lokal melalui pariwisata akan bergeliat serta melahirkan penulis-penulis hebat Kaltara.</p>\n<p><div class=\"read__midimg\"><img src=\"https://assets.ytprayeh.com/img/2w1597426621283/d4141-03 - Borneo Writers Festival.jpg\" alt=\"\"></div> </p>\n<p>Saya sudah memvisualisasikan festival penulis ini. Membayangkan warga Kalimantan Utara berduyung-duyun berdiskusi bersama para penulis nasional serta mancanegara dalam ajang intelektual. Mereka pantas berbangga karena juga punya karya yang ditampilkan. Karya yang dibahas oleh para pakar nasional dan internasional. Semua itu terjadi di tepian sungai Kayan yang indah, sejak pagi hingga malam, dihiasi sinar mentari yang bergerak pelan sampai ke peraduannya di tepian seberang sungai Kayan.</p>\n<blockquote>Sejak abad ke-18, nenek moyang Bulungan (cikal bakal provinsi Kaltara) sudah bergaul dengan warga dunia. Kini saatnya, pergaulan dunia dalam kemasan intelektual yang lebih maju dan terhormat dilanjutkan oleh generasi penerusnya.</blockquote>\n<p>Yang setuju, angkat tangannya!</p>\n",
+		"comment": "",
+		"comments": [
+		  {
+			"avatars": [
+			  {
+				"height": 133,
+				"size": "small",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 333,
+				"size": "medium",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Alexander",
+			"last_name": "Mawardi",
+			"comment": "Pelanggan juga berhak tau berapa penghasilan yang diperoleh oleh ojek online yang kita gunakan. Jangan sampai kita abai terhadap nasib mereka."
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 500,
+				"size": "medium",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Kiki",
+			"last_name": "Maria",
+			"comment": "Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat."
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 499,
+				"size": "medium",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Michelle",
+			"last_name": "Rahmadhani",
+			"reply": "Yang pasti karena perubahan itu orang buru-buru berteriak soal pergantian kabinet atau resufle."
+		  }
+		],
+		"subscribed": 1,
+		"link": "news-detail.html"
+	  },
+	  {
+		"type": "jobs",
+		"jobs": 1,
+		"company": "HappyFresh",
+		"location": "Malinau, Kalimantan Utara",
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://cdn.techinasia.com/data/images/neDhtvQop0Pd2y8o58x4pJkQ3OepsiR4YQ2OE4bO.png",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://cdn.techinasia.com/data/images/neDhtvQop0Pd2y8o58x4pJkQ3OepsiR4YQ2OE4bO.png",
+			"width": 500
+		  }
+		],
+		"first_name": "Creative",
+		"gender": "female",
+		"bio": "Love Swimming",
+		"last_name": "Copywriter",
+		"header": 0,
+		"link": "jobs-detail.html",
+		"content": "<p>HappyFresh is the fastest-growing online grocery marketplace in South-East Asia and Asia's Best Company to Work For 2019. Headquartered in Jakarta, we have expanded to major cities in three countries and now operate in Indonesia, Malaysia, and Thailand. Every day, our team delivers the #FreshlyHandpicked quality groceries to thousands of customers.</p>\n<p>As a company, we are here to deliver a simplified life by providing an easy grocery shopping experience with a high-quality service. With our <a href=\"#\"><strong>HappyFresh Culture</strong></a>, we believe we can achieve our goals with you in it. </p>\n<h2>What You'll Be Doing?</h2>\n<ul>\n    <li>Together with the local creative team, he/she will develop creative ideas and concepts for monthly marketing plans, and campaigns to help achieve the local marketing team goals</li>\n    <li>Write clear, persuasive, original copy that is on-brand.</li>\n    <li>In charge of the creative copywriting in local teams; campaign lines, short form catchy copies for OOH or any other project needed.</li>\n    <li>Video scripts for evergreen videos and/or campaigns.</li>\n    <li>Proofreading copy to check spelling and grammar.</li>\n    <li>Assist other team members (Social media specialists, CRM specialists, etc) with their creative and short form copywriting needs.</li>\n    <li>Amending, revising campaigns in response to feedback from internal.</li>\n</ul>\n<h2>What We Are Looking For?</h2>\n<ul>\n    <li>BA or BSc Degree with focus on communication, advertising, and/or marketing.</li>\n    <li>At least 2 years experience minimum in a Copywriter role in advertising agencies. </li>\n    <li>Demonstrates creativity and documented immersion in copywriting and campaigns.</li>\n    <li>Ability to work in conceptual thinking, wide knowledge, creative in making up new ideas.</li>\n    <li>Valued for writing flexibility, conceptual/visual thinking.</li>\n    <li>Strong interpersonal and communication skills. </li>\n    <li>Have a good time management.</li>\n    <li>Fluency in written and spoken English and the local language (Indonesian, Bahasa Melayu or Thai).</li>\n    <li>Well-organized and detail oriented – mandatory.</li>\n</ul>\n<p>We are looking for an enthusiastic Copywriter to join our local marketing team. This role will use creative thinking to find brilliant, eye-opener communication solutions. He/she will develop ideas which are original.</p>",
+		"people_belt": [
+		  {
+			"avatars": [
+			  {
+				"height": 133,
+				"size": "small",
+				"url": "https://assets.ytprayeh.com/usr/masri/avatar/asam%20pauh%20belimbing%20batu.jpg",
+				"width": 200
+			  },
+			  {
+				"height": 333,
+				"size": "medium",
+				"url": "https://assets.ytprayeh.com/usr/masri/avatar/asam%20pauh%20belimbing%20batu.jpg",
+				"width": 500
+			  }
+			],
+			"first_name": "Prof. Masri",
+			"last_name": "Sareb",
+			"verified": 1
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 133,
+				"size": "small",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 333,
+				"size": "medium",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Alexander",
+			"last_name": "Mawardi",
+			"verified": ""
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 500,
+				"size": "medium",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Michelle",
+			"last_name": "Maria",
+			"verified": ""
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/26CFEFB3-21C8-49FC-8C19-8E6A62B6D2E0-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 500,
+				"size": "medium",
+				"url": "../asset/images/dummy/26CFEFB3-21C8-49FC-8C19-8E6A62B6D2E0-200w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Chris",
+			"last_name": "Wibisana",
+			"verified": 1
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 499,
+				"size": "medium",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Kiki",
+			"last_name": "Rahmadhani",
+			"verified": ""
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 499,
+				"size": "medium",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Annisa",
+			"last_name": "Syaidar",
+			"verified": ""
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/avatar.jpg",
+				"width": 200
+			  },
+			  {
+				"height": 499,
+				"size": "medium",
+				"url": "../asset/images/dummy/avatar.jpg",
+				"width": 500
+			  }
+			],
+			"first_name": "Chelsea",
+			"last_name": "Amalia",
+			"verified": 1
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 499,
+				"size": "medium",
+				"url": "../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-200w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Ahmed",
+			"last_name": "Djaelani",
+			"verified": 1
+		  }
+		]
+	  },
+	  {
+		"type": "neoblog",
+		"neoblog": 1,
+		"status": "Published",
+		"avatars": [
+		  {
+			"height": 133,
+			"size": "small",
+			"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 333,
+			"size": "medium",
+			"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Noorchamid",
+		"bio": "akun yang ngomongin PNS wakanda | PNS NKRI sangat profesional #ASNKiniBeda | kumpulan orang bego yang disuruh pintar sama yang lebih bego. untung digaji.",
+		"last_name": "Ustadi",
+		"header": 1,
+		"post": "<p>Masyarakat adat merupakan suatu komunitas asli yang masih tetap eksis mempertahankan identitas aslinya berdasarkan kewenangan tradisional  dan hak asal usul yang diwariskan secara turun temurun  jauh sebelum Negara modern berdiri.</p><p>Konsep masyarakat adat atau juga disebut dengan masyarakat hukum adat telah dikembangkan oleh sarjana-sarjana hukum dan ilmu sosial sejak pada masa kolonial Belanda. Masyarakat adat sendiri adalah konsep untuk menunjuk komunitas-komunitas adat (adat rechtsgemeenschappen) yang merupakan bagian terbesar dari populasi Hindia Belanda pada masa itu.</p><p>Bangsa, suku, dan masyarakat adat adalah sekelompok orang yang memiliki jejak sejarah dengan masyarakat sebelum masa invasi dan penjajahan, yang berkembang di daerah mereka, menganggap diri mereka beda dengan komunitas lain yang sekarang berada di daerah mereka atau bukan bagian dari komunitas tersebut. Mereka bukan merupakan bagian yang dominan dari masyarakat dan bertekad untuk memelihara, mengembangkan, dan mewariskan daerah leluhur dan identitas etnik mereka kepada generasi selanjutnya; sebagai dasar bagi kelangsungan keberadaan mereka sebagai suatu sukubangsa, sesuai dengan pola budaya, lembaga sosial dan sistem hukum mereka.</p>",
+		"comment": "",
+		"lng": 106.824377,
+		"img": [
+		  "https://source.unsplash.com/WmyCgxDf1cA/750x500",
+		  "https://source.unsplash.com/KbAUg-WKJYI/750x889"
+		],
+		"link": "neoblog-detail-gallery.html"
+	  },
+	  {
+		"type": "qna",
+		"qna": 1,
+		"avatars": [
+		  {
+			"height": 133,
+			"size": "small",
+			"url": "../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-200w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 333,
+			"size": "medium",
+			"url": "../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-200w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Ahmed",
+		"gender": "male",
+		"bio": "Run! Run! Run!",
+		"last_name": "Djaelani",
+		"header": 0,
+		"lng": 106.823691,
+		"question": "Apakah pantai paling indah di Kalimantan?",
+		"unanswered": 1,
+		"link": "qna-question-empty.html"
+	  },
+	  {
+		"type": "figure",
+		"figure": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://photo.jpnn.com/arsip/normal/2019/10/25/alue-dohong-tokoh-dayak-menjadi-wakil-menteri-lhk-foto-m-fathra-nazrul-islamjpnn-43.JPG",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://photo.jpnn.com/arsip/normal/2019/10/25/alue-dohong-tokoh-dayak-menjadi-wakil-menteri-lhk-foto-m-fathra-nazrul-islamjpnn-43.JPG",
+			"width": 500
+		  }
+		],
+		"first_name": "Dr. Alue",
+		"gender": "male",
+		"bio": "Wakil Menteri Lingkungan Hidup dan Kehutanan",
+		"bio_teaser": "Alue Dohong is an Indonesian politician and incumbent Deputy Minister of Environment and Forestry. He was appointed on 25 October 2019. Before appointed, he was a lecturer in University of Palangka Raya.",
+		"last_name": "Dohong",
+		"header": 0,
+		"link": "figure-detail.html"
+	  },
+	  {
+		"type": "neoblog",
+		"neoblog": 1,
+		"status": "Unpublished",
+		"avatars": [
+		  {
+			"height": 246,
+			"size": "small",
+			"url": "../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-200w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 615,
+			"size": "medium",
+			"url": "../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-500w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Mochammad",
+		"gender": "male",
+		"bio": "Sport Lover",
+		"last_name": "Toha",
+		"header": 1,
+		"lng": 106.8211255,
+		"post": "Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat.",
+		"link": "neoblog-detail.html"
+	  },
+	  {
+		"type": "qna",
+		"qna": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 499,
+			"size": "medium",
+			"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Kiki",
+		"gender": "male",
+		"bio": "Runner",
+		"last_name": "Rahmadhani",
+		"header": 0,
+		"lng": 106.8228594,
+		"question": "Mengapa di Indonesia terdapat banyak partai politik, tidak seperti di Amerika Serikat yang hanya punya dua partai?",
+		"unanswered": 1,
+		"link": "qna-question-empty.html"
+	  },
+	  {
+		"type": "figure",
+		"figure": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/yansen.jpg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "../asset/images/dummy/yansen.jpg",
+			"width": 500
+		  }
+		],
+		"first_name": "Dr. Yansen",
+		"gender": "male",
+		"bio": "Wakil Gubernur Kalimantan Utara 2020-2025",
+		"bio_teaser": "Yansen Tipa Padan is an Indonesian politician and current vice governor of North Kalimantan. Previously he was regent of Malinau Regency. Born in village of Pa'Upan, Nunukan Regency, he continued his education in Samarinda in politics, gained bachelor and then gained doctor in administration on University of Brawijaya.",
+		"last_name": "Tipa Padan",
+		"header": 0,
+		"content": "<p>Yansen Tipa Padan is an Indonesian politician and current vice governor of <a href=\"#\">North Kalimantan</a>. Previously he was regent of Malinau Regency. Born in village of Pa'Upan, Nunukan Regency, he continued his education in Samarinda in politics, gained bachelor and then gained doctor in administration on University of Brawijaya.</p><h2>Career</h2><ul><li>Camat Mentarang (1993&mdash;1996)</li><li>Camat Kayan Hilir (1996&mdash;1999)</li><li>Camat Peso (1999&mdash;2001)</li><li>Kepala Kantor Catatan Sipil Kabupaten Bulungan (2001)</li><li>Kepala BKD Kabupaten Malinau</li><li>Sekretaris Daerah Kabupaten Malinau</li><li>Staf Ahli Gubernur bidang Hukum, Poltik, dan Pemerintah</li><li>Staf Ahli Gubernur bidang Ekonomi dan Keuangan</li><li>Bupati Malinau (2011&mdash;2016)</li><li>Bupati Malinau (2016&mdash;2021)</li><li>Wakil Gubernur Kalimantan Utara (2021&mdash;)</li></ul><h2>Biography</h2><p>Yansen Tipa Padan is an Indonesian politician and current vice governor of North Kalimantan. Previously he was regent of Malinau Regency. Born in village of Pa'Upan, Nunukan Regency, he continued his education in Samarinda in politics, gained bachelor and then gained doctor in administration on University of Brawijaya.</p><p>Yansen Tipa Padan is an Indonesian politician and current vice governor of North Kalimantan. Previously he was regent of Malinau Regency. Born in village of Pa'Upan, Nunukan Regency, he continued his education in Samarinda in politics, gained bachelor and then gained doctor in administration on University of Brawijaya.</p>",
+		"comment": "",
+		"comments": [
+		  {
+			"avatars": [
+			  {
+				"height": 133,
+				"size": "small",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 333,
+				"size": "medium",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Alexander",
+			"last_name": "Mawardi",
+			"comment": "Pelanggan juga berhak tau berapa penghasilan yang diperoleh oleh ojek online yang kita gunakan. Jangan sampai kita abai terhadap nasib mereka."
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 500,
+				"size": "medium",
+				"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Kiki",
+			"last_name": "Maria",
+			"comment": "Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat."
+		  },
+		  {
+			"avatars": [
+			  {
+				"height": 200,
+				"size": "small",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 200
+			  },
+			  {
+				"height": 499,
+				"size": "medium",
+				"url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+				"width": 500
+			  }
+			],
+			"first_name": "Michelle",
+			"last_name": "Rahmadhani",
+			"reply": "Yang pasti karena perubahan itu orang buru-buru berteriak soal pergantian kabinet atau resufle."
+		  }
+		],
+		"link": "figure-detail.html"
+	  },
+	  {
+		"type": "neoblog",
+		"neoblog": 1,
+		"status": "Published",
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Annisa",
+		"gender": "female",
+		"bio": "Swimmer",
+		"last_name": "Syaidar",
+		"header": 1,
+		"lng": 106.8227496,
+		"post": "<p>\"KPK menginisiasi pembahasan mengenai pendanaan parpol ini disebabkan adanya irisan yang jelas antara tindak pidana korupsi dengan partai politik selama ini. Selain itu kerugian keuangan negara akibat korupsi (politik) sangat signifikan dampaknya. Ini diduga karena mahalnya biaya politik dalam rangka pendanaan partai dan biaya kontestasi,\" kata Saut Situmorang, komisioner KPK.</p><p>KPK berdalih bahwa sentimen publik ini harus diluruskan. Negara berkewajiban memastikan parpol kuat dan berintegritas tinggi sebagai sarana menghasilkan pemimpin bangsa dan negara, mulai dari Kepala Daerah sampai ke Presiden, di samping pemimpin di legislatif dan lembaga lainnya. Pikiran ini sejalan dengan amanat konstitusi yang telah secara jelas menempatkan peran, fungsi dan tanggung jawab strategis partai politik dalam penyelenggaraan berbangsa dan bernegara.</p>",
+		"link": "neoblog-detail.html"
+	  },
+	  {
+		"type": "news",
+		"news": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://pbs.twimg.com/profile_images/787289530390851584/SJIR1c5H_400x400.jpg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://pbs.twimg.com/profile_images/787289530390851584/SJIR1c5H_400x400.jpg",
+			"width": 500
+		  }
+		],
+		"first_name": "Pepnews.com",
+		"bio": "",
+		"last_name": "",
+		"header": 1,
+		"lng": 106.824396,
+		"title": "Pemerintah Indonesia Optimal Dukung Palestina",
+		"img": "https://statics.pepnews.com/img/6715278f5986268/4c7b1-Screenshot_2021-05-15-10-13-24-70.jpg",
+		"subscribed": 1,
+		"link": "news-detail.html"
+	  },
+	  {
+		"type": "figure",
+		"figure": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://assets.ytprayeh.com/usr/masri/avatar/asam%20pauh%20belimbing%20batu.jpg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://assets.ytprayeh.com/usr/masri/avatar/asam%20pauh%20belimbing%20batu.jpg",
+			"width": 500
+		  }
+		],
+		"first_name": "Prof. Masri",
+		"gender": "male",
+		"bio": "Penulis, Aktivis Suku Dayak",
+		"bio_teaser": "Seorang penulis, angkatan 2000 dalam Sastra Indonesia dan telah merilis lebih dari 60 buku.",
+		"last_name": "Sareb",
+		"header": 0,
+		"link": "figure-detail.html"
+	  },
+	  {
+		"type": "news",
+		"news": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://pbs.twimg.com/profile_images/378800000384191722/545c13d9c1924241ad980688339d55a3_400x400.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://pbs.twimg.com/profile_images/378800000384191722/545c13d9c1924241ad980688339d55a3_400x400.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Detik.com",
+		"bio": "",
+		"last_name": "",
+		"header": 1,
+		"lng": 106.824396,
+		"title": "792 Calon Penumpang Tak Lolos Verifikasi Nonmudik di Daop 8 Surabaya",
+		"img": "https://akcdn.detik.net.id/community/media/visual/2021/05/16/pt-kai-daop-8-surabaya_169.jpeg?w=700&q=90",
+		"link": "news-detail.html"
+	  },
+	  {
+		"type": "news",
+		"news": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://pbs.twimg.com/profile_images/1295402529551867905/AdR0iGP2_400x400.jpg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://pbs.twimg.com/profile_images/1295402529551867905/AdR0iGP2_400x400.jpg",
+			"width": 500
+		  }
+		],
+		"first_name": "Kompas.id",
+		"bio": "",
+		"last_name": "",
+		"header": 1,
+		"lng": 106.824396,
+		"title": "Kedermawanan Sosial Jadi Asa Bangkit dari Pandemi",
+		"img": "https://d2huqozv2aqnkj.cloudfront.net/wp-content/uploads//2021/05/e85700b3-27aa-48ce-a191-00246eb4adbe_jpg-1024x585.jpg",
+		"link": "news-detail.html"
+	  },
+	  {
+		"type": "news",
+		"news": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://pbs.twimg.com/profile_images/1175141826870861825/K2qKoGla_400x400.png",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://pbs.twimg.com/profile_images/1175141826870861825/K2qKoGla_400x400.png",
+			"width": 500
+		  }
+		],
+		"first_name": "The Guardian",
+		"bio": "",
+		"last_name": "",
+		"header": 1,
+		"title": "Even with gravy so thick it needs spreading, my wife triumphs in the kitchen wars",
+		"img": "https://i.guim.co.uk/img/media/79c991801035ed7341c3c3a2501f55217399283b/0_0_5000_3000/master/5000.jpg?width=620&quality=85&auto=format&fit=max&s=39f55dadd90c8ee50f700a839f002224",
+		"link": "news-detail.html"
+	  },
+	  {
+		"type": "news",
+		"news": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://pbs.twimg.com/profile_images/1273572997614440450/ULkR08Er_400x400.png",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://pbs.twimg.com/profile_images/1273572997614440450/ULkR08Er_400x400.png",
+			"width": 500
+		  }
+		],
+		"first_name": "The Times",
+		"bio": "",
+		"last_name": "",
+		"header": 1,
+		"title": "Unesco backs protesters over Amazon warehouse near world heritage site",
+		"img": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9aed8c58-ca99-11eb-b6f5-fed739e7c1ca.jpg?crop=5760%2C3240%2C0%2C300&resize=1180",
+		"link": "news-detail.html"
+	  },
+	  {
+		"type": "news",
+		"news": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://pbs.twimg.com/profile_images/1396726715871682563/vQ5xITAd_400x400.jpg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://pbs.twimg.com/profile_images/1396726715871682563/vQ5xITAd_400x400.jpg",
+			"width": 500
+		  }
+		],
+		"first_name": "Liputan6.com",
+		"bio": "",
+		"last_name": "",
+		"header": 1,
+		"title": "Strategi Pemerintah Hijaukan Kawasan Industri di Kaltara Didukung Dunia Usaha",
+		"img": "https://cdn1-production-images-kly.akamaized.net/4rqd7Hn9nkR73zLP6pxs8gTvjdQ=/1280x720/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3311030/original/073537000_1606721807-Kaltim.jpg",
+		"link": "news-detail.html"
+	  },
+	  {
+		"type": "news",
+		"news": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://pbs.twimg.com/profile_images/1230469523842707456/1nqEZvCp_400x400.jpg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://pbs.twimg.com/profile_images/1230469523842707456/1nqEZvCp_400x400.jpg",
+			"width": 500
+		  }
+		],
+		"first_name": "Republika",
+		"bio": "",
+		"last_name": "",
+		"header": 1,
+		"title": "Puisi: Sawah Bapak dan Pesulap dari Kota",
+		"img": "https://assets.kompasiana.com/items/album/2021/06/11/sawah-kering-antara-foto-yulius-satria-wijaya-900-60c3766d8ede480fe82614b3.jpg?t=o&v=740&x=416",
+		"link": "news-detail.html"
+	  },
+	  {
+		"type": "neoblog",
+		"neoblog": 1,
+		"status": "Published",
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/B3CF5288-34B0-4A5E-9877-5965522529D6-500w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "../asset/images/dummy/B3CF5288-34B0-4A5E-9877-5965522529D6-500w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Budi",
+		"gender": "female",
+		"bio": "Swimmer",
+		"last_name": "Wonderkids",
+		"header": 1,
+		"post": "<p>Kata-kata Jakob Oetama ini mengiang di telinga seperti mantram, karena setiap kali diungkapkan beliau saat Rapat Besar tiga bulanan bersama seluruh wartawan dan anggota Redaksi dengan Pemimpin Umum Harian Kompas.</p><p>Mantra ini juga sering kali diucapkan hampir di setiap Rapat Pagi maupun Rapat Sore dengan segenap Redaktur untuk evaluasi harian liputan kemaren, perencanaan liputan hari itu, maupun hasil liputan yang akan disajikan esok hari -- dalam Rapat Sore yang di Kompas biasa disebut sebagai “Rapat Budgeting”.</p>",
+		"link": "neoblog-detail.html"
+	  },
+	  {
+		"type": "neoblog",
+		"neoblog": 1,
+		"status": "Unpublished",
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-500w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-500w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Andreas",
+		"gender": "female",
+		"bio": "Swimmer",
+		"last_name": "Marbun",
+		"header": 1,
+		"post": "<p>Pak Jakob (selanjutnya saya sebut Pak JO) tidak hanya menguasai teori dasar jurnalistik, ataupun publisistik, dan ilmu politik. Akan tetapi ia juga kuat melobi berbagai kalangan, bergaul dengan wartawan peliput lapangan dan fasih mengajarkannya setiap hari pada anggota Redaksi melalui rapat temu muka, yang tidak jarang bisa berlangsung berjam-jam pada saat-saat penting.</p><p>Dan Pak JO ini bukan tipe boros kata. Atau hamburan kata-kata boss yang hanya menghitung untung. Setiap kata yang dikeluarkan dari mulut seperti sudah diperhitungkan isi, konteks dan juga tak ketinggalan – berbagi filosofi. Beliau jago ekonomisasi kata-kata, agar tidak berhamburan kata-kata tak perlu.</p>",
+		"link": "neoblog-detail.html"
+	  },
+	  {
+		"type": "qna",
+		"qna": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-200w.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-500w.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "Bana",
+		"gender": "male",
+		"bio": "Full-time Traveler",
+		"last_name": "Elvianto",
+		"header": 1,
+		"draft": 1,
+		"question": "Apa yang menyebabkan tingkat inflasi di Jepang begitu rendah?",
+		"answer": "<p>Salah satu cara untuk mempercepat ekonomi disana adalah dengan membangun Casino disana, perusahaan tempat saya bekerja sedang menunggu Licence dari asasfas asasdjas asdasj</p>",
+		"link": "qna-question-detail.html"
+	  },
+	  {
+		"type": "qna",
+		"qna": 1,
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/avatar.jpg",
+			"width": 200
+		  },
+		  {
+			"height": 499,
+			"size": "medium",
+			"url": "../asset/images/dummy/avatar.jpg",
+			"width": 500
+		  }
+		],
+		"first_name": "Chelsea",
+		"gender": "male",
+		"bio": "Runner",
+		"last_name": "Olivia",
+		"header": 0,
+		"question": "Mengapa bumi itu bulat asdaosnf askfn aosfn asn",
+		"unanswered": 1,
+		"draft": 1,
+		"link": "qna-question-empty.html"
+	  },
+	  {
+		"type": "jobs",
+		"jobs": 1,
+		"company": "Grab",
+		"location": "Pontianak, Kalimantan Barat",
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "../asset/images/dummy/grab.png",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "../asset/images/dummy/grab.png",
+			"width": 500
+		  }
+		],
+		"first_name": "Front-end",
+		"gender": "female",
+		"bio": "Love Swimming",
+		"last_name": "Developer",
+		"header": 0,
+		"link": "jobs-detail.html"
+	  },
+	  {
+		"type": "jobs",
+		"jobs": 1,
+		"company": "Detik.com",
+		"location": "Pontianak, Kalimantan Barat",
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://pbs.twimg.com/profile_images/378800000384191722/545c13d9c1924241ad980688339d55a3_400x400.jpeg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://pbs.twimg.com/profile_images/378800000384191722/545c13d9c1924241ad980688339d55a3_400x400.jpeg",
+			"width": 500
+		  }
+		],
+		"first_name": "News",
+		"gender": "female",
+		"bio": "Love Swimming",
+		"last_name": "Journalist",
+		"header": 0,
+		"link": "jobs-detail.html"
+	  },
+	  {
+		"type": "jobs",
+		"jobs": 1,
+		"company": "Sayur Box",
+		"location": "Samarinda, Kalimantan Timur",
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://cdn.techinasia.com/data/images/6425e0ae953a64cc3b10ffbd65313cd5.jpg",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://cdn.techinasia.com/data/images/6425e0ae953a64cc3b10ffbd65313cd5.jpg",
+			"width": 500
+		  }
+		],
+		"first_name": "UX",
+		"gender": "female",
+		"bio": "Love Swimming",
+		"last_name": "Researcher",
+		"header": 0,
+		"link": "jobs-detail.html"
+	  },
+	  {
+		"type": "jobs",
+		"jobs": 1,
+		"company": "Halodoc ID",
+		"location": "Malinau, Kalimantan Utara",
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://cdn.techinasia.com/data/images/yipEcTRi0hxCPMBVJe4MtAzP1jYSyvgM0Yt0uWmq.png",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://cdn.techinasia.com/data/images/yipEcTRi0hxCPMBVJe4MtAzP1jYSyvgM0Yt0uWmq.png",
+			"width": 500
+		  }
+		],
+		"first_name": "System",
+		"gender": "female",
+		"bio": "Love Swimming",
+		"last_name": "Analyst",
+		"header": 0,
+		"link": "jobs-detail.html"
+	  },
+	  {
+		"type": "jobs",
+		"jobs": 1,
+		"company": "Inspigo",
+		"location": "Banjarmasin, Kalimantan Selatan",
+		"avatars": [
+		  {
+			"height": 200,
+			"size": "small",
+			"url": "https://cdn.techinasia.com/data/images/cc4a492dac3aa10789d62bc34b2c35c1.png",
+			"width": 200
+		  },
+		  {
+			"height": 500,
+			"size": "medium",
+			"url": "https://cdn.techinasia.com/data/images/cc4a492dac3aa10789d62bc34b2c35c1.png",
+			"width": 500
+		  }
+		],
+		"first_name": "Project",
+		"gender": "female",
+		"bio": "Love Swimming",
+		"last_name": "Manager",
+		"header": 0,
+		"link": "jobs-detail.html"
+	  }
+	],
+	"trending": [
+	  {
+		"title": "Siapakah suku dayak tertua di Kalimantan?",
+		"link": "neoblog-detail.html",
+		"answer": "",
+		"views": "21k"
+	  },
+	  {
+		"title": "Di mana Pisang Goreng di Malinau yang paling terkenal?",
+		"link": "qna-question-detail.html",
+		"answer": "15k",
+		"views": "17k"
+	  },
+	  {
+		"title": "Apa merek makanan/usaha kuliner yang dimiliki artis namun sudah tidak ada lagi/bangkrut?",
+		"link": "qna-question-detail.html",
+		"answer": "10k",
+		"views": "7k"
+	  },
+	  {
+		"title": "Apakah pantai paling indah di Kalimantan?",
+		"link": "qna-question-detail.html",
+		"answer": "8k",
+		"views": "2k"
+	  },
+	  {
+		"title": "Apakah mungkin suatu negara memiliki pertumbuhan ekonomi yang tinggi namun tingkat inflasinya rendah?",
+		"link": "qna-question-detail.html",
+		"answer": "245",
+		"views": "1k"
+	  },
+	  {
+		"title": "Prof. Masri Sareb",
+		"link": "figure-detail.html",
+		"avatar": "https://assets.ytprayeh.com/usr/masri/avatar/asam%20pauh%20belimbing%20batu.jpg",
+		"bio": "Penulis, Aktivis Suku Dayak",
+		"answer": "",
+		"views": "980"
+	  },
+	  {
+		"title": "Kekonyolan dan Kemunafikan Kita Di TTS",
+		"link": "neoblog-detail.html",
+		"answer": "",
+		"views": "238"
+	  },
+	  {
+		"title": "Era Digital, Seniman Ahmad Hady Surya Siap Hadirkan Karya Unik dan Langka",
+		"link": "neoblog-detail.html",
+		"answer": "",
+		"views": "101"
+	  }
+	],
+	"store": {
+	  "product": [
+		{
+		  "title": "Akar Rempah Borneo",
+		  "price": "Rp.20.000,-",
+		  "location": "Pontianak",
+		  "unsplash": "GUT0T_UA5KI",
+		  "link": "store-detail.html"
+		},
+		{
+		  "title": "Pisang Malinau",
+		  "price": "Rp.20.000,-",
+		  "location": "Malinau",
+		  "unsplash": "gjR2sh-s970",
+		  "link": "store-detail.html"
+		}
+	  ]
+	},
+	"setting": [
+	  {
+		"title": "Account",
+		"list": [
+		  {
+			"title": "Change Email",
+			"link": "setting-email.html",
+			"toggle": false,
+			"toggle_value": false
+		  },
+		  {
+			"title": "Change Password",
+			"link": "setting-password.html",
+			"toggle": false,
+			"toggle_value": false
+		  },
+		  {
+			"title": "Request Verification",
+			"link": "setting-verify.html",
+			"toggle": false,
+			"toggle_value": false
+		  },
+		  {
+			"title": "Private Account",
+			"link": "",
+			"toggle": true,
+			"toggle_value": false
+		  }
+		]
+	  },
+	  {
+		"title": "Setting",
+		"list": [
+		  {
+			"title": "Push Notification",
+			"link": "",
+			"toggle": true,
+			"toggle_value": true
+		  },
+		  {
+			"title": "Email Notification",
+			"link": "",
+			"toggle": true,
+			"toggle_value": true
+		  }
+		]
+	  },
+	  {
+		"title": "Other",
+		"list": [
+		  {
+			"title": "Terms & Conditions",
+			"link": "static-term.html",
+			"toggle": false,
+			"toggle_value": false
+		  },
+		  {
+			"title": "Policy Privacy",
+			"link": "static-policy.html",
+			"toggle": false,
+			"toggle_value": false
+		  },
+		  {
+			"title": "About",
+			"link": "static-about.html",
+			"toggle": false,
+			"toggle_value": false
+		  },
+		  {
+			"title": "FAQ",
+			"link": "static-faq.html",
+			"toggle": false,
+			"toggle_value": false
+		  },
+		  {
+			"title": "Version",
+			"link": "static-about.html",
+			"toggle": false,
+			"toggle_value": false
+		  },
+		  {
+			"title": "Logout",
+			"link": "index-wp.html",
+			"toggle": false,
+			"toggle_value": false
+		  },
+		  {
+			"title": "Delete Account",
+			"link": "setting-account-remove.html",
+			"toggle": false
+		  }
+		]
+	  }
+	]
+  }

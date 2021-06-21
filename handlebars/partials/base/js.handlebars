@@ -1,0 +1,67 @@
+<script type="text/javascript" src="../asset/js/jquery.min.js"></script>
+<script type="text/javascript" src="../asset/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../asset/js/plugin-pack.js"></script>
+<script type="text/javascript" src="../asset/js/main.js"></script>
+<script>
+// tinymce
+let plugins = 'emoticons lists image';
+let toolbar = 'bold italic | bullist | image';
+tinymce.init({
+	selector: '.tinymce-textarea',
+	menubar: false,
+	placeholder: 'Write here',
+	statusbar: false,
+	min_height: 285,
+	plugins: plugins,
+	toolbar: toolbar
+});
+tinymce.init({
+	selector: '.tinymce-inline',
+	menubar: false,
+	placeholder: 'Answer here',
+	statusbar: false,
+	min_height: 100,
+	plugins: plugins,
+	toolbar: toolbar
+});
+
+// modal
+$('#modalNeoblogAdd').on('show.bs.modal', function () {
+	$('#modalNavAdd').modal('hide');
+});
+$('#modalNeoblogAdd').on('shown.bs.modal', function () {
+	tinymce.get('neoblog-textarea-add').focus();
+});
+$('#modalQnaAdd').on('show.bs.modal', function () {
+	$('#modalNavAdd').modal('hide');
+});
+  
+// mention 
+var tribute = new Tribute({
+  values: [
+  {{#each people}}
+  {{#or qna neoblog figure}}
+    { key: "{{first_name}} {{last_name}}", value: "@{{first_name}} {{last_name}}" },
+	{{/or}}
+	{{/each}}
+  ],
+    selectTemplate: function(item) {
+    return (
+      '<span class="at" contenteditable="false">' + item.original.value + '</span>'
+    );
+  }
+});
+// attach element
+tribute.attach(document.querySelectorAll(".js-mentionable"));
+
+// copy to textarea
+let textareaContent = document.getElementById('qna-textarea-add');
+let editableContent = document.getElementById('qna-contenteditable-add');
+if(!!editableContent) {
+	editableContent.addEventListener('input', function(e){
+		if(!!textareaContent) {
+			textareaContent.value = editableContent.innerHTML;
+		}
+	});
+}
+</script>

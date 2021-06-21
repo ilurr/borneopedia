@@ -1,0 +1,5 @@
+@mixin vars-pack() {
+    --font-base: #{$font-primary};
+	--color-theme: #{$color-theme};
+	--color-price: #{$color-price};
+}

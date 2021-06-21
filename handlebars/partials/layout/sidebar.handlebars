@@ -1,0 +1,36 @@
+<aside class="aside -fixed">
+	<div class="aside-scroll" id="aside-scroll">
+		<div class="aside-block">
+			<!-- hot sale -->
+			<h3 class="title-aside">Hot Sale</h3>
+			<div class="store-promo">
+				<div class="product-list product-promo">
+					{{>component/product size=150 index_start=0 index_end=2}}
+				</div>
+			</div>
+
+			<!-- trending -->
+			<h3 class="title-aside">Trending</h3>
+			<div class="trending box">
+				{{#each trending}}
+				<div class="trending-item">
+					{{#if avatar}}
+					<div class="trending-img">
+						<img src="{{avatar}}" alt="">
+					</div>
+					{{/if}}
+					<div class="trending-info">
+						<a href="{{link}}" role="link">
+							<h3 class="trending-title">{{title}}</h3>
+							{{#if bio}}
+							<div class="trending-bio">{{bio}}</div>
+							{{/if}}
+							<div class="trending-stat">{{#if answer}}{{answer}} Answer, {{/if}}{{views}} Read</div>
+						</a>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</aside>

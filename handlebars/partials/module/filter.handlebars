@@ -1,0 +1,18 @@
+<div class="filter{{#if position_middle}} profile{{else}} fixed{{/if}}" data-sticky="submenu">
+	<div class="filter-block">
+		<div class="filter-block-left">
+			{{#each channel.[0]}}
+			<div class="filter-item">
+				{{>component/button type="link" href=link class="-filter filter-button" label=title icon=icon badge=badge icon_only=icon_only active=../active}}
+			</div>
+			{{/each}}
+		</div>
+		<div class="filter-block-right">
+			{{#each channel.[1]}}
+			<div class="filter-item">
+				{{>component/button type="link" href=link class="-filter filter-button" label=title icon=icon badge=badge icon_only=icon_only active=../active}}
+			</div>
+			{{/each}}
+		</div>
+	</div>
+</div>

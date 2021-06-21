@@ -1,0 +1,40 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+{{#if last_name}}
+{{#not jobs}}
+<div class="people-item">
+	<div class="people-row">
+		<div class="people-img">
+			<a href="profile.html">
+				<img src="{{avatars.[0].url}}" alt="{{avatars.first_name}}">
+			</a>
+		</div>
+		<div class="people-info">
+			<h4 class="people-name"><a href="profile.html">{{first_name}} {{last_name}}</a></h4>
+			<div class="people-bio">{{bio}}</div>
+		</div>
+	</div>
+	<div class="people-action">
+		{{#if ../request}}
+		{{>component/button type="button" name="btn-requst-confirm" class="-primary" label="Confirm"}}
+		{{>component/button type="button" name="btn-requst-delete" label="Delete"}}
+		{{else}}
+		{{#eq @index compare=0}}
+		{{>component/button type="follow" name="btn-follow" label="Following"}}
+		{{else}}
+		{{#eq @index compare=1}}
+		{{>component/button type="follow" name="btn-follow" label="Follow" lock=1}}
+		{{else}}
+		{{>component/button type="follow" name="btn-follow" label="Follow"}}
+		{{/eq}}
+		{{/eq}}
+		{{/if}}
+	</div>
+</div>
+{{/not}}
+{{/if}}
+{{/gte}}
+{{/gte}}
+{{/each}}

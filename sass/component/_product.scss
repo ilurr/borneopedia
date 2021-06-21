@@ -1,0 +1,59 @@
+.product {
+	&-list {
+		position: relative;
+		margin-left: -.5rem;
+		margin-right: -.5rem;
+	}
+	&-item {
+		position: relative;
+		padding-left: .5rem;
+		padding-right: .5rem;
+	}
+	&-card {
+		position: relative;
+		border-radius: 6px;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+		background-color: #fff;
+		overflow: hidden;
+	}
+	&-promo {
+		@include display-flex();
+		flex-wrap: nowrap;
+		.product-item {
+			width: calc(100% / 2);
+		}
+	}
+	&-img {
+		position: relative;
+		span {
+			position: relative;
+			display: block;
+			padding-top: calc(117 / 132 * 100%);
+			overflow: hidden;
+			background: #f8f8f8;
+		}
+		img {
+			@include ratio-flexible(100%, auto);
+			z-index: 2;
+		}
+	}
+	&-info {
+		position: relative;
+		padding: .5rem;
+	}
+	&-title {
+		margin: 0 0 .125rem;
+		@include font-pack(false, .875rem, 600, false, #000);
+		@include title-overflow(39px, 39px);
+	}
+	&-price {
+		margin: 0 0 .125rem;
+		@include font-pack(false, .875rem, 700, false, var(--color-price));
+		@include title-overflow(20px, 20px);
+	}
+	&-location {
+		margin: 0;
+		@include font-pack(false, .688rem, 400, false, #868686);
+		@include title-overflow(16px, 16px);
+	}
+}

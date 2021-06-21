@@ -1,0 +1,25 @@
+<div class="feed-content-flex">
+	<div class="feed-img-thumb">
+		<img src="{{avatars.[0].url}}" alt="">
+	</div>
+	<div class="feed-content-col">
+		{{#eq timeline compare="index"}}
+		<h3 class="feed-title">
+			<a href="{{link}}">{{first_name}} {{last_name}}</a>
+		</h3>
+		{{else}}
+		<h1 class="feed-title">{{first_name}} {{last_name}}</h1>
+		{{/eq}}
+		{{#if figure}}
+		<div class="feed-bio">{{bio}}</div>
+		{{#eq timeline compare="index"}}
+		<div class="feed-bio-teaser">{{bio_teaser}}</div>
+		{{/eq}}
+		{{/if}}
+		{{#if jobs}}
+		<div class="feed-company">{{company}}</div>
+		<div class="feed-location">{{location}}</div>
+		<div class="feed-time">Today, 03:24 PM</div>
+		{{/if}}
+	</div>
+</div>

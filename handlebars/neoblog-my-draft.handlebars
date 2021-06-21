@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true active="Neoblog"}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- filter -->
+					{{>module/filter type="neoblog" channel=submenu.neoblog active="Draft"}}
+
+					<!-- feeds draft -->
+					<div class="feed-draft">
+						{{#each people}}
+						{{#eq type compare="neoblog"}}
+						{{#eq status compare="Unpublished"}}
+						<section class="feed box">
+							{{>module/feed timeline="index" header=0 comment=false disable_footer=true disable_option=true disable_img=true enable_status=true enable_draft=true mypost=true}}
+						</section>
+						{{/eq}}
+						{{else}}
+						{{/eq}}
+						{{/each}}
+					</div>
+
+					{{>component/more label="Load more"}}
+
+					{{>module/modal_form}}
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post page="neoblog" modal_title="Edit Story" modal_draft="Save to draft" modal_action="POST"}}
+
+{{>base/js}}
+</body>
+</html>

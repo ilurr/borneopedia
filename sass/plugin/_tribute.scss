@@ -1,0 +1,43 @@
+.tribute-container {
+  position: absolute;
+  // position: fixed !important;
+  top: 0;
+  left: 0;
+  height: auto;
+  max-height: 250px;
+  max-width: 500px;
+  overflow: auto;
+  display: block;
+  z-index: 10;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  margin-top: .125rem;
+
+  ul {
+    margin: 0;
+    // margin-top: 2px;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+  }
+
+  li {
+    padding: .5rem .75rem;
+    cursor: pointer;
+
+    &.highlight {
+      background: #ddd;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    &.no-match {
+      cursor: default;
+    }
+  }
+
+  .menu-highlighted {
+    font-weight: bold;
+  }
+}
