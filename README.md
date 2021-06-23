@@ -6,5 +6,4 @@ UI/UX HTML prototype for borneopedia.id
 
 ### Link Preview
 
-[https://borneopedia.netlify.app/index.html](https://borneopedia.netlify.app/index.html) 
 [https://borneopedia.netlify.app/home.html](https://borneopedia.netlify.app/home.html) 
