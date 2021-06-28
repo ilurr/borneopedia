@@ -114,30 +114,31 @@
 
 	// static
 	&.-static {
+		text-align: right;
 		.nav-wrap {
 			margin: 1rem 0;
 		}
 		.nav-text {
 			display: inline-block;
 			margin-left: 0;
-			font-size: .875rem;
-			@include range-responsive($screen-tablet, $screen-desktop) {
+			font-size: 1rem;
+			@include max-responsive($screen-tablet) {
 				font-size: .75rem;
 			}
 		}
 		.nav-flex {
-			@include range-responsive($screen-tablet, $screen-desktop) {
+			@include max-responsive($screen-tablet) {
 				padding: 0;
 			}
 		}
-		.nav-link.-active {
-			.nav-flex {
-				background: #fff;
-				@include range-responsive($screen-tablet, $screen-desktop) {
-					background: transparent;
-				}
-			}
-		}
+		// .nav-link.-active {
+		// 	.nav-flex {
+		// 		background: #fff;
+		// 		@include range-responsive($screen-tablet, $screen-desktop) {
+		// 			background: transparent;
+		// 		}
+		// 	}
+		// }
 	}
 
 	// modal

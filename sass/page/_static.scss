@@ -6,7 +6,7 @@
     margin-top: -0.625rem;
     margin-bottom: -3.125rem;
     background: #fff;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 420px);
     box-shadow: none;
 	border-radius: 0;
 	&-block {
@@ -92,6 +92,12 @@
 		@include min-responsive($screen-desktop) {
 			width: 500px;
 		}
+		textarea {
+			min-height: 175px;
+		}
+	}
+	.panel {
+		width: 100%;
 	}
 }
 // .-static {

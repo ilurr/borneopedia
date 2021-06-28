@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header disable_search=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav_static active="Contact"}}
+
+						{{!>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- static -->
+					<div class="static box">
+						<div class="static-block">
+							<h1 class="static-title">Contact Us</h1>
+							<article class="static-content">
+								<p>We believe you should always know what data we collect from you and how we use it, and that you should have meaningful control over both. <a href="#">We want to empower you</a> to make the best decisions about the information that you share with us.</p>
+							</article>
+							<section class="static-form">
+								{{>component/input type="text" label="Name" name="name"}}
+								{{>component/input type="text" label="Email Address" name="email" txterror="Email must be filled" txthint="Email must be filled"}}
+								{{>component/textarea label="Your Message" name="message"}}
+								{{>component/button type="submit" label="Send" name="btn-contact" class="-primary"}}
+							</section>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<section class="welcome-bg">
+				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
+			</section>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- login -->
+	{{>module/modal_login}}
+
+{{>base/js}}
+</body>
+</html>

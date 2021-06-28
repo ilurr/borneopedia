@@ -2,6 +2,8 @@
 <header class="header -fixed">
 	<div class="header-flex">
 		<div class="header-col">
+			{{#if disable_search}}
+			{{else}}
 			<!-- search -->
 			<div class="search-header">
 				<form action="search.html">
@@ -10,6 +12,7 @@
 					<span class="icon-general icon-search"></span>
 				</form>
 			</div>
+			{{/if}}
 		</div>
 		<div class="header-col">
 			<div class="logo">

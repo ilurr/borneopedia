@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- url bar color theme -->
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
+	<!-- icon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="../asset/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../asset/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../asset/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../asset/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../asset/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Borneopedia</title>
+    
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+	
+
+    <link href="../asset/css/style.css" rel="stylesheet" type="text/css">
+
+	<!-- tinymce -->
+	<script src="https://cdn.tiny.cloud/1/t8pnyourm2nt4bownb36wqp8ahusl8e6a7kzapaxs9ill67b/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+</head>
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		<!-- header -->
+		<header class="header -fixed">
+			<div class="header-flex">
+				<div class="header-col">
+				</div>
+				<div class="header-col">
+					<div class="logo">
+						<a href="index.html">
+							<img src="../asset/images/logo-borneopedia.svg" alt="Borneopedia" width="275" height="46">
+						</a>
+					</div>
+				</div>
+				<div class="header-col">
+					<!-- menu -->
+					<div class="menu-header">
+						<!-- menu login -->
+						<div class="menu-item">
+							<a class="button menu-button" role="button" data-toggle="modal" data-target="#modalLogin">
+								<span class="icon-general icon-user"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						<!-- nav static page -->
+						<nav class="nav -fixed -static" aria-label="Main Navigation">
+							<ol class="nav-wrap">
+								<li class="nav-item">
+									<a href="static-about.html" class="nav-link" role="link" aria-label="About">
+										<div class="nav-flex">
+											<div class="nav-text">About</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="static-faq.html" class="nav-link" role="link" aria-label="FAQ">
+										<div class="nav-flex">
+											<div class="nav-text">FAQ</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="static-privacy.html" class="nav-link" role="link" aria-label="Privacy">
+										<div class="nav-flex">
+											<div class="nav-text">Privacy</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="static-terms.html" class="nav-link" role="link" aria-label="Terms">
+										<div class="nav-flex">
+											<div class="nav-text">Terms</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="static-contact.html" class="nav-link -active" role="link" aria-label="Contact">
+										<div class="nav-flex">
+											<div class="nav-text">Contact</div>
+										</div>
+									</a>
+								</li>
+							</ol>
+						</nav>
+
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- static -->
+					<div class="static box">
+						<div class="static-block">
+							<h1 class="static-title">Contact Us</h1>
+							<article class="static-content">
+								<p>We believe you should always know what data we collect from you and how we use it, and that you should have meaningful control over both. <a href="#">We want to empower you</a> to make the best decisions about the information that you share with us.</p>
+							</article>
+							<section class="static-form">
+								<div class="form-row">
+									<label for="name">Name</label>
+									<div class="form-input">
+										<input type="text" id="name" name="name" class="input" placeholder="">
+									</div>
+									<div class="form-hint"></div>
+								</div>
+								<div class="form-row form-error">
+									<label for="email">Email Address</label>
+									<div class="form-input">
+										<input type="text" id="email" name="email" class="input -error" placeholder="">
+									</div>
+									<div class="form-hint">Email must be filled</div>
+								</div>
+								<div class="form-row">
+									<label for="message">Your Message</label>
+									<div class="form-textarea">
+										<textarea name="message" id="message" class="textarea" placeholder=""></textarea>
+									</div>
+									<div class="form-hint"></div>
+								</div>
+								<div class="form-row">
+									<input type="submit" name="btn-contact" id="btn-contact" value="Send" class="button -primary">
+								</div>
+							</section>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<section class="welcome-bg">
+				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
+			</section>
+
+		</div>
+
+		<!-- notify message -->
+		<div id="success-msg" class="panel-alert -fixed -success">
+			<p>Yeay! You were successful.</p>
+		</div>
+		<div id="error-msg" class="panel-alert -fixed -error">
+			<p>Failed, there was a problem, try again later.</p>
+		</div>
+
+	</div>
+	<!-- e: root -->
+
+	<!-- login -->
+	<div id="modalLogin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true">
+		<div class="modal-dialog -small">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+				<div class="modal-header">
+					<h5 class="modal-title">Sign In</h5>
+				</div>
+				<div class="modal-body">
+					<div class="sign-modal">
+						<form action="home.html">
+							<div class="form-row">
+								<label for="email">Email Address</label>
+								<div class="form-input">
+									<input type="text" id="email" name="email" class="input" placeholder="">
+								</div>
+								<div class="form-hint"></div>
+							</div>
+							<div class="form-row form-error">
+								<label for="password">Password</label>
+								<div class="form-input">
+									<input type="password" id="password" name="password" class="input -error" placeholder="">
+								</div>
+								<div class="form-hint">The password that you've entered is incorrect</div>
+							</div>
+							<div class="form-row">
+								<div class="form-checkbox">
+									<input type="checkbox" name="remember" id="remember" value="">
+									<label for="remember">Remember Me</label>
+								</div>
+							</div>
+							<div class="form-row">
+								<input type="submit" name="signin" id="signin" value="Login" class="button -primary">
+							</div>
+							<div class="sign-text -center">
+								<a href="index-reset-password.html">Forgot your password?</a>
+							</div>
+							<div class="sign-text -center">
+								Don't have an account? <strong><a href="index-signup.html">Sign up</a></strong>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="../asset/js/jquery.min.js"></script>
+<script type="text/javascript" src="../asset/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../asset/js/plugin-pack.js"></script>
+<script type="text/javascript" src="../asset/js/main.js"></script>
+<script>
+// tinymce
+let plugins = 'emoticons lists image';
+let toolbar = 'bold italic | bullist | image';
+tinymce.init({
+	selector: '.tinymce-textarea',
+	menubar: false,
+	placeholder: 'Write here',
+	statusbar: false,
+	min_height: 285,
+	plugins: plugins,
+	toolbar: toolbar
+});
+tinymce.init({
+	selector: '.tinymce-inline',
+	menubar: false,
+	placeholder: 'Answer here',
+	statusbar: false,
+	min_height: 100,
+	plugins: plugins,
+	toolbar: toolbar
+});
+
+// modal
+$('#modalNeoblogAdd').on('show.bs.modal', function () {
+	$('#modalNavAdd').modal('hide');
+});
+$('#modalNeoblogAdd').on('shown.bs.modal', function () {
+	tinymce.get('neoblog-textarea-add').focus();
+});
+$('#modalQnaAdd').on('show.bs.modal', function () {
+	$('#modalNavAdd').modal('hide');
+});
+  
+// mention 
+var tribute = new Tribute({
+  values: [
+    { key: "Chris Wibisana", value: "@Chris Wibisana" },
+    { key: "Vika Dyahsasanti", value: "@Vika Dyahsasanti" },
+    { key: "Didik Wicaksono", value: "@Didik Wicaksono" },
+    { key: "Noorchamid Ustadi", value: "@Noorchamid Ustadi" },
+    { key: "Ahmed Djaelani", value: "@Ahmed Djaelani" },
+    { key: "Dr. Alue Dohong", value: "@Dr. Alue Dohong" },
+    { key: "Mochammad Toha", value: "@Mochammad Toha" },
+    { key: "Kiki Rahmadhani", value: "@Kiki Rahmadhani" },
+    { key: "Dr. Yansen Tipa Padan", value: "@Dr. Yansen Tipa Padan" },
+    { key: "Annisa Syaidar", value: "@Annisa Syaidar" },
+    { key: "Prof. Masri Sareb", value: "@Prof. Masri Sareb" },
+    { key: "Budi Wonderkids", value: "@Budi Wonderkids" },
+    { key: "Andreas Marbun", value: "@Andreas Marbun" },
+    { key: "Bana Elvianto", value: "@Bana Elvianto" },
+    { key: "Chelsea Olivia", value: "@Chelsea Olivia" },
+  ],
+    selectTemplate: function(item) {
+    return (
+      '<span class="at" contenteditable="false">' + item.original.value + '</span>'
+    );
+  }
+});
+// attach element
+tribute.attach(document.querySelectorAll(".js-mentionable"));
+
+// copy to textarea
+let textareaContent = document.getElementById('qna-textarea-add');
+let editableContent = document.getElementById('qna-contenteditable-add');
+if(!!editableContent) {
+	editableContent.addEventListener('input', function(e){
+		if(!!textareaContent) {
+			textareaContent.value = editableContent.innerHTML;
+		}
+	});
+}
+</script>
+</body>
+</html>
