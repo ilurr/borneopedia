@@ -168,7 +168,7 @@
 }
 .grid .welcome-bg {
 	width: auto;
-	z-index: -1;
+	// z-index: -1;
 	margin: 0 calc((-100vw + 100vw) / 2);
 	@include min-responsive($screen-desktop) {
 		margin: 0 calc((-100vw + (990px - 1.876rem)) / 2);

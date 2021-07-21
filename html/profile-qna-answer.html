@@ -309,7 +309,7 @@
 					
 					<!-- feeds -->
 					<section class="feed box">
-						<div class="feed-block -qna">
+						<div class="feed-block -qna -answered">
 							<div class="feed-header">
 								<div class="feed-avatar">
 									<a href="profile.html">
@@ -325,6 +325,7 @@
 								<!-- qna -->
 								<h3 class="feed-title">
 									<a href="qna-question-detail.html" role="link">Apakah mungkin suatu negara memiliki pertumbuhan ekonomi yang tinggi namun tingkat inflasinya rendah?</a>
+									<span>By Dyahsasanti Vika</span>
 								</h3>
 								<!-- text -->
 								<div class="feed-text">
@@ -441,6 +442,7 @@
 										<a class="dropdown-item" href="#">Hide Post</a>
 										<a class="dropdown-item" href="#">Unfollow</a>
 										<a class="dropdown-item" href="#">Report</a>
+										<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
 									</div>
 								</div>
 							</div>
@@ -591,7 +593,7 @@
 						</div>
 					</section>
 					<section class="feed box">
-						<div class="feed-block -qna">
+						<div class="feed-block -qna -answered">
 							<div class="feed-header">
 								<div class="feed-avatar">
 									<a href="profile.html">
@@ -607,6 +609,7 @@
 								<!-- qna -->
 								<h3 class="feed-title">
 									<a href="qna-question-detail.html" role="link">Apakah mungkin suatu negara memiliki pertumbuhan ekonomi yang tinggi namun tingkat inflasinya rendah?</a>
+									<span>By Dyahsasanti Vika</span>
 								</h3>
 								<!-- text -->
 								<div class="feed-text">
@@ -723,6 +726,7 @@
 										<a class="dropdown-item" href="#">Hide Post</a>
 										<a class="dropdown-item" href="#">Unfollow</a>
 										<a class="dropdown-item" href="#">Report</a>
+										<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
 									</div>
 								</div>
 							</div>
@@ -873,7 +877,7 @@
 						</div>
 					</section>
 					<section class="feed box">
-						<div class="feed-block -qna">
+						<div class="feed-block -qna -answered">
 							<div class="feed-header">
 								<div class="feed-avatar">
 									<a href="profile.html">
@@ -889,6 +893,7 @@
 								<!-- qna -->
 								<h3 class="feed-title">
 									<a href="qna-question-detail.html" role="link">Apa yang menyebabkan tingkat inflasi di Jepang begitu rendah?</a>
+									<span>By Wicaksono Didik</span>
 								</h3>
 								<!-- text -->
 								<div class="feed-text">
@@ -954,6 +959,7 @@
 										<a class="dropdown-item" href="#">Hide Post</a>
 										<a class="dropdown-item" href="#">Unfollow</a>
 										<a class="dropdown-item" href="#">Report</a>
+										<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
 									</div>
 								</div>
 							</div>
@@ -996,7 +1002,7 @@
 						</div>
 					</section>
 					<section class="feed box">
-						<div class="feed-block -qna">
+						<div class="feed-block -qna -answered">
 							<div class="feed-header">
 								<div class="feed-avatar">
 									<a href="profile.html">
@@ -1012,6 +1018,7 @@
 								<!-- qna -->
 								<h3 class="feed-title">
 									<a href="qna-question-detail.html" role="link">Apa yang menyebabkan tingkat inflasi di Jepang begitu rendah?</a>
+									<span>By Wicaksono Didik</span>
 								</h3>
 								<!-- text -->
 								<div class="feed-text">
@@ -1077,6 +1084,7 @@
 										<a class="dropdown-item" href="#">Hide Post</a>
 										<a class="dropdown-item" href="#">Unfollow</a>
 										<a class="dropdown-item" href="#">Report</a>
+										<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
 									</div>
 								</div>
 							</div>
@@ -2247,14 +2255,14 @@
 							<div class="post-modal-content">
 								<textarea name="neoblog-textarea" id="neoblog-textarea-add" class="tinymce-textarea"></textarea>
 								<div class="post-footnote">
-									<div class="post-input-counter"><span class="postRemaining">0</span>/<span class="postMax">200</span></div>
+									<div class="post-input-counter"><span id="postRemainingNeoblog">0</span>/<span class="postMax">1000</span></div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="modal-footer">
-						<button class="button">Save to draft</button>
-						<button class="button -primary">POST</button>
+						<button class="button" disabled="disabled" id="neoblog-button-add-draft">Save to draft</button>
+						<button class="button -primary" disabled="disabled" id="neoblog-button-add">POST</button>
 					</div>
 				</div>
 			</div>
@@ -2276,7 +2284,7 @@
 								<!-- 
 								<textarea name="qna-textarea" id="qna-textarea-add" class="post-input js-mentionable" placeholder="Start your question with 'What', 'How', 'Why'"></textarea>
 								-->
-								<article name="qna-contenteditable" id="qna-contenteditable-add" class="post-contenteditable js-mentionable" placeholder="Start your question with 'What', 'How', 'Why'"></article>
+								<article name="qna-contenteditable" id="qna-contenteditable-add" class="post-contenteditable js-mentionable" placeholder="Start your question with 'What', 'How', 'Why' and you can ask to someone with mention @"></article>
 								<textarea name="qna-textarea" id="qna-textarea-add" class="post-textarea-hidden"></textarea>
 								<div class="post-footnote">
 									<div class="form-row">
@@ -2285,20 +2293,41 @@
 											<label for="anonymous">Anonymous</label>
 										</div>
 									</div>
-									<div class="post-input-counter"><span class="postRemaining">0</span>/<span class="postMax">200</span></div>
+									<div class="post-input-counter"><span id="postRemainingQna">0</span>/<span class="postMax">200</span></div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="modal-footer">
 						<button class="button">Save to draft</button>
-						<button class="button -primary">POST</button>
+						<button class="button -primary" id="qna-button-add">POST</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</form>
 	
+	
+	<!-- modal feed delete -->
+	<form action="feed.html">
+		<div id="modalFeedDelete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="feedForm" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+					<div class="modal-header">
+						<h5 class="modal-title">Delete</h5>
+					</div>
+					<div class="modal-body">
+						<div class="modal-text">Are you sure want to delete?</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="button" data-dismiss="modal">Cancel</button>
+						<button class="button -primary">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
 
 <script type="text/javascript" src="../asset/js/jquery.min.js"></script>
 <script type="text/javascript" src="../asset/js/bootstrap.min.js"></script>
@@ -2306,7 +2335,7 @@
 <script type="text/javascript" src="../asset/js/main.js"></script>
 <script>
 // tinymce
-let plugins = 'emoticons lists image';
+let plugins = 'emoticons lists image wordcount';
 let toolbar = 'bold italic | bullist | image';
 tinymce.init({
 	selector: '.tinymce-textarea',
@@ -2315,7 +2344,27 @@ tinymce.init({
 	statusbar: false,
 	min_height: 285,
 	plugins: plugins,
-	toolbar: toolbar
+	toolbar: toolbar,
+	setup: function(editor) {
+		editor.on('keyup', function(e) {
+			var wordcount = tinymce.activeEditor.plugins.wordcount;
+			var words = wordcount.body.getCharacterCount();
+			var rem = document.getElementById('postRemainingNeoblog');
+			if(rem) {
+				rem.innerHTML = words;
+			}
+			if(words > 0) {
+				document.getElementById('neoblog-button-add-draft').removeAttribute('disabled');
+			} else {
+				document.getElementById('neoblog-button-add-draft').setAttribute('disabled','disabled');
+			}
+			if(words > 125) {
+				document.getElementById('neoblog-button-add').removeAttribute('disabled');
+			} else {
+				document.getElementById('neoblog-button-add').setAttribute('disabled','disabled');
+			}
+		});
+	}
 });
 tinymce.init({
 	selector: '.tinymce-inline',
@@ -2324,7 +2373,25 @@ tinymce.init({
 	statusbar: false,
 	min_height: 100,
 	plugins: plugins,
-	toolbar: toolbar
+	toolbar: toolbar,
+	setup: function(editor) {
+		editor.on('keyup', function(e) {
+			var wordcount = tinymce.activeEditor.plugins.wordcount;
+			var words = wordcount.body.getCharacterCount();
+			var parent = document.getElementById(editor.id).closest('.post-inline')
+			if(words > 0) {
+				parent.querySelector('.inline-button-draft').removeAttribute('disabled');
+			} else {
+				parent.querySelector('.inline-button-draft').setAttribute('disabled','disabled');
+			}
+			if(words > 50) {
+				parent.querySelector('.inline-button-post').removeAttribute('disabled');
+			} else {
+				parent.querySelector('.inline-button-post').setAttribute('disabled','disabled');
+			}
+			
+		});
+	}
 });
 
 // modal
@@ -2370,12 +2437,32 @@ tribute.attach(document.querySelectorAll(".js-mentionable"));
 let textareaContent = document.getElementById('qna-textarea-add');
 let editableContent = document.getElementById('qna-contenteditable-add');
 if(!!editableContent) {
+	editableContent.addEventListener('click', function(e){
+		// add ? marks
+		if(editableContent.innerHTML == 0) {
+			insertTextAtCaret('?');
+		}
+	});
 	editableContent.addEventListener('input', function(e){
 		if(!!textareaContent) {
 			textareaContent.value = editableContent.innerHTML;
 		}
 	});
 }
+
+function insertTextAtCaret(text) {
+    let selection = window.getSelection();
+    let range = selection.getRangeAt(0);
+    range.deleteContents();
+    let node = document.createTextNode(text);
+    range.insertNode(node);
+
+    for(let position = 0; position != text.length; position++)
+    {
+        selection.modify("move", "left", "character");
+    };
+}
+
 </script>
 </body>
 </html>

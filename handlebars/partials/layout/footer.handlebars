@@ -1,14 +1,7 @@
 {{#eq footer compare="small"}}
 <!-- footer aside -->
 <footer class="footer-aside">
-	<nav class="footer-nav" aria-label="Footer">
-		<ul>
-			{{#each static}}
-			<li><a href="{{link}}" role="link" aria-label="{{title}}">{{title}}</a></li>
-			{{/each}}
-		</ul>
-	</nav>
-	<div class="footer-copy">© {{base.footer.year}} {{base.footer.title}}</div>
+	{{>layout/footer_block}}
 	{{>module/app_widget}}
 </footer>
 {{/eq}}

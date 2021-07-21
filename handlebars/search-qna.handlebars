@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- filter -->
+					{{>module/filter type="search" channel=submenu.search active="Q&A"}}
+
+					<!-- search -->
+					<div class="search-list">
+
+						<section class="search box">
+							<div class="search-content">
+								Result for <strong>"Apakah Borneo"</strong>
+							</div>
+						</section>
+
+						<!-- qna -->
+						<section class="feed box">
+							<div class="feed-block">
+								<div class="feed-search -qna">
+									{{>module/feed_list channel=people index_start=0 index_end=20 search_qna=true}}
+								</div>
+							</div>
+							{{>component/more type="button" label="Load more"}}
+						</section>
+						
+					</div>
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+{{>base/js}}
+</body>
+</html>

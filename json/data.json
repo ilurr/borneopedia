@@ -2981,6 +2981,46 @@
 		  }
 		],
 		[]
+	  ],
+	  "search": [
+		  [
+			  {
+				"title": "All",
+				"icon": "",
+				"link": "search.html",
+				"badge": ""	
+			  },
+			  {
+				"title": "People",
+				"icon": "",
+				"link": "search-people.html",
+				"badge": ""	
+			},
+			{
+			  "title": "News",
+			  "icon": "",
+			  "link": "search-news.html",
+			  "badge": ""	
+			},
+			  {
+				"title": "Q&A",
+				"icon": "",
+				"link": "search-qna.html",
+				"badge": ""	
+			  },
+			  {
+				"title": "Figure",
+				"icon": "",
+				"link": "search-figure.html",
+				"badge": ""	
+			  },
+			  {
+				"title": "Neoblog",
+				"icon": "",
+				"link": "search-neoblog.html",
+				"badge": ""	
+			  }
+		  ]
 	  ]
 	},
 	"static": [
@@ -3549,8 +3589,9 @@
 		"last_name": "Djaelani",
 		"header": 0,
 		"lng": 106.823691,
-		"question": "Apakah pantai paling indah di Kalimantan?",
+		"question": "Apakah pantai paling indah di Kalimantan pak <span class=\"at\" contenteditable=\"false\">@Chris Wibisana</span>?",
 		"unanswered": 1,
+		"anonymous": 1,
 		"link": "qna-question-empty.html"
 	  },
 	  {

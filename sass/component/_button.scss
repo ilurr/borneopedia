@@ -126,6 +126,7 @@ button,
 		background: $color-theme;
 		border: 1px solid $color-theme;
 		color: $color-button-primary;
+		padding: 0 .25rem;
 		&:hover {
 			border: 1px solid darken($color-theme, 6%);
 			background: darken($color-theme, 6%);

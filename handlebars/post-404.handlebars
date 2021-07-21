@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- feeds -->
+					<section class="feed">
+						<div class="feed-block">
+							<div class="feed-lock">
+								<span class="icon-general icon-lock"></span>
+								<h4 class="feed-lock-title">This Content Isn't Available Right Now</h4>
+								<div class="feed-lock-info">When this happens, it's usually because the owner only shared it with a small group of people, changed who can see it or it's been deleted.</div>
+								{{>component/button type="link" href="home.html" label="Back to Home" class="-secondary"}}
+							</div>
+						</div>
+					</section>
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+{{>base/js}}
+</body>
+</html>

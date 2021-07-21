@@ -125,6 +125,18 @@
 			</section>
 
 			<section class="welcome-bg">
+				<footer class="footer-bottom">
+					<nav class="footer-nav" aria-label="Footer">
+						<ul>
+							<li><a href="static-about.html" role="link" aria-label="About">About</a></li>
+							<li><a href="static-faq.html" role="link" aria-label="FAQ">FAQ</a></li>
+							<li><a href="static-privacy.html" role="link" aria-label="Privacy">Privacy</a></li>
+							<li><a href="static-terms.html" role="link" aria-label="Terms">Terms</a></li>
+							<li><a href="static-contact.html" role="link" aria-label="Contact">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="footer-copy">© 2021 borneopedia.id</div>
+				</footer>
 				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
 			</section>
 		</div>
@@ -138,7 +150,7 @@
 <script type="text/javascript" src="../asset/js/main.js"></script>
 <script>
 // tinymce
-let plugins = 'emoticons lists image';
+let plugins = 'emoticons lists image wordcount';
 let toolbar = 'bold italic | bullist | image';
 tinymce.init({
 	selector: '.tinymce-textarea',
@@ -147,7 +159,27 @@ tinymce.init({
 	statusbar: false,
 	min_height: 285,
 	plugins: plugins,
-	toolbar: toolbar
+	toolbar: toolbar,
+	setup: function(editor) {
+		editor.on('keyup', function(e) {
+			var wordcount = tinymce.activeEditor.plugins.wordcount;
+			var words = wordcount.body.getCharacterCount();
+			var rem = document.getElementById('postRemainingNeoblog');
+			if(rem) {
+				rem.innerHTML = words;
+			}
+			if(words > 0) {
+				document.getElementById('neoblog-button-add-draft').removeAttribute('disabled');
+			} else {
+				document.getElementById('neoblog-button-add-draft').setAttribute('disabled','disabled');
+			}
+			if(words > 125) {
+				document.getElementById('neoblog-button-add').removeAttribute('disabled');
+			} else {
+				document.getElementById('neoblog-button-add').setAttribute('disabled','disabled');
+			}
+		});
+	}
 });
 tinymce.init({
 	selector: '.tinymce-inline',
@@ -156,7 +188,25 @@ tinymce.init({
 	statusbar: false,
 	min_height: 100,
 	plugins: plugins,
-	toolbar: toolbar
+	toolbar: toolbar,
+	setup: function(editor) {
+		editor.on('keyup', function(e) {
+			var wordcount = tinymce.activeEditor.plugins.wordcount;
+			var words = wordcount.body.getCharacterCount();
+			var parent = document.getElementById(editor.id).closest('.post-inline')
+			if(words > 0) {
+				parent.querySelector('.inline-button-draft').removeAttribute('disabled');
+			} else {
+				parent.querySelector('.inline-button-draft').setAttribute('disabled','disabled');
+			}
+			if(words > 50) {
+				parent.querySelector('.inline-button-post').removeAttribute('disabled');
+			} else {
+				parent.querySelector('.inline-button-post').setAttribute('disabled','disabled');
+			}
+			
+		});
+	}
 });
 
 // modal
@@ -202,12 +252,32 @@ tribute.attach(document.querySelectorAll(".js-mentionable"));
 let textareaContent = document.getElementById('qna-textarea-add');
 let editableContent = document.getElementById('qna-contenteditable-add');
 if(!!editableContent) {
+	editableContent.addEventListener('click', function(e){
+		// add ? marks
+		if(editableContent.innerHTML == 0) {
+			insertTextAtCaret('?');
+		}
+	});
 	editableContent.addEventListener('input', function(e){
 		if(!!textareaContent) {
 			textareaContent.value = editableContent.innerHTML;
 		}
 	});
 }
+
+function insertTextAtCaret(text) {
+    let selection = window.getSelection();
+    let range = selection.getRangeAt(0);
+    range.deleteContents();
+    let node = document.createTextNode(text);
+    range.insertNode(node);
+
+    for(let position = 0; position != text.length; position++)
+    {
+        selection.modify("move", "left", "character");
+    };
+}
+
 </script>
 </body>
 </html>

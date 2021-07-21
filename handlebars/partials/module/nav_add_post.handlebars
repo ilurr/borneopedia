@@ -22,7 +22,7 @@
 	</div>
 </div>
 
-{{>module/modal_form modal_page="neoblog" modal_type="add" modal_title="Write Story" modal_draft="Save to draft" modal_action="POST"}}
+{{>module/modal_form modal_page="neoblog" modal_type="add" modal_title="Write Story" modal_draft="Save to draft" modal_action="POST" modal_disabled=true}}
 
 {{>module/modal_form modal_page="qna" modal_type="add" modal_title="New Question" modal_draft="Save to draft" modal_action="POST"}}
 
@@ -34,3 +34,5 @@
 
 {{>module/modal_delete modal_page=page}}
 {{/if}}
+
+{{>module/modal_delete modal_page="feed"}}

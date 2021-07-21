@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- filter -->
+					{{>module/filter type="search" channel=submenu.search active="All"}}
+
+					<!-- search -->
+					<div class="search-list">
+
+						<section class="search box">
+							<div class="search-content">
+								Result for <strong>"Kiki Ramadhani"</strong>
+							</div>
+						</section>
+
+						<!-- people -->
+						<section class="people box">
+							<div class="people-block">
+								<div class="people-list">
+									{{>module/people_list channel=people index_start=0 index_end=3}}
+								</div>
+							</div>
+							{{>component/more type="link" href="search-people.html" label="See all people result"}}
+						</section>
+						
+						<!-- news -->
+						<section class="feed box">
+							<div class="feed-block">
+								<div class="feed-search -news">
+									{{>module/feed_list channel=people index_start=0 index_end=14 search_news=true}}
+								</div>
+							</div>
+							{{>component/more type="link" href="search-news.html" label="See all news result"}}
+						</section>
+						
+						<!-- qna -->
+						<section class="feed box">
+							<div class="feed-block">
+								<div class="feed-search -qna">
+									{{>module/feed_list channel=people index_start=0 index_end=14 search_qna=true}}
+								</div>
+							</div>
+							{{>component/more type="link" href="search-qna.html" label="See all Q&A result"}}
+						</section>
+						
+						<!-- neoblog -->
+						<section class="feed box">
+							<div class="feed-block">
+								<div class="feed-search -neoblog">
+									{{>module/feed_list channel=people index_start=0 index_end=10 search_neoblog=true}}
+								</div>
+							</div>
+							{{>component/more type="link" href="search-neoblog.html" label="See all neoblog result"}}
+						</section>
+						
+						<!-- figure -->
+						<section class="feed box">
+							<div class="feed-block">
+								<div class="feed-search -figure">
+									{{>module/feed_list channel=people index_start=0 index_end=11 search_figure=true}}
+								</div>
+							</div>
+							{{>component/more type="link" href="search-figure.html" label="See all figure result"}}
+						</section>
+						
+						<!-- jobs -->
+						<section class="feed box">
+							<div class="feed-block">
+								<div class="feed-search -jobs">
+									{{>module/feed_list channel=people index_start=0 index_end=25 search_jobs=true}}
+								</div>
+							</div>
+							{{>component/more type="link" href="search-jobs.html" label="See all jobs result"}}
+						</section>
+						
+					</div>
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+{{>base/js}}
+</body>
+</html>

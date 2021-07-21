@@ -28,7 +28,7 @@
 					{{>component/profile/header profile=people.[0] view=true}}
 
 					<!-- filter -->
-					{{>module/filter type="profile" channel=submenu.profile active="2 Question" position_middle=true}}
+					{{>module/filter type="profile" channel=submenu.profile active="2 Question" position="profile"}}
 					
 					<!-- feeds -->
 					{{#each people}}
@@ -53,7 +53,7 @@
 					{{/gte}}
 					{{/each}}
 
-					{{>component/more label="Load more"}}
+					{{>component/more type="button" label="Load more"}}
 
 				</div>
 

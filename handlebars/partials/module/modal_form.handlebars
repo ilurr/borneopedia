@@ -14,18 +14,18 @@
 							<!-- 
 							<textarea name="{{modal_page}}-textarea" id="{{modal_page}}-textarea-{{modal_type}}" class="post-input js-mentionable" placeholder="Start your question with 'What', 'How', 'Why'"></textarea>
 							-->
-							<article name="{{modal_page}}-contenteditable" id="{{modal_page}}-contenteditable-{{modal_type}}" class="post-contenteditable js-mentionable" placeholder="Start your question with 'What', 'How', 'Why'"></article>
+							<article name="{{modal_page}}-contenteditable" id="{{modal_page}}-contenteditable-{{modal_type}}" class="post-contenteditable js-mentionable" placeholder="Start your question with 'What', 'How', 'Why' and you can ask to someone with mention @"></article>
 							<textarea name="{{modal_page}}-textarea" id="{{modal_page}}-textarea-{{modal_type}}" class="post-textarea-hidden"></textarea>
 							<div class="post-footnote">
 								{{>component/checkbox type="checkbox" label="Anonymous" name="anonymous"}}
-								<div class="post-input-counter"><span class="postRemaining">0</span>/<span class="postMax">200</span></div>
+								<div class="post-input-counter"><span id="postRemainingQna">0</span>/<span class="postMax">200</span></div>
 							</div>
 						</div>
 						{{else}}
 						<div class="post-modal-content">
 							<textarea name="{{modal_page}}-textarea" id="{{modal_page}}-textarea-{{modal_type}}" class="tinymce-textarea"></textarea>
 							<div class="post-footnote">
-								<div class="post-input-counter"><span class="postRemaining">0</span>/<span class="postMax">200</span></div>
+								<div class="post-input-counter"><span id="postRemainingNeoblog">0</span>/<span class="postMax">1000</span></div>
 							</div>
 						</div>
 						{{/eq}}
@@ -33,8 +33,13 @@
 				</div>
 				<div class="modal-footer">
 					{{!-- <button type="button" class="button" data-dismiss="modal">Cancel</button> --}}
+					{{#if modal_disabled}}
+					<button class="button" disabled="disabled" id="{{modal_page}}-button-{{modal_type}}-draft">{{modal_draft}}</button>
+					<button class="button -primary" disabled="disabled" id="{{modal_page}}-button-{{modal_type}}">{{modal_action}}</button>
+					{{else}}
 					<button class="button">{{modal_draft}}</button>
-					<button class="button -primary">{{modal_action}}</button>
+					<button class="button -primary" id="{{modal_page}}-button-{{modal_type}}">{{modal_action}}</button>
+					{{/if}}
 				</div>
 			</div>
 		</div>

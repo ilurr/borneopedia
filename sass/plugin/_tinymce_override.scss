@@ -1,0 +1,32 @@
+.post-inline-content,
+.post-modal-content {
+	.tox .tox-toolbar__primary {
+		background-color: #F5F4F4;
+		border-bottom: 2px solid #E1E1E1;
+	}
+	.tox .tox-tbtn {
+		width: 32px;
+		height: 30px;
+		margin: 1px 0;
+	}
+	.tox .tox-tbtn svg {
+		@include transform(scale(.9));
+	}
+	.tox-toolbar__group {
+		&:last-child {
+			// align-self: center;
+			margin-left: auto;
+		}
+	} 
+	.tox-tinymce {
+		border: 1px solid #E1E1E1;
+	}
+}
+.tox .tox-button {
+	// background-color: var(--color-theme) !important;
+	// border-color: var(--color-theme) !important;
+	border-radius: 6px;
+}
+.tox .tox-dialog-wrap__backdrop {
+	background-color: rgba(0,0,0,.85) !important;
+}

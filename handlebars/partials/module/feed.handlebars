@@ -1,4 +1,11 @@
-<div class="feed-block -{{type}}">
+<div class="feed-block -{{type}}{{#if answer}} -answered{{/if}}">
+	{{#if qnadetail}}
+	<h3 class="feed-title">
+		<a href="{{#if unanswered}}qna-question-empty.html{{else}}qna-question-detail.html{{/if}}" role="link">{{{question}}}</a>
+		<span>By {{comments.[0].first_name}} {{comments.[0].last_name}}</span>
+	</h3>
+	{{else}}
+	{{/if}}
 	{{#if header}}
 	<div class="feed-header">
 		<div class="feed-avatar">
@@ -52,13 +59,20 @@
 		{{/if}}
 		{{#if disable_question}}
 		{{else}}
+		{{#if qnadetail}}
+		{{else}}
 		<h3 class="feed-title">
 			{{#and unanswered mypost}}
 			{{{question}}}
 			{{else}}
 			<a href="{{#if unanswered}}qna-question-empty.html{{else}}qna-question-detail.html{{/if}}" role="link">{{{question}}}</a>
+			{{#if anonymous}}
+			{{else}}
+			<span>By {{last_name}} {{first_name}}</span>
+			{{/if}}
 			{{/and}}
 		</h3>
+		{{/if}}
 		{{/if}}
 		{{#if unanswered}}
 		{{#if mypost}}

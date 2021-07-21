@@ -1,0 +1,94 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+{{#if ../search_news}}
+{{#if news}}
+<div class="feed-item">
+	<div class="feed-content-flex">
+		<div class="feed-img-thumb">
+			<img src="{{img}}" alt="">
+		</div>
+		<div class="feed-content-col">
+			<h3 class="feed-title">
+				<a href="{{link}}">{{title}}</a>
+			</h3>
+			<div class="feed-time">21 June 2021, 03:24 PM</div>
+		</div>
+	</div>
+</div>
+{{/if}}
+{{/if}}
+{{#if ../search_figure}}
+{{#if figure}}
+<div class="feed-item">
+	<div class="feed-content-flex">
+		<div class="feed-img-thumb">
+			<img src="{{avatars.[0].url}}" alt="">
+		</div>
+		<div class="feed-content-col">
+			<h3 class="feed-title">
+				<a href="{{link}}">{{first_name}} {{last_name}}</a>
+			</h3>
+			<div class="feed-bio">{{bio}}</div>
+		</div>
+	</div>
+</div>
+{{/if}}
+{{/if}}
+{{#if ../search_jobs}}
+{{#if jobs}}
+<div class="feed-item">
+	<div class="feed-content-flex">
+		<div class="feed-img-thumb">
+			<img src="{{avatars.[0].url}}" alt="">
+		</div>
+		<div class="feed-content-col">
+			<h3 class="feed-title">
+				<a href="{{link}}">{{first_name}} {{last_name}}</a>
+			</h3>
+			<div class="feed-company">{{company}}</div>
+			<div class="feed-location">{{location}}</div>
+		</div>
+	</div>
+</div>
+{{/if}}
+{{/if}}
+{{#if ../search_qna}}
+{{#if qna}}
+<div class="feed-item">
+	<h3 class="feed-title">
+		<a href="{{link}}">{{{question}}}</a>
+		<span>By {{last_name}} {{first_name}}, 11 Answers, 23 Hours ago</span>
+	</h3>
+	{{#if answer}}
+	<div class="feed-text">
+		{{{truncateWords (sanitize answer) 20 "... <a href=\"qna-answer-detail.html\" class=\"feed-more\">read more</a>"}}}
+	</div>
+	{{/if}}
+</div>
+{{/if}}
+{{/if}}
+{{#if ../search_neoblog}}
+{{#if neoblog}}
+<div class="feed-item">
+	<div class="feed-header">
+		<div class="feed-avatar">
+			<a href="profile.html">
+				<img src="{{avatars.[0].url}}" alt="">	
+			</a>
+		</div>
+		<div class="feed-header-col">
+			<div class="feed-user"><a href="profile.html">{{first_name}} {{last_name}}</a></div>
+			<div class="feed-time">21 June 2021, 2:09 PM</div>
+		</div>
+	</div>
+	<div class="feed-text">
+		{{{truncateWords (sanitize post) 20 "... <a href=\"neoblog-detail.html\" class=\"feed-more\">read more</a>"}}}
+	</div>
+</div>
+{{/if}}
+{{/if}}
+{{/gte}}
+{{/gte}}
+{{/each}}

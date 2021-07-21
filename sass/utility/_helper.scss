@@ -38,6 +38,9 @@
 		padding-top: 1rem;
 		@include display-flex();
 		justify-content: center;
+		.form-row {
+			padding: 0;
+		}
 		.button {
 			height: auto;
 			padding: .375rem 1rem;

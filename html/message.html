@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- url bar color theme -->
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
+	<!-- icon -->
+    <link rel="apple-touch-icon" sizes="152x152" href="../asset/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../asset/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../asset/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../asset/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../asset/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Borneopedia</title>
+    
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+	
+
+    <link href="../asset/css/style.css" rel="stylesheet" type="text/css">
+
+	<!-- tinymce -->
+	<script src="https://cdn.tiny.cloud/1/t8pnyourm2nt4bownb36wqp8ahusl8e6a7kzapaxs9ill67b/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+</head>
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		<!-- header -->
+		<header class="header -fixed">
+			<div class="header-flex">
+				<div class="header-col">
+					<!-- search -->
+					<div class="search-header">
+						<form action="search.html">
+							<input type="text" class="input" name="search" placeholder="Search">
+							<input type="submit" class="button" name="search-btn" value="Search">
+							<span class="icon-general icon-search"></span>
+						</form>
+					</div>
+				</div>
+				<div class="header-col">
+					<div class="logo">
+						<a href="home.html">
+							<img src="../asset/images/logo-borneopedia.svg" alt="Borneopedia" width="275" height="46">
+						</a>
+					</div>
+				</div>
+				<div class="header-col">
+					<!-- menu -->
+					<div class="menu-header">
+						<!-- menu user -->
+						<div class="menu-item">
+							<div class="dropdown">
+								<button type="button" class="button -transparent dropdown-toggle" role="button" id="menuHeaderDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<div class="menu-user">
+										<div class="menu-user-img">
+											<img src="../asset/images/dummy/avatar.jpg" alt="">
+										</div>
+									</div>
+								</button>
+								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuHeaderDropdown">
+									<a class="dropdown-item" href="profile-mypost.html">View Profile</a>
+									<a class="dropdown-item" href="index.html">Logout</a>
+								</div>
+							</div>
+						</div>
+						<!-- menu message -->
+						<div class="menu-item">
+							<a class="button menu-button" href="message.html" role="link">
+								<span class="nav-badge">5</span>
+								<span class="icon-general icon-message"></span>
+							</a>
+						</div>
+						<!-- menu notify -->
+						<div class="menu-item">
+							<a class="button menu-button" href="notification.html" role="link">
+								<span class="nav-badge">5</span>
+								<span class="icon-general icon-bell"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						<!-- nav main -->
+						<nav class="nav" aria-label="Main Navigation">
+							<ol class="nav-wrap">
+								<li class="nav-item">
+									<a href="#" class="nav-link" data-toggle="modal" data-target="#modalNavAdd" role="button" aria-label="Add Post">
+										<div class="nav-flex">
+											<div class="nav-icon">
+												<span class="icon-general icon-add"></span>
+											</div>
+											<div class="nav-text">Add Post</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="home.html" class="nav-link" role="link" aria-label="Home">
+										<div class="nav-flex">
+											<div class="nav-icon">
+												<span class="icon-general icon-home"></span>
+											</div>
+											<div class="nav-text">Home</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="news.html" class="nav-link" role="link" aria-label="News">
+										<div class="nav-flex">
+											<div class="nav-icon">
+												<span class="icon-general icon-news"></span>
+											</div>
+											<div class="nav-text">News</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="qna.html" class="nav-link" role="link" aria-label="Q&amp;A">
+										<div class="nav-flex">
+											<div class="nav-icon">
+												<span class="icon-general icon-qna"></span>
+											</div>
+											<div class="nav-text">Q&amp;A</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="figure.html" class="nav-link" role="link" aria-label="Figure">
+										<div class="nav-flex">
+											<div class="nav-icon">
+												<span class="icon-general icon-figure"></span>
+											</div>
+											<div class="nav-text">Figure</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="neoblog.html" class="nav-link" role="link" aria-label="Neoblog">
+										<div class="nav-flex">
+											<div class="nav-icon">
+												<span class="icon-general icon-neoblog"></span>
+											</div>
+											<div class="nav-text">Neoblog</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="jobs.html" class="nav-link" role="link" aria-label="Jobs">
+										<div class="nav-flex">
+											<div class="nav-icon">
+												<span class="icon-general icon-jobs"></span>
+											</div>
+											<div class="nav-text">Jobs</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="store.html" class="nav-link" role="link" aria-label="Store">
+										<div class="nav-flex">
+											<div class="nav-icon">
+												<span class="nav-badge">9</span>
+												<span class="icon-general icon-store"></span>
+											</div>
+											<div class="nav-text">Store</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="setting.html" class="nav-link" role="link" aria-label="Setting">
+										<div class="nav-flex">
+											<div class="nav-icon">
+												<span class="icon-general icon-setting"></span>
+											</div>
+											<div class="nav-text">Setting</div>
+										</div>
+									</a>
+								</li>
+							</ol>
+						</nav>
+
+						<!-- footer aside -->
+						<footer class="footer-aside">
+							<nav class="footer-nav" aria-label="Footer">
+								<ul>
+									<li><a href="static-about.html" role="link" aria-label="About">About</a></li>
+									<li><a href="static-faq.html" role="link" aria-label="FAQ">FAQ</a></li>
+									<li><a href="static-privacy.html" role="link" aria-label="Privacy">Privacy</a></li>
+									<li><a href="static-terms.html" role="link" aria-label="Terms">Terms</a></li>
+									<li><a href="static-contact.html" role="link" aria-label="Contact">Contact</a></li>
+								</ul>
+							</nav>
+							<div class="footer-copy">© 2021 borneopedia.id</div>
+							<div class="app-badge">
+								<a href="#" target="_blank">
+									<img src="../asset/images/google-play-badge.png" alt="Get it on Google Play">
+								</a>
+								<a href="#" target="_blank">
+									<img src="../asset/images/app-store-badge.png" alt="Download on the App Store">
+								</a>
+							</div>
+						</footer>
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- message -->
+					<div class="feed box"></div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		<div id="success-msg" class="panel-alert -fixed -success">
+			<p>Yeay! You were successful.</p>
+		</div>
+		<div id="error-msg" class="panel-alert -fixed -error">
+			<p>Failed, there was a problem, try again later.</p>
+		</div>
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		<div class="emoji" data-emoji="emoji">
+			<div class="emoji-header" role="tablist">
+				<button type="button" class="button emoji-tab active" aria-controls="Smileys &amp; People" role="tab" data-toggle="emojiTab" data-target="emoji1">😃</button>
+				<button type="button" class="button emoji-tab" aria-controls="Animals &amp; Nature" role="tab" data-toggle="emojiTab" data-target="emoji2">🐻</button>
+				<button type="button" class="button emoji-tab" aria-controls="Food &amp; Drink" role="tab" data-toggle="emojiTab" data-target="emoji3">🍔</button>
+				<button type="button" class="button emoji-tab" aria-controls="Activity" role="tab" data-toggle="emojiTab" data-target="emoji4">⚽</button>
+				<button type="button" class="button emoji-tab" aria-controls="Travel &amp; Places" role="tab" data-toggle="emojiTab" data-target="emoji5">🌇</button>
+				<button type="button" class="button emoji-tab" aria-controls="Flags" role="tab" data-toggle="emojiTab" data-target="emoji6">🏳</button>
+			</div>
+			<div class="emoji-content">
+				<div data-emoji-id="emoji1" class="emoji-panel active" role="tabpanel">
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😆</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😅</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤣</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🙂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🙃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😉</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😇</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😍</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😘</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😚</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😙</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😋</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😛</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😜</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😝</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤑</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤔</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😑</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😏</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😒</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🙄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😌</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😔</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤤</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤒</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤢</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😎</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤓</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😟</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🙁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😢</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😖</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😣</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😞</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😓</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😤</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😡</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">👿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">☠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤡</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">👹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">👺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">👻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">👽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">👾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤖</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🙀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">😾</button>
+				</div>
+				<div data-emoji-id="emoji2" class="emoji-panel" role="tabpanel">
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🙈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🙉</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🙊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐒</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦍</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦝</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐅</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐆</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐎</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦓</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦌</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐖</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐏</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐑</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦙</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦒</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐘</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦏</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦛</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐇</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦔</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦇</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦘</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦡</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐔</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐓</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐣</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐤</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🕊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦅</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦆</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦢</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦉</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦚</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦜</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐢</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦎</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐍</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐉</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦖</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐋</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐟</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐡</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐙</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐚</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐌</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦋</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐛</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐜</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐝</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🐞</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🕷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🕸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦟</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">☘</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦞</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦑</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌍</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌎</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌏</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌑</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌒</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌓</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌔</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌖</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌘</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌙</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌚</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌛</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌜</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">☀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌝</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌞</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⭐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌟</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">☁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛅</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌤</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">☂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">☔</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⚡</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">❄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">☃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">☄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🔥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">✨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎋</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎍</button>
+				</div>
+				<div data-emoji-id="emoji3" class="emoji-panel" role="tabpanel">
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍇</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍉</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍋</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍌</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍍</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍎</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍏</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍑</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍒</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍓</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥝</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍅</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥑</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍆</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥔</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥒</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧅</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥜</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍞</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥖</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥞</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧇</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍖</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥓</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍔</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍟</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥙</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧆</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥚</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥘</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥣</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍘</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍙</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍚</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍛</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍜</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍝</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍢</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍣</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍤</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍡</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥟</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥡</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🦪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥛</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">☕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥤</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧉</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥢</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🍴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥄</button>
+				</div>
+				<div data-emoji-id="emoji4" class="emoji-panel" role="tabpanel">
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🕴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏇</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏌</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚣</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏋</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🤹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧘</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎟</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎖</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏆</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏅</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥇</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥉</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⚽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⚾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥎</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏉</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥏</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏏</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏑</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏒</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥍</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏓</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥋</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥅</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎣</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥌</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🧶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎤</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🥁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏹</button>
+				</div>
+				<div data-emoji-id="emoji5" class="emoji-panel" role="tabpanel">
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚣</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🗾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏔</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌋</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🗻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏖</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏜</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏝</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏞</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏟</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏛</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏘</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏚</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏡</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏢</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏣</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏤</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💒</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🗼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🗽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🕌</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🕍</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🕋</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏙</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌅</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌆</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌇</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌉</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎡</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎢</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚅</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚆</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚇</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚉</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚊</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚝</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚞</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚋</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚌</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚍</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚎</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚑</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚒</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚓</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚔</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚕</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚖</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚗</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚘</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚙</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚚</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚛</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚜</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏎</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏍</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚏</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛣</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛤</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⚓</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚤</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛥</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚢</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">✈</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🪂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚟</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚡</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚀</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🪐</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌠</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🌌</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">⛱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎆</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎇</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎑</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">💷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🗿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛂</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛃</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛄</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🛅</button>
+				</div>
+				<div data-emoji-id="emoji6" class="emoji-panel" role="tabpanel">
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏁</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🚩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🎌</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇦🇿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇧🇿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇨🇿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇩🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇩🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇩🇯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇩🇰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇩🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇩🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇩🇿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇪🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇪🇨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇪🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇪🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇪🇭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇪🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇪🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇪🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇪🇺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇫🇮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇫🇯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇫🇰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇫🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇫🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇫🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇬🇾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇭🇰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇭🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇭🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇭🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇭🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇭🇺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇮🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇯🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇯🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇯🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇯🇵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇰🇿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇱🇾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇶</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇲🇿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇵</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇳🇿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇴🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇵🇾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇶🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇷🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇷🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇷🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇷🇺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇷🇼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇧</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇽</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇸🇿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇩</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇭</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇯</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇱</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇴</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇷</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇻</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇹🇿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇺🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇺🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇺🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇺🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇺🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇺🇾</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇺🇿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇻🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇻🇨</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇻🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇻🇬</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇻🇮</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇻🇳</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇻🇺</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇼🇫</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇼🇸</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇽🇰</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇾🇪</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇾🇹</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇿🇦</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇿🇲</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🇿🇼</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏴󠁧󠁢󠁥󠁮󠁧󠁿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏴󠁧󠁢󠁳󠁣󠁴󠁿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏴󠁧󠁢󠁷󠁬󠁳󠁿</button>
+					<button type="button" class="button emoji-icon" data-toggle="emojiIcon">🏴󠁵󠁳󠁴󠁸󠁿</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- nav add post -->
+	<div id="modalNavAdd" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="navAdd" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="nav-modal">
+					<div class="nav-modal-item">
+						<a class="nav-link" data-toggle="modal" data-target="#modalQnaAdd" role="button" aria-label="Ask a Question">
+							<div class="nav-flex">
+								<div class="nav-icon">
+									<span class="icon-general icon-qna"></span>
+								</div>
+								<div class="nav-text">Ask a Question</div>
+							</div>
+						</a>
+					</div>
+					<div class="nav-modal-item">
+						<a class="nav-link" data-toggle="modal" data-target="#modalNeoblogAdd" role="button" aria-label="Write a Story">
+							<div class="nav-flex">
+								<div class="nav-icon">
+									<span class="icon-general icon-neoblog"></span>
+								</div>
+								<div class="nav-text">Write a Story</div>
+							</div>
+						</a>
+					</div>
+					<div class="nav-modal-item">
+						<a class="nav-link" data-toggle="modal" data-target="#modalJobAdd" role="button" aria-label="Post a Job">
+							<div class="nav-flex">
+								<div class="nav-icon">
+									<span class="icon-general icon-jobs"></span>
+								</div>
+								<div class="nav-text">Post a Job</div>
+							</div>
+						</a>
+					</div>
+					<div class="nav-modal-item">
+						<a class="nav-link" data-toggle="modal" data-target="#modalProductAdd" role="button" aria-label="Add Product">
+							<div class="nav-flex">
+								<div class="nav-icon">
+									<span class="icon-general icon-store"></span>
+								</div>
+								<div class="nav-text">Add Product</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- modal neoblog add -->
+	<form action="neoblog.html">
+		<div id="modalNeoblogAdd" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="neoblogForm" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+					<div class="modal-header">
+						<h5 class="modal-title">Write Story</h5>
+					</div>
+					<div class="modal-body">
+						<div class="post-modal -neoblog">
+							<div class="post-modal-content">
+								<textarea name="neoblog-textarea" id="neoblog-textarea-add" class="tinymce-textarea"></textarea>
+								<div class="post-footnote">
+									<div class="post-input-counter"><span id="postRemainingNeoblog">0</span>/<span class="postMax">1000</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="button" disabled="disabled" id="neoblog-button-add-draft">Save to draft</button>
+						<button class="button -primary" disabled="disabled" id="neoblog-button-add">POST</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	
+	<!-- modal qna add -->
+	<form action="qna.html">
+		<div id="modalQnaAdd" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="qnaForm" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+					<div class="modal-header">
+						<h5 class="modal-title">New Question</h5>
+					</div>
+					<div class="modal-body">
+						<div class="post-modal -qna">
+							<div class="post-modal-content">
+								<!-- 
+								<textarea name="qna-textarea" id="qna-textarea-add" class="post-input js-mentionable" placeholder="Start your question with 'What', 'How', 'Why'"></textarea>
+								-->
+								<article name="qna-contenteditable" id="qna-contenteditable-add" class="post-contenteditable js-mentionable" placeholder="Start your question with 'What', 'How', 'Why' and you can ask to someone with mention @"></article>
+								<textarea name="qna-textarea" id="qna-textarea-add" class="post-textarea-hidden"></textarea>
+								<div class="post-footnote">
+									<div class="form-row">
+										<div class="form-checkbox">
+											<input type="checkbox" name="anonymous" id="anonymous" value="">
+											<label for="anonymous">Anonymous</label>
+										</div>
+									</div>
+									<div class="post-input-counter"><span id="postRemainingQna">0</span>/<span class="postMax">200</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="button">Save to draft</button>
+						<button class="button -primary" id="qna-button-add">POST</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	
+	
+	<!-- modal feed delete -->
+	<form action="feed.html">
+		<div id="modalFeedDelete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="feedForm" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+					<div class="modal-header">
+						<h5 class="modal-title">Delete</h5>
+					</div>
+					<div class="modal-body">
+						<div class="modal-text">Are you sure want to delete?</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="button" data-dismiss="modal">Cancel</button>
+						<button class="button -primary">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+<script type="text/javascript" src="../asset/js/jquery.min.js"></script>
+<script type="text/javascript" src="../asset/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../asset/js/plugin-pack.js"></script>
+<script type="text/javascript" src="../asset/js/main.js"></script>
+<script>
+// tinymce
+let plugins = 'emoticons lists image wordcount';
+let toolbar = 'bold italic | bullist | image';
+tinymce.init({
+	selector: '.tinymce-textarea',
+	menubar: false,
+	placeholder: 'Write here',
+	statusbar: false,
+	min_height: 285,
+	plugins: plugins,
+	toolbar: toolbar,
+	setup: function(editor) {
+		editor.on('keyup', function(e) {
+			var wordcount = tinymce.activeEditor.plugins.wordcount;
+			var words = wordcount.body.getCharacterCount();
+			var rem = document.getElementById('postRemainingNeoblog');
+			if(rem) {
+				rem.innerHTML = words;
+			}
+			if(words > 0) {
+				document.getElementById('neoblog-button-add-draft').removeAttribute('disabled');
+			} else {
+				document.getElementById('neoblog-button-add-draft').setAttribute('disabled','disabled');
+			}
+			if(words > 125) {
+				document.getElementById('neoblog-button-add').removeAttribute('disabled');
+			} else {
+				document.getElementById('neoblog-button-add').setAttribute('disabled','disabled');
+			}
+		});
+	}
+});
+tinymce.init({
+	selector: '.tinymce-inline',
+	menubar: false,
+	placeholder: 'Answer here',
+	statusbar: false,
+	min_height: 100,
+	plugins: plugins,
+	toolbar: toolbar,
+	setup: function(editor) {
+		editor.on('keyup', function(e) {
+			var wordcount = tinymce.activeEditor.plugins.wordcount;
+			var words = wordcount.body.getCharacterCount();
+			var parent = document.getElementById(editor.id).closest('.post-inline')
+			if(words > 0) {
+				parent.querySelector('.inline-button-draft').removeAttribute('disabled');
+			} else {
+				parent.querySelector('.inline-button-draft').setAttribute('disabled','disabled');
+			}
+			if(words > 50) {
+				parent.querySelector('.inline-button-post').removeAttribute('disabled');
+			} else {
+				parent.querySelector('.inline-button-post').setAttribute('disabled','disabled');
+			}
+			
+		});
+	}
+});
+
+// modal
+$('#modalNeoblogAdd').on('show.bs.modal', function () {
+	$('#modalNavAdd').modal('hide');
+});
+$('#modalNeoblogAdd').on('shown.bs.modal', function () {
+	tinymce.get('neoblog-textarea-add').focus();
+});
+$('#modalQnaAdd').on('show.bs.modal', function () {
+	$('#modalNavAdd').modal('hide');
+});
+  
+// mention 
+var tribute = new Tribute({
+  values: [
+    { key: "Chris Wibisana", value: "@Chris Wibisana" },
+    { key: "Vika Dyahsasanti", value: "@Vika Dyahsasanti" },
+    { key: "Didik Wicaksono", value: "@Didik Wicaksono" },
+    { key: "Noorchamid Ustadi", value: "@Noorchamid Ustadi" },
+    { key: "Ahmed Djaelani", value: "@Ahmed Djaelani" },
+    { key: "Dr. Alue Dohong", value: "@Dr. Alue Dohong" },
+    { key: "Mochammad Toha", value: "@Mochammad Toha" },
+    { key: "Kiki Rahmadhani", value: "@Kiki Rahmadhani" },
+    { key: "Dr. Yansen Tipa Padan", value: "@Dr. Yansen Tipa Padan" },
+    { key: "Annisa Syaidar", value: "@Annisa Syaidar" },
+    { key: "Prof. Masri Sareb", value: "@Prof. Masri Sareb" },
+    { key: "Budi Wonderkids", value: "@Budi Wonderkids" },
+    { key: "Andreas Marbun", value: "@Andreas Marbun" },
+    { key: "Bana Elvianto", value: "@Bana Elvianto" },
+    { key: "Chelsea Olivia", value: "@Chelsea Olivia" },
+  ],
+    selectTemplate: function(item) {
+    return (
+      '<span class="at" contenteditable="false">' + item.original.value + '</span>'
+    );
+  }
+});
+// attach element
+tribute.attach(document.querySelectorAll(".js-mentionable"));
+
+// copy to textarea
+let textareaContent = document.getElementById('qna-textarea-add');
+let editableContent = document.getElementById('qna-contenteditable-add');
+if(!!editableContent) {
+	editableContent.addEventListener('click', function(e){
+		// add ? marks
+		if(editableContent.innerHTML == 0) {
+			insertTextAtCaret('?');
+		}
+	});
+	editableContent.addEventListener('input', function(e){
+		if(!!textareaContent) {
+			textareaContent.value = editableContent.innerHTML;
+		}
+	});
+}
+
+function insertTextAtCaret(text) {
+    let selection = window.getSelection();
+    let range = selection.getRangeAt(0);
+    range.deleteContents();
+    let node = document.createTextNode(text);
+    range.insertNode(node);
+
+    for(let position = 0; position != text.length; position++)
+    {
+        selection.modify("move", "left", "character");
+    };
+}
+
+</script>
+</body>
+</html>
