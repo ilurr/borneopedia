@@ -3216,7 +3216,7 @@
 			],
 			"first_name": "Michelle",
 			"last_name": "Maria",
-			"reply": "Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat."
+			"comment": "Pelanggan juga berhak tau berapa penghasilan yang diperoleh oleh ojek online yang kita gunakan. Jangan sampai kita abai terhadap nasib mereka."
 		  },
 		  {
 			"avatars": [
@@ -3235,7 +3235,7 @@
 			],
 			"first_name": "Alexander",
 			"last_name": "Mawardi",
-			"comment": "Pelanggan juga berhak tau berapa penghasilan yang diperoleh oleh ojek online yang kita gunakan. Jangan sampai kita abai terhadap nasib mereka."
+			"reply": "Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat."
 		  }
 		]
 	  },
@@ -3573,13 +3573,13 @@
 		  {
 			"height": 133,
 			"size": "small",
-			"url": "../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-200w.jpeg",
+			"url": "../asset/images/dummy/1C4EEDC2-FE9C-40B3-A2C9-A038873EE692-500w.jpeg",
 			"width": 200
 		  },
 		  {
 			"height": 333,
 			"size": "medium",
-			"url": "../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-200w.jpeg",
+			"url": "../asset/images/dummy/1C4EEDC2-FE9C-40B3-A2C9-A038873EE692-500w.jpeg",
 			"width": 500
 		  }
 		],

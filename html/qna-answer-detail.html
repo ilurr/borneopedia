@@ -343,8 +343,8 @@
 											</div>
 										</div>
 										<div class="comment-item">
-											<!-- reply -->
-											<div class="comment-row -reply">
+											<!-- comment -->
+											<div class="comment-row">
 												<div class="comment-avatar">
 													<a href="profile.html" role="link">
 														<img src="../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg" alt="">	
@@ -356,8 +356,8 @@
 															<a href="profile.html" role="link">Michelle Maria</a>
 														</div>
 														<div class="comment-text">
+															Pelanggan juga berhak tau berapa penghasilan yang diperoleh oleh ojek online yang kita gunakan. Jangan sampai kita abai terhadap nasib mereka.
 															
-															Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat.
 														</div>
 													</div>
 													<div class="comment-reaction">
@@ -370,8 +370,8 @@
 											</div>
 										</div>
 										<div class="comment-item">
-											<!-- comment -->
-											<div class="comment-row">
+											<!-- reply -->
+											<div class="comment-row -reply">
 												<div class="comment-avatar">
 													<a href="profile.html" role="link">
 														<img src="../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg" alt="">	
@@ -383,8 +383,8 @@
 															<a href="profile.html" role="link">Alexander Mawardi</a>
 														</div>
 														<div class="comment-text">
-															Pelanggan juga berhak tau berapa penghasilan yang diperoleh oleh ojek online yang kita gunakan. Jangan sampai kita abai terhadap nasib mereka.
 															
+															Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat.
 														</div>
 													</div>
 													<div class="comment-reaction">
@@ -1640,6 +1640,45 @@ tinymce.init({
 	min_height: 285,
 	plugins: plugins,
 	toolbar: toolbar,
+	automatic_uploads: true,
+	file_picker_types: 'image',
+	file_picker_callback: function (cb, value, meta) {
+		var input = document.createElement('input');
+		input.setAttribute('type', 'file');
+		input.setAttribute('accept', 'image/*');
+
+		/*
+		Note: In modern browsers input[type="file"] is functional without
+		even adding it to the DOM, but that might not be the case in some older
+		or quirky browsers like IE, so you might want to add it to the DOM
+		just in case, and visually hide it. And do not forget do remove it
+		once you do not need it anymore.
+		*/
+
+		input.onchange = function () {
+			var file = this.files[0];
+
+			var reader = new FileReader();
+			reader.onload = function () {
+				/*
+					Note: Now we need to register the blob in TinyMCEs image blob
+					registry. In the next release this part hopefully won't be
+					necessary, as we are looking to handle it internally.
+				*/
+				var id = 'blobid' + (new Date()).getTime();
+				var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
+				var base64 = reader.result.split(',')[1];
+				var blobInfo = blobCache.create(id, file, base64);
+				blobCache.add(blobInfo);
+
+				/* call the callback and populate the Title field with the file name */
+				cb(blobInfo.blobUri(), { title: file.name });
+			};
+			reader.readAsDataURL(file);
+		};
+
+		input.click();
+	},
 	setup: function(editor) {
 		editor.on('keyup', function(e) {
 			var wordcount = tinymce.activeEditor.plugins.wordcount;
@@ -1694,6 +1733,7 @@ $('#modalNeoblogAdd').on('show.bs.modal', function () {
 	$('#modalNavAdd').modal('hide');
 });
 $('#modalNeoblogAdd').on('shown.bs.modal', function () {
+	$(document).off('focusin.modal');
 	tinymce.get('neoblog-textarea-add').focus();
 });
 $('#modalQnaAdd').on('show.bs.modal', function () {
