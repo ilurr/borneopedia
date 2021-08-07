@@ -1,0 +1,220 @@
+{
+  "user": [
+    {
+      "avatars": [
+        {
+          "height": 200,
+          "size": "small",
+          "url": "../asset/images/dummy/26CFEFB3-21C8-49FC-8C19-8E6A62B6D2E0-200w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 500,
+          "size": "medium",
+          "url": "../asset/images/dummy/26CFEFB3-21C8-49FC-8C19-8E6A62B6D2E0-500w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Chris",
+      "last_name": "Wibisana"
+    },
+    {
+      "avatars": [
+        {
+          "height": 200,
+          "size": "small",
+          "url": "../asset/images/dummy/A7299C8E-CEFC-47D9-939A-3C8CA0EA4D13-200w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 500,
+          "size": "medium",
+          "url": "../asset/images/dummy/A7299C8E-CEFC-47D9-939A-3C8CA0EA4D13-500w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Vika",
+      "last_name": "Dyahsasanti"
+    },
+    {
+      "avatars": [
+        {
+          "height": 200,
+          "size": "small",
+          "url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-200w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 500,
+          "size": "medium",
+          "url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-500w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Didik",
+      "last_name": "Wicaksono"
+    },
+    {
+      "avatars": [
+        {
+          "height": 133,
+          "size": "small",
+          "url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 333,
+          "size": "medium",
+          "url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Noorchamid",
+      "last_name": "Ustadi"
+    },
+    {
+      "avatars": [
+        {
+          "height": 133,
+          "size": "small",
+          "url": "../asset/images/dummy/1C4EEDC2-FE9C-40B3-A2C9-A038873EE692-500w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 333,
+          "size": "medium",
+          "url": "../asset/images/dummy/1C4EEDC2-FE9C-40B3-A2C9-A038873EE692-500w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Ahmed",
+      "last_name": "Djaelani"
+    },
+    {
+      "avatars": [
+        {
+          "height": 246,
+          "size": "small",
+          "url": "../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-200w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 615,
+          "size": "medium",
+          "url": "../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-500w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Mochammad",
+      "last_name": "Toha"
+    },
+    {
+      "avatars": [
+        {
+          "height": 200,
+          "size": "small",
+          "url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 499,
+          "size": "medium",
+          "url": "../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Kiki",
+      "last_name": "Rahmadhani"
+    },
+    {
+      "avatars": [
+        {
+          "height": 200,
+          "size": "small",
+          "url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 500,
+          "size": "medium",
+          "url": "../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Annisa",
+      "last_name": "Syaidar"
+    },
+    {
+      "avatars": [
+        {
+          "height": 200,
+          "size": "small",
+          "url": "../asset/images/dummy/B3CF5288-34B0-4A5E-9877-5965522529D6-500w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 500,
+          "size": "medium",
+          "url": "../asset/images/dummy/B3CF5288-34B0-4A5E-9877-5965522529D6-500w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Budi",
+      "last_name": "Wonderkids"
+    },
+    {
+      "avatars": [
+        {
+          "height": 200,
+          "size": "small",
+          "url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-500w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 500,
+          "size": "medium",
+          "url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-500w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Andreas",
+      "last_name": "Marbun"
+    },
+    {
+      "avatars": [
+        {
+          "height": 200,
+          "size": "small",
+          "url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-200w.jpeg",
+          "width": 200
+        },
+        {
+          "height": 500,
+          "size": "medium",
+          "url": "../asset/images/dummy/FBEBF655-4886-455A-A4A4-D62B77DD419B-500w.jpeg",
+          "width": 500
+        }
+      ],
+      "first_name": "Bana",
+      "last_name": "Elvianto"
+    },
+    {
+      "avatars": [
+        {
+          "height": 200,
+          "size": "small",
+          "url": "../asset/images/dummy/avatar.jpg",
+          "width": 200
+        },
+        {
+          "height": 499,
+          "size": "medium",
+          "url": "../asset/images/dummy/avatar.jpg",
+          "width": 500
+        }
+      ],
+      "first_name": "Chelsea",
+      "last_name": "Olivia"
+    }
+  ]
+}

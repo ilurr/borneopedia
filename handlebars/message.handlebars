@@ -25,7 +25,79 @@
 				<div class="grid-col -wide">
 
 					<!-- message -->
-					<div class="feed box"></div>
+					<div class="msg box">
+						<div class="msg-block">
+							<section class="msg-side">
+								{{>component/message/side}}
+							</section>
+							<section class="msg-board">
+								{{>component/message/board channel=people index_start=0 index_end=8}}
+							</section>
+						</div>
+					</div>
+
+					<!-- modal message add -->
+					<form action="message.html">
+						<div id="modalMsgAdd" class="modal modal-compose fade" tabindex="-1" role="dialog" aria-labelledby="MsgForm" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+									<div class="modal-header">
+										<h5 class="modal-title">New Message</h5>
+									</div>
+									<div class="modal-body">
+										<div class="msg-modal">
+											<div class="msg-modal-row">
+												<div class="msg-compose-label">To</div>
+												<div class="msg-compose-destination">
+													<span class="icon-general icon-search"></span>
+													<article contenteditable="true" name="msg-compose-editable" id="msg-compose-editable" class="msg-compose-editable" placeholder="Enter name..."></article>
+													{{!-- <input type="hidden" value=""> --}}
+													{{!-- <input type="text" name="msg-compose-search" class="input" id="msg-compose-search" placeholder="Enter name..." autocomplete="off"> --}}
+													<textarea name="msg-compose-hidden" id="msg-compose-hidden" class="msg-compose-hidden"></textarea>
+													<div class="msg-compose-user" id="msg-compose-user"></div>
+												</div>
+											</div>
+											<div class="msg-modal-row">
+												<div class="msg-compose-message">
+													<textarea name="msg-compose-text" id="msg-compose-text" placeholder="Write your message..."></textarea>
+												</div>
+											</div>
+											<div class="msg-compose-preview">
+												<button type="button" class="button -transparent msg-upload-remove">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<img src="" alt="">
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<div class="msg-compose-picture">
+											<label class="msg-picture" for="msg-picture">
+												<input type="file" class="msg-file" aria-label="Send a picture" onchange="readURL(this, '.modal', '.msg-compose-preview')">
+												<span class="icon-general icon-picture"></span>
+											</label>
+										</div>
+										<button class="button -primary" name="msg-compose-send" id="msg-compose-send" disabled="disabled">Send</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<!-- modal larger image -->
+					<div id="modalMsgImg" class="modal modal-msg-img fade" tabindex="-1" role="dialog" aria-labelledby="MsgImg" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+								<div class="modal-body">
+									<div class="msg-img-modal">
+										<img src="{{people.[0].img}}" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				</div>
 
@@ -48,5 +120,95 @@
 	{{>module/nav_add_post}}
 
 {{>base/js}}
+<script>
+
+// search name user 
+var tributeUser = new Tribute({
+  values: [
+	{{#each people}}
+	{{#or qna neoblog figure}}
+		{ key: "{{first_name}} {{last_name}}", value: "{{first_name}} {{last_name}}" },
+		{{/or}}
+		{{/each}}
+	],
+    selectTemplate: function(item) {
+    return (
+      '<span class="to" contenteditable="false">' + item.original.value + '</span>'
+    );
+  },
+  autocompleteMode: true,
+  menuShowMinLength: 1
+  //menuContainer: document.querySelector('.msg-compose-destination'),
+});
+// attach element
+tributeUser.attach(document.querySelectorAll(".msg-compose-editable"));
+
+
+
+// upload img preview
+function readURL(input, parent, preview) {
+	if (input.files && input.files[0]) {
+		var reader = new FileReader();
+
+		reader.onload = function (e) {
+			$(input).closest(parent).find('img').attr('src', e.target.result);
+			$(input).closest(parent).find(preview).addClass('-active');
+		};
+
+		reader.readAsDataURL(input.files[0]);
+	}
+}
+// function for deleting photo preview
+$(document).on('click','.msg-upload-remove', function(e){
+	$(this).closest('.modal').find('.msg-compose-preview img').removeAttr('src');
+	$(this).closest('.modal').find('.msg-compose-preview input[type=file]').val('');
+	$(this).closest('.modal').find('.msg-compose-preview').removeClass('-active');
+});
+
+
+
+// open window chat
+document.addEventListener('click', function (e) {
+	let msgClick = e.target.dataset.toggle;
+	let msgClickAll = document.querySelectorAll('[data-toggle="message"]');
+	let msgWindowAll = document.querySelectorAll('.msg-window');
+	//console.log(e.target)
+	if(msgClick=='message') {
+		e.preventDefault();
+		let msgTarget = e.target.dataset.href;
+		if(msgTarget) {
+			let msgWin = document.getElementById(msgTarget);
+			if(msgWin) {
+				// remove all active chat
+				msgClickAll.forEach(function(item){
+					item.classList.remove('active');
+				});
+				msgWindowAll.forEach(function(item){
+					item.classList.remove('show');
+				});
+				// set active chat
+				e.target.classList.add('active');
+				msgWin.classList.add('show');
+			}
+		}
+	}
+}, false);
+
+// onload scroll to end chat
+let msgBody = document.querySelectorAll('.msg-window-body');
+if(msgBody) {
+	msgBody.forEach(function(item){
+		scrollToBottom(item);
+	});
+}
+
+// function for scroll to bottom chat
+function scrollToBottom(el) {
+	el.scrollTop = el.scrollHeight;
+}
+
+// dummy for send chat
+//let msgBody = document.querySelectorAll('.msg-window-body');
+</script>
 </body>
 </html>

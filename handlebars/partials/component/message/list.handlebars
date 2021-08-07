@@ -1,0 +1,34 @@
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+{{#or neoblog qna}}
+<div class="msg-item">
+	<a href="#" data-href="msgWindow{{@index}}" class="msg-link" role="button" data-toggle="message">
+		<div class="msg-row{{#eq @index compare=0}} unread{{/eq}}">
+			<span class="msg-online"></span>
+			<div class="msg-avatar">
+				<img src="{{avatars.[0].url}}" alt="">	
+			</div>
+			<div class="msg-col">
+				<div class="msg-name">{{first_name}} {{last_name}}</div>
+				<div class="msg-teaser">
+					{{truncateWords (sanitize post) 20}}
+					{{#if question}}
+					{{truncateWords (sanitize question) 20}}
+					{{else}}
+					{{truncateWords (sanitize answer) 20}}
+					{{/if}}
+				</div>
+				{{#eq @index compare=0}}
+				<div class="msg-badge">2</div>
+				{{/eq}}
+				<div class="msg-time">2:34 PM</div>
+			</div>
+		</div>
+	</a>
+</div>
+{{/or}}
+{{/gte}}
+{{/gte}}
+{{/each}}

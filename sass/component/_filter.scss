@@ -60,11 +60,11 @@
 			// border-bottom: 1px solid #f0f0f0;
 			// box-shadow: 0 0 2px rgba(0,0,0,.2);
 			// width: 584px;
-			width: 100%;
-			@include min-responsive($screen-tablet) {
-				// width: calc(100% - 85px - 30px - 15px);
-				width: calc(768px - 85px - 15px);
-			}
+			// width: 100%;
+			width: calc(100% - 85px - 275px - 15px);
+			// @include min-responsive($screen-tablet) {
+				// width: calc(768px - 85px - 15px);
+			// }
 			@include min-responsive($screen-desktop) {
 				width: calc(445px + 14px);
 			}

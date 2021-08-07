@@ -1,0 +1,72 @@
+<div class="msg-empty">You don’t have a message selected</div>
+{{#each channel}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+{{#or neoblog qna}}
+<div class="msg-window" id="msgWindow{{@index}}">
+	<div class="msg-window-header">
+		<div class="msg-avatar">
+			<img src="{{avatars.[0].url}}" alt="">	
+		</div>
+		<div class="msg-col">
+			<div class="msg-name"><a href="profile.html" class="msg-link">{{first_name}} {{last_name}}</a></div>
+		</div>
+		{{>component/feed/option}}
+	</div>
+	<div class="msg-window-body">
+		{{#if comments}}
+		<div class="msg-bubble">
+			<span>
+				<div class="msg-img">
+					<a href="#" class="msg-img-link" role="button" data-toggle="modal" data-target="#modalMsgImg">
+						<img src="{{img}}" alt="">	
+					</a>
+				</div>
+			</span>
+			<div class="msg-time">11:25 PM</div>
+		</div>
+		{{#each comments}}
+		{{#if reply}}
+		<div class="msg-bubble reply">
+			<span>{{reply}}</span>
+			<div class="msg-time">11:34 PM <span class="msg-status sent"></span></div>
+		</div>
+		{{/if}}
+		{{#if comment}}
+		<div class="msg-bubble">
+			{{#eq ../first_name compare="Chris"}}
+			{{#eq @index compare=0}}
+			<span>Iya kan?</span>
+			{{/eq}}
+			{{/eq}}
+			<span>{{comment}}</span>
+			<div class="msg-time">11:30 PM</div>
+		</div>
+		{{/if}}
+		{{/each}}
+		{{/if}}
+		<div class="msg-bubble reply">
+			<span>Oke 😇</span>
+			<div class="msg-time">11:20 PM <span class="msg-status"></span></div>
+		</div>
+	</div>
+	<div class="msg-window-footer">
+		{{!-- <textarea class="msg-input" placeholder="Write message..."></textarea> --}}
+		{{!-- <button type="button" class="button msg-picture">
+			<span class="icon-general icon-picture"></span>
+		</button> --}}
+		<label class="msg-picture" for="msg-picture">
+			<input type="file" name="msg-picture" class="msg-file" aria-label="Send a picture">
+			<span class="icon-general icon-picture"></span>
+		</label>
+		<input type="text" name="msg-input" class="msg-input" placeholder="Write message...">
+		<button type="button" data-toggle="emoji" data-container="msg-window-footer" data-target="msg-input" class="button msg-emoji">
+			<span class="icon-general icon-emoji"></span>
+		</button>
+	</div>
+</div>
+{{/or}}
+{{/gte}}
+{{/gte}}
+{{/each}}

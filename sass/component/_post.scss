@@ -29,10 +29,11 @@
 			content: attr(placeholder);
 			font-size: .938rem;
 			color: #666;
+			pointer-events: none;
 		}
-		&:empty:focus:before {
-			content: '';
-		}
+		// &:empty:focus:before {
+		// 	content: '';
+		// }
 		span.at[contenteditable=false] {
 			font-weight: 700;
 			color: var(--color-theme);

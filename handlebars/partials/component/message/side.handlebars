@@ -1,0 +1,10 @@
+<div class="msg-header">
+	<span>Messages</span>
+	<button class="button -transparent" type="button" data-toggle="modal" data-target="#modalMsgAdd" role="button" aria-label="New Message">
+		<span class="icon-general icon-message"></span>
+	</button>
+	{{!>component/button type="hrefmodal" icon="message" class="" dataAttrTarget="message-add"}}
+</div>
+<div class="msg-list">
+	{{>component/message/list channel=people index_start=0 index_end=8}}
+</div>
