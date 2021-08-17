@@ -37,6 +37,17 @@
 	&.-front {
 		z-index: 11;
 	}
+	// modal 
+	&-limit {
+		&-info {
+			pointer-events: none;
+			display: block;
+			position: relative;
+			text-align: center;
+			padding: 10px 10px 20px;
+			@include font-pack(false, false, 700, false, #fff);
+		}
+	}
 }
 // #modalPost {
 // 	over

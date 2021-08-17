@@ -1,4 +1,8 @@
 <!-- more -->
 <div class="more-block">
+	{{#if limit}}
+	{{>component/button type=type class="button-limit" name="btn-more-lock" label=label}}
+	{{else}}
 	{{>component/button type=type name="btn-more" label=label href=href}}
+	{{/if}}
 </div>

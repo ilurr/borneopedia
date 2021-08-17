@@ -33,6 +33,7 @@
 	
 
     <link href="../asset/css/style.css" rel="stylesheet" type="text/css">
+    <link href="http://xassets.borneopedia.com/css/main.css" rel="stylesheet" type="text/css">
 
 	<!-- tinymce -->
 	<script src="https://cdn.tiny.cloud/1/t8pnyourm2nt4bownb36wqp8ahusl8e6a7kzapaxs9ill67b/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
@@ -78,7 +79,7 @@
 								</button>
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuHeaderDropdown">
 									<a class="dropdown-item" href="profile-mypost.html">View Profile</a>
-									<a class="dropdown-item" href="index.html">Logout</a>
+									<a class="dropdown-item" href="index-login.html">Logout</a>
 								</div>
 							</div>
 						</div>
@@ -1447,6 +1448,9 @@
 							<div class="post-modal-content">
 								<textarea name="neoblog-textarea" id="neoblog-textarea-add" class="tinymce-textarea"></textarea>
 								<div class="post-footnote">
+									<div class="form-row">
+										<small class="text-muted">* post must contain at least 200 words</small>
+									</div>
 									<div class="post-input-counter"><span id="postRemainingNeoblog">0</span>/<span class="postMax">1000</span></div>
 								</div>
 							</div>
@@ -1537,6 +1541,7 @@ tinymce.init({
 	min_height: 285,
 	plugins: plugins,
 	toolbar: toolbar,
+	content_style: 'img { max-width: 100%; width: auto; height: auto }', // update agustus 2021
 	automatic_uploads: true,
 	file_picker_types: 'image',
 	file_picker_callback: function (cb, value, meta) {
@@ -1605,6 +1610,7 @@ tinymce.init({
 	min_height: 100,
 	plugins: plugins,
 	toolbar: toolbar,
+	content_style: 'img { max-width: 100%; width: auto; height: auto }', // update agustus 2021
 	setup: function(editor) {
 		editor.on('keyup', function(e) {
 			var wordcount = tinymce.activeEditor.plugins.wordcount;
@@ -1635,6 +1641,19 @@ $('#modalNeoblogAdd').on('shown.bs.modal', function () {
 });
 $('#modalQnaAdd').on('show.bs.modal', function () {
 	$('#modalNavAdd').modal('hide');
+});
+// show modal login to limit content | update agustus 2021
+$(document).on('click','.button-limit', function (e) {
+	e.preventDefault();
+	$('#modalLogin').find('.modal-content').before('<div class="modal-limit-info">Sign in to continue</div>')
+	$('#modalLogin').addClass('modal-limit');
+	$('#modalLogin').modal('show');
+});
+$('#modalLogin').on('hidden.bs.modal', function () {
+	if($(this).hasClass('modal-limit')) {
+		$(this).removeClass('modal-limit');
+		$(this).find('.modal-limit-info').remove();
+	}
 });
   
 // mention 

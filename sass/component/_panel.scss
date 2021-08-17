@@ -9,22 +9,66 @@
 	// @include min-responsive($screen-tablet) {
 	// }
 	&-alert {
-		padding: .75rem .5rem;
+		position: relative;
+		padding: .25rem 0 .25rem .75rem;
 		margin-bottom: 1rem;
-		text-align: center;
+		// text-align: center;
+		background: #f9f9f9;
 		border-radius: 4px;
 		@include font-pack(false, .75rem, 500, false, #fff);
+		&:before {
+			content: '';
+			position: absolute;
+			left: .75rem;
+			top: calc(50% - 1.375rem / 2);
+			width: 1.375rem;
+			height: 1.375rem;
+			border-radius: 1.375rem;
+		}
 		p {
 			margin: .25rem 0;
-			font-size: inherit;
-			font-weight: 500;
-			color: #fff;
+			// font-size: inherit;
+			font-weight: 700;
+			// color: #fff;
 		}
 		&.-success {
-			background: $color-success;
+			border-left: .188rem solid $color-success;
+			p {
+				margin-left: 2.125rem;
+			}
+			&:before {
+				background: $color-success;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				left: 1.063rem;
+				width: .75rem;
+				height: .375rem;
+				z-index: 2;
+				top: calc(50% - .188rem);
+				border-left: .188rem solid #fff;
+				border-bottom: .188rem solid #fff;
+				@include transform(rotate(-45deg));
+			}
 		}
 		&.-error {
-			background: $color-error;
+			border-left: .188rem solid $color-error;
+			p {
+				margin-left: 2.125rem;
+			}
+			&:before {
+				background: $color-error;
+			}
+			&:after {
+				content: '×';
+				position: absolute;
+				color: #fff;
+				top: calc(50% - 1.75rem / 2);
+				left: 1.063rem;
+				font-size: 1.25rem;
+				font-weight: 900;
+			}
 		}
 		&.-fixed {
 			position: fixed;
@@ -35,11 +79,37 @@
 			padding: .5rem .75rem;
 			bottom: 2rem;
 			width: calc(100% - 2rem);
+			box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+			@include transform(scale(.75));
+			transform-origin: left;
 			display: none;
 			@include min-responsive($screen-tablet) {
 				// max-width: 300px;
 				width: auto;
 				left: 1rem;
+			}
+			p {
+				// font-size: .875rem;
+				color: #fff;
+			}
+			&.-success {
+				&:before {
+					background: #fff;
+				}
+				&:after {
+					border-left: .188rem solid $color-success;
+					border-bottom: .188rem solid $color-success;
+				}
+				background: $color-success;
+			}
+			&.-error {
+				&:before {
+					background: #fff;
+				}
+				&:after {
+					color: $color-error;
+				}
+				background: $color-error;
 			}
 		}
 	}

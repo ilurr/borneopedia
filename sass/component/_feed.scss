@@ -119,6 +119,7 @@
 	&-text {
 		position: relative;
 		margin: .563rem 0;
+		word-break: break-word;
 		@include font-pack(false, 0.938rem, 400, 1.7, rgba(#131313, .9));
 		h2 {
 			border-top: 1px solid #E8E8E8;
@@ -476,17 +477,28 @@
 			font-weight: 400;
 		}
 		.feed-action {
-			margin-top: 1.5rem;
+			margin-top: 1.25rem;
 			// border-bottom: 1px solid #d7d7d7;
 			// border-top: 1px solid transparent;
 			// .button.-interact {
 			// 	background: transparent;
 			// }
 		}
+		.feed-time {
+			span {
+				font-size: .938rem;
+				font-weight: 800;
+				color: rgba(#000,.7);
+			}
+		}
 	}
 
 	&-draft {
 		position: relative;
+		.feed-text + .feed-img {
+			padding-top: 0;
+			margin: 0 -1.438rem .75rem;
+		}
 		.feed-action {
 			border-top: 1px solid transparent;
 		}

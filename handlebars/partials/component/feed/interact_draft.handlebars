@@ -1,8 +1,12 @@
 <div class="feed-action -manage">
-	{{#if question_empty}}
+	{{#if qna_action}}
 	<!-- answer button -->
 	<div class="feed-action-item">
+		{{#if question_empty}}
 		<div class="feed-time">Chelsea, can you answer this question?</div>
+		{{else}}
+		<div class="feed-time"><span>5 Answers</span>, 19 hours ago</div>
+		{{/if}}
 	</div>
 	<div class="feed-action-item feed-action-answer">
 		<button type="button" id="btn-feed-answer" name="btn-feed-answer" class="button -secondary" data-toggle="inline" data-target="{{type}}AnswerForm{{@index}}">

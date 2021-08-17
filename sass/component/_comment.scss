@@ -59,6 +59,7 @@
 	&-text {
 		position: relative;
 		padding: .25rem 0;
+		word-break: break-word;
 		@include font-pack(false, 0.938rem, 500, 1.7, #4D4D4D);
 	}
 	&-time {

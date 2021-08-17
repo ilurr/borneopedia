@@ -1,0 +1,15 @@
+.loading-icon-container {
+	width: 40px;
+	height: 36px;
+	top: 0;
+	background: #f5f4f4;
+    z-index: 1;
+	@include transform(translate(7px, -8px));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+}
+.loading-icon-container .loader::after, .loader::before {
+	background-color: transparent !important;
+}

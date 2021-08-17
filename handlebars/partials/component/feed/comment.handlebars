@@ -3,15 +3,15 @@
 	<div class="comment">
 		<div class="comment-feed">
 			{{#eq timeline compare="detail"}}
+			{{>component/feed/comment_list comments=comments co_start=0 co_end=3}}
 			<div class="comment-more">
 				{{>component/button type="button" name="btn-comment-load" class="-transparent" label="Load more comments"}}
 			</div>
-			{{>component/feed/comment_list comments=comments co_start=0 co_end=3}}
 			{{else}}
+			{{>component/feed/comment_list comments=comments co_start=0 co_end=1}}
 			<div class="comment-more">
 				{{>component/button type="link" href=link class="-transparent" label="View more comments"}}
 			</div>
-			{{>component/feed/comment_list comments=comments co_start=0 co_end=1}}
 			{{/eq}}
 		</div>
 	</div>
