@@ -1016,53 +1016,51 @@ a.dropdown-item.-loading-bar {
   width: 400px; }
   .panel-alert {
     position: relative;
-    padding: .25rem 0 .25rem .75rem;
+    padding: .75rem .5rem .75rem 2.5rem;
     margin-bottom: 1rem;
     background: #f9f9f9;
     border-radius: 4px;
     font-size: 0.75rem;
-    font-weight: 500;
-    color: #fff; }
+    font-weight: 700;
+    color: #000; }
     .panel-alert:before {
       content: '';
       position: absolute;
       left: .75rem;
-      top: calc(50% - 1.375rem / 2);
-      width: 1.375rem;
-      height: 1.375rem;
-      border-radius: 1.375rem; }
+      top: calc(50% - 1.125rem / 2);
+      width: 1.125rem;
+      height: 1.125rem;
+      border-radius: 1.125rem; }
     .panel-alert p {
-      margin: .25rem 0;
-      font-weight: 700; }
+      margin: 0;
+      font-size: inherit;
+      font-weight: inherit;
+      color: inherit; }
     .panel-alert.-success {
       border-left: 0.188rem solid #43b300; }
-      .panel-alert.-success p {
-        margin-left: 2.125rem; }
       .panel-alert.-success:before {
         background: #43b300; }
       .panel-alert.-success:after {
         content: '';
         position: absolute;
-        left: 1.063rem;
+        left: .96rem;
         width: .75rem;
         height: .375rem;
         z-index: 2;
-        top: calc(50% - .188rem);
+        top: calc(50% - .25rem);
         border-left: .188rem solid #fff;
         border-bottom: .188rem solid #fff;
         transform: rotate(-45deg); }
     .panel-alert.-error {
       border-left: 0.188rem solid #E82828; }
-      .panel-alert.-error p {
-        margin-left: 2.125rem; }
       .panel-alert.-error:before {
         background: #E82828; }
       .panel-alert.-error:after {
         content: '×';
         position: absolute;
         color: #fff;
-        top: calc(50% - 1.75rem / 2);
-        left: 1.063rem;
+        top: calc(50% - 28px / 2);
+        left: .96rem;
         font-size: 1.25rem;
         font-weight: 900; }
     .panel-alert.-fixed {
@@ -1071,10 +1069,11 @@ a.dropdown-item.-loading-bar {
       margin-left: 1rem;
       margin-right: 1rem;
       margin-bottom: 0;
-      padding: .5rem .75rem;
       bottom: 2rem;
       width: calc(100% - 2rem);
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      font-size: 1rem;
       transform: scale(0.75);
       transform-origin: left;
       display: none; }
@@ -1082,8 +1081,6 @@ a.dropdown-item.-loading-bar {
         .panel-alert.-fixed {
           width: auto;
           left: 1rem; } }
-      .panel-alert.-fixed p {
-        color: #fff; }
       .panel-alert.-fixed.-success {
         background: #43b300; }
         .panel-alert.-fixed.-success:before {
@@ -1097,11 +1094,6 @@ a.dropdown-item.-loading-bar {
           background: #fff; }
         .panel-alert.-fixed.-error:after {
           color: #E82828; }
-  .panel-body {
-    font-size: 0.75rem; }
-    .panel-body p {
-      margin: .25rem 0;
-      font-size: inherit; }
   .panel-group {
     position: relative; }
     .panel-group .panel {
@@ -1769,12 +1761,20 @@ a.dropdown-item.-loading-bar {
     font-size: 1.125rem;
     font-weight: 800;
     color: #171717; }
+    .feed-title span.at {
+      color: var(--color-theme); }
     .feed-title > span {
       padding: .25rem 0 0;
       display: block;
       font-weight: 400;
       font-size: .875rem;
       color: rgba(23, 23, 23, 0.8); }
+      .feed-title > span.at {
+        display: inline;
+        padding: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        color: var(--color-theme); }
   .feed-subtitle {
     position: relative;
     margin: 0;
@@ -4136,7 +4136,7 @@ a.dropdown-item.-loading-bar {
 
 .setting {
   position: relative;
-  padding: .875rem 2rem 1.875rem;
+  padding: 1.875rem 2rem 1.875rem;
   margin: .938rem 0; }
   .setting-block {
     position: relative; }
@@ -4199,6 +4199,8 @@ a.dropdown-item.-loading-bar {
     color: inherit;
     font-weight: inherit;
     padding: 0; }
+  .setting-block > .setting-subtitle:first-child {
+    margin: .5rem 0 .75rem; }
 
 .search {
   position: relative;
