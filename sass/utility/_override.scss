@@ -13,3 +13,24 @@
 .loading-icon-container .loader::after, .loader::before {
 	background-color: transparent !important;
 }
+
+// upload
+.user-form {
+	&-col {
+		flex-basis: 0;
+		flex-grow: 1;
+		label:empty {
+			min-height: 16px;
+			margin-bottom: .25rem;
+		} 
+		// input[type=file] {
+		// 	width: 185px;
+		// }
+	}
+	&-document {
+		margin-left: 1.5rem;
+		width: 175px;
+		flex-basis: 175px;
+		flex-grow: 0;
+	}
+}

@@ -1,6 +1,6 @@
 .setting {
 	position: relative;
-	padding: .875rem 2rem 1.875rem;
+	padding: 1.875rem 2rem 1.875rem;
 	margin: .938rem 0;
 	&-block {
 		position: relative;
@@ -30,6 +30,22 @@
 	&-subtitle {
 		position: relative;
 		margin: 1.5rem 0 .75rem;
+		@include font-pack(false, 1.125rem, 700, false, false);
+	}
+	&-lead {
+		position: relative;
+		margin: .5rem 0 1.5rem;
+		@include font-pack(false, .875rem, 400, false, false);
+	} 
+	&-subsection {
+		position: relative;
+		margin: 1rem 0 .5rem;
+		@include font-pack(false, .875rem, 700, false, false);
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		& + .setting-lead {
+			margin: .5rem 0;
+		}
 	}
 	&-link {
 		display: block;
@@ -80,6 +96,9 @@
 			color: inherit;
 			font-weight: inherit;
 			padding: 0;
+		}
+		& > .setting-subtitle:first-child {
+			margin: .5rem 0 .75rem;
 		}
 	}
 }

@@ -11,6 +11,7 @@
 	}
 
 	// item
+	&-file,
 	&-input {
 		display: block;
 		position: relative;
@@ -125,23 +126,26 @@
 		position: relative;
 		width: 100%;
 		height: 40px;
-		margin: 0.250rem 0;
+		margin: 0;
 		padding: 0;
 		border-radius: 6px;
 		background: #fff;
-		// &:after {
-		// 	content: "";
-		// 	display: inline-block;
-		// 	position: absolute;
-		// 	z-index: 1;
-		// 	top: calc(50% - 0.25rem);
-		// 	right: 10px;
-		// 	pointer-events: none;
-		// 	width: 0.8rem;
-		// 	height: 0.5rem;
-		// 	background: darken(#ADB4BC, 50%);
-		// 	clip-path: polygon(100% 0%, 0 0%, 50% 100%);		  
-		// }
+		&:after {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			z-index: 1;
+			top: calc(50% - 0.25rem);
+			right: .875rem;
+			pointer-events: none;
+			width: 0.5rem;
+			height: 0.5rem;
+			border-bottom: 2px solid #212121;
+			border-right: 2px solid #212121;
+			@include transform(rotate(45deg));
+			// background: darken(#ADB4BC, 50%);
+			// clip-path: polygon(100% 0%, 0 0%, 50% 100%);		  
+		}
 	}
 	&-radio {
 		position: relative;
@@ -222,6 +226,7 @@
 	&-error {
 		.form-textarea textarea,
 		.form-select select,
+		.form-file input,
 		.form-input input {
 			border: 1px solid $color-error;
 		}

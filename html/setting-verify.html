@@ -194,7 +194,7 @@
 									</a>
 								</li>
 								<li class="nav-item">
-									<a href="setting.html" class="nav-link" role="link" aria-label="Setting">
+									<a href="setting.html" class="nav-link -active" role="link" aria-label="Setting">
 										<div class="nav-flex">
 											<div class="nav-icon">
 												<span class="icon-general icon-setting"></span>
@@ -232,102 +232,153 @@
 
 				<div class="grid-col -wide">
 
-					<!-- pofile edit -->
-					<div class="user-profile box">
-						<form action="profile.html">
-							<div class="user-form">
+					<!-- setting -->
+					<div class="setting box">
+						<h2 class="title">Verified Account</h2>
+						<form action="setting.html">
+							<div class="user-form setting-verify">
+								<div class="setting-lead">
+									A verified badge is a check that appears next to an account's name on the profile. It means has confirmed that an account  is the authentic presence of the public figure, celebrity or brand it represents
+								</div>
+								<h3 class="setting-subsection">Step 1</h3>
 								<div class="user-form-row">
-									<div class="user-form-avatar">
-										<div class="user-avatar">
-											<img src="../asset/images/dummy/avatar.jpg" alt="">
+									<div class="form-row">
+										<label for="verify-username">Username</label>
+										<div class="form-input">
+											<input type="text" id="verify-username" name="verify-username" class="input" placeholder="">
 										</div>
-										<span>Change Profile Picture</span>
-										<a href="#modalAvatar" data-toggle="modal" class="user-avatar-button" role="button">
-											<span class="icon-general icon-photo"></span>
-										</a>
+										<div class="form-hint"></div>
 									</div>
+									<div class="form-row">
+										<label for="verify-fullname">Full Name</label>
+										<div class="form-input">
+											<input type="text" id="verify-fullname" name="verify-fullname" class="input" placeholder="">
+										</div>
+										<div class="form-hint"></div>
+									</div>
+									<div class="user-form-flex">
+										<div class="user-form-col">
+											<div class="form-row">
+												<label for="verify-document-type">Document Type</label>
+												<div class="form-select" data-placeholder=" ">
+													<select id="verify-document-type" name="verify-document-type" class="select ">
+														<option value="0" selected="selected" disabled="disabled"> </option>
+														<option value="Driver&#x27;s License (SIM)">Driver&#x27;s License (SIM)</option>
+														<option value="National ID card (KTP)">National ID card (KTP)</option>
+														<option value="NPWP">NPWP</option>
+														<option value="Passport">Passport</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="user-form-col user-form-document">
+											<div class="form-row">
+												<label for="verify-document-file"></label>
+												<div class="form-file">
+													<input type="file" id="verify-document-file" name="verify-document-file" class="input" placeholder="Choose File">
+												</div>
+												<div class="form-hint"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<h3 class="setting-subsection">Step 2</h3>
+								<div class="setting-lead">
+									Select category for the public figure, celebrity or brand your account represents in public
 								</div>
 								<div class="user-form-row">
 									<div class="form-row">
-										<label for="name">Name</label>
-										<div class="form-input">
-											<input type="text" id="name" name="name" class="input" placeholder="" value="Chelsea Islan">
-										</div>
-										<div class="form-hint"></div>
-									</div>
-									<div class="form-row" id="js-datepicker-container">
-										<label for="birthday">Birthday</label>
-										<div class="form-input">
-											<input type="text" id="birthday" name="birthday" class="input js-datepicker" placeholder="" readonly="readonly" value="12 Mar 1999">
-										</div>
-										<div class="form-hint"></div>
-									</div>
-									<div class="form-row">
-										<label for="gender">Gender</label>
-										<div class="form-select" data-placeholder="-">
-											<select id="gender" name="gender" class="select ">
-												<option value="0" selected="selected" disabled="disabled">-</option>
-												<option value="Male">Male</option>
-												<option value="Female">Female</option>
+										<label for="verify-category">Category</label>
+										<div class="form-select" data-placeholder=" ">
+											<select id="verify-category" name="verify-category" class="select ">
+												<option value="0" selected="selected" disabled="disabled"> </option>
+												<option value="Digital Creator/Blogger/Influencer">Digital Creator/Blogger/Influencer</option>
+												<option value="Musician">Musician</option>
+												<option value="Global Business/Brand/Organization">Global Business/Brand/Organization</option>
+												<option value="Reporter">Reporter</option>
+												<option value="Athlete">Athlete</option>
+												<option value="Student">Student</option>
+												<option value="Government">Government</option>
+												<option value="Politician">Politician</option>
+												<option value="Businessman">Businessman</option>
+												<option value="Artist">Artist</option>
+												<option value="Actor/Actress">Actor/Actress</option>
 											</select>
 										</div>
 									</div>
+								</div>
+								<h3 class="setting-subsection">Links</h3>
+								<div class="setting-lead">
+									Add website, social media account and other links that show your account is in public
+								</div>
+								<div class="user-form-row">
 									<div class="form-row">
-										<label for="phone">Phone</label>
+										<label for="verify-website">Website</label>
 										<div class="form-input">
-											<input type="text" id="phone" name="phone" class="input" placeholder="" value="0987654321">
+											<input type="text" id="verify-website" name="verify-website" class="input" placeholder="https://www.website.com/...">
 										</div>
 										<div class="form-hint"></div>
 									</div>
 									<div class="form-row">
-										<label for="location">Location</label>
+										<label for="verify-twitter">Twitter</label>
 										<div class="form-input">
-											<input type="text" id="location" name="location" class="input" placeholder="" value="South Jakarta, Indonesia">
+											<input type="text" id="verify-twitter" name="verify-twitter" class="input" placeholder="https://twitter.com/...">
 										</div>
 										<div class="form-hint"></div>
 									</div>
 									<div class="form-row">
-										<label for="short-bio">Short Bio</label>
+										<label for="verify-instagram">Instagram</label>
 										<div class="form-input">
-											<input type="text" id="short-bio" name="short-bio" class="input" placeholder="" value="Penulis">
+											<input type="text" id="verify-instagram" name="verify-instagram" class="input" placeholder="https://www.instagram.com/...">
+										</div>
+										<div class="form-hint"></div>
+									</div>
+									<div class="form-row">
+										<label for="verify-facebook">Facebook</label>
+										<div class="form-input">
+											<input type="text" id="verify-facebook" name="verify-facebook" class="input" placeholder="https://www.facebook.com/...">
+										</div>
+										<div class="form-hint"></div>
+									</div>
+									<div class="form-row">
+										<label for="verify-linkedin">Linkedin</label>
+										<div class="form-input">
+											<input type="text" id="verify-linkedin" name="verify-linkedin" class="input" placeholder="https://www.linkedin.com/...">
 										</div>
 										<div class="form-hint"></div>
 									</div>
 								</div>
 								<div class="user-form-action">
 									<div class="form-row">
-										<input type="submit" name="btn-save-user" id="btn-save-user" value="Save" class="button -primary">
+										<button type="button" name="btn-save-user" class="button -primary" data-toggle="modal" data-target="#modalVerifyAcc">Submit</button>
 									</div>
+								</div>
+								<div class="user-form-note">
+									We’ll only use the information you submit to determine if your account meets our verification criteria
 								</div>
 							</div>		
 						</form>
 					</div>
 
-					<!-- modal change avatar -->
-					<form action="profile.html">
-					<div id="modalAvatar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="changeAvatar" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
-								<div class="modal-header">
-									<h5 class="modal-title" id="changeAvatar">Preview Avatar</h5>
-								</div>
-								<div class="modal-body">
-									<div class="user-modal-body">
-										<p>Your profile avatar will look like this. Best image ratio should be 1:1 (square)</p>
-										<div class="user-modal-img">
-											<img src="../asset/images/dummy/avatar.jpg" alt="">
-										</div>
-										<p>* Maximum size 2Mb. File type should be .jpg, .jpeg or .png format</p>
+					<!-- modal callback -->
+					<form action="setting.html">
+						<div id="modalVerifyAcc" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="VerifyAcc" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+									<div class="modal-header">
+										<h5 class="modal-title" id="VerifyAcc">Verified Account</h5>
 									</div>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="button" data-dismiss="modal">Cancel</button>
-									<button name="btn-avatar-save" class="button -primary">Save</button>
+									<div class="modal-body">
+										<div class="modal-text">We’ll only use the information you submit to determine if your account meets our verification criteria</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="button" data-dismiss="modal">Cancel</button>
+										<button class="button -primary">Submit</button>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 					</form>
 
 				</div>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header login=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav logged=true active="Setting"}}
+
+						{{>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- setting -->
+					<div class="setting box">
+						<h2 class="title">Verified Account</h2>
+						<form action="setting.html">
+							<div class="user-form setting-verify">
+								<div class="setting-lead">
+									A verified badge is a check that appears next to an account's name on the profile. It means has confirmed that an account  is the authentic presence of the public figure, celebrity or brand it represents
+								</div>
+								<h3 class="setting-subsection">Step 1</h3>
+								<div class="user-form-row">
+									{{>component/input type="text" label="Username" name="verify-username"}}
+									{{>component/input type="text" label="Full Name" name="verify-fullname"}}
+									<div class="user-form-flex">
+										<div class="user-form-col">
+											{{>component/select option="Driver's License (SIM),National ID card (KTP),NPWP,Passport" placeholder=" " label="Document Type" name="verify-document-type"}}
+										</div>
+										<div class="user-form-col user-form-document">
+											{{>component/input type="file" name="verify-document-file" placeholder="Choose File"}}
+										</div>
+									</div>
+								</div>
+								<h3 class="setting-subsection">Step 2</h3>
+								<div class="setting-lead">
+									Select category for the public figure, celebrity or brand your account represents in public
+								</div>
+								<div class="user-form-row">
+									{{>component/select option="Digital Creator/Blogger/Influencer,Musician,Global Business/Brand/Organization,Reporter,Athlete,Student,Government,Politician,Businessman,Artist,Actor/Actress" placeholder=" " label="Category" name="verify-category"}}
+								</div>
+								<h3 class="setting-subsection">Links</h3>
+								<div class="setting-lead">
+									Add website, social media account and other links that show your account is in public
+								</div>
+								<div class="user-form-row">
+									{{>component/input type="text" label="Website" placeholder="https://www.website.com/..." name="verify-website"}}
+									{{>component/input type="text" label="Twitter" placeholder="https://twitter.com/..." name="verify-twitter"}}
+									{{>component/input type="text" label="Instagram" placeholder="https://www.instagram.com/..." name="verify-instagram"}}
+									{{>component/input type="text" label="Facebook" placeholder="https://www.facebook.com/..." name="verify-facebook"}}
+									{{>component/input type="text" label="Linkedin" placeholder="https://www.linkedin.com/..." name="verify-linkedin"}}
+								</div>
+								<div class="user-form-action">
+									{{>component/button type="modal" name="btn-save-user" class="-primary" label="Submit" dataAttrTarget="#modalVerifyAcc"}}
+								</div>
+								<div class="user-form-note">
+									We’ll only use the information you submit to determine if your account meets our verification criteria
+								</div>
+							</div>		
+						</form>
+					</div>
+
+					<!-- modal callback -->
+					<form action="setting.html">
+						<div id="modalVerifyAcc" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="VerifyAcc" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+									<div class="modal-header">
+										<h5 class="modal-title" id="VerifyAcc">Verified Account</h5>
+									</div>
+									<div class="modal-body">
+										<div class="modal-text">We’ll only use the information you submit to determine if your account meets our verification criteria</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="button" data-dismiss="modal">Cancel</button>
+										<button class="button -primary">Submit</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+
+				</div>
+
+				<div class="grid-col -aside">
+					{{>layout/sidebar}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- emoji source -->
+	<div id="emoji">
+		{{>component/emoji}}
+	</div>
+
+	<!-- nav add post -->
+	{{>module/nav_add_post}}
+
+{{>base/js}}
+</body>
+</html>

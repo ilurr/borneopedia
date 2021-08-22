@@ -3,7 +3,7 @@
 	{{else}}
 	<label for="{{name}}">{{label}}</label>
 	{{/eq}}
-	<div class="form-input">
+	<div class="{{#eq type compare="file"}}form-file{{else}}form-input{{/eq}}">
 		<input type="{{type}}" id="{{name}}" name="{{name}}" class="input{{#if txterror}} -error{{/if}}{{#if function}} {{function}}{{/if}}" placeholder="{{placeholder}}"{{#eq required compare="true"}} required="required"{{/eq}}{{#eq disabled compare="true"}} disabled="disabled"{{/eq}}{{#eq readonly compare="true"}} readonly="readonly"{{/eq}}{{#if txtVal}} value="{{txtVal}}"{{/if}}>
 	</div>
 	<div class="form-hint">{{{txthint}}}</div>
