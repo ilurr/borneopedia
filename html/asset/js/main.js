@@ -348,3 +348,7 @@ $('.js-datepicker').datepicker({
 //scrollbar
 $('.aside-scroll').scrollbar();;
 
+// tooltips
+$(function () {
+	$('[data-tooltip="tooltip"]').tooltip()
+})
