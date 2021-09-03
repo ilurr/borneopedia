@@ -22,12 +22,12 @@
 			<div class="user-stat">21 <span>Activities</span></div>
 		</div>
 		<div class="user-col">
-			<a class="user-stat-link" href="people.html">
+			<a class="user-stat-link" href="#" role="button" data-toggle="modal" data-target="#modalFollowers">
 				<div class="user-stat">1234 <span>Followers</span></div>
 			</a>
 		</div>
 		<div class="user-col">
-			<a class="user-stat-link" href="people.html">
+			<a class="user-stat-link" href="#" role="button" data-toggle="modal" data-target="#modalFollowing">
 				<div class="user-stat">2 <span>Following</span></div>
 			</a>
 		</div>
@@ -48,3 +48,42 @@
 		{{/if}}
 	</div>
 </section>
+
+<!-- followers -->
+<div id="modalFollowers" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalFollowers" aria-hidden="true">
+	<div class="modal-dialog -small">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+			<div class="modal-header">
+				<h5 class="modal-title">Followers</h5>
+			</div>
+			<div class="modal-body">
+				<div class="people-block -modal">
+					<div class="people-list">
+						{{>module/people_list channel=people index_start=0 index_end=20}}
+					</div>
+					{{>component/more type="button" label="Load more"}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- following -->
+<div id="modalFollowing" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalFollowing" aria-hidden="true">
+	<div class="modal-dialog -small">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+			<div class="modal-header">
+				<h5 class="modal-title">Following</h5>
+			</div>
+			<div class="modal-body">
+				<div class="people-block -modal">
+					<div class="people-list">
+						{{>module/people_list channel=people index_start=10 index_end=20}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

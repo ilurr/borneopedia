@@ -526,6 +526,9 @@
 			margin: 0 0 1.5rem;
 			border-radius: 5px;
 			overflow: hidden;
+			& > img {
+				width: 100%;
+			}
 		}
 		.feed-img-object span {
 			// padding-top: calc(1280 / 1080 * 100%);
@@ -559,6 +562,12 @@
 				color: var(--color-theme);
 				&:hover {
 					color: inherit;
+				}
+			}
+			p + .feed-img {
+				margin: 0 0 1rem;
+				&:empty {
+					margin: 0;
 				}
 			}
 		}

@@ -1487,7 +1487,10 @@ a.dropdown-item.-loading-bar {
       font-size: 0.75rem;
       padding: .438rem 1rem; }
     .people-block.-modal {
-      padding: 0 1.25rem; }
+      padding: 0 1.25rem 1.5rem; }
+      .people-block.-modal .people-info {
+        padding-left: 1rem;
+        padding-right: .75rem; }
   .people-aside {
     position: relative; }
     .people-aside a {
@@ -2129,6 +2132,8 @@ a.dropdown-item.-loading-bar {
     margin: 0 0 1.5rem;
     border-radius: 5px;
     overflow: hidden; }
+    .feed-detail .feed-img > img {
+      width: 100%; }
   .feed-detail .feed-img-object span {
     padding-top: 0; }
   .feed-detail .feed-img-object img {
@@ -2153,6 +2158,10 @@ a.dropdown-item.-loading-bar {
     color: var(--color-theme); }
     .feed-detail .feed-text a:hover {
       color: inherit; }
+  .feed-detail .feed-text p + .feed-img {
+    margin: 0 0 1rem; }
+    .feed-detail .feed-text p + .feed-img:empty {
+      margin: 0; }
   .feed-detail .feed-block.-qna.-answered .feed-title {
     border: transparent;
     background: transparent;

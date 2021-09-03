@@ -83,7 +83,11 @@
 			}		
 		}
 		&.-modal {
-			padding: 0 1.25rem;
+			padding: 0 1.25rem 1.5rem;
+			.people-info {
+				padding-left: 1rem;
+				padding-right: .75rem;
+			}
 		}
 	}
 	&-aside {
