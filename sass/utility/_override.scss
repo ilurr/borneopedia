@@ -34,3 +34,8 @@
 		flex-grow: 0;
 	}
 }
+
+// plugin scrollbar
+.scroll-wrapper{
+	-ms-overflow-style : none
+}

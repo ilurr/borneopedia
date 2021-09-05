@@ -114,6 +114,7 @@
 		margin: 10vh 0 1rem;
 		& + .panel {
 			margin-top: 1rem;
+			margin-bottom: 1rem;
 			z-index: 1;
 		}
 	}
@@ -128,7 +129,7 @@
 	}
 	&-download {
 		position: relative;
-		padding: 1rem 0;
+		margin: 0;
 		.app-badge img {
 			height: 40px;
 			margin-left: .875rem;
@@ -176,4 +177,7 @@
 	@include min-responsive($screen-large-desktop) {
 		margin: 0 calc((-100vw + (1160px - 1.876rem)) / 2);
 	}
+}
+.welcome-logo ~ .welcome-bg {
+    margin-top: 6vh;
 }

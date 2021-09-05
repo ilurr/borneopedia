@@ -3591,6 +3591,7 @@
 		"lng": 106.823691,
 		"question": "Apakah pantai paling indah di Kalimantan pak <span class=\"at\" contenteditable=\"false\">@Chris Wibisana</span>?",
 		"unanswered": 1,
+		"unanswered_wait": 1,
 		"anonymous": 1,
 		"link": "qna-question-empty.html"
 	  },

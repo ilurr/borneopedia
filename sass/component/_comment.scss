@@ -99,6 +99,10 @@
 			padding: .125rem;
 			font-size: .875rem;
 			color: #A5A5A5;
+			&.-loading-bar {
+				background-size: auto 225%;
+				background-position: 65% center;
+			}
 		}
 	}
 }

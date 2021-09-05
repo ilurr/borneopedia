@@ -12,6 +12,9 @@
 		</a>
 		{{/eq}}
 		{{#eq timeline compare="detail"}}
+		{{#if comment}}
+		<div class="feed-reply-to">Reply to <span>Kiki Rahmadhani</span></div>
+		{{/if}}
 		<input type="text" class="feed-reply-input" placeholder="Write comment...">
 		<div class="loading-icon-container"><i class="loader"></i></div>
 		<button type="button" data-toggle="emoji" data-container="feed-reply" data-target="feed-reply-input" class="button feed-reply-emoji">

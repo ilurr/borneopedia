@@ -5,7 +5,7 @@
 			{{#eq timeline compare="detail"}}
 			{{>component/feed/comment_list comments=comments co_start=0 co_end=3}}
 			<div class="comment-more">
-				{{>component/button type="button" name="btn-comment-load" class="-transparent" label="Load more comments"}}
+				{{>component/button type="button" name="btn-comment-load" class="-transparent -loading-bar" label="Load more comments"}}
 			</div>
 			{{else}}
 			{{>component/feed/comment_list comments=comments co_start=0 co_end=1}}

@@ -50,8 +50,12 @@
 	{{#if unanswered}}
 	<!-- answer button -->
 	<div class="feed-action-item feed-action-answer">
-		<button type="button" id="btn-feed-answer" name="btn-feed-answer" class="button -secondary" data-toggle="inline" data-target="{{type}}AnswerForm{{@index}}">
+		<button type="button" id="btn-feed-answer" name="btn-feed-answer" class="button -secondary{{#if unanswered_wait}} active{{/if}}" data-toggle="inline" data-target="{{type}}AnswerForm{{@index}}">
+			{{#if unanswered_wait}}
+			Waiting for Answer
+			{{else}}
 			Answer
+			{{/if}}
 		</button>
 	</div>
 	{{/if}}
