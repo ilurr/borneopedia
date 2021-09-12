@@ -1,0 +1,234 @@
+.cover {
+	position: relative;
+	background: var(--color-theme);
+	padding: 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&-title {
+		position: relative;
+		display: none;
+		margin: 0;
+	}
+	&-lead {
+		position: relative;
+		margin: 0;
+		padding: .5rem 0;
+		@include font-pack(false, 1rem, 400, false, #fff);
+	}
+	&-logo {
+		position: relative;
+		padding: .5rem 0;
+	}
+	&-img {
+		position: relative;
+		width: 100vw;
+		height: 205px;
+		overflow: hidden;
+		margin: 2rem -1rem -2rem;
+		z-index: 1;
+		img {
+			@include ratio-flexible(auto, 100%);
+		}
+	}
+}
+
+.about {
+	&-cover {
+		position: relative;
+		background: var(--color-theme);
+		display: flex;
+		justify-content: center;
+		z-index: 1;
+		@include min-responsive($screen-tablet) {
+			padding-bottom: 5rem;
+		}
+	}
+	&-box {
+		position: relative;
+		width: 100%;
+		background: #fff;
+		padding: 1.875rem 1.5rem 3.5rem;
+		border-radius: 10px 10px 0 0;
+		margin-top: -1rem;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		@include min-responsive($screen-tablet) {
+			padding: 1.875rem 1.5rem;
+			width: 700px;
+			border-radius: 10px;
+		}
+		@include min-responsive($screen-desktop) {
+			width: 900px;
+		}
+	}
+	&-icon {
+		position: relative;
+		img {
+			height: 2rem;
+			// @include min-responsive($screen-tablet) {
+			// 	height: auto;
+			// }
+		}
+	}
+	&-content {
+		position: relative;
+		text-align: center;
+		padding: 1rem 1rem;
+		@include font-pack(false, 1.188rem, 300, 1.5, #494949);
+		p {
+			margin: 0;
+			@include font-pack(false, 1.188rem, 300, 1.5, #494949);
+		}
+	}
+}
+
+.service {
+	&-cover {
+		position: relative;
+		background: #F1F3F5;
+		min-height: 325px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		z-index: 2;
+		@include min-responsive($screen-desktop) {
+			min-height: 425px;
+		}
+		&-bg {
+			position: absolute;
+			height: calc(100% + 50px);
+			width: 100%;
+			bottom: 0;
+			z-index: 2;
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			background-size: auto;
+			pointer-events: none;
+			@include min-responsive($screen-tablet) {
+				background-position: calc(50vw - 250px) bottom;
+			}
+			@include min-responsive($screen-desktop) {
+				height: 100%;
+				background-position: calc(50vw - 380px) bottom;
+			}
+		}
+	}
+	&-teaser {
+		position: relative;
+		width: 45%;
+		margin: 0;
+		padding: 0 .5rem 0 .25rem;
+		text-align: center;
+		@include font-pack(false, .938rem, 700, false, #3F3F3F);
+		@include min-responsive($screen-tablet) {
+			text-align: left;
+			width: 50vw;
+			font-size: 1rem;
+		}
+		@include min-responsive($screen-desktop) {
+			width: 60vw;
+			font-size: 1.5rem;
+		}
+	}
+
+	// 
+	&-box {
+		position: relative;
+		background: #fff;
+		padding: 2rem;
+		@include min-responsive($screen-desktop) {
+			padding: 3rem 2rem;
+		}
+	}
+	&-list {
+		position: relative;
+		@include min-responsive($screen-desktop) {
+			width: 900px;
+			margin: 0 auto;
+			padding: 0 2rem;
+		}
+	}
+	&-item {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		padding: 1rem 0;
+		@include min-responsive($screen-desktop) {
+			flex-direction: row;
+		}
+	}
+	&-feature {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: .5rem 0;
+		@include min-responsive($screen-desktop) {
+			flex-basis: 30%;
+			flex-grow: 0;
+		}
+	}
+	&-icon {
+		position: relative;
+		display: flex;
+		margin-right: .5rem;
+		.icon-general {
+			width: 1.25rem;
+			height: 1.25rem;
+			@include min-responsive($screen-desktop) {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+	}
+	&-title {
+		position: relative;
+		@include font-pack(false, 1.125rem, 700, false, #14171A);
+		@include min-responsive($screen-desktop) {
+			font-size: 1.375rem;
+		}
+	}
+	&-content {
+		position: relative;
+		text-align: center;
+		padding: 0 .5rem;
+		@include font-pack(false, .875rem, 400, 1.5, #575757);
+		@include min-responsive($screen-desktop) {
+			flex-basis: 0;
+			flex-grow: 1;
+			text-align: left;
+			font-size: 1rem;
+		}
+	}
+}
+
+.join {
+	position: relative;
+	&-box {
+		position: relative;
+		padding: 3rem 2rem;
+		background: #FFAC3E;
+	}
+	&-lead {
+		position: relative;
+		text-align: center;
+		padding-bottom: 1rem;
+		@include font-pack(false, .875rem, 400, 1.5, #000);
+		@include min-responsive($screen-desktop) {
+			font-size: 1rem;
+		}
+	}
+	&-button {
+		position: relative;
+		width: 275px;
+		margin: 0 auto;
+		.button {
+			font-weight: 900;
+			text-transform: uppercase;
+		}
+	}
+}

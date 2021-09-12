@@ -2624,10 +2624,10 @@
 		</div>
 
 		<!-- notify message -->
-		<div id="success-msg" class="panel-alert -fixed -success">
+		<div id="success-msg" class="panel-alert -fixed -success -modal">
 			<p>Yeay! You were successful.</p>
 		</div>
-		<div id="error-msg" class="panel-alert -fixed -error">
+		<div id="error-msg" class="panel-alert -fixed -error -modal">
 			<p>Failed, there was a problem, try again later.</p>
 		</div>
 
@@ -3884,6 +3884,15 @@ function insertTextAtCaret(text) {
     };
 }
 
+</script>
+<script>
+// dummy alert succes / failed message
+let msg = document.getElementById('success-msg');
+if(!!msg) {
+	setTimeout(function(){
+		$('#success-msg').fadeIn(300);
+	}, 300);
+}
 </script>
 </body>
 </html>

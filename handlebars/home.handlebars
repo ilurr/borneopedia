@@ -57,7 +57,7 @@
 		</div>
 
 		<!-- notify message -->
-		{{>module/panel_alert}}
+		{{>module/panel_alert modal=true}}
 
 	</div>
 	<!-- e: root -->
@@ -71,5 +71,14 @@
 	{{>module/nav_add_post}}
 
 {{>base/js}}
+<script>
+// dummy alert succes / failed message
+let msg = document.getElementById('success-msg');
+if(!!msg) {
+	setTimeout(function(){
+		$('#success-msg').fadeIn(300);
+	}, 300);
+}
+</script>
 </body>
 </html>

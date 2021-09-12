@@ -39,3 +39,10 @@
 .scroll-wrapper{
 	-ms-overflow-style : none
 }
+
+// mobile
+body.mobile {
+	.root {
+		width: 100%;
+	}
+} 

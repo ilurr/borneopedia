@@ -6,7 +6,7 @@
 	<button name="{{name}}" id="{{#if id}}{{id}}{{else}}{{name}}{{/if}}" class="button{{#if class}} {{class}}{{/if}}"{{#eq disabled compare="true"}} disabled="disabled"{{/eq}}>{{label}}</button>
 	{{/eq}}
 	{{#eq type compare="link"}}
-	<a href="{{href}}" class="button{{#if class}} {{class}}{{/if}}{{#eq active compare=title}} active{{/eq}}" role="link">{{#if badge}}<span class="nav-badge"></span>{{/if}}{{#if icon}}<span class="icon-general icon-{{icon}}"></span> {{/if}}{{#if icon_only}}{{else}}{{label}}{{/if}}</a>
+	<a href="{{href}}" {{#if id}} id="{{id}}"{{/if}}class="button{{#if class}} {{class}}{{/if}}{{#eq active compare=title}} active{{/eq}}" role="link">{{#if badge}}<span class="nav-badge"></span>{{/if}}{{#if icon}}<span class="icon-general icon-{{icon}}"></span> {{/if}}{{#if icon_only}}{{else}}{{label}}{{/if}}</a>
 	{{/eq}}
 	{{#eq type compare="follow"}}
 	{{!-- custom --}}

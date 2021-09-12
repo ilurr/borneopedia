@@ -3,38 +3,121 @@
 
 {{>base/head font="link"}}
 
-<body>
+<body class="mobile">
+
+	<!-- smartbanner -->
+	<div id="smart-banner" class="smart-banner">
+		<div class="smart-wrap">
+			<div class="smart-left"><a class="smart-close">×</a>
+				<div class="smart-icon" style="background-image:url('./asset/images/app-icon.png')"></div>
+			</div>
+			<div class="smart-info">
+				<div class="smart-desc">Borneopedia for <span id="smart-type"></span></div>
+				<div class="smart-rating">
+					<span class="bg"></span>
+					<span class="fg" id="smart-rating" data-rating="4.5"></span>
+				</div>
+			</div>
+			<div class="smart-right">
+				<div class="smart-btn">Install</div>
+			</div>
+		</div>
+		<a class="smart-link" id="smart-link" href="#" data-playstore="https://play.google.com/store/apps/details?id=com.ertanto.kompas.official&hl=en&gl=US" data-appstore="https://apps.apple.com/id/app/kompas-com-berita-terpercaya/id535483055"></a>
+	</div>
+
 	<!-- s: root -->
 	<div class="root">
 
-		<div class="welcome-wrap">
-			<header class="welcome-logo">
-				<h1 class="welcome-img">
-					<a href="index.html" role="link">
-						<img src="../asset/images/logo-{{lowercase base.title}}-red.svg" alt="{{base.title}}" width="447" height="79">
-					</a>
-				</h1>
-			</header>
+		<section class="cover">
+			<div class="cover-logo">
+				<img src="../asset/images/logo-{{lowercase base.title}}.svg" alt="{{base.title}}" width="275" height="46">
+			</div>
+			<h1 class="cover-title">Borneopedia</h1>
+			<h2 class="cover-lead">Everything About Borneo</h2>
+			<div class="cover-img">
+				<img src="../asset/images/welcome-cover.png" alt="{{base.title}}">
+			</div>
+		</section>
 
-			<section class="welcome-download">
-				{{>module/app_widget}}
-			</section>
+		<section class="about-cover">
+			<div class="about-box">
+				<div class="about-icon">
+					<img src="../asset/images/welcome-icon.png" alt="{{base.title}}">
+				</div>
+				<div class="about-content">
+					<p>Aplikasi interaksi sosial (percakapan) khusus membahas tentang Kalimantan. Siapa pun Anda penduduk asli Kalimantan atau yang lahir, besar, dan tinggal di Kalimantan atau punya ketertarikan terhadap Kalimantan, di sinilah tempatmu berinteraksi.</p>
+				</div>
+			</div>
+		</section>
 
-			<section class="welcome-gate">
-				{{>component/button type="link" href="index-login.html" class="-primary" label="POST"}}
-			</section>
+		<section class="service-cover">
+			<div class="service-cover-bg" style="background-image: url('../asset/images/welcome-mockup.png');"></div>
+			<h3 class="service-teaser">Aplikasi Lengkap tentang Kalimantan</h3>
+		</section>
 
-			<section class="welcome-bg">
-				<footer class="footer-bottom">
-					{{>layout/footer_block}}
-				</footer>
-				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
-			</section>
-		</div>
+		<section class="service-box">
+			<div class="service-list">
+				<div class="service-item">
+					<div class="service-feature">
+						<div class="service-icon">
+							<span class="icon-general icon-neoblog"></span>
+						</div>
+						<div class="service-title">Neoblog</div>
+					</div>
+					<div class="service-content">Borneopedia menyediakan ruang yang cukup bagi Anda dalam berekspresi melalui tulisan  apa saja khususnya terkait Kalimantan</div>
+				</div>
+				<div class="service-item">
+					<div class="service-feature">
+						<div class="service-icon">
+							<span class="icon-general icon-qna"></span>
+						</div>
+						<div class="service-title">Q&A</div>
+					</div>
+					<div class="service-content">Fitur tanya jawab apa saja tentang Kalimantan. Borneopedia menyediakan para ahli, tokoh publik, dan pakar lainnya yang siap menjawab pertanyaan apa pun tentang Kalimantan</div>
+				</div>
+				<div class="service-item">
+					<div class="service-feature">
+						<div class="service-icon">
+							<span class="icon-general icon-figure"></span>
+						</div>
+						<div class="service-title">Figure</div>
+					</div>
+					<div class="service-content">Borneopedia menyediakan informasi lengkap tentang profil dan atau figur tokoh, organisasi, lembaga, perusahaan, perguruan tinggi yang ada di Kalimantan.</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="join">
+			<div class="join-box">
+				<div class="join-lead">Dan masih banyak lagi keseruan yang akan dapatkan dengan mengunduh aplikasi Borneopedia.</div>
+				<div class="join-button">
+					{{>component/button id="download-now" type="link" href="index-login.html" class="-primary" label="Yuk! Bergabung"}}
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer-cover">
+			<div class="footer-cover-box">
+				<div class="footer-cover-top">
+					<nav class="footer-nav" aria-label="Footer">
+						<ul>
+							{{#each static}}
+							<li><a href="{{link}}" role="link" aria-label="{{title}}">{{title}}</a></li>
+							{{/each}}
+						</ul>
+					</nav>
+					<div class="footer-copy">© {{base.footer.year}} {{base.footer.title}}</div>
+				</div>
+				<div class="footer-cover-bottom">
+					{{>module/app_widget}}
+				</div>
+			</div>
+		</footer>
 
 	</div>
 	<!-- e: root -->
 
 {{>base/js}}
+<script src="./asset/js/smart-banner.js"></script>
 </body>
 </html>

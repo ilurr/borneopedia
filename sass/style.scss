@@ -36,6 +36,7 @@
 @import 'component/emoji';
 @import 'component/trending';
 @import 'component/filter';
+@import 'component/smartbanner';
 
 // component services
 @import 'component/message';
@@ -47,6 +48,9 @@
 @import 'layout/search';
 @import 'layout/sidebar';
 @import 'layout/footer';
+
+// cover
+@import 'page/cover';
 
 // page
 @import 'page/sign';
