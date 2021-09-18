@@ -3,123 +3,82 @@
 
 {{>base/head font="link"}}
 
-<body>
+<body class="mobile">
+
+	<!-- smartbanner -->
+	{{>component/smartbanner}}
+
 	<!-- s: root -->
 	<div class="root">
 
-		{{>layout/header disable_search=true}}
-		
-		<!-- grid -->
-		<div class="grid">
+		<section class="cover">
+			<div class="cover-logo">
+				<img src="../asset/images/logo-{{lowercase base.title}}.svg" alt="{{base.title}}" width="275" height="46">
+			</div>
+			<h1 class="cover-title">Borneopedia</h1>
+			<h2 class="cover-lead">Everything About Borneo</h2>
+			<div class="cover-img">
+				<img src="../asset/images/welcome-cover.png" alt="{{base.title}}">
+			</div>
+		</section>
 
-			<div class="grid-flex">
-
-				<div class="grid-col -nav">
-					<div class="nav-fixed">
-						{{>layout/nav_static active="FAQ"}}
-
-						{{!>layout/footer footer="small"}}
-					</div>
-				</div>
-
-				<div class="grid-col -wide">
-
-					<!-- static -->
-					<div class="static box">
-						<div class="static-block">
-							<h1 class="static-title">FAQ</h1>
-							<article class="static-content">
-								<p>We believe you should always know what data we collect from you and how we use it, and that you should have meaningful control over both. <a href="#">We want to empower you</a> to make the best decisions about the information that you share with us.</p>
-							</article>
-							<section class="static-faq">
-								<div class="panel-group" id="accordionFAQ" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h4 class="panel-title">
-												<a role="button" data-toggle="collapse" class="collapsed" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-													#1 Anim pariatur cliche reprehenderit
-												</a>
-											</h4>
-										</div>
-										<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-											<div class="panel-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-												3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-												laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-												coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-												anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-												occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-												of them accusamus labore sustainable VHS.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingTwo">
-											<h4 class="panel-title">
-												<a class="collapsed" role="button" data-toggle="collapse" class="collapsed" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-													#2 Brunch 3 wolf moon tempor
-												</a>
-											</h4>
-										</div>
-										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-											<div class="panel-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-												3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-												laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-												coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-												anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-												occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-												of them accusamus labore sustainable VHS.
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingThree">
-											<h4 class="panel-title">
-												<a class="collapsed" role="button" data-toggle="collapse" class="collapsed" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-													#3 Nihil anim keffiyeh helvetica
-												</a>
-											</h4>
-										</div>
-										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-											<div class="panel-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-												3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-												laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-												coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-												anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-												occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-												of them accusamus labore sustainable VHS.
-											</div>
-										</div>
+		<section class="about-cover">
+			<div class="about-box">
+				<div class="about-content">
+					<h1 class="static-title">FAQ</h1>
+					<article class="static-content">
+					</article>
+					<section class="static-faq">
+						<div class="panel-group" id="accordionFAQ" role="tablist" aria-multiselectable="true">
+							{{#each static.[1].content}}
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="heading{{add @index 1}}">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" class="collapsed" href="#collapse{{add @index 1}}" aria-expanded="false" aria-controls="collapse{{add @index 1}}">
+											{{ask}}
+										</a>
+									</h4>
+								</div>
+								<div id="collapse{{add @index 1}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{add @index 1}}">
+									<div class="panel-body">
+										{{content}}
 									</div>
 								</div>
-							</section>
+							</div>
+							{{/each}}
 						</div>
-					</div>
-
+					</section>
 				</div>
-
 			</div>
+		</section>
 
-			<section class="welcome-bg">
-				<footer class="footer-bottom">
-					{{>layout/footer_block}}
-				</footer>
-				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
-			</section>
-
-		</div>
-
-		<!-- notify message -->
-		{{>module/panel_alert}}
+		<section class="service-cover">
+			<div class="service-cover-bg" style="background-image: url('../asset/images/welcome-mockup.png');"></div>
+			<h3 class="service-teaser">Aplikasi Lengkap tentang Kalimantan</h3>
+		</section>
+		
+		<footer class="footer-cover">
+			<div class="footer-cover-box">
+				<div class="footer-cover-top">
+					<nav class="footer-nav" aria-label="Footer">
+						<ul>
+							{{#each static}}
+							<li><a href="{{link}}" role="link" aria-label="{{title}}">{{title}}</a></li>
+							{{/each}}
+						</ul>
+					</nav>
+					<div class="footer-copy">© {{base.footer.year}} {{base.footer.title}}</div>
+				</div>
+				<div class="footer-cover-bottom">
+					{{>module/app_widget}}
+				</div>
+			</div>
+		</footer>
 
 	</div>
 	<!-- e: root -->
 
-	<!-- login -->
-	{{>module/modal_login}}
-
 {{>base/js}}
+<script src="./asset/js/smart-banner.js"></script>
 </body>
 </html>

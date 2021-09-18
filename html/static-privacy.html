@@ -40,119 +40,75 @@
 
 </head>
 
-<body>
+<body class="mobile">
+
+	<!-- smartbanner -->
+	<div id="smart-banner" class="smart-banner">
+		<div class="smart-wrap">
+			<div class="smart-left"><a class="smart-close">×</a>
+				<div class="smart-icon" style="background-image:url('./asset/images/app-icon.png')"></div>
+			</div>
+			<div class="smart-info">
+				<div class="smart-desc">Borneopedia for <span id="smart-type"></span></div>
+				<div class="smart-rating">
+					<span class="bg"></span>
+					<span class="fg" id="smart-rating" data-rating="4.5"></span>
+				</div>
+			</div>
+			<div class="smart-right">
+				<div class="smart-btn">Install</div>
+			</div>
+		</div>
+		<a class="smart-link" id="smart-link" href="#" data-playstore="https://play.google.com/store/apps/details?id=com.ertanto.kompas.official&hl=en&gl=US" data-appstore="https://apps.apple.com/id/app/kompas-com-berita-terpercaya/id535483055"></a>
+	</div>
+
 	<!-- s: root -->
 	<div class="root">
 
-		<!-- header -->
-		<header class="header -fixed">
-			<div class="header-flex">
-				<div class="header-col">
-				</div>
-				<div class="header-col">
-					<div class="logo">
-						<a href="index.html">
-							<img src="../asset/images/logo-borneopedia.svg" alt="Borneopedia" width="275" height="46">
-						</a>
-					</div>
-				</div>
-				<div class="header-col">
-					<!-- menu -->
-					<div class="menu-header">
-						<!-- menu login -->
-						<div class="menu-item">
-							<a class="button menu-button" role="button" data-toggle="modal" data-target="#modalLogin" data-tooltip="tooltip" data-placement="bottom" title="Sign In">
-								<span class="icon-general icon-user"></span>
-							</a>
-						</div>
-					</div>
+		<section class="cover">
+			<div class="cover-logo">
+				<img src="../asset/images/logo-borneopedia.svg" alt="Borneopedia" width="275" height="46">
+			</div>
+			<h1 class="cover-title">Borneopedia</h1>
+			<h2 class="cover-lead">Everything About Borneo</h2>
+			<div class="cover-img">
+				<img src="../asset/images/welcome-cover.png" alt="Borneopedia">
+			</div>
+		</section>
+
+		<section class="about-cover">
+			<div class="about-box">
+				<div class="about-content">
+					<h1 class="static-title">Policy Privacy</h1>
+					<article class="static-content">
+						<div class="bs-meta"><span class="bs-cat">DISCLAIMER</span></div>
+<h1>Policy Privacy</h1>
+<div class="bs-content">
+<ol>
+<li>Borneopedia adalah aplikasi interaksi sosial (percakapan) yang terbuka untuk umum. Siapa pun Anda, khususnya penduduk asli Kalimantan, lahir, besar, dan tinggal di Kalimantan, atau punya ketertarikan terhadap Kalimantan, dapat menggunakan aplikasi ini.</li>
+<li>Siapa pun dapat membuat satu akun sebagai pengguna Borneopedia dengan mencantumkan nama asli sesuai Kartu Tanda Penduduk (KTP), mengisi profil singkat, menyertakan alamat email aktif, dan melampirkan foto diri.</li>
+<li>Akun Borneopedia adalah identitas kepemilikan pengguna di aplikasi ini. Setiap akun memiliki halaman profil berisi data diri dan riwayat tulisan yang dapat diakses oleh pengguna lain yang saling mengikuti (<em>follow</em>).</li>
+<li>Tulisan merupakan karya sendiri, bukan hasil plagiasi atau menyalin karya orang lain, ditulis dalam bahasa Indonesia yang baik dan menyenangkan atau bahasa lain yang dapat dimengerti pengguna lain.</li>
+<li>Hak cipta dan merek dagang Borneopedia dimiliki oleh PT. Borneopedia Digital Indonesia.</li>
+<li>Setiap tulisan, gambar, dan video yang tayang di Borneopedia merupakan hak milik penulisnya masing-masing (pengguna).</li>
+<li>Tulisan, gambar, dan video tidak boleh mempertentangkan SARA (suku, agama, ras, dan antargolongan), tidak mengandung pornografi, tidak merendahkan pihak lain, tidak berisi fitnah, perjudian, prostitusi, dan dusta (hoaks), informasi bohong (<em>fake news</em>), serta ujaran kebencian (<em>hate speech</em>).</li>
+<li>Pengelola Borneopedia berhak melakukan tindakan seperlunya terhadap pengguna yang menyalahi aturan pada poin 6.</li>
+<li>Pengelola Borneopedia akan mengingatkan, menghapus konten yang tidak sesuai ketentuan bahkan memblokir akun yang tidak bertanggung jawab.</li>
+</ol>
+</div>
+					</article>
 				</div>
 			</div>
-		</header>
+		</section>
+
+		<section class="service-cover">
+			<div class="service-cover-bg" style="background-image: url('../asset/images/welcome-mockup.png');"></div>
+			<h3 class="service-teaser">Aplikasi Lengkap tentang Kalimantan</h3>
+		</section>
 		
-		<!-- grid -->
-		<div class="grid">
-
-			<div class="grid-flex">
-
-				<div class="grid-col -nav">
-					<div class="nav-fixed">
-						<!-- nav static page -->
-						<nav class="nav -fixed -static" aria-label="Main Navigation">
-							<ol class="nav-wrap">
-								<li class="nav-item">
-									<a href="static-about.html" class="nav-link" role="link" aria-label="About">
-										<div class="nav-flex">
-											<div class="nav-text">About</div>
-										</div>
-									</a>
-								</li>
-								<li class="nav-item">
-									<a href="static-faq.html" class="nav-link" role="link" aria-label="FAQ">
-										<div class="nav-flex">
-											<div class="nav-text">FAQ</div>
-										</div>
-									</a>
-								</li>
-								<li class="nav-item">
-									<a href="static-privacy.html" class="nav-link" role="link" aria-label="Privacy">
-										<div class="nav-flex">
-											<div class="nav-text">Privacy</div>
-										</div>
-									</a>
-								</li>
-								<li class="nav-item">
-									<a href="static-terms.html" class="nav-link" role="link" aria-label="Terms">
-										<div class="nav-flex">
-											<div class="nav-text">Terms</div>
-										</div>
-									</a>
-								</li>
-								<li class="nav-item">
-									<a href="static-contact.html" class="nav-link" role="link" aria-label="Contact">
-										<div class="nav-flex">
-											<div class="nav-text">Contact</div>
-										</div>
-									</a>
-								</li>
-							</ol>
-						</nav>
-
-					</div>
-				</div>
-
-				<div class="grid-col -wide">
-
-					<!-- static -->
-					<div class="static box">
-						<div class="static-block">
-							<h1 class="static-title">Policy Privacy</h1>
-							<article class="static-content">
-								<p>We believe you should always know what data we collect from you and how we use it, and that you should have meaningful control over both. <a href="#">We want to empower you</a> to make the best decisions about the information that you share with us.</p>
-								<ul>
-									<li>Twitter is public and Tweets are immediately viewable and searchable by anyone around the world. We give you non-public ways to communicate on Twitter too, through protected Tweets and Direct Messages. You can also use Twitter under a pseudonym if you prefer not to use your name.</li>
-									<li>When you use Twitter, even if you’re just looking at Tweets, we receive some personal information from you like the type of device you’re using and your IP address. You can choose to share additional information with us like your email address, phone number, address book contacts, and a public profile. We use this information for things like keeping your account secure and showing you more relevant Tweets, people to follow, events, and ads.</li>
-									<li>We give you <a href="#">control through your settings</a> to limit the data we collect from you and how we use it, and to control things like account security, marketing preferences, apps that can access your account, and address book contacts you’ve uploaded to Twitter. You can also download information you have shared on Twitter. </li>
-									<li>In addition to information you share with us, we use your Tweets, content you’ve read, Liked, or Retweeted, and other information to determine what topics you’re interested in, your age, the languages you speak, and other signals to show you more relevant content. We give you transparency into that information, and you can modify or correct it at any time.</li>
-									<li>If you have questions about this policy, how we collect or process your personal data, or anything else related to our privacy practices, we want to hear from you. You can contact us at any time.</li>
-								</ul>
-								<h2>Information You Share With Us</h2>
-								<p>We require certain information to provide our services to you. For example, you must have an account in order to upload or share content on Twitter. When you choose to share the information below with us, we collect and use it to operate our services.</p>
-								<ol>
-									<li>You don’t have to create an account to use some of our service features, such as searching and viewing public Twitter profiles or watching a broadcast on Periscope’s website. If you do choose to create an account, you must provide us with some personal data so that we can provide our services to you. On Twitter this includes a display name (for example, “Twitter Moments”), a username (for example, @TwitterMoments), a password, and an email address or phone number. Your display name and username are always public, but you can use either your real name or a pseudonym. You can also create and manage multiple Twitter accounts1, for example to express different parts of your identity.</li>
-									<li>You can choose to upload and sync your address book on Twitter so that we can help you find and connect with people you know and help others find and connect with you. We also use this information to better recommend content to you and others.</li>
-								</ol>
-								<p>You can sign up for Periscope with an account from another service like Twitter, Google, or Facebook, or connect your Periscope account to these other services. If you do, we will use information from that service, including your email address, friends, or contacts list, to recommend other accounts or content to you or to recommend your account or content to others. You can control whether your Periscope account is discoverable by email through your <a href="#">Periscope settings.</a>.</p>
-							</article>
-						</div>
-					</div>
-
-				</div>
-
-			</div>
-
-			<section class="welcome-bg">
-				<footer class="footer-bottom">
+		<footer class="footer-cover">
+			<div class="footer-cover-box">
+				<div class="footer-cover-top">
 					<nav class="footer-nav" aria-label="Footer">
 						<ul>
 							<li><a href="static-about.html" role="link" aria-label="About">About</a></li>
@@ -163,69 +119,22 @@
 						</ul>
 					</nav>
 					<div class="footer-copy">© 2021 borneopedia.id</div>
-				</footer>
-				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
-			</section>
-
-		</div>
-
-		<!-- notify message -->
-		<div id="success-msg" class="panel-alert -fixed -success">
-			<p>Yeay! You were successful.</p>
-		</div>
-		<div id="error-msg" class="panel-alert -fixed -error">
-			<p>Failed, there was a problem, try again later.</p>
-		</div>
-
-	</div>
-	<!-- e: root -->
-
-	<!-- login -->
-	<div id="modalLogin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true">
-		<div class="modal-dialog -small">
-			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
-				<div class="modal-header">
-					<h5 class="modal-title">Sign In</h5>
 				</div>
-				<div class="modal-body">
-					<div class="sign-modal">
-						<form action="home.html">
-							<div class="form-row">
-								<label for="email">Email Address</label>
-								<div class="form-input">
-									<input type="text" id="email" name="email" class="input" placeholder="">
-								</div>
-								<div class="form-hint"></div>
-							</div>
-							<div class="form-row form-error">
-								<label for="password">Password</label>
-								<div class="form-input">
-									<input type="password" id="password" name="password" class="input -error" placeholder="">
-								</div>
-								<div class="form-hint">The password that you've entered is incorrect</div>
-							</div>
-							<div class="form-row">
-								<div class="form-checkbox">
-									<input type="checkbox" name="remember" id="remember" value="">
-									<label for="remember">Remember Me</label>
-								</div>
-							</div>
-							<div class="form-row">
-								<input type="submit" name="signin" id="signin" value="Login" class="button -primary">
-							</div>
-							<div class="sign-text -center">
-								<a href="index-reset-password.html">Forgot your password?</a>
-							</div>
-							<div class="sign-text -center">
-								Don't have an account? <strong><a href="index-signup.html">Sign up</a></strong>
-							</div>
-						</form>
+				<div class="footer-cover-bottom">
+					<div class="app-badge">
+						<a href="#" target="_blank">
+							<img src="../asset/images/google-play-badge.png" alt="Get it on Google Play">
+						</a>
+						<a href="#" target="_blank">
+							<img src="../asset/images/app-store-badge.png" alt="Download on the App Store">
+						</a>
 					</div>
 				</div>
 			</div>
-		</div>
+		</footer>
+
 	</div>
+	<!-- e: root -->
 
 <script type="text/javascript" src="../asset/js/jquery.min.js"></script>
 <script type="text/javascript" src="../asset/js/bootstrap.min.js"></script>
@@ -417,5 +326,6 @@ function insertTextAtCaret(text) {
 }
 
 </script>
+<script src="./asset/js/smart-banner.js"></script>
 </body>
 </html>

@@ -149,15 +149,35 @@
 		padding: 0;
 		a {
 			display: block;
-			padding: 1rem;
+			padding: 1rem 2rem 1rem 1rem;
 			margin: 0 0 .5rem;
 			background: #dfdfdf;
 			color: #000;
 			border-radius: 6px;
 			border-bottom: 1px solid #dfdfdf;
+			&:after {
+				content: "";
+				display: inline-block;
+				position: absolute;
+				z-index: 1;
+				top: calc(50% - 0.25rem);
+				right: 1.5rem;
+				pointer-events: none;
+				width: 0.5rem;
+				height: 0.5rem;
+				border-bottom: 2px solid #212121;
+				border-right: 2px solid #212121;
+				@include transition(transform .2s ease);
+				@include transform(rotate(225deg));
+				// background: darken(#ADB4BC, 50%);
+				// clip-path: polygon(100% 0%, 0 0%, 50% 100%);		  
+			}	
 			&.collapsed {
 				background: #f7f7f7;
-				color: $color-theme;
+				// color: $color-theme;
+				&:after {
+					@include transform(rotate(45deg));
+				}
 			}
 		}
 	}

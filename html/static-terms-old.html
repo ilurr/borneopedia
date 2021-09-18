@@ -40,48 +40,95 @@
 
 </head>
 
-<body class="mobile">
-
-	<!-- smartbanner -->
-	<div id="smart-banner" class="smart-banner">
-		<div class="smart-wrap">
-			<div class="smart-left"><a class="smart-close">×</a>
-				<div class="smart-icon" style="background-image:url('./asset/images/app-icon.png')"></div>
-			</div>
-			<div class="smart-info">
-				<div class="smart-desc">Borneopedia for <span id="smart-type"></span></div>
-				<div class="smart-rating">
-					<span class="bg"></span>
-					<span class="fg" id="smart-rating" data-rating="4.5"></span>
-				</div>
-			</div>
-			<div class="smart-right">
-				<div class="smart-btn">Install</div>
-			</div>
-		</div>
-		<a class="smart-link" id="smart-link" href="#" data-playstore="https://play.google.com/store/apps/details?id=com.ertanto.kompas.official&hl=en&gl=US" data-appstore="https://apps.apple.com/id/app/kompas-com-berita-terpercaya/id535483055"></a>
-	</div>
-
+<body>
 	<!-- s: root -->
 	<div class="root">
 
-		<section class="cover">
-			<div class="cover-logo">
-				<img src="../asset/images/logo-borneopedia.svg" alt="Borneopedia" width="275" height="46">
+		<!-- header -->
+		<header class="header -fixed">
+			<div class="header-flex">
+				<div class="header-col">
+				</div>
+				<div class="header-col">
+					<div class="logo">
+						<a href="index.html">
+							<img src="../asset/images/logo-borneopedia.svg" alt="Borneopedia" width="275" height="46">
+						</a>
+					</div>
+				</div>
+				<div class="header-col">
+					<!-- menu -->
+					<div class="menu-header">
+						<!-- menu login -->
+						<div class="menu-item">
+							<a class="button menu-button" role="button" data-toggle="modal" data-target="#modalLogin" data-tooltip="tooltip" data-placement="bottom" title="Sign In">
+								<span class="icon-general icon-user"></span>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<h1 class="cover-title">Borneopedia</h1>
-			<h2 class="cover-lead">Everything About Borneo</h2>
-			<div class="cover-img">
-				<img src="../asset/images/welcome-cover.png" alt="Borneopedia">
-			</div>
-		</section>
+		</header>
+		
+		<!-- grid -->
+		<div class="grid">
 
-		<section class="about-cover">
-			<div class="about-box">
-				<div class="about-content">
-					<h1 class="static-title">Terms</h1>
-					<article class="static-content">
-						<ul>
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						<!-- nav static page -->
+						<nav class="nav -fixed -static" aria-label="Main Navigation">
+							<ol class="nav-wrap">
+								<li class="nav-item">
+									<a href="static-about.html" class="nav-link" role="link" aria-label="About">
+										<div class="nav-flex">
+											<div class="nav-text">About</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="static-faq.html" class="nav-link" role="link" aria-label="FAQ">
+										<div class="nav-flex">
+											<div class="nav-text">FAQ</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="static-privacy.html" class="nav-link" role="link" aria-label="Privacy">
+										<div class="nav-flex">
+											<div class="nav-text">Privacy</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="static-terms.html" class="nav-link -active" role="link" aria-label="Terms">
+										<div class="nav-flex">
+											<div class="nav-text">Terms</div>
+										</div>
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="static-contact.html" class="nav-link" role="link" aria-label="Contact">
+										<div class="nav-flex">
+											<div class="nav-text">Contact</div>
+										</div>
+									</a>
+								</li>
+							</ol>
+						</nav>
+
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- static -->
+					<div class="static box">
+						<div class="static-block">
+							<h1 class="static-title">Terms</h1>
+							<article class="static-content">
+								<ul>
 <li><strong>Ketentuan Mendasar</strong><br /> Anda bertanggung jawab atas penggunaan Layanan, untuk setiap Konten yang Anda posting ke Layanan, dan untuk segala konsekuensinya. Materi yang Anda serahkan, pos, atau tampilan akan dapat dilihat oleh pengguna Layanan baik yang terdaftar dan / atau tidak-terdaftar dan melalui layanan pihak ketiga dan situs web. Anda hanya dapat menyediakan konten yang nyaman untuk Anda berbagi dengan orang lain berdasarkan Ketentuan. Layanan yang Borneopedia sediakan selalu berkembang dan bentuk dan sifat dari Layanan yang Borneopedia sediakan dapat berubah dari waktu ke waktu tanpa pemberitahuan sebelumnya kepada Anda. Selain itu, Borneopedia dapat memberhentikan (secara permanen maupun sementara) penyediaan Layanan (atau fitur apapun dalam Layanan) kepada Anda atau pengguna pada umumnya dan mungkin tidak dapat menyediakan Anda dengan pemberitahuan sebelumnya. Kami juga mempertahankan hak untuk membatasi penggunaan dan penyimpanan menurut kebijakan kami kapanpun tanpa pemberitahuan sebelumnya kepada Anda. Layanan dapat mencakup iklan, yang mungkin ditargetkan untuk Konten atau informasi pada Layanan, permintaan yang dilakukan melalui Layanan, atau informasi lainnya. Jenis iklan oleh Borneopedia pada Layanan dapat berubah. Dalam pertimbangan bahwa Borneopedia memberikan akses dan penggunaan Layanan, Anda setuju bahwa Borneopedia dan setiap penyedia pihak ketiga dan mitra dapat menempatkan iklan tersebut pada Layanan atau yang berhubungan dengan tampilan Konten atau informasi dari Layanan yang diposting oleh Anda atau orang lain. Layanan secara sistem merupakan jaringan terbatas / tertutup yang diselenggarakan oleh Penyelenggara Infrastruktur, dan oleh karena itu setiap Pengguna yang menggunakan Layanan secara otomatis merupakan anggota dari sistem terbatas/tertutup atau intranet ini.<br /><br /></li>
 <li><strong>Data Pendaftaran, Privasi dan Kata Sandi</strong><br /> Untuk mengakses beberapa Layanan, Anda akan diminta untuk menggunakan akun dan kata sandi yang dapat diperoleh dengan mengisi formulir pendaftaran online kami, yang meminta informasi tertentu dan data ("Data Pendaftaran"), dan untuk memelihara dan untuk memperbarui Data Pendaftaran Anda sebagaimana diperlukan. Dengan mendaftar, Anda setuju bahwa semua informasi yang diberikan dalam Data Pendaftaran adalah benar dan akurat dan bahwa Anda akan mempertahankan dan memperbarui informasi ini sebagaimana diharuskan untuk menjaganya agar tetap terbaru, lengkap, dan akurat. Kegagalan untuk melakukannya merupakan pelanggaran terhadap Ketentuan, yang dapat mengakibatkan penghentian segera akun Anda. Anda dilarang untuk (i) memilih atau menggunakan akun dengan nama orang lain dengan maksud untuk menirukan orang tersebut; (ii) memilih atau menggunakan akun yang menyerupai nama orang dan/atau institusi lain (iii) menggunakan nama akun yang tunduk pada hak pihak lain selain Anda tanpa izin yang sesuai; atau (iv) menggunakan nama akun yang ofensif, vulgar atau cabul. Borneopedia berhak untuk menolak pendaftaran, membatalkan akun, memberikan akun yang sudah dibatalkan kepada pihak lain menurut kebijakannya. Borneopedia berhak untuk membatalkan akun yang tidak aktif selama 3 bulan, sehingga akun tersebut dapat didaftarkan/dipakai/digunakan oleh pihak/pendaftar lain. Anda juga memberikan kepada kami hak untuk mengungkapkan Data Pendaftaran Anda kepada pihak ketiga.<br /> Setiap informasi yang Anda berikan kepada Borneopedia tunduk pada Kebijakan Privasi kami, yang mengatur pengumpulan dan penggunaan informasi Anda. Anda mengerti bahwa melalui penggunaan Layanan Anda setuju atas pengumpulan dan penggunaan (sebagaimana diatur dalam Kebijakan Privasi) dari informasi ini, termasuk pemindahan informasi ini untuk penyimpanan, pengolahan dan penggunaan oleh Borneopedia. Sebagai bagian dari menyediakan Layanan kepada Anda, kami mungkin perlu untuk memberikan Anda komunikasi tertentu, misalnya pengumuman menyangkut layanan dan pesan administratif. Komunikasi ini dianggap sebagai bagian dari Layanan dan akun Anda, yang mungkin tidak dapat Anda pilih untuk tidak menerima.<br /> Anda bertanggung jawab untuk menjaga kata sandi yang Anda gunakan untuk mengakses Layanan dan untuk setiap kegiatan atau tindakan dengan kata sandi. Kami mendorong Anda untuk menggunakan kata sandi yang "kuat" (kata sandi yang menggunakan kombinasi huruf besar dan huruf kecil, angka dan simbol) untuk akun Anda. Borneopedia tidak dapat dan tidak akan bertanggung jawab atas kerugian atau kerusakan yang timbul dari kegagalan Anda untuk mematuhi hal diatas.<br /><br /></li>
 <li><strong>Konten dalam Layanan </strong><br /> Semua Konten, baik yang diposting publik atau dikirim secara pribadi, sepenuhnya merupakan tanggung jawab dari orang dimana Konten tersebut berasal. Kita mungkin tidak memantau atau mengontrol Konten yang dipasang lewat Layanan, dan kita tidak dapat bertanggung jawab atas Konten tersebut. Setiap penggunaan atau ketergantungan pada setiap Konten atau materi yang diposting melalui Layanan atau diperoleh oleh Anda melalui Layanan adalah risiko Anda sendiri. Kami tidak mendukung, mewakili atau menjamin kelengkapan, kebenaran, akurasi, dan keandalan dari setiap Konten atau komunikasi yang diposting melalui Layanan atau mendukung pendapat tertentu yang diekspresikan melalui Layanan. Anda memahami bahwa dengan menggunakan Layanan, Anda mungkin akan menemukan Konten yang mungkin ofensif, berbahaya, tidak akurat atau tidak pantas, atau dalam beberapa kasus, posting yang telah disalahartikan atau menipu. Dalam kondisi apa pun Borneopedia tidak bertanggung jawab dengan cara apapun atas Konten apapun, termasuk, namun tidak terbatas pada, kesalahan atau kelalaian dalam Konten, atau atas kehilangan atau kerusakan apapun yang timbul sebagai akibat dari penggunaan Konten yang dipasang, dikirim lewat email, dikirimkan atau disediakan melalui Layanan atau disiarkan di tempat lain.<br /> Anda mempertahankan hak Anda untuk setiap Konten yang Anda serahkan, posting atau tampilkan pada atau melalui Layanan. Dengan menyerahkan, memposting, atau menampilkan Konten pada atau melalui Layanan, Anda memberikan kami lisensi secara global, non-eksklusif, bebas royalti (dengan hak untuk mensublisensikan) untuk menggunakan, menyalin, mereproduksi, proses, menyesuaikan, memodifikasi, mempublikasikan, mengirimkan, menampilkan dan mendistribusikan Konten tersebut dalam setiap dan semua media atau metode distribusi (sekarang dikenal atau yang kemudian dikembangkan). Anda setuju bahwa lisensi ini mencakup hak untuk Borneopedia untuk memberikan, mempromosikan, dan meningkatkan layanan dan untuk membuat Konten yang dikirimkan ke atau melalui Layanan yang tersedia untuk perusahaan lain, organisasi atau individu yang bermitra dengan Borneopedia untuk sindikasi, penyiaran, distribusi atau publikasi Konten tersebut pada media dan layanan lainnya, dengan tunduk pada syarat dan ketentuan untuk penggunaan Konten tersebut.<br /> Penggunaan tambahan tersebut oleh Borneopedia, atau perusahaan lain, organisasi atau individu yang bermitra dengan Borneopedia, dapat dilakukan tanpa kompensasi yang dibayarkan kepada Anda sehubungan dengan Konten yang Anda serahkan, posting, kirimkan, atau buat tersedia melalui Layanan.<br /> Kami dapat mengubah atau menyesuaikan Konten Anda untuk mengirimkan, menampilkan atau mendistribusikannya melalui jaringan komputer dan di berbagai media dan / atau membuat perubahan pada Konten Anda sebagaimana yang diperlukan agar sesuai dengan dan menyesuaikan Konten untuk setiap persyaratan atau keterbatasan jaringan apapun, perangkat, layanan atau media.<br /> Anda bertanggung jawab atas penggunaan Anda terhadap Layanan, untuk setiap Konten yang Anda berikan, dan untuk setiap konsekuensinya, termasuk penggunaan Konten Anda oleh pengguna lain dan mitra pihak ketiga kami. Anda memahami bahwa Konten Anda dapat dibuat sindikasi, disiarkan, didistribusikan, atau diterbitkan oleh mitra kami dan jika Anda tidak memiliki hak untuk mengirimkan Konten untuk penggunaan tersebut, hal tersebut dapat membuat Anda memiliki pertanggung jawaban. Borneopedia tidak akan bertanggung jawab atau berkewajiban atas setiap penggunaan Konten Anda dengan Borneopedia sesuai dengan Ketentuan ini. Anda mewakili dan menjamin bahwa Anda memiliki semua hak; kekuasaan dan otoritas yang diperlukan untuk memberikan hak-hak di sini terhadap Konten apapun yang Anda kirimkan.<br /><br /></li>
@@ -96,19 +143,16 @@
 <li><strong>Penghentian Penggunaan</strong><br /> Anda setuju bahwa kami dapat, atas pertimbangan kami sendiri, menghentikan atau menangguhkan akses Anda ke semua atau sebagian dari Layanan dengan atau tanpa pemberitahuan dan alasan apapun, termasuk, tanpa batasan, pelanggaran dari Ketentuan ini. Apa saja yang dicurigai sebagai perbuatan curang, kasar atau ilegal dapat menjadi dasar untuk mengakhiri hubungan Anda dan dapat diserahkan kepada penegak hukum yang sesuai. Pada saat pengakhiran atau suspensi, terlepas dari alasannya, hak Anda untuk menggunakan layanan yang tersedia pada Layanan segera berhenti, dan Anda mengakui dan menyetujui bahwa kami dapat dengan segera menghentikan atau menghapus akun Anda dan semua informasi terkait dan file dalam akun Anda dan / atau setiap akses lebih lanjut ke file tersebut atau Layanan. Kami tidak bertanggung jawab kepada Anda atau pihak ketiga atas setiap klaim atau kerusakan yang timbul dari penghentian atau penangguhan atau tindakan lain yang diambil oleh kami sehubungan dengan penghentian atau penangguhan tersebut. Jika Anda ingin mengakhiri akun Anda, Anda hanya perlu menghentikan penggunaan Layanan. Semua syarat dalam Ketentuan, yang menurut sifatnya harus bertahan ketika ada penghentian penggunaan, akan tetap berlaku, termasuk, tanpa batasan, penyangkalan garansi, batasan tanggung jawab dan ganti rugi.<br /><br /></li>
 <li><strong>Ketentuan Umum</strong><br /> Tidak ada keagenan, kemitraan, kongsi, atau ketenagakerjaan yang terbuat sebagai akibat dari Ketentuan dan Anda tidak memiliki otoritas apapun untuk mengikat Penyedia Infrastruktur dalam aspek apa pun. Kegagalan Penyedia Infrastruktur untuk menggunakan hak dalam Ketentuan ini tidak akan dianggap sebagai pengecualian penggunaan hak dalam Ketentuan ini. Dalam hal suatu persyaratan dalam Ketentuan ini yang dianggap tidak sah atau tidak dapat dilaksanakan, maka persyaratan tersebut akan dibatasi atau dieliminasi sampai sebatas minimum yang diperlukan, dan persyaratan lainnya dalam Ketentuan ini akan tetap berlaku sepenuhnya. Ketentuan ini tidak dapat dialihkan, dipindahkan atau disublisensikan oleh Anda kecuali dengan persetujuan tertulis terlebih dahulu Penyedia Infrastruktur. Penyedia Infrastruktur dapat mentransfer, mengalihkan atau mendelegasikan Ketentuan dan hak dan kewajibannya tanpa perlu meminta persetujuan Anda. Ketentuan akan diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia. Ketentuan ini, dan Kebijakan Privasi kami adalah kesepakanan keseluruhan dan eksklusif antara Penyedia Infrastruktur dengan Anda mengenai Layanan (tidak termasuk layanan apapun yang Anda memiliki perjanjian terpisah dengan Penyedia Infrastruktur yang secara eksplisit adalah tambahan atau pengganti Ketentuan ini), dan Ketentuan ini menggantikan dan menggantikan setiap perjanjian sebelumnya antara Penyedia Infrastruktur dan Anda mengenai Layanan. Jika Anda memiliki pertanyaan tentang Ketentuan ini, silahkan hubungi kami.</li>
 </ul>
-					</article>
-				</div>
-			</div>
-		</section>
+							</article>
+						</div>
+					</div>
 
-		<section class="service-cover">
-			<div class="service-cover-bg" style="background-image: url('../asset/images/welcome-mockup.png');"></div>
-			<h3 class="service-teaser">Aplikasi Lengkap tentang Kalimantan</h3>
-		</section>
-		
-		<footer class="footer-cover">
-			<div class="footer-cover-box">
-				<div class="footer-cover-top">
+				</div>
+
+			</div>
+
+			<section class="welcome-bg">
+				<footer class="footer-bottom">
 					<nav class="footer-nav" aria-label="Footer">
 						<ul>
 							<li><a href="static-about.html" role="link" aria-label="About">About</a></li>
@@ -119,22 +163,69 @@
 						</ul>
 					</nav>
 					<div class="footer-copy">© 2021 borneopedia.id</div>
-				</div>
-				<div class="footer-cover-bottom">
-					<div class="app-badge">
-						<a href="#" target="_blank">
-							<img src="../asset/images/google-play-badge.png" alt="Get it on Google Play">
-						</a>
-						<a href="#" target="_blank">
-							<img src="../asset/images/app-store-badge.png" alt="Download on the App Store">
-						</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+				</footer>
+				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
+			</section>
+
+		</div>
+
+		<!-- notify message -->
+		<div id="success-msg" class="panel-alert -fixed -success">
+			<p>Yeay! You were successful.</p>
+		</div>
+		<div id="error-msg" class="panel-alert -fixed -error">
+			<p>Failed, there was a problem, try again later.</p>
+		</div>
 
 	</div>
 	<!-- e: root -->
+
+	<!-- login -->
+	<div id="modalLogin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalLogin" aria-hidden="true">
+		<div class="modal-dialog -small">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+				<div class="modal-header">
+					<h5 class="modal-title">Sign In</h5>
+				</div>
+				<div class="modal-body">
+					<div class="sign-modal">
+						<form action="home.html">
+							<div class="form-row">
+								<label for="email">Email Address</label>
+								<div class="form-input">
+									<input type="text" id="email" name="email" class="input" placeholder="">
+								</div>
+								<div class="form-hint"></div>
+							</div>
+							<div class="form-row form-error">
+								<label for="password">Password</label>
+								<div class="form-input">
+									<input type="password" id="password" name="password" class="input -error" placeholder="">
+								</div>
+								<div class="form-hint">The password that you've entered is incorrect</div>
+							</div>
+							<div class="form-row">
+								<div class="form-checkbox">
+									<input type="checkbox" name="remember" id="remember" value="">
+									<label for="remember">Remember Me</label>
+								</div>
+							</div>
+							<div class="form-row">
+								<input type="submit" name="signin" id="signin" value="Login" class="button -primary">
+							</div>
+							<div class="sign-text -center">
+								<a href="index-reset-password.html">Forgot your password?</a>
+							</div>
+							<div class="sign-text -center">
+								Don't have an account? <strong><a href="index-signup.html">Sign up</a></strong>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 <script type="text/javascript" src="../asset/js/jquery.min.js"></script>
 <script type="text/javascript" src="../asset/js/bootstrap.min.js"></script>
@@ -326,6 +417,5 @@ function insertTextAtCaret(text) {
 }
 
 </script>
-<script src="./asset/js/smart-banner.js"></script>
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header disable_search=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav_static active="FAQ"}}
+
+						{{!>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- static -->
+					<div class="static box">
+						<div class="static-block">
+							<h1 class="static-title">FAQ</h1>
+							<article class="static-content">
+								{{!-- <p>We believe you should always know what data we collect from you and how we use it, and that you should have meaningful control over both. <a href="#">We want to empower you</a> to make the best decisions about the information that you share with us.</p> --}}
+							</article>
+							<section class="static-faq">
+								<div class="panel-group" id="accordionFAQ" role="tablist" aria-multiselectable="true">
+									{{#each static.[1].content}}
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="heading{{add @index 1}}">
+											<h4 class="panel-title">
+												<a role="button" data-toggle="collapse" class="collapsed" href="#collapse{{add @index 1}}" aria-expanded="false" aria-controls="collapse{{add @index 1}}">
+													{{ask}}
+												</a>
+											</h4>
+										</div>
+										<div id="collapse{{add @index 1}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{add @index 1}}">
+											<div class="panel-body">
+												{{content}}
+											</div>
+										</div>
+									</div>
+									{{/each}}
+								</div>
+							</section>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<section class="welcome-bg">
+				<footer class="footer-bottom">
+					{{>layout/footer_block}}
+				</footer>
+				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
+			</section>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- login -->
+	{{>module/modal_login}}
+
+{{>base/js}}
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>base/head font="link"}}
+
+<body>
+	<!-- s: root -->
+	<div class="root">
+
+		{{>layout/header disable_search=true}}
+		
+		<!-- grid -->
+		<div class="grid">
+
+			<div class="grid-flex">
+
+				<div class="grid-col -nav">
+					<div class="nav-fixed">
+						{{>layout/nav_static active="Contact"}}
+
+						{{!>layout/footer footer="small"}}
+					</div>
+				</div>
+
+				<div class="grid-col -wide">
+
+					<!-- static -->
+					<div class="static box">
+						<div class="static-block">
+							<h1 class="static-title">Contact Us</h1>
+							<article class="static-content">
+								{{{static.[4].content}}}
+							</article>
+							<section class="static-form">
+								{{>component/input type="text" label="Nama Pengirim" name="name" placeholder="Tulis nama anda"}}
+								{{>component/input type="text" label="Subjek Pesan" name="subject" placeholder="Tulis subjek pesan anda"}}
+								{{>component/input type="text" label="Email" name="email" placeholder="Tulis email pengirim"}}
+								{{>component/textarea label="Pesan" name="message" placeholder="Tuliskan pesan yang ingin anda sampaikan"}}
+								{{>component/button type="submit" label="Kirim" name="btn-contact" class="-primary"}}
+							</section>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<section class="welcome-bg">
+				<footer class="footer-bottom">
+					{{>layout/footer_block}}
+				</footer>
+				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
+			</section>
+
+		</div>
+
+		<!-- notify message -->
+		{{>module/panel_alert}}
+
+	</div>
+	<!-- e: root -->
+
+	<!-- login -->
+	{{>module/modal_login}}
+
+{{>base/js}}
+</body>
+</html>

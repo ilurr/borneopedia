@@ -3,65 +3,70 @@
 
 {{>base/head font="link"}}
 
-<body>
+<body class="mobile">
+
+	<!-- smartbanner -->
+	{{>component/smartbanner}}
+
 	<!-- s: root -->
 	<div class="root">
 
-		{{>layout/header disable_search=true}}
-		
-		<!-- grid -->
-		<div class="grid">
-
-			<div class="grid-flex">
-
-				<div class="grid-col -nav">
-					<div class="nav-fixed">
-						{{>layout/nav_static active="Contact"}}
-
-						{{!>layout/footer footer="small"}}
-					</div>
-				</div>
-
-				<div class="grid-col -wide">
-
-					<!-- static -->
-					<div class="static box">
-						<div class="static-block">
-							<h1 class="static-title">Contact Us</h1>
-							<article class="static-content">
-								<p>We believe you should always know what data we collect from you and how we use it, and that you should have meaningful control over both. <a href="#">We want to empower you</a> to make the best decisions about the information that you share with us.</p>
-							</article>
-							<section class="static-form">
-								{{>component/input type="text" label="Name" name="name"}}
-								{{>component/input type="text" label="Email Address" name="email" txterror="Email must be filled" txthint="Email must be filled"}}
-								{{>component/textarea label="Your Message" name="message"}}
-								{{>component/button type="submit" label="Send" name="btn-contact" class="-primary"}}
-							</section>
-						</div>
-					</div>
-
-				</div>
-
+		<section class="cover">
+			<div class="cover-logo">
+				<img src="../asset/images/logo-{{lowercase base.title}}.svg" alt="{{base.title}}" width="275" height="46">
 			</div>
+			<h1 class="cover-title">Borneopedia</h1>
+			<h2 class="cover-lead">Everything About Borneo</h2>
+			<div class="cover-img">
+				<img src="../asset/images/welcome-cover.png" alt="{{base.title}}">
+			</div>
+		</section>
 
-			<section class="welcome-bg">
-				<footer class="footer-bottom">
-					{{>layout/footer_block}}
-				</footer>
-				<span style="background-image: url('../asset/images/welcome-background.png');"></span>
-			</section>
+		<section class="about-cover">
+			<div class="about-box">
+				<div class="about-content">
+					<h1 class="static-title">Contact</h1>
+					<article class="static-content">
+						{{{static.[4].content}}}
+					</article>
+					<section class="static-form">
+						{{>component/input type="text" label="Nama Pengirim" name="name" placeholder="Tulis nama anda"}}
+						{{>component/input type="text" label="Subjek Pesan" name="subject" placeholder="Tulis subjek pesan anda"}}
+						{{>component/input type="text" label="Email" name="email" placeholder="Tulis email pengirim"}}
+						{{>component/textarea label="Pesan" name="message" placeholder="Tuliskan pesan yang ingin anda sampaikan"}}
+						{{>component/button type="submit" label="Kirim" name="btn-contact" class="-primary"}}
+					</section>
+				</div>
+			</div>
+		</section>
 
-		</div>
-
-		<!-- notify message -->
-		{{>module/panel_alert}}
+		<section class="service-cover">
+			<div class="service-cover-bg" style="background-image: url('../asset/images/welcome-mockup.png');"></div>
+			<h3 class="service-teaser">Aplikasi Lengkap tentang Kalimantan</h3>
+		</section>
+		
+		<footer class="footer-cover">
+			<div class="footer-cover-box">
+				<div class="footer-cover-top">
+					<nav class="footer-nav" aria-label="Footer">
+						<ul>
+							{{#each static}}
+							<li><a href="{{link}}" role="link" aria-label="{{title}}">{{title}}</a></li>
+							{{/each}}
+						</ul>
+					</nav>
+					<div class="footer-copy">© {{base.footer.year}} {{base.footer.title}}</div>
+				</div>
+				<div class="footer-cover-bottom">
+					{{>module/app_widget}}
+				</div>
+			</div>
+		</footer>
 
 	</div>
 	<!-- e: root -->
 
-	<!-- login -->
-	{{>module/modal_login}}
-
 {{>base/js}}
+<script src="./asset/js/smart-banner.js"></script>
 </body>
 </html>
