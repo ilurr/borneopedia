@@ -26,6 +26,19 @@
 
 {{>module/modal_form modal_page="qna" modal_type="add" modal_title="New Question" modal_draft="Save to draft" modal_action="POST"}}
 
+<!-- form add job -->
+<form action="jobs.html">
+{{>module/modal_form_job modal_page="job" modal_type="addStep1" modal_title="Post a Job" modal_draft="Save to draft" modal_action="NEXT" modal_next="Step2" step="1"}}
+
+{{>module/modal_form_job modal_page="job" modal_type="addStep2" modal_title="Post a Job" modal_draft="Back to Write" modal_action="NEXT" modal_prev="Step1" modal_next="Step3" step="2"}}
+
+{{>module/modal_form_job modal_page="job" modal_type="addStep3" modal_title="Post a Job" modal_draft="Back to Select Payment" modal_action="PAY NOW" modal_prev="Step2" modal_next="Finish" step="3"}}
+
+{{>module/modal_form_job modal_page="job" modal_type="addPayment" modal_title="Payment Method" modal_cancel="Cancel" modal_action="CHANGE" submodal="payment" modal_footer="false"}}
+
+{{>module/modal_form_job modal_page="job" modal_type="addFinish" step="4" modal_header="false" modal_footer="false"}}
+</form>
+
 {{#if page}}
 {{#eq page compare="qna"}}
 {{>module/modal_form modal_page="qna" modal_type="edit" modal_title="Edit Question" modal_draft="Save to draft" modal_action="POST"}}

@@ -25,6 +25,7 @@
 			min-width: 75px;
 			padding: 0 .75rem;
 			border: 1px solid transparent;
+			vertical-align: middle;
 		}
 	}
 	&-text {
@@ -48,10 +49,31 @@
 			@include font-pack(false, false, 700, false, #fff);
 		}
 	}
+	button.close[aria-label="Back"] {
+		right: unset;
+		left: 15px;
+		top: 15px;
+		& + .modal-header {
+			padding: 15px 15px 15px 50px;
+		}
+		& > .icon-arrow {
+			// margin-right: 1rem;
+			&:before {
+				border-top: 2px solid #575757;
+			}
+			&:after {
+				border-top: 2px solid #575757;
+				border-left: 2px solid #575757;
+			}
+		}
+	}
 }
 // #modalPost {
 // 	over
 // }
+#modalJobAddStep1,
+#modalJobAddStep2,
+#modalJobAddStep3,
 #modalMsgAdd,
 #modalQnaAdd,
 #modalNeoblogAdd,
@@ -62,5 +84,18 @@
 	}
 	.modal-footer {
 		border-top: 1px solid transparent;
+	}
+}
+#modalJobAddPayment {
+	.modal-dialog {
+		padding-top: 45px;
+	}
+}
+#modalLogin {
+	.modal-header + .modal-body {
+		max-height: calc(70vh - 59px + 70px);
+	}
+	.modal-dialog {
+		margin: 16vh auto 2rem;
 	}
 }

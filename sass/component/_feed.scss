@@ -830,6 +830,31 @@
 		}
 	}
 
+	&-info {
+		position: relative;
+		border-top: 1px solid #E8E8E8;
+		margin: 1rem 0;
+		padding: 1rem 0;
+		&-row {
+			position: relative;
+			display: flex;
+			align-items: center;
+			padding: .125rem 0;
+		}
+		&-label {
+			flex-basis: 150px;
+			flex-grow: 0;
+			// text-transform: uppercase;
+			// letter-spacing: 1px;
+			@include font-pack(false, .875rem, false, false, rgba(22, 31, 61, 0.7));
+		}
+		&-text {
+			flex-grow: 1;
+			flex-basis: 0;
+			@include font-pack(false, .875rem, 700, false, false);
+		}
+	}
+
 	.feed-content .feed-img + .feed-action {
 		border-top: 1px solid transparent;
 	}

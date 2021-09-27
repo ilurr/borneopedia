@@ -1,0 +1,11 @@
+<div class="job-payment-row">
+	<div class="job-payment-img">
+		<img src="./asset/images/payment-{{channel.code}}.png" alt="{{channel.title}}">
+	</div>
+	<div class="job-payment-title">{{channel.title}}</div>
+	{{#if button_action}}
+	<div class="job-payment-action">
+		<button type="button" class="button job-payment-button" data-toggle="modal" data-target="#modalJobAddPayment">Change</button>
+	</div>
+	{{/if}}
+</div>

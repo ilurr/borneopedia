@@ -46,3 +46,32 @@ body.mobile {
 		width: 100%;
 	}
 } 
+
+// sosmed login
+.button {
+	&.-facebook,
+	&.-google {
+		.icon-general {
+			margin-top: -.125rem;
+			margin-right: .5rem;
+		}
+	}
+}
+.sign-text.-sosmed {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		border-top: 1px solid #d7d7d7;
+		width: 100%;
+	}
+	& > .text-center {
+		position: relative;
+		background: #fff;
+		padding: 0 .25rem;
+		font-weight: 700;
+	}
+}

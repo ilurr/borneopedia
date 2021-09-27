@@ -30,6 +30,33 @@
 .tox .tox-dialog-wrap__backdrop {
 	background-color: rgba(0,0,0,.85) !important;
 }
+
+// jobs
+.post-modal.-job {
+	.tox .tox-toolbar__primary {
+		background: rgba(#161F3D, .1);
+		border-bottom: 0 solid transparent;
+	}
+	.tox .tox-tbtn {
+		width: 32px;
+		height: 30px;
+		margin: 1px 0;
+	}
+	.tox .tox-tbtn svg {
+		@include transform(scale(.9));
+	}
+	.tox-tinymce {
+		border-radius: 4px 4px 0 0;
+		border: 1px solid transparent;
+	}
+	.tox .tox-edit-area__iframe {
+		background: rgba(#161F3D, .06);
+	}
+	.tox:not([dir=rtl]) .tox-toolbar__group:not(:last-of-type) {
+		border-right: transparent;
+	}
+}
+
 // button.tox-browse-url {
 // 	// margin-left: 0 !important;
 // 	// margin-bottom: 8px !important;

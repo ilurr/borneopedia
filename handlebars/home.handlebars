@@ -76,7 +76,7 @@
 let msg = document.getElementById('success-msg');
 if(!!msg) {
 	setTimeout(function(){
-		$('#success-msg').fadeIn(300);
+		$('#success-msg').fadeIn(300).delay(3000).fadeOut(1000);
 	}, 300);
 }
 </script>

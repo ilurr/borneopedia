@@ -2778,7 +2778,7 @@
 			"icon": "jobs",
 			"link": "jobs.html",
 			"modal": 1,
-			"modal_id": "modalJobAdd",
+			"modal_id": "modalJobAddStep1",
 			"notification": "",
 			"badge": false,
 			"login": "1"
@@ -3394,6 +3394,12 @@
 		"header": 0,
 		"link": "jobs-detail.html",
 		"content": "<p>HappyFresh is the fastest-growing online grocery marketplace in South-East Asia and Asia's Best Company to Work For 2019. Headquartered in Jakarta, we have expanded to major cities in three countries and now operate in Indonesia, Malaysia, and Thailand. Every day, our team delivers the #FreshlyHandpicked quality groceries to thousands of customers.</p>\n<p>As a company, we are here to deliver a simplified life by providing an easy grocery shopping experience with a high-quality service. With our <a href=\"#\"><strong>HappyFresh Culture</strong></a>, we believe we can achieve our goals with you in it. </p>\n<h2>What You'll Be Doing?</h2>\n<ul>\n    <li>Together with the local creative team, he/she will develop creative ideas and concepts for monthly marketing plans, and campaigns to help achieve the local marketing team goals</li>\n    <li>Write clear, persuasive, original copy that is on-brand.</li>\n    <li>In charge of the creative copywriting in local teams; campaign lines, short form catchy copies for OOH or any other project needed.</li>\n    <li>Video scripts for evergreen videos and/or campaigns.</li>\n    <li>Proofreading copy to check spelling and grammar.</li>\n    <li>Assist other team members (Social media specialists, CRM specialists, etc) with their creative and short form copywriting needs.</li>\n    <li>Amending, revising campaigns in response to feedback from internal.</li>\n</ul>\n<h2>What We Are Looking For?</h2>\n<ul>\n    <li>BA or BSc Degree with focus on communication, advertising, and/or marketing.</li>\n    <li>At least 2 years experience minimum in a Copywriter role in advertising agencies. </li>\n    <li>Demonstrates creativity and documented immersion in copywriting and campaigns.</li>\n    <li>Ability to work in conceptual thinking, wide knowledge, creative in making up new ideas.</li>\n    <li>Valued for writing flexibility, conceptual/visual thinking.</li>\n    <li>Strong interpersonal and communication skills. </li>\n    <li>Have a good time management.</li>\n    <li>Fluency in written and spoken English and the local language (Indonesian, Bahasa Melayu or Thai).</li>\n    <li>Well-organized and detail oriented – mandatory.</li>\n</ul>\n<p>We are looking for an enthusiastic Copywriter to join our local marketing team. This role will use creative thinking to find brilliant, eye-opener communication solutions. He/she will develop ideas which are original.</p>",
+		"job_info": {
+			"Job Type": "Full-time",
+			"Years of Experience": "2 years above",
+			"Career Level": "Senior",
+			"Job Specializations": "Project & Product Management"
+		},
 		"people_belt": [
 		  {
 			"avatars": [
@@ -4309,6 +4315,31 @@
 		  "location": "Malinau",
 		  "unsplash": "gjR2sh-s970",
 		  "link": "store-detail.html"
+		}
+	  ]
+	},
+	"jobs": {
+	  "payment": [
+		{
+		  "type": "Virtual Account",
+		  "list": [
+			{
+			  "title": "BCA Virtual Account",
+			  "code": "bca"
+			},
+			{
+			  "title": "Mandiri Virtual Account",
+			  "code": "mandiri"
+			},
+			{
+			  "title": "BRIVA",
+			  "code": "bri"
+			},
+			{
+			  "title": "BNI Virtual Account",
+			  "code": "bni"
+			}
+		  ]
 		}
 	  ]
 	},

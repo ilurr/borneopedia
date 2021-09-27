@@ -122,7 +122,8 @@
 		margin: 0;
 		position: relative;
 		width: 396px;
-		height: 70px;
+		height: 55px;
+		// height: 70px;
 		img {
 			@include ratio-flexible(auto, 100%);
 		}

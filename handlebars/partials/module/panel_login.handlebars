@@ -3,19 +3,18 @@
 	{{>component/input type="password" label="Password" name="password" txterror="The password that you've entered is incorrect" txthint="The password that you've entered is incorrect"}}
 	{{>component/checkbox type="checkbox" label="Remember Me" name="remember"}}
 	{{>component/button type="submit" label="Login" name="signin" class="-primary"}}
-	{{#if sosmed}}
-	<div class="sign-text">
-		<div class="text-center">OR</div>
-	</div>
-	{{>component/button type="link" label="Continue with Facebook" class="-facebook" icon="facebook" href="index.html"}}
-	{{>component/button type="link" label="Continue with Google" class="-google" icon="google-color" href="index.html"}}
-	{{else}}
 	<div class="sign-text -center">
 		<a href="index-reset-password.html">Forgot your password?</a>
 	</div>
 	<div class="sign-text -center">
 		Don't have an account? <strong><a href="index-signup.html">Sign up</a></strong>
 	</div>
-	{{!>component/button href="index-signup.html" type="link" label="Sign up" name="signup" class="-primary"}}
+	{{#if sosmed}}
+	<div class="sign-text -sosmed">
+		<div class="text-center">OR</div>
+	</div>
+	{{>component/button type="link" label="Continue with Facebook" class="-facebook" icon="facebook" href="index.html"}}
+	{{>component/button type="link" label="Continue with Google" class="-google" icon="google-color" href="index.html"}}
 	{{/if}}
+	{{!>component/button href="index-signup.html" type="link" label="Sign up" name="signup" class="-primary"}}
 </form>

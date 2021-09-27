@@ -1533,7 +1533,7 @@
 						</a>
 					</div>
 					<div class="nav-modal-item">
-						<a class="nav-link" data-toggle="modal" data-target="#modalJobAdd" role="button" aria-label="Post a Job">
+						<a class="nav-link" data-toggle="modal" data-target="#modalJobAddStep1" role="button" aria-label="Post a Job">
 							<div class="nav-flex">
 								<div class="nav-icon">
 									<span class="icon-general icon-jobs"></span>
@@ -1624,6 +1624,394 @@
 				</div>
 			</div>
 		</div>
+	</form>
+	
+	<!-- form add job -->
+	<form action="jobs.html">
+	<!-- modal job addStep1 -->
+	<div id="modalJobAddStep1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="jobForm" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="job-step">
+				<div class="job-step-item active">
+					<div class="job-step-title"><span>Write</span></div>
+				</div>
+				<div class="job-step-item">
+					<div class="job-step-title"><span>Select Payment</span></div>
+				</div>
+				<div class="job-step-item">
+					<div class="job-step-title"><span>Complete Post</span></div>
+				</div>
+			</div>
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+				<div class="modal-header">
+					<h5 class="modal-title">Post a Job</h5>
+				</div>
+				<div class="modal-body">
+					<div class="post-modal -job">
+						<div class="job-post-row">
+							<div class="job-post-col">
+								<div class="form-row">
+									<label for="job-title">Job Title</label>
+									<div class="form-input">
+										<input type="text" id="job-title" name="job-title" class="input" placeholder="" required="required">
+									</div>
+									<div class="form-hint"></div>
+								</div>
+							</div>
+						</div>
+						<div class="job-post-row">
+							<div class="job-post-col">
+								<div class="form-row">
+									<label for="job-type-role">Type of Role</label>
+									<div class="form-select" data-placeholder=" ">
+										<select id="job-type-role" name="job-type-role" class="select ">
+											<option value="0" selected="selected" disabled="disabled"> </option>
+											<option value="Full-time">Full-time</option>
+											<option value="Part-time">Part-time</option>
+											<option value="Intern">Intern</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="job-post-col">
+								<div class="form-row">
+									<label for="job-pos-level">Position Level</label>
+									<div class="form-select" data-placeholder=" ">
+										<select id="job-pos-level" name="job-pos-level" class="select ">
+											<option value="0" selected="selected" disabled="disabled"> </option>
+											<option value="Junior">Junior</option>
+											<option value="Staff">Staff</option>
+											<option value="Superintendent">Superintendent</option>
+											<option value="Manager">Manager</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="job-post-row">
+							<div class="job-post-col">
+								<div class="form-row">
+									<label for="job-specialisation">Job Specialisation</label>
+									<div class="form-select" data-placeholder=" ">
+										<select id="job-specialisation" name="job-specialisation" class="select ">
+											<option value="0" selected="selected" disabled="disabled"> </option>
+											<option value="Project &amp; Product Management">Project &amp; Product Management</option>
+											<option value="Sales &amp; Marketing">Sales &amp; Marketing</option>
+											<option value="Business Dev">Business Dev</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="job-post-col job-post-year">
+								<div class="form-row">
+									<label for="job-experience">Year of Experience</label>
+									<div class="form-select" data-placeholder=" ">
+										<select id="job-experience" name="job-experience" class="select ">
+											<option value="0" selected="selected" disabled="disabled"> </option>
+											<option value="Fresh Graduation">Fresh Graduation</option>
+											<option value="1 Year">1 Year</option>
+											<option value="&gt; 1 Years">&gt; 1 Years</option>
+											<option value="&gt; 5 Years">&gt; 5 Years</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="job-post-row">
+							<div class="job-post-col">
+								<div class="form-row">
+									<label for="job-place-prov">Work Location</label>
+									<div class="form-select" data-placeholder="">
+										<select id="job-place-prov" name="job-place-prov" class="select ">
+											<option value="Kalimantan Utara">Kalimantan Utara</option>
+											<option value="Kalimantan Barat">Kalimantan Barat</option>
+											<option value="Kalimantan Tengah">Kalimantan Tengah</option>
+											<option value="Kalimantan Timur">Kalimantan Timur</option>
+											<option value="Kalimantan Selatan">Kalimantan Selatan</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="job-post-col">
+								<div class="form-row">
+									<label for="job-place-city"> </label>
+									<div class="form-select" data-placeholder=" ">
+										<select id="job-place-city" name="job-place-city" class="select ">
+											<option value="0" selected="selected" disabled="disabled"> </option>
+											<option value="Malinau">Malinau</option>
+											<option value="Pontianak">Pontianak</option>
+											<option value="Palangkaraya">Palangkaraya</option>
+											<option value="Samarinda">Samarinda</option>
+											<option value="Banjarmasin">Banjarmasin</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="job-post-row">
+							<div class="job-post-col job-post-salary">
+								<div class="form-row">
+									<label for="job-salary-currency">Salary</label>
+									<div class="form-select" data-placeholder="">
+										<select id="job-salary-currency" name="job-salary-currency" class="select ">
+											<option value="IDR">IDR</option>
+											<option value="USD">USD</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<label for="job-salary-from"> </label>
+									<div class="form-input">
+										<input type="text" id="job-salary-from" name="job-salary-from" class="input" placeholder="5.000.000" required="required">
+									</div>
+									<div class="form-hint"></div>
+								</div>
+								<div class="job-post-cell">To</div>
+								<div class="form-row">
+									<label for="job-salary-to"> </label>
+									<div class="form-input">
+										<input type="text" id="job-salary-to" name="job-salary-to" class="input" placeholder="" required="required">
+									</div>
+									<div class="form-hint"></div>
+								</div>
+							</div>
+						</div>
+						<div class="job-post-row">
+							<div class="job-post-col">
+								<div class="form-row">
+									<label for="job-description">Job Description</label>
+									<textarea name="job-textarea" id="job-textarea-addStep1" class="tinymce-textarea-job"></textarea>
+									<div class="post-footnote">
+										<div class="post-input-counter"><span id="postRemainingJobDesc">0</span>/<span class="postMax">1000</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button class="button">Save to draft</button>
+					<button type="button" class="button -primary" id="job-button-addStep1" data-toggle="modal" data-target="#modalJobAddStep2">NEXT</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- modal job addStep2 -->
+	<div id="modalJobAddStep2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="jobForm" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="job-step">
+				<div class="job-step-item">
+					<div class="job-step-title"><span>Write</span></div>
+				</div>
+				<div class="job-step-item active">
+					<div class="job-step-title"><span>Select Payment</span></div>
+				</div>
+				<div class="job-step-item">
+					<div class="job-step-title"><span>Complete Post</span></div>
+				</div>
+			</div>
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+				<div class="modal-header">
+					<h5 class="modal-title">Post a Job</h5>
+				</div>
+				<div class="modal-body">
+					<div class="post-modal -job">
+						<div class="job-post-row">
+							<div class="job-post-col">
+								<div class="job-post-payment">
+									<div class="job-payment-block">
+										<label for="job-payment-method">Payment Method</label>
+										<input type="hidden" id="job-payment-method" name="job-payment-method" value="">
+										<div class="job-payment-row">
+											<div class="job-payment-img">
+												<img src="./asset/images/payment-bca.png" alt="BCA Virtual Account">
+											</div>
+											<div class="job-payment-title">BCA Virtual Account</div>
+											<div class="job-payment-action">
+												<button type="button" class="button job-payment-button" data-toggle="modal" data-target="#modalJobAddPayment">Change</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button" data-toggle="modal" data-target="#modalJobAddStep1"><span class="icon-arrow icon-arrow-left2"></span>Back to Write</button>
+					<button type="button" class="button -primary" id="job-button-addStep2" data-toggle="modal" data-target="#modalJobAddStep3">NEXT</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- modal job addStep3 -->
+	<div id="modalJobAddStep3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="jobForm" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="job-step">
+				<div class="job-step-item">
+					<div class="job-step-title"><span>Write</span></div>
+				</div>
+				<div class="job-step-item">
+					<div class="job-step-title"><span>Select Payment</span></div>
+				</div>
+				<div class="job-step-item active">
+					<div class="job-step-title"><span>Complete Post</span></div>
+				</div>
+			</div>
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+				<div class="modal-header">
+					<h5 class="modal-title">Post a Job</h5>
+				</div>
+				<div class="modal-body">
+					<div class="post-modal -job">
+						<div class="job-post-row">
+							<div class="job-post-col">
+								<div class="job-post-payment">
+									<div class="job-payment-block">
+										<label for="job-payment-method">Payment Method</label>
+										<div class="job-payment-row">
+											<div class="job-payment-img">
+												<img src="./asset/images/payment-bca.png" alt="BCA Virtual Account">
+											</div>
+											<div class="job-payment-title">BCA Virtual Account</div>
+										</div>
+									</div>
+									<div class="job-payment-block">
+										<label for="job-payment-summary">Payment Summary</label>
+										<div class="job-payment-total">Total <span>IDR 150,000</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="button" data-toggle="modal" data-target="#modalJobAddStep2"><span class="icon-arrow icon-arrow-left2"></span>Back to Select Payment</button>
+					<button type="button" class="button -primary" id="job-button-addStep3" data-toggle="modal" data-target="#modalJobAddFinish">PAY NOW</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- modal job addPayment -->
+	<div id="modalJobAddPayment" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="jobForm" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Back"><span class="icon-arrow icon-arrow-left2" aria-hidden="true"></span></button>
+				<div class="modal-header">
+					<h5 class="modal-title">Payment Method</h5>
+				</div>
+				<div class="modal-body">
+					<div class="post-modal -job">
+						<div class="job-post-row">
+							<div class="job-post-col">
+								<div class="job-payment-list">
+									<div class="job-payment-item">
+										<a href="#" role="button" class="job-payment-select" data-paycode="bca" data-paytitle="BCA Virtual Account">
+											<div class="job-payment-row">
+												<div class="job-payment-img">
+													<img src="./asset/images/payment-bca.png" alt="BCA Virtual Account">
+												</div>
+												<div class="job-payment-title">BCA Virtual Account</div>
+											</div>
+										</a>
+									</div>
+									<div class="job-payment-item">
+										<a href="#" role="button" class="job-payment-select" data-paycode="mandiri" data-paytitle="Mandiri Virtual Account">
+											<div class="job-payment-row">
+												<div class="job-payment-img">
+													<img src="./asset/images/payment-mandiri.png" alt="Mandiri Virtual Account">
+												</div>
+												<div class="job-payment-title">Mandiri Virtual Account</div>
+											</div>
+										</a>
+									</div>
+									<div class="job-payment-item">
+										<a href="#" role="button" class="job-payment-select" data-paycode="bri" data-paytitle="BRIVA">
+											<div class="job-payment-row">
+												<div class="job-payment-img">
+													<img src="./asset/images/payment-bri.png" alt="BRIVA">
+												</div>
+												<div class="job-payment-title">BRIVA</div>
+											</div>
+										</a>
+									</div>
+									<div class="job-payment-item">
+										<a href="#" role="button" class="job-payment-select" data-paycode="bni" data-paytitle="BNI Virtual Account">
+											<div class="job-payment-row">
+												<div class="job-payment-img">
+													<img src="./asset/images/payment-bni.png" alt="BNI Virtual Account">
+												</div>
+												<div class="job-payment-title">BNI Virtual Account</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- modal job addFinish -->
+	<div id="modalJobAddFinish" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="jobForm" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="job-step">
+				<div class="job-step-item">
+					<div class="job-step-title"><span>Write</span></div>
+				</div>
+				<div class="job-step-item">
+					<div class="job-step-title"><span>Select Payment</span></div>
+				</div>
+				<div class="job-step-item">
+					<div class="job-step-title"><span>Complete Post</span></div>
+				</div>
+			</div>
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+				<div class="modal-body">
+					<div class="post-modal -job">
+						<div class="job-post-finish">
+							<div class="job-finish-title">Please complete the payment in</div>
+							<div class="job-finish-counter">
+								<span id="job-payment-counter" data-date="09/29/2021 20:45:00"></span>
+							</div>
+							<div class="job-finish-limit">Your time limit to make a tranfer in:</div>
+							<div class="job-finish-date">Monday, 29 September 2021 20:45</div>
+							<div class="job-finish-detail">
+								<div class="job-finish-col">
+									<div class="job-finish-label">Virtual Account Number</div>
+								</div>
+								<div class="job-finish-col">
+									<div class="job-finish-info">289879029893</div>
+								</div>
+							</div>
+							<div class="job-finish-detail">
+								<div class="job-finish-col">
+									<div class="job-finish-label">Total Payment</div>
+								</div>
+								<div class="job-finish-col">
+									<div class="job-finish-info">IDR. 150.000</div>
+								</div>
+							</div>
+							<div class="job-finish-button">
+								<div class="form-row">
+									<a href="jobs-payment-status.html" class="button -primary active" role="link">CHECK PAYMENT STATUS</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	</form>
 	
 	
@@ -1778,7 +2166,7 @@ $('#modalLogin').on('hidden.bs.modal', function () {
 		$(this).find('.modal-limit-info').remove();
 	}
 });
-  
+
 // mention 
 var tribute = new Tribute({
   values: [
@@ -1835,6 +2223,101 @@ function insertTextAtCaret(text) {
     {
         selection.modify("move", "left", "character");
     };
+}
+
+// update 26 sep 2021
+// modal for jobs
+$('#modalJobAddStep1').on('show.bs.modal', function () {
+	$('#modalNavAdd').modal('hide');
+	$('#modalJobAddStep2').modal('hide');
+	$('#modalJobAddStep3').modal('hide');
+});
+$('#modalJobAddStep2').on('show.bs.modal', function () {
+	$('#modalNavAdd').modal('hide');
+	$('#modalJobAddStep1').modal('hide');
+	$('#modalJobAddStep3').modal('hide');
+});
+$('#modalJobAddStep3').on('show.bs.modal', function () {
+	$('#modalNavAdd').modal('hide');
+	$('#modalJobAddStep2').modal('hide');
+	$('#modalJobAddStep4').modal('hide');
+});
+$('#modalJobAddFinish').on('show.bs.modal', function () {
+	$('#modalNavAdd').modal('hide');
+	$('#modalJobAddStep3').modal('hide');
+	// counting date
+	startCountdown();
+});
+// tnymce job
+tinymce.init({
+	selector: '.tinymce-textarea-job',
+	menubar: false,
+	placeholder: 'Write job descriptions here...',
+	statusbar: false,
+	min_height: 150,
+	plugins: plugins,
+	toolbar: "bold italic bullist",
+	content_style: ".mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before {color: #B0B0B0; font-size: .875rem; }",
+	setup: function(editor) {
+		editor.on('keyup', function(e) {
+			var wordcount = tinymce.activeEditor.plugins.wordcount;
+			var words = wordcount.body.getCharacterCount();
+			var rem = document.getElementById('postRemainingJobDesc');
+			if(rem) {
+				rem.innerHTML = words;
+			}
+			//if(words > 125) {
+			//	document.getElementById('job-button-addStep1').removeAttribute('disabled');
+			//} else {
+			//	document.getElementById('job-button-addStep1').setAttribute('disabled','disabled');
+			//}
+		});
+	}
+});
+// change payment method
+$('.job-payment-select').on('click',function(e){
+	e.preventDefault();
+	$('#modalJobAddPayment').modal('hide');
+	// update payment content, for dummy
+	$('#job-payment-method').val($(this).attr('data-paycode'));
+	$('#job-payment-method ~ .job-payment-row img').attr('src', './asset/images/payment-'+$(this).attr('data-paycode')+'.png');
+	$('#job-payment-method ~ .job-payment-row .job-payment-title').text($(this).attr('data-paytitle'));
+});
+// payment countdown
+function startCountdown() {
+    let paymentCountdown = document.getElementById('job-payment-counter');
+    if(!!paymentCountdown) {
+        let gDate = paymentCountdown.getAttribute('data-date');
+        let vDate = new Date(gDate).getTime();
+        if(isNaN(vDate)) {
+            console.log('Invalid format date')
+        } else {
+            let xyz = setInterval(function(){
+                let now = new Date().getTime();
+                let selisih = vDate - now;
+                let days = Math.floor(selisih / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((selisih % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((selisih % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((selisih % (1000 * 60)) / 1000);
+
+                if(days > 1) {
+                    paymentCountdown.innerHTML = days + " Days";
+                } else {
+                    paymentCountdown.innerHTML = pad(hours) + ":" + pad(minutes) + ":" + pad(seconds) + "";
+                }
+
+                if (selisih < 0) {
+                    clearInterval(xyz);
+                    paymentCountdown.innerHTML = "00:00:00";
+                }
+
+            }, 1000);
+            //console.log(vDate);
+        }
+    }
+}
+function pad(val) {
+	return val > 9 ? val : "0" + val;
 }
 
 </script>

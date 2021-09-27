@@ -252,6 +252,31 @@
 				padding: 0 1rem;
 			}
 		}
+		&.-job {
+			.form-select,
+			.form-file, 
+			.form-input,
+			textarea, 
+			input:not([type=checkbox]) {
+				height: 32px;
+			}
+			select,
+			textarea, 
+			input:not([type=checkbox]) {
+				border: 1px solid transparent;
+				background: rgba(#161F3D, .06);
+				font-size: .875rem;
+			}
+			label {
+				min-height: 22px;
+			}
+			select {
+				padding: .25rem 2rem .25rem .75rem;
+			}
+			.form-select:after {
+				top: calc(50% - 0.375rem);
+			}
+		}
 	}
 }
 

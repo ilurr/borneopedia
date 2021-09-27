@@ -1,0 +1,184 @@
+<!-- modal {{modal_page}} {{modal_type}} -->
+<div id="modal{{capitalize modal_page}}{{capitalize modal_type}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="{{modal_page}}Form" aria-hidden="true">
+	<div class="modal-dialog">
+		{{#if step}}
+		<div class="job-step">
+			<div class="job-step-item{{#eq step compare="1"}} active{{/eq}}">
+				<div class="job-step-title"><span>Write</span></div>
+			</div>
+			<div class="job-step-item{{#eq step compare="2"}} active{{/eq}}">
+				<div class="job-step-title"><span>Select Payment</span></div>
+			</div>
+			<div class="job-step-item{{#eq step compare="3"}} active{{/eq}}">
+				<div class="job-step-title"><span>Complete Post</span></div>
+			</div>
+		</div>
+		{{/if}}
+		<div class="modal-content">
+			{{#if submodal}}
+			<button type="button" class="close" data-dismiss="modal" aria-label="Back"><span class="icon-arrow icon-arrow-left2" aria-hidden="true"></span></button>
+			{{else}}
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+			{{/if}}
+			{{#eq modal_header compare="false"}}
+			{{else}}
+			<div class="modal-header">
+				<h5 class="modal-title">{{modal_title}}</h5>
+			</div>
+			{{/eq}}
+			<div class="modal-body">
+				<div class="post-modal -{{modal_page}}">
+					{{#eq modal_page compare="job"}}
+					{{#eq step compare="1"}}
+					<div class="job-post-row">
+						<div class="job-post-col">
+							{{>component/input type="text" label="Job Title" name="job-title" required="true"}}
+						</div>
+					</div>
+					<div class="job-post-row">
+						<div class="job-post-col">
+							{{>component/select option="Full-time,Part-time,Intern" placeholder=" " label="Type of Role" name="job-type-role"}}
+						</div>
+						<div class="job-post-col">
+							{{>component/select option="Junior,Staff,Superintendent,Manager" placeholder=" " label="Position Level" name="job-pos-level"}}
+						</div>
+					</div>
+					<div class="job-post-row">
+						<div class="job-post-col">
+							{{>component/select option="Project & Product Management,Sales & Marketing,Business Dev" placeholder=" " label="Job Specialisation" name="job-specialisation"}}
+						</div>
+						<div class="job-post-col job-post-year">
+							{{>component/select option="Fresh Graduation,1 Year,> 1 Years,> 5 Years" placeholder=" " label="Year of Experience" name="job-experience"}}
+						</div>
+					</div>
+					<div class="job-post-row">
+						<div class="job-post-col">
+							{{>component/select option="Kalimantan Utara,Kalimantan Barat,Kalimantan Tengah,Kalimantan Timur,Kalimantan Selatan" label="Work Location" name="job-place-prov" selected="Kalimantan Utara"}}
+						</div>
+						<div class="job-post-col">
+							{{>component/select option="Malinau,Pontianak,Palangkaraya,Samarinda,Banjarmasin" placeholder=" " label=" " name="job-place-city"}}
+						</div>
+					</div>
+					<div class="job-post-row">
+						<div class="job-post-col job-post-salary">
+							{{>component/select option="IDR,USD" label="Salary" name="job-salary-currency" selected="IDR"}}
+							{{>component/input type="text" label=" " name="job-salary-from" placeholder="5.000.000" required="true"}}
+							<div class="job-post-cell">To</div>
+							{{>component/input type="text" label=" " name="job-salary-to" required="true"}}
+						</div>
+					</div>
+					<div class="job-post-row">
+						<div class="job-post-col">
+							<div class="form-row">
+								<label for="job-description">Job Description</label>
+								<textarea name="{{modal_page}}-textarea" id="{{modal_page}}-textarea-{{modal_type}}" class="tinymce-textarea-job"></textarea>
+								<div class="post-footnote">
+									<div class="post-input-counter"><span id="postRemainingJobDesc">0</span>/<span class="postMax">1000</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{{/eq}}
+					{{#eq step compare="2"}}
+					<div class="job-post-row">
+						<div class="job-post-col">
+							<div class="job-post-payment">
+								<div class="job-payment-block">
+									<label for="job-payment-method">Payment Method</label>
+									<input type="hidden" id="job-payment-method" name="job-payment-method" value="">
+									{{>component/jobs/payment_item channel=jobs.payment.[0].list.[0] button_action=true}}
+								</div>
+							</div>
+						</div>
+					</div>
+					{{/eq}}
+					{{#eq step compare="3"}}
+					<div class="job-post-row">
+						<div class="job-post-col">
+							<div class="job-post-payment">
+								<div class="job-payment-block">
+									<label for="job-payment-method">Payment Method</label>
+									{{>component/jobs/payment_item channel=jobs.payment.[0].list.[0]}}
+								</div>
+								<div class="job-payment-block">
+									<label for="job-payment-summary">Payment Summary</label>
+									<div class="job-payment-total">Total <span>IDR 150,000</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					{{/eq}}
+					{{#eq step compare="4"}}
+					<div class="job-post-finish">
+						<div class="job-finish-title">Please complete the payment in</div>
+						<div class="job-finish-counter">
+							<span id="job-payment-counter" data-date="09/29/2021 20:45:00"></span>
+						</div>
+						<div class="job-finish-limit">Your time limit to make a tranfer in:</div>
+						<div class="job-finish-date">Monday, 29 September 2021 20:45</div>
+						<div class="job-finish-detail">
+							<div class="job-finish-col">
+								<div class="job-finish-label">Virtual Account Number</div>
+							</div>
+							<div class="job-finish-col">
+								<div class="job-finish-info">289879029893</div>
+							</div>
+						</div>
+						<div class="job-finish-detail">
+							<div class="job-finish-col">
+								<div class="job-finish-label">Total Payment</div>
+							</div>
+							<div class="job-finish-col">
+								<div class="job-finish-info">IDR. 150.000</div>
+							</div>
+						</div>
+						<div class="job-finish-button">
+							{{>component/button type="link" class="-primary" href="jobs-payment-status.html" label="CHECK PAYMENT STATUS"}}
+						</div>
+					</div>
+					{{/eq}}
+					{{#eq submodal compare="payment"}}
+					<div class="job-post-row">
+						<div class="job-post-col">
+							<div class="job-payment-list">
+								{{#each jobs.payment.[0].list}}
+								<div class="job-payment-item">
+									<a href="#" role="button" class="job-payment-select" data-paycode="{{code}}" data-paytitle="{{title}}">
+										{{>component/jobs/payment_item channel=this}}
+									</a>
+								</div>
+								{{/each}}
+							</div>
+						</div>
+					</div>
+					{{/eq}}
+					{{/eq}}
+				</div>
+			</div>
+			{{#eq modal_footer compare="false"}}
+			{{else}}
+			<div class="modal-footer">
+				{{#if modal_disabled}}
+				<button class="button" disabled="disabled" id="{{modal_page}}-button-{{modal_type}}-draft">{{modal_draft}}</button>
+				<button class="button -primary" disabled="disabled" id="{{modal_page}}-button-{{modal_type}}">{{modal_action}}</button>
+				{{else}}
+				{{#if modal_prev}}
+				<button type="button" class="button" data-toggle="modal" data-target="#modalJobAdd{{modal_prev}}"><span class="icon-arrow icon-arrow-left2"></span>{{modal_draft}}</button>
+				{{else}}
+				{{#if modal_cancel}}
+				<button type="button" class="button" data-dismiss="modal">{{modal_cancel}}</button>
+				{{else}}
+				<button class="button">{{modal_draft}}</button>
+				{{/if}}
+				{{/if}}
+				{{#if modal_next}}
+				<button type="button" class="button -primary" id="{{modal_page}}-button-{{modal_type}}" data-toggle="modal" data-target="#modalJobAdd{{modal_next}}">{{modal_action}}</button>
+				{{else}}
+				<button class="button -primary" id="{{modal_page}}-button-{{modal_type}}">{{modal_action}}</button>
+				{{/if}}
+				{{/if}}
+			</div>
+			{{/eq}}
+		</div>
+	</div>
+</div>

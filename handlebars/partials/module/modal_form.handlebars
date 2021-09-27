@@ -21,7 +21,8 @@
 								<div class="post-input-counter"><span id="postRemainingQna">0</span>/<span class="postMax">200</span></div>
 							</div>
 						</div>
-						{{else}}
+						{{/eq}}
+						{{#eq modal_page compare="neoblog"}}
 						<div class="post-modal-content">
 							<textarea name="{{modal_page}}-textarea" id="{{modal_page}}-textarea-{{modal_type}}" class="tinymce-textarea"></textarea>
 							<div class="post-footnote">

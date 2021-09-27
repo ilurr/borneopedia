@@ -18,6 +18,25 @@
 		}
 		&-left {
 			@include transform(rotate(-40deg));
+			&2 {
+				@include transform(rotate(-40deg));
+				width: 1.125rem;
+				margin-right: .5rem;
+				&:before {
+					content: '';
+					display: block;
+					width: .875rem;
+					position: absolute;
+					top: 9px;
+					left: 4px;
+					border-top: 1px solid #5e5e5e;
+					@include transform(rotate(40deg));
+				}
+				&:after {
+					border-top: 1px solid #5e5e5e;
+					border-left: 1px solid #5e5e5e;
+				}
+			}
 		}
 		&-right {
 			@include transform(rotate(135deg));
