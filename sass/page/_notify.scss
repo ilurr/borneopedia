@@ -67,6 +67,15 @@
 		span {
 			font-weight: 800;
 		}
+		a {
+			color: inherit;
+			span {
+				@include transition(all .2s ease);
+				&:hover {
+					color: var(--color-theme);
+				}
+			}
+		}
 	}
 	&-time {
 		position: relative;

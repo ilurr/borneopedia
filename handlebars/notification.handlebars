@@ -37,22 +37,26 @@
 							{{#or qna neoblog}}
 							{{#not draft}}
 							<div class="notify-item{{#eq @index compare=1}} unread{{/eq}}">
-								<a href="{{link}}">
-									<div class="notify-row">
-										<div class="notify-img">
+								<div class="notify-row">
+									<div class="notify-img">
+										<a href="profile-view.html">
 											<img src="{{avatars.[0].url}}" alt="{{avatars.first_name}}">
-										</div>
-										<div class="notify-col">
-											<div class="notify-content">
+										</a>
+									</div>
+									<div class="notify-col">
+										<div class="notify-content">
+											<a href="profile-view.html">
 												<span>{{first_name}} {{last_name}}</span> 
+											</a>
+											<a href="{{link}}">
 												{{#if post}} commented on your post <strong>"{{truncateWords (sanitize post) 10}}..."</strong> {{/if}}
 												{{#if answer}} answered on your question <strong>"{{truncateWords (sanitize answer) 10}}..."</strong> {{/if}}
 												{{#if unanswered}} requested an answer from a question <strong>"{{truncateWords (sanitize question) 10}}..."</strong> {{/if}}
-											</div>
-											<div class="notify-time">20 minutes ago</div>
+											</a>
 										</div>
+										<div class="notify-time">20 minutes ago</div>
 									</div>
-								</a>
+								</div>
 							</div>
 							{{/not}}
 							{{/or}}

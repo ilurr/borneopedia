@@ -49,8 +49,10 @@ body.mobile {
 
 // sosmed login
 .button {
+	&.-apple,
 	&.-facebook,
 	&.-google {
+		margin: -.75rem 0;
 		.icon-general {
 			margin-top: -.125rem;
 			margin-right: .5rem;
