@@ -10,6 +10,11 @@
 		&:last-child {
 			padding: 0.313rem 0 0;
 		}
+		.option {
+			top: 2px;
+		    right: 2px;
+			@include transform(scale(.9));
+		}
 	}
 	&-row {
 		position: relative;
@@ -58,7 +63,7 @@
 	}
 	&-text {
 		position: relative;
-		padding: .25rem 0;
+		padding: .25rem .5rem .25rem 0;
 		word-break: break-word;
 		@include font-pack(false, 0.938rem, 500, 1.7, #4D4D4D);
 	}

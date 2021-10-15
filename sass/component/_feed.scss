@@ -140,6 +140,10 @@
 		p {
 			margin: 0 0 1rem;
 			@include font-pack(false, 0.938rem, 400, 1.7, rgba(#131313, .9));
+			& > img {
+				display: block;
+				margin: 0 auto;
+			}
 		}
 		blockquote {
 			position: relative;
