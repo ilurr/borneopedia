@@ -7,14 +7,14 @@
 		<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
 			{{#if option}}
 			{{#each (split option ",") as |item|}}
-			<a class="dropdown-item" data-toggle="modal" data-target="#modal{{pascalcase item}}" href="#" role="button">{{item}}</a>
+			<a class="dropdown-item" data-toggle="modal" data-target="#modal{{#eq item compare="Edit"}}Comment{{/eq}}{{pascalcase item}}" href="#" role="button">{{item}}</a>
 			{{/each}}
 			{{else}}
-			<a class="dropdown-item" href="#">Hide Post</a>
-			<a class="dropdown-item" href="#">Unfollow</a>
+			{{!-- <a class="dropdown-item" href="#">Hide Post</a> --}}
 			<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
+			<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Unfollow</a>
 			<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
-			<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
+			<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Post</a>
 			{{!-- <button type="button" class="dropdown-item" role="link">Edit Post</button> --}}
 			{{/if}}
 		</div>

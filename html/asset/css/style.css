@@ -1519,6 +1519,10 @@ a.dropdown-item.-loading-bar {
     height: 24px;
     margin-top: .125rem;
     margin-bottom: .125rem; }
+  .app-badge > a:last-child img {
+    height: 36px; }
+  .app-badge > a:first-child + a:last-child img {
+    height: 24px; }
 
 .app-modal {
   padding: 1rem 1rem 2rem; }
@@ -2598,12 +2602,7 @@ a.dropdown-item.-loading-bar {
       -moz-transform: scale(0.9);
       -ms-transform: scale(0.9);
       -o-transform: scale(0.9);
-      transform: scale(0.9);
-      visibility: hidden;
-      opacity: 0; }
-    .comment-item:hover .option {
-      opacity: 1;
-      visibility: visible; }
+      transform: scale(0.9); }
   .comment-row {
     position: relative;
     display: -webkit-box;
@@ -6890,12 +6889,26 @@ body.mobile .root {
     padding: 0 .25rem;
     font-weight: 700; }
 
+.dropup.open > .tooltip,
+.dropdown.open > .tooltip {
+  pointer-events: none;
+  opacity: 0; }
+
+.modal-edit .modal-header {
+  border-bottom: none; }
+
+.modal-edit .modal-text {
+  padding: 0 1rem; }
+
+.modal-edit .modal-footer {
+  border-top: none; }
+
 @media (min-width: 768px) {
   .modal-confirm .modal-dialog {
     width: 460px; } }
 
 .modal-confirm .modal-body .modal-text {
-  padding: 1rem !important; }
+  padding: .75rem 1rem !important; }
 
 .modal-confirm .modal-header.modal-delete {
   padding: 15px 15px 15px 40px !important; }

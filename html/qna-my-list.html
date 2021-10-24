@@ -395,7 +395,7 @@
 															<span class="icon-option"><i></i></span>
 														</button>
 														<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
-															<a class="dropdown-item" data-toggle="modal" data-target="#modalEdit" href="#" role="button">Edit</a>
+															<a class="dropdown-item" data-toggle="modal" data-target="#modalCommentEdit" href="#" role="button">Edit</a>
 															<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete</a>
 															<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
 														</div>
@@ -431,11 +431,10 @@
 											<span class="icon-option"><i></i></span>
 										</button>
 										<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
-											<a class="dropdown-item" href="#">Hide Post</a>
-											<a class="dropdown-item" href="#">Unfollow</a>
 											<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
+											<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Unfollow</a>
 											<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
-											<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
+											<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Post</a>
 										</div>
 									</div>
 								</div>
@@ -522,11 +521,10 @@
 											<span class="icon-option"><i></i></span>
 										</button>
 										<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
-											<a class="dropdown-item" href="#">Hide Post</a>
-											<a class="dropdown-item" href="#">Unfollow</a>
 											<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
+											<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Unfollow</a>
 											<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
-											<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
+											<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Post</a>
 										</div>
 									</div>
 								</div>
@@ -2107,9 +2105,9 @@
 	</form>
 	
 	
-	<!-- modal feed delete -->
-	<form action="feed.html">
-		<div id="modalFeedDelete" class="modal fade modal-confirm" tabindex="-1" role="dialog" aria-labelledby="feedForm" aria-hidden="true">
+	<!-- modal  delete -->
+	<form action="home.html">
+		<div id="modalDelete" class="modal fade modal-confirm" tabindex="-1" role="dialog" aria-labelledby="Form" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
@@ -2125,6 +2123,58 @@
 					<div class="modal-footer">
 						<button type="button" class="button" data-dismiss="modal">Cancel</button>
 						<button class="button -primary">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	
+	<!-- modal  unfollow -->
+	<form action="home.html">
+		<div id="modalUnfollow" class="modal fade modal-confirm" tabindex="-1" role="dialog" aria-labelledby="Form" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+					<div class="modal-header modal-delete">
+						<h5 class="modal-title">Unfollow</h5>
+					</div>
+					<div class="modal-body">
+						<div class="modal-text">
+							Are you sure want to unfollow this <strong id="confirm-delete-name" class=""></strong>?<br>
+							<small class="text-muted">warning, your action cannot be undone in the future</small>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="button" data-dismiss="modal">Cancel</button>
+						<button class="button -primary">Unfollow</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	
+	<!-- modal comment edit -->
+	<form action="comment.html">
+		<div id="modalCommentEdit" class="modal fade modal-edit" tabindex="-1" role="dialog" aria-labelledby="commentForm" aria-hidden="true">
+			<div class="modal-dialog -small">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+					<div class="modal-header">
+						<h5 class="modal-title">Edit Comment</h5>
+					</div>
+					<div class="modal-body">
+						<div class="modal-text">
+							<div class="form-row">
+								<div class="form-textarea">
+									<textarea name="comment-edit" id="comment-edit" class="textarea" placeholder="" required="required">Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat.</textarea>
+								</div>
+								<div class="form-hint"></div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="button" data-dismiss="modal">Cancel</button>
+						<button class="button -primary">Edit</button>
 					</div>
 				</div>
 			</div>

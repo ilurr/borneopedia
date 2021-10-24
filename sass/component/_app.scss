@@ -13,6 +13,19 @@
 			// 	height: 35px;
 			// }
 		}
+		& > a:last-child {
+			img {
+				// width: auto;
+				height: 36px;
+			}
+		}
+		& > a:first-child {
+			& + a:last-child {
+				img {
+					height: 24px;
+				}
+			}
+		}
 	}
 	&-modal {
 		padding: 1rem 1rem 2rem;

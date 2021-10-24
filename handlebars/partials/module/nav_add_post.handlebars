@@ -45,9 +45,13 @@
 {{/eq}}
 {{>module/modal_form modal_page=page modal_type="edit" modal_title=modal_title modal_draft=modal_draft modal_action=modal_action}}
 
-{{>module/modal_delete modal_page=page}}
+{{>module/modal_delete modal_page=page modal_text="delete"}}
 {{/if}}
 
-{{>module/modal_delete modal_page="feed"}}
+{{>module/modal_delete modal_text="delete"}}
+
+{{>module/modal_delete modal_text="unfollow"}}
+
+{{>module/modal_edit modal_page="comment" modal_type="edit" modal_text="edit" modal_title="Edit Comment"}}
 
 {{>module/modal_report}}

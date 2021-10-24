@@ -14,15 +14,15 @@
 			top: 2px;
 		    right: 2px;
 			@include transform(scale(.9));
-			visibility: hidden;
-			opacity: 0;
+			// visibility: hidden;
+			// opacity: 0;
 		}
-		&:hover {
-			.option {
-				opacity: 1;
-				visibility: visible;
-			}
-		}
+		// &:hover {
+		// 	.option {
+		// 		opacity: 1;
+		// 		visibility: visible;
+		// 	}
+		// }
 	}
 	&-row {
 		position: relative;

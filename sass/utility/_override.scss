@@ -77,6 +77,29 @@ body.mobile {
 		font-weight: 700;
 	}
 }
+
+// tooltip
+.dropup.open,
+.dropdown.open {
+	& > .tooltip {
+		pointer-events: none;
+		opacity: 0;
+	}
+}
+
+// dr gw
+.modal-edit {
+	.modal-header {
+		border-bottom: none;
+	}
+	.modal-text {
+		padding: 0 1rem;
+	}
+	.modal-footer {
+		border-top: none;
+	}
+}
+
 // override dari buatan dev
 .modal-confirm .modal-dialog {
 	@include min-responsive(768px) {
@@ -84,7 +107,7 @@ body.mobile {
 	}
 }
 .modal-confirm .modal-body .modal-text {
-	padding: 1rem !important;
+	padding: .75rem 1rem !important;
 }
 .modal-confirm .modal-header.modal-delete {
 	padding: 15px 15px 15px 40px !important;
