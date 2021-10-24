@@ -33,7 +33,28 @@
 	
 
     <link href="../asset/css/style.css" rel="stylesheet" type="text/css">
-    <link href="http://xassets.borneopedia.com/css/main.css?v3" rel="stylesheet" type="text/css">
+    <link href="http://xassets.borneopedia.com/css/main.css?v7" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .-noborder { border: none !important; pointer-events: none; }
+        .modal-confirm { z-index: 101 !important; }
+        .modal-confirm .modal-header { padding: 15px 30px 30px 53px; border-bottom: none; }
+        .modal-confirm .modal-footer { border-top: none; }
+        .modal-confirm .modal-body { min-height: 50px ; }
+        .modal-confirm .modal-body .modal-text { padding: 0 2rem; }
+        .feed-reply-to .btn-reply-cancel { display: none; }
+        .feed-reply-to .btn-reply-cancel font { color: #D40008; cursor: pointer; }
+        .feed-reply-to:hover .btn-reply-cancel { display: inline-block; }
+        .modal-confirm .modal-header.report { margin: .25rem 0 0.75rem; padding: 15px 15px 0 15px; }
+        .modal-confirm .modal-header h2 { margin: .25rem 1rem 0; }
+        .modal-confirm .setting.report { box-shadow: none; padding: 0 2rem; margin: 0; }
+        .form-check-input.custom { box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%); vertical-align: middle; padding: 0.250rem 0.5rem; }
+        .form-check-input.custom:checked { box-shadow: none; background: #d40008; }
+        .form-check-label.custom { display: inline-block; }
+        .report textarea { color: #5d5d5d; }
+        .modal-confirm .modal-delete:before { background: #E82828; }
+        .modal-confirm .modal-delete:before { content: ''; position: absolute; left: 1.85rem; top: 1.15rem; width: 1.125rem; height: 1.125rem; border-radius: 1.125rem; }
+        .modal-confirm .modal-delete:after { content: '!'; position: absolute; color: #fff; top: .91rem; left: 2.27rem; font-size: 1.25rem; font-weight: 900; }
+    </style>
 
 	<!-- tinymce -->
 	<script src="https://cdn.tiny.cloud/1/t8pnyourm2nt4bownb36wqp8ahusl8e6a7kzapaxs9ill67b/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
@@ -261,7 +282,7 @@
 											<a class="dropdown-item" href="#">Hide Post</a>
 											<a class="dropdown-item" href="#">Unfollow</a>
 											<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-											<a class="dropdown-item" href="#">Report</a>
+											<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
 											<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
 										</div>
 									</div>
@@ -296,7 +317,7 @@
 											<a class="dropdown-item" href="#">Hide Post</a>
 											<a class="dropdown-item" href="#">Unfollow</a>
 											<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-											<a class="dropdown-item" href="#">Report</a>
+											<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
 											<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
 										</div>
 									</div>
@@ -331,7 +352,7 @@
 											<a class="dropdown-item" href="#">Hide Post</a>
 											<a class="dropdown-item" href="#">Unfollow</a>
 											<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-											<a class="dropdown-item" href="#">Report</a>
+											<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
 											<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
 										</div>
 									</div>
@@ -366,7 +387,7 @@
 											<a class="dropdown-item" href="#">Hide Post</a>
 											<a class="dropdown-item" href="#">Unfollow</a>
 											<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-											<a class="dropdown-item" href="#">Report</a>
+											<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
 											<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
 										</div>
 									</div>
@@ -401,7 +422,7 @@
 											<a class="dropdown-item" href="#">Hide Post</a>
 											<a class="dropdown-item" href="#">Unfollow</a>
 											<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-											<a class="dropdown-item" href="#">Report</a>
+											<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
 											<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
 										</div>
 									</div>
@@ -436,7 +457,7 @@
 											<a class="dropdown-item" href="#">Hide Post</a>
 											<a class="dropdown-item" href="#">Unfollow</a>
 											<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-											<a class="dropdown-item" href="#">Report</a>
+											<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
 											<a class="dropdown-item" data-toggle="modal" data-target="#modalFeedDelete" href="#" role="button">Delete Post</a>
 										</div>
 									</div>
@@ -2020,19 +2041,84 @@
 	
 	<!-- modal feed delete -->
 	<form action="feed.html">
-		<div id="modalFeedDelete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="feedForm" aria-hidden="true">
+		<div id="modalFeedDelete" class="modal fade modal-confirm" tabindex="-1" role="dialog" aria-labelledby="feedForm" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
-					<div class="modal-header">
+					<div class="modal-header modal-delete">
 						<h5 class="modal-title">Delete</h5>
 					</div>
 					<div class="modal-body">
-						<div class="modal-text">Are you sure want to delete?</div>
+						<div class="modal-text">
+							Are you sure want to delete this <strong id="confirm-delete-name" class=""></strong>?<br>
+							<small class="text-muted">warning, your action cannot be undone in the future</small>
+						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="button" data-dismiss="modal">Cancel</button>
 						<button class="button -primary">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	
+	<!-- modal report -->
+	<form action="home.html">
+		<div id="modalReport" class="modal fade modal-confirm" tabindex="-1" role="dialog" aria-labelledby="reportForm" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+					<div class="modal-header report">
+						<h2 class="title">Report This Post</h2>
+					</div>
+					<div class="modal-body">
+						<div class="setting box report">
+							<div class="user-form setting-verify">
+								<div class="user-form-row">
+									<div class="form-row">
+										<input class="form-check-input custom" type="radio" name="reason" value="sara" id="reason-racist" required="">
+										<label class="form-check-label custom" for="reason-racist">
+											Racist/ Hate Speech/ discrimination (SARA)
+										</label>
+									</div>
+									<div class="form-row">
+										<input class="form-check-input custom" type="radio" name="reason" value="inappropriate" id="reason-inappropriate">
+										<label class="form-check-label custom" for="reason-inappropriate">
+											Inappropriate
+										</label>
+									</div>
+									<div class="form-row">
+										<input class="form-check-input custom" type="radio" name="reason" value="sex" id="reason-sex">
+										<label class="form-check-label custom" for="reason-sex">
+											Sex/ Pornography
+										</label>
+									</div>
+									<div class="form-row">
+										<input class="form-check-input custom" type="radio" name="reason" value="plagiarism" id="reason-plagiarism">
+										<label class="form-check-label custom" for="reason-plagiarism">
+											Plagiarism
+										</label>
+									</div>
+									<div class="form-row">
+										<input class="form-check-input custom" type="radio" name="reason" value="other" id="reason-other">
+										<label class="form-check-label custom" for="reason-other">
+											Other
+										</label>
+									</div>
+									<div class="form-row">
+										<div class="form-hint"><span>*</span> Write your reason at least 20 characters</div>
+										<div class="form-input">
+											<textarea name="context" class="" cols="4" required=""></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="button" data-dismiss="modal">Cancel</button>
+						<button class="button -primary">Report</button>
 					</div>
 				</div>
 			</div>

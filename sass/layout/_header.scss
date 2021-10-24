@@ -73,7 +73,7 @@
 	width: calc(285px + 1rem);
 	height: calc(46px + 1rem);
 	//@include min-responsive($screen-tablet) {
-		margin: 0;
+		margin: 0 auto;
 	//}
 	a {
 		//display: block;

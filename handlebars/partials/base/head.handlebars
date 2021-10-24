@@ -22,7 +22,28 @@
 	{{>base/font font=font}}
 
     <link href="../asset/css/style.css" rel="stylesheet" type="text/css">
-    <link href="http://xassets.borneopedia.com/css/main.css?v3" rel="stylesheet" type="text/css">
+    <link href="http://xassets.borneopedia.com/css/main.css?v7" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .-noborder { border: none !important; pointer-events: none; }
+        .modal-confirm { z-index: 101 !important; }
+        .modal-confirm .modal-header { padding: 15px 30px 30px 53px; border-bottom: none; }
+        .modal-confirm .modal-footer { border-top: none; }
+        .modal-confirm .modal-body { min-height: 50px ; }
+        .modal-confirm .modal-body .modal-text { padding: 0 2rem; }
+        .feed-reply-to .btn-reply-cancel { display: none; }
+        .feed-reply-to .btn-reply-cancel font { color: #D40008; cursor: pointer; }
+        .feed-reply-to:hover .btn-reply-cancel { display: inline-block; }
+        .modal-confirm .modal-header.report { margin: .25rem 0 0.75rem; padding: 15px 15px 0 15px; }
+        .modal-confirm .modal-header h2 { margin: .25rem 1rem 0; }
+        .modal-confirm .setting.report { box-shadow: none; padding: 0 2rem; margin: 0; }
+        .form-check-input.custom { box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%); vertical-align: middle; padding: 0.250rem 0.5rem; }
+        .form-check-input.custom:checked { box-shadow: none; background: #d40008; }
+        .form-check-label.custom { display: inline-block; }
+        .report textarea { color: #5d5d5d; }
+        .modal-confirm .modal-delete:before { background: #E82828; }
+        .modal-confirm .modal-delete:before { content: ''; position: absolute; left: 1.85rem; top: 1.15rem; width: 1.125rem; height: 1.125rem; border-radius: 1.125rem; }
+        .modal-confirm .modal-delete:after { content: '!'; position: absolute; color: #fff; top: .91rem; left: 2.27rem; font-size: 1.25rem; font-weight: 900; }
+    </style>
 
 	<!-- tinymce -->
 	<script src="https://cdn.tiny.cloud/1/t8pnyourm2nt4bownb36wqp8ahusl8e6a7kzapaxs9ill67b/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>

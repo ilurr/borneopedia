@@ -1,14 +1,17 @@
 <!-- modal {{modal_page}} delete -->
 <form action="{{modal_page}}.html">
-	<div id="modal{{capitalize modal_page}}Delete" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="{{modal_page}}Form" aria-hidden="true">
+	<div id="modal{{capitalize modal_page}}Delete" class="modal fade modal-confirm" tabindex="-1" role="dialog" aria-labelledby="{{modal_page}}Form" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
-				<div class="modal-header">
+				<div class="modal-header modal-delete">
 					<h5 class="modal-title">Delete</h5>
 				</div>
 				<div class="modal-body">
-					<div class="modal-text">Are you sure want to delete?</div>
+					<div class="modal-text">
+						Are you sure want to delete this <strong id="confirm-delete-name" class=""></strong>?<br>
+						<small class="text-muted">warning, your action cannot be undone in the future</small>
+					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="button" data-dismiss="modal">Cancel</button>

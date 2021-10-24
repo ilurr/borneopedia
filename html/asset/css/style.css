@@ -2598,7 +2598,12 @@ a.dropdown-item.-loading-bar {
       -moz-transform: scale(0.9);
       -ms-transform: scale(0.9);
       -o-transform: scale(0.9);
-      transform: scale(0.9); }
+      transform: scale(0.9);
+      visibility: hidden;
+      opacity: 0; }
+    .comment-item:hover .option {
+      opacity: 1;
+      visibility: visible; }
   .comment-row {
     position: relative;
     display: -webkit-box;
@@ -3655,7 +3660,7 @@ a.dropdown-item.-loading-bar {
   text-align: center;
   width: calc(285px + 1rem);
   height: calc(46px + 1rem);
-  margin: 0; }
+  margin: 0 auto; }
   .logo a {
     display: inline-block;
     vertical-align: middle;
@@ -6884,3 +6889,54 @@ body.mobile .root {
     background: #fff;
     padding: 0 .25rem;
     font-weight: 700; }
+
+@media (min-width: 768px) {
+  .modal-confirm .modal-dialog {
+    width: 460px; } }
+
+.modal-confirm .modal-body .modal-text {
+  padding: 1rem !important; }
+
+.modal-confirm .modal-header.modal-delete {
+  padding: 15px 15px 15px 40px !important; }
+
+.modal-confirm .modal-delete:before {
+  top: 1.125rem !important;
+  left: 15px !important; }
+
+.modal-confirm .modal-delete:after {
+  top: .875rem !important;
+  left: 22px !important; }
+
+.modal-confirm .modal-header.report {
+  margin: 0 !important;
+  padding: 15px !important; }
+
+.modal-confirm .modal-header h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 !important; }
+
+.modal-confirm .setting.report {
+  padding: 0 1rem !important; }
+  .modal-confirm .setting.report .user-form .form-row {
+    padding: 0.375rem 0;
+    padding-bottom: 0.375rem; }
+  .modal-confirm .setting.report .form-check-label.custom {
+    padding-bottom: 0;
+    text-transform: inherit;
+    letter-spacing: 0;
+    font-size: .875rem; }
+  .modal-confirm .setting.report .form-check-input.custom {
+    border-radius: 100%;
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #e7e7e7;
+    box-shadow: none; }
+  .modal-confirm .setting.report .form-check-input.custom:checked {
+    border: 1px solid #767D87; }
+  .modal-confirm .setting.report .form-input {
+    height: auto; }
+  .modal-confirm .setting.report textarea {
+    min-height: 100px; }
