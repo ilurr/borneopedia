@@ -145,6 +145,10 @@
 				margin: 0 auto;
 			}
 		}
+		b,
+		strong {
+			font-weight: 700;
+		}
 		blockquote {
 			position: relative;
 			@include font-pack(false, 1.125rem, 700, 1.5, false);
@@ -166,6 +170,11 @@
 				@include transition(all .2s ease);
 			}
 		}
+		// & section,
+		// & div {
+		// 	padding-left: 0;
+		// 	padding-right: 0;
+		// }
 	}
 	&-location,
 	&-company {
@@ -544,57 +553,61 @@
 		}
 	}
 
+	&-list > .feed:not(.feed-box) {
+		.feed-block.-neoblog {
+			.feed-img {
+				padding-top: 0;
+				margin: 0 0 1.5rem;
+				border-radius: 5px;
+				overflow: hidden;
+				& > img {
+					width: 100%;
+				}
+			}
+			.feed-img-object span {
+				// padding-top: calc(1280 / 1080 * 100%);
+				padding-top: 0;
+			}
+			.feed-img-object img {
+				position: relative;
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				left: unset;
+				top: unset;
+				@include transform(translate(0,0));
+			}
+			.feed-text {
+				ul, ol {
+					list-style: inherit;
+					padding-left: 1.5rem;
+					margin-bottom: 1rem;
+				}
+				ul {
+					list-style-type: disc;
+				}
+				ol {
+					list-style-type: decimal;
+				}
+				li {
+					display: list-item;
+				}
+				a {
+					color: var(--color-theme);
+					&:hover {
+						color: inherit;
+					}
+				}
+				p + .feed-img {
+					margin: 0 0 1rem;
+					&:empty {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
 	&-detail {
-		.feed-img {
-			padding-top: 0;
-			margin: 0 0 1.5rem;
-			border-radius: 5px;
-			overflow: hidden;
-			& > img {
-				width: 100%;
-			}
-		}
-		.feed-img-object span {
-			// padding-top: calc(1280 / 1080 * 100%);
-			padding-top: 0;
-		}
-		.feed-img-object img {
-			position: relative;
-			width: auto;
-			height: auto;
-			max-width: 100%;
-			left: unset;
-			top: unset;
-			@include transform(translate(0,0));
-		}
-		.feed-text {
-			ul, ol {
-				list-style: inherit;
-				padding-left: 1.5rem;
-				margin-bottom: 1rem;
-			}
-			ul {
-				list-style-type: disc;
-			}
-			ol {
-				list-style-type: decimal;
-			}
-			li {
-				display: list-item;
-			}
-			a {
-				color: var(--color-theme);
-				&:hover {
-					color: inherit;
-				}
-			}
-			p + .feed-img {
-				margin: 0 0 1rem;
-				&:empty {
-					margin: 0;
-				}
-			}
-		}
 		.feed-block.-qna.-answered {
 			.feed-title {
 				border: transparent;

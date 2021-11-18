@@ -104,3 +104,12 @@
 		width: 320px;
 	}
 }
+.grid-col.-wide {
+	width: calc(100% - 275px - 85px);
+	@include min-responsive($screen-desktop) {
+		width: calc(100% - 275px - 210px);
+	}
+	@include min-responsive($screen-large-desktop) {
+		width: calc(100% - 320px - 210px);
+	}
+}

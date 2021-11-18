@@ -154,6 +154,15 @@ hr {
     .-aside {
       width: 320px; } }
 
+.grid-col.-wide {
+  width: calc(100% - 275px - 85px); }
+  @media (min-width: 990px) {
+    .grid-col.-wide {
+      width: calc(100% - 275px - 210px); } }
+  @media (min-width: 1160px) {
+    .grid-col.-wide {
+      width: calc(100% - 320px - 210px); } }
+
 textarea {
   resize: vertical;
   min-height: 60px; }
@@ -865,7 +874,7 @@ button,
   button.-filter,
   .button.-filter {
     border: 1px solid transparent;
-    padding: 0 1rem;
+    padding: 0 .75rem;
     color: #000;
     font-weight: 700;
     font-size: .938rem;
@@ -873,6 +882,11 @@ button,
     background-color: #fff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
     height: 32px; }
+    @media (min-width: 1160px) {
+      input[type=submit].-filter,
+      button.-filter,
+      .button.-filter {
+        padding: 0 1rem; } }
     input[type=submit].-filter:hover, input[type=submit].-filter.active,
     button.-filter:hover,
     button.-filter.active,
@@ -1998,6 +2012,9 @@ a.dropdown-item.-loading-bar {
       .feed-text p > img {
         display: block;
         margin: 0 auto; }
+    .feed-text b,
+    .feed-text strong {
+      font-weight: 700; }
     .feed-text blockquote {
       position: relative;
       font-size: 1.125rem;
@@ -2317,16 +2334,16 @@ a.dropdown-item.-loading-bar {
       border-top: 1px solid transparent; }
   .feed-mypost .feed-action {
     border-top: 1px solid transparent; }
-  .feed-detail .feed-img {
+  .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-img {
     padding-top: 0;
     margin: 0 0 1.5rem;
     border-radius: 5px;
     overflow: hidden; }
-    .feed-detail .feed-img > img {
+    .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-img > img {
       width: 100%; }
-  .feed-detail .feed-img-object span {
+  .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-img-object span {
     padding-top: 0; }
-  .feed-detail .feed-img-object img {
+  .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-img-object img {
     position: relative;
     width: auto;
     height: auto;
@@ -2338,23 +2355,23 @@ a.dropdown-item.-loading-bar {
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
     transform: translate(0, 0); }
-  .feed-detail .feed-text ul, .feed-detail .feed-text ol {
+  .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-text ul, .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-text ol {
     list-style: inherit;
     padding-left: 1.5rem;
     margin-bottom: 1rem; }
-  .feed-detail .feed-text ul {
+  .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-text ul {
     list-style-type: disc; }
-  .feed-detail .feed-text ol {
+  .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-text ol {
     list-style-type: decimal; }
-  .feed-detail .feed-text li {
+  .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-text li {
     display: list-item; }
-  .feed-detail .feed-text a {
+  .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-text a {
     color: var(--color-theme); }
-    .feed-detail .feed-text a:hover {
+    .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-text a:hover {
       color: inherit; }
-  .feed-detail .feed-text p + .feed-img {
+  .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-text p + .feed-img {
     margin: 0 0 1rem; }
-    .feed-detail .feed-text p + .feed-img:empty {
+    .feed-list > .feed:not(.feed-box) .feed-block.-neoblog .feed-text p + .feed-img:empty {
       margin: 0; }
   .feed-detail .feed-block.-qna.-answered .feed-title {
     border: transparent;
