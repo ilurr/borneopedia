@@ -3082,7 +3082,25 @@ a.dropdown-item.-loading-bar {
       -moz-transform: scale(1.25);
       -ms-transform: scale(1.25);
       -o-transform: scale(1.25);
-      transform: scale(1.25); }
+      transform: scale(1.25);
+      position: relative; }
+      .msg-header .icon-general:after {
+        content: '+';
+        display: block;
+        position: absolute;
+        width: .75rem;
+        height: .75rem;
+        background: var(--color-theme);
+        border-radius: 50%;
+        border: 1px solid var(--color-theme);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        right: -5px;
+        top: -3px;
+        transform: scale(0.85);
+        color: #fff; }
   .msg-block {
     height: calc(100vh - 70px - 3.125rem - 0.625rem - 2rem);
     position: relative;
@@ -4054,6 +4072,8 @@ a.dropdown-item.-loading-bar {
         height: 38px;
         margin-left: .25rem;
         margin-right: .25rem; }
+    .footer-cover .app-badge > a:first-child + a:last-child img {
+      height: 38px; }
 
 .cover {
   position: relative;
@@ -5470,6 +5490,64 @@ a.dropdown-item.-loading-bar {
       min-height: 175px; }
   .static .panel {
     width: 100%; }
+
+.ads-content,
+.ads-square,
+.ads-giant,
+.ads-top {
+  position: relative;
+  text-align: center;
+  min-height: 250px;
+  padding: 0; }
+
+.ads-content:after,
+.ads-square:after,
+.ads-giant:after,
+.ads-top:after {
+  background-color: #f0f0f0;
+  content: "Adv";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  font-size: 11px;
+  line-height: 1;
+  color: #d3d3d3;
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.ads-content {
+  background-color: #fbfbfb;
+  color: #f0f0f0;
+  min-height: auto; }
+
+.ads-giant {
+  min-height: 600px; }
+
+.ads-top {
+  margin: 0 0 1rem;
+  /* min-height: 90px; */ }
+
+.ads-content,
+.ads-square,
+.ads-giant {
+  margin: 1rem 0; }
+
+.aside-block > .ads-giant,
+.aside-block > .ads-square,
+.aside-block > .ads-giant,
+.aside-block > .ads-square {
+  margin: 1.625rem 0 1rem; }
+
+.aside-block .ads-square,
+.aside-block .ads-giant {
+  width: 300px; }
 
 .small {
   font-size: 0.625rem; }
