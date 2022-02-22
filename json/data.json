@@ -3101,6 +3101,7 @@
 		"rewards": 1,
 		"img": "https://source.unsplash.com/UNqBMVeTXGg/780x390",
 		"header": 1,
+		"unread": 10,
 		"post": "<p>Bilamana tenaga kesehatan garda depan itu melawan virus Covid-19 yang terus bermutasi, maka 75 pegawai KPK yang kini nonaktif tersebut telah melawan virus korupsi yang anehnya tidak pernah selesai menjangkiti petinggi negeri kita, generasi ke generasi.</p><p><img src=\"https://source.unsplash.com/GUT0T_UA5KI/150x150\" alt=\"\"></p><p>Apapun ideologi mereka, terlebih wilayah kerjanya yang rawan dan tidak mempersoalkan ideologi, kita seharusnya menaruh perhatian besar pada integritas dan kejujuran serta tadi dan pada keberanian mereka menangkap tikus kantor.</p><div class=\"feed-img\"><img src=\"https://source.unsplash.com/5i3oyOrojvk/750x500\" alt=\"\"></div><p>Karenanya, terhadap mereka pula yang diklaim tidak lulus Tes Wawasan Kebangsaan yang disusun oleh lima instansi negara yang sebagian besar berasal dari TNI matra Angkatan Darat, saya tetap menaruh hormat setinggi-tingginya, persetan dengan apapun pandangan para penghamba kekuasaan yang menebar syakwasangka dan menanam akar pahit di masyarakat bahwa mereka yang tidak lulus terafiliasi kelompok teroris Islam garis keras.</p><ol><li>Kita seharusnya menaruh perhatian besar pada integritas dan kejujuran serta tadi</li><li>Keberanian mereka menangkap tikus kantor</li><li>Tidak mempersoalkan ideologi</li></ol><p>Catatan kecil ini saya buat, selain sebagai tanda belasungkawa atas tercabutnya cakar-cakar KPK untuk menggaruk koruptor, juga sebagai katarsis dari tanda tanya besar yang menggelayut di benak saya berhari-hari lamanya.</p><ul><li>Kita seharusnya menaruh perhatian besar pada integritas dan kejujuran serta tadi</li><li>Keberanian mereka menangkap tikus kantor</li><li>Tidak mempersoalkan ideologi</li></ul>",
 		"link": "neoblog-detail.html",
 		"comment": 1,
@@ -3187,6 +3188,7 @@
 		"last_name": "Dyahsasanti",
 		"location": "Banjarmasin, Kalimantan Selatan",
 		"header": 1,
+		"unread": 2,
 		"post": "",
 		"question": "Apakah mungkin suatu negara memiliki pertumbuhan ekonomi yang tinggi namun tingkat inflasinya rendah?",
 		"answer": "<p>Tiga tahun terakhir tingkat inflasi di tingkat pusat dan daerah selalu di bawah empat persen: 3,35 persen pada 2015, 3,02 persen pada 2016, dan 3,61 persen pada 2017. Ini bisa terjadi berkat sinergi yang baik antara Tim Pengendali Inflasi pusat dan daerah.</p><p>Kendati begitu, di hadapan ratusan kepala daerah dan perwakilan Bank Indonesia dari berbagai wilayah di Indonesia yang menghadiri Rakornas Pengendalian Inflasi tahun 2018 di Jakarta, kemarin, saya tetap berharap inflasi bisa diturunkan lagi hingga menyentuh angka antara 1-2 persen.</p><p>Kepala daerah harus lebih proaktif berupaya menekan inflasi yang terjadi di daerahnya. Contoh, bila inflasi terjadi karena kekurangan pasokan, maka kepala daerah itu harus langsung mengupayakan kelancaran pasokan dengan cara bekerja sama dengan daerah lainnya yang mengalami surplus.</p>",
@@ -3395,10 +3397,10 @@
 		"link": "jobs-detail.html",
 		"content": "<p>HappyFresh is the fastest-growing online grocery marketplace in South-East Asia and Asia's Best Company to Work For 2019. Headquartered in Jakarta, we have expanded to major cities in three countries and now operate in Indonesia, Malaysia, and Thailand. Every day, our team delivers the #FreshlyHandpicked quality groceries to thousands of customers.</p>\n<p>As a company, we are here to deliver a simplified life by providing an easy grocery shopping experience with a high-quality service. With our <a href=\"#\"><strong>HappyFresh Culture</strong></a>, we believe we can achieve our goals with you in it. </p>\n<h2>What You'll Be Doing?</h2>\n<ul>\n    <li>Together with the local creative team, he/she will develop creative ideas and concepts for monthly marketing plans, and campaigns to help achieve the local marketing team goals</li>\n    <li>Write clear, persuasive, original copy that is on-brand.</li>\n    <li>In charge of the creative copywriting in local teams; campaign lines, short form catchy copies for OOH or any other project needed.</li>\n    <li>Video scripts for evergreen videos and/or campaigns.</li>\n    <li>Proofreading copy to check spelling and grammar.</li>\n    <li>Assist other team members (Social media specialists, CRM specialists, etc) with their creative and short form copywriting needs.</li>\n    <li>Amending, revising campaigns in response to feedback from internal.</li>\n</ul>\n<h2>What We Are Looking For?</h2>\n<ul>\n    <li>BA or BSc Degree with focus on communication, advertising, and/or marketing.</li>\n    <li>At least 2 years experience minimum in a Copywriter role in advertising agencies. </li>\n    <li>Demonstrates creativity and documented immersion in copywriting and campaigns.</li>\n    <li>Ability to work in conceptual thinking, wide knowledge, creative in making up new ideas.</li>\n    <li>Valued for writing flexibility, conceptual/visual thinking.</li>\n    <li>Strong interpersonal and communication skills. </li>\n    <li>Have a good time management.</li>\n    <li>Fluency in written and spoken English and the local language (Indonesian, Bahasa Melayu or Thai).</li>\n    <li>Well-organized and detail oriented – mandatory.</li>\n</ul>\n<p>We are looking for an enthusiastic Copywriter to join our local marketing team. This role will use creative thinking to find brilliant, eye-opener communication solutions. He/she will develop ideas which are original.</p>",
 		"job_info": {
-			"Job Type": "Full-time",
-			"Years of Experience": "2 years above",
-			"Career Level": "Senior",
-			"Job Specializations": "Project & Product Management"
+		  "Job Type": "Full-time",
+		  "Years of Experience": "2 years above",
+		  "Career Level": "Senior",
+		  "Job Specializations": "Project & Product Management"
 		},
 		"people_belt": [
 		  {

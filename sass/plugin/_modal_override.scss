@@ -11,6 +11,13 @@
 		// text-align: center;
 		@include font-pack(false, 1.125rem, 600, false, rgba(#2B2B2B, .9));
 	}
+	&-subtitle {
+		position: relative;
+		// text-align: center;
+		padding: .25rem 0;
+		margin-top: .875rem;
+		@include font-pack(false, .875rem, 600, false, rgba(#2B2B2B, .9));
+	}
 	&-body {
 		max-height: 78vh;
 	}

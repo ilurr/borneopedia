@@ -259,7 +259,7 @@
 							<section class="msg-side">
 								<div class="msg-header">
 									<span>Messages</span>
-									<button class="button -transparent" type="button" data-toggle="modal" data-target="#modalMsgAdd" role="button" aria-label="New Message">
+									<button id="msg-new-button" class="button -transparent" type="button" data-toggle="modal" data-target="#modalMsgAdd" role="button" aria-label="New Message">
 										<span class="icon-general icon-message"></span>
 									</button>
 								</div>
@@ -267,17 +267,21 @@
 									<div class="msg-item">
 										<a href="#" data-href="msgWindow0" class="msg-link" role="button" data-toggle="message">
 											<div class="msg-row unread">
-												<span class="msg-online"></span>
-												<div class="msg-avatar">
-													<img src="../asset/images/dummy/26CFEFB3-21C8-49FC-8C19-8E6A62B6D2E0-200w.jpeg" alt="">	
+												<div class="msg-avatar-group">
+													<div class="msg-avatar">
+														<img src="../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg" alt="">	
+													</div>
+													<div class="msg-avatar">
+														<img src="../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg" alt="">	
+													</div>
 												</div>
 												<div class="msg-col">
-													<div class="msg-name">Chris Wibisana</div>
+													<div class="msg-name">Alexander, Michelle, dan 2 orang lainnya</div>
 													<div class="msg-teaser">
 														Bilamana tenaga kesehatan garda depan itu melawan virus Covid-19 yang terus bermutasi, maka 75 pegawai KPK yang kini nonaktif tersebut…
 														
 													</div>
-													<div class="msg-badge">2</div>
+													<div class="msg-badge">10</div>
 													<div class="msg-time">2:34 PM</div>
 												</div>
 											</div>
@@ -285,7 +289,7 @@
 									</div>
 									<div class="msg-item">
 										<a href="#" data-href="msgWindow1" class="msg-link" role="button" data-toggle="message">
-											<div class="msg-row">
+											<div class="msg-row unread">
 												<span class="msg-online"></span>
 												<div class="msg-avatar">
 													<img src="../asset/images/dummy/A7299C8E-CEFC-47D9-939A-3C8CA0EA4D13-200w.jpeg" alt="">	
@@ -296,6 +300,7 @@
 														
 														Apakah mungkin suatu negara memiliki pertumbuhan ekonomi yang tinggi namun tingkat inflasinya rendah?
 													</div>
+													<div class="msg-badge">2</div>
 													<div class="msg-time">2:34 PM</div>
 												</div>
 											</div>
@@ -322,7 +327,6 @@
 									<div class="msg-item">
 										<a href="#" data-href="msgWindow5" class="msg-link" role="button" data-toggle="message">
 											<div class="msg-row">
-												<span class="msg-online"></span>
 												<div class="msg-avatar">
 													<img src="../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg" alt="">	
 												</div>
@@ -355,17 +359,39 @@
 											</div>
 										</a>
 									</div>
+									<div class="msg-item">
+										<a href="#" data-href="msgWindow8" class="msg-link" role="button" data-toggle="message">
+											<div class="msg-row">
+												<div class="msg-avatar">
+													<img src="../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-200w.jpeg" alt="">	
+												</div>
+												<div class="msg-col">
+													<div class="msg-name">Mochammad Toha</div>
+													<div class="msg-teaser">
+														Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat.
+														
+													</div>
+													<div class="msg-time">2:34 PM</div>
+												</div>
+											</div>
+										</a>
+									</div>
 								</div>
 							</section>
 							<section class="msg-board">
 								<div class="msg-empty">You don’t have a message selected</div>
 								<div class="msg-window" id="msgWindow0">
 									<div class="msg-window-header">
-										<div class="msg-avatar">
-											<img src="../asset/images/dummy/26CFEFB3-21C8-49FC-8C19-8E6A62B6D2E0-200w.jpeg" alt="">	
+										<div class="msg-avatar-group">
+											<div class="msg-avatar">
+												<img src="../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg" alt="">	
+											</div>
+											<div class="msg-avatar">
+												<img src="../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg" alt="">	
+											</div>
 										</div>
 										<div class="msg-col">
-											<div class="msg-name"><a href="profile.html" class="msg-link">Chris Wibisana</a></div>
+											<div class="msg-name"><a href="#" class="msg-link" role="button" data-toggle="modal" data-target="#modalMsgGroup0">Alexander, Michelle, and 2 others</a></div>
 										</div>
 										<!-- option -->
 										<div class="option">
@@ -374,16 +400,21 @@
 													<span class="icon-option"><i></i></span>
 												</button>
 												<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
-													<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-													<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Unfollow</a>
+													<a class="dropdown-item" data-toggle="modal" data-target="#modalMsgGroup0" href="#" role="button">Group Info</a>
+													<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Leave Group</a>
 													<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
-													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Post</a>
+													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Chat</a>
 												</div>
 											</div>
 										</div>
 										<!-- option -->
 									</div>
 									<div class="msg-window-body">
+										<div class="msg-bubble more">
+											<div class="form-row">
+												<button name="btn-bubble-more" id="btn-bubble-more" class="button -transparent" onclick="this.classList.add('-loading');return false;">Older Messages</button>
+											</div>
+										</div>
 										<div class="msg-bubble">
 											<span>
 												<div class="msg-img">
@@ -396,6 +427,7 @@
 										</div>
 										<div class="msg-bubble">
 											<span>Iya kan?</span>
+											<div class="msg-sender">Alexander Mawardi</div>
 											<span>Lepas dari kepentingan sesaat. Kita butuh jawaban cepat untuk masa depan yang semakin mendekat.</span>
 											<div class="msg-time">11:30 PM</div>
 										</div>
@@ -404,8 +436,14 @@
 											<div class="msg-time">11:34 PM <span class="msg-status sent"></span></div>
 										</div>
 										<div class="msg-bubble">
+											<div class="msg-sender">Kiki Rahmadhani</div>
 											<span>Pelanggan juga berhak tau berapa penghasilan yang diperoleh oleh ojek online yang kita gunakan. Jangan sampai kita abai terhadap nasib mereka.</span>
 											<div class="msg-time">11:30 PM</div>
+										</div>
+										<div class="msg-bubble info">
+											<div class="msg-info">
+												<strong>Alexander</strong> added <strong>Michelle</strong> to the group
+											</div>
 										</div>
 										<div class="msg-bubble reply">
 											<span>Oke 😇</span>
@@ -423,6 +461,119 @@
 										</button>
 									</div>
 								</div>
+								<!-- modal message group -->
+								<div id="modalMsgGroup0" class="modal modal-msg-group fade" tabindex="-1" role="dialog" aria-labelledby="MsgGroup" aria-hidden="true">
+									<div class="modal-dialog -small">
+										<div class="modal-content">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+											<div class="modal-header">
+												<h5 class="modal-title">Details</h5>
+											</div>
+											<div class="modal-body">
+												<div class="msg-modal">
+													<div class="msg-group-row">
+														<h6 class="modal-subtitle">Group Name</h6>
+														<div class="msg-group-info">
+															<div class="form-row">
+																<div class="form-input">
+																	<input type="text" id="msg-group-name" name="msg-group-name" class="input" placeholder="" onkeyup="if(this.value.length>0){document.getElementById('msg-group-name-save').removeAttribute('disabled');return false;}">
+																</div>
+																<div class="form-hint"></div>
+															</div>
+															<div class="form-row">
+																<button name="msg-group-name-save" id="msg-group-name-save" class="button -transparent" disabled="disabled">Save</button>
+															</div>
+														</div>
+													</div>
+													<div class="msg-group-row">
+														<div class="msg-group-top">
+															<h6 class="modal-subtitle">Members</h6>
+															<a id="msg-new-people" href="#" class="button -transparent" role="button" data-toggle="modal" data-target="#modalMsgAdd">Add People</a>
+														</div>
+														<div class="msg-group-list">
+															<div class="people-block">
+																<div class="people-list">
+																	<div class="people-item">
+																		<div class="people-row">
+																			<div class="people-img">
+																				<a href="profile.html">
+																					<img src="../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-200w.jpeg" alt="">
+																				</a>
+																			</div>
+																			<div class="people-info">
+																				<h4 class="people-name"><a href="profile.html">Alexander Mawardi</a></h4>
+																				<div class="people-bio"></div>
+																				<div class="people-bio">Admin</div>
+																			</div>
+																		</div>
+																		<div class="people-action">
+																		</div>
+																	</div>
+																	<div class="people-item">
+																		<div class="people-row">
+																			<div class="people-img">
+																				<a href="profile.html">
+																					<img src="../asset/images/dummy/BA20CB1F2-8C79-4376-B13B-DD5FB8772537-200w.jpeg" alt="">
+																				</a>
+																			</div>
+																			<div class="people-info">
+																				<h4 class="people-name"><a href="profile.html">Michelle Maria</a></h4>
+																				<div class="people-bio"></div>
+																			</div>
+																		</div>
+																		<div class="people-action">
+																			<!-- option -->
+																			<div class="option">
+																				<div class="dropup">
+																					<button type="button" class="button -transparent dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-tooltip="tooltip" data-placement="bottom" title="Option">
+																						<span class="icon-option"><i></i></span>
+																					</button>
+																					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
+																						<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Remove From Group</a>
+																						<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Make Admin</a>
+																					</div>
+																				</div>
+																			</div>
+																			<!-- option -->
+																		</div>
+																	</div>
+																	<div class="people-item">
+																		<div class="people-row">
+																			<div class="people-img">
+																				<a href="profile.html">
+																					<img src="../asset/images/dummy/282A12CA-E0D7-4011-8BDD-1FAFAAB035F7-500w.jpeg" alt="">
+																				</a>
+																			</div>
+																			<div class="people-info">
+																				<h4 class="people-name"><a href="profile.html">Kiki Rahmadhani</a></h4>
+																				<div class="people-bio"></div>
+																			</div>
+																		</div>
+																		<div class="people-action">
+																			<!-- option -->
+																			<div class="option">
+																				<div class="dropup">
+																					<button type="button" class="button -transparent dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-tooltip="tooltip" data-placement="bottom" title="Option">
+																						<span class="icon-option"><i></i></span>
+																					</button>
+																					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
+																						<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Remove From Group</a>
+																						<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Make Admin</a>
+																					</div>
+																				</div>
+																			</div>
+																			<!-- option -->
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="msg-window" id="msgWindow1">
 									<div class="msg-window-header">
 										<div class="msg-avatar">
@@ -438,16 +589,19 @@
 													<span class="icon-option"><i></i></span>
 												</button>
 												<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
-													<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-													<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Unfollow</a>
 													<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
-													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Post</a>
+													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Chat</a>
 												</div>
 											</div>
 										</div>
 										<!-- option -->
 									</div>
 									<div class="msg-window-body">
+										<div class="msg-bubble more">
+											<div class="form-row">
+												<button name="btn-bubble-more" id="btn-bubble-more" class="button -transparent" onclick="this.classList.add('-loading');return false;">Older Messages</button>
+											</div>
+										</div>
 										<div class="msg-bubble">
 											<span>
 												<div class="msg-img">
@@ -459,10 +613,12 @@
 											<div class="msg-time">11:25 PM</div>
 										</div>
 										<div class="msg-bubble">
+											<div class="msg-sender">Kiki Rahmadhani</div>
 											<span>Yang pasti karena perubahan itu orang buru-buru berteriak soal pergantian kabinet atau resufle.</span>
 											<div class="msg-time">11:30 PM</div>
 										</div>
 										<div class="msg-bubble">
+											<div class="msg-sender">Michelle Maria</div>
 											<span>Pelanggan juga berhak tau berapa penghasilan yang diperoleh oleh ojek online yang kita gunakan. Jangan sampai kita abai terhadap nasib mereka.</span>
 											<div class="msg-time">11:30 PM</div>
 										</div>
@@ -501,10 +657,8 @@
 													<span class="icon-option"><i></i></span>
 												</button>
 												<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
-													<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-													<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Unfollow</a>
 													<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
-													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Post</a>
+													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Chat</a>
 												</div>
 											</div>
 										</div>
@@ -542,10 +696,8 @@
 													<span class="icon-option"><i></i></span>
 												</button>
 												<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
-													<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-													<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Unfollow</a>
 													<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
-													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Post</a>
+													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Chat</a>
 												</div>
 											</div>
 										</div>
@@ -583,10 +735,47 @@
 													<span class="icon-option"><i></i></span>
 												</button>
 												<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
-													<a class="dropdown-item -loading-bar" href="#">Unfollow</a>
-													<a class="dropdown-item" data-toggle="modal" data-target="#modalUnfollow" href="#" role="button">Unfollow</a>
 													<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
-													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Post</a>
+													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Chat</a>
+												</div>
+											</div>
+										</div>
+										<!-- option -->
+									</div>
+									<div class="msg-window-body">
+										<div class="msg-bubble reply">
+											<span>Oke 😇</span>
+											<div class="msg-time">11:20 PM <span class="msg-status"></span></div>
+										</div>
+									</div>
+									<div class="msg-window-footer">
+										<label class="msg-picture" for="msg-picture">
+											<input type="file" name="msg-picture" class="msg-file" aria-label="Send a picture">
+											<span class="icon-general icon-picture"></span>
+										</label>
+										<input type="text" name="msg-input" class="msg-input" placeholder="Write message...">
+										<button type="button" data-toggle="emoji" data-container="msg-window-footer" data-target="msg-input" class="button msg-emoji">
+											<span class="icon-general icon-emoji"></span>
+										</button>
+									</div>
+								</div>
+								<div class="msg-window" id="msgWindow8">
+									<div class="msg-window-header">
+										<div class="msg-avatar">
+											<img src="../asset/images/dummy/344CFC24-61FB-426C-B3D1-CAD5BCBD3209-200w.jpeg" alt="">	
+										</div>
+										<div class="msg-col">
+											<div class="msg-name"><a href="profile.html" class="msg-link">Mochammad Toha</a></div>
+										</div>
+										<!-- option -->
+										<div class="option">
+											<div class="dropdown">
+												<button type="button" class="button -transparent dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-tooltip="tooltip" data-placement="bottom" title="Option">
+													<span class="icon-option"><i></i></span>
+												</button>
+												<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuOption">
+													<a class="dropdown-item" data-toggle="modal" data-target="#modalReport" href="#" role="button">Report</a>
+													<a class="dropdown-item" data-toggle="modal" data-target="#modalDelete" href="#" role="button">Delete Chat</a>
 												</div>
 											</div>
 										</div>
@@ -633,27 +822,10 @@
 													<div class="msg-compose-user" id="msg-compose-user"></div>
 												</div>
 											</div>
-											<div class="msg-modal-row">
-												<div class="msg-compose-message">
-													<textarea name="msg-compose-text" id="msg-compose-text" placeholder="Write your message..."></textarea>
-												</div>
-											</div>
-											<div class="msg-compose-preview">
-												<button type="button" class="button -transparent msg-upload-remove">
-													<span aria-hidden="true">&times;</span>
-												</button>
-												<img src="" alt="">
-											</div>
 										</div>
 									</div>
 									<div class="modal-footer">
-										<div class="msg-compose-picture">
-											<label class="msg-picture" for="msg-picture">
-												<input type="file" class="msg-file" aria-label="Send a picture" onchange="readURL(this, '.modal', '.msg-compose-preview')">
-												<span class="icon-general icon-picture"></span>
-											</label>
-										</div>
-										<button class="button -primary" name="msg-compose-send" id="msg-compose-send" disabled="disabled">Send</button>
+										<button class="button -primary" name="msg-compose-group" id="msg-compose-group">Next</button>
 									</div>
 								</div>
 							</div>
@@ -2565,7 +2737,7 @@ var tributeUser = new Tribute({
 	],
     selectTemplate: function(item) {
     return (
-      '<span class="to" contenteditable="false">' + item.original.value + '</span>'
+      '<span class="to" contenteditable="false">' + item.original.value + '</span>,'
     );
   },
   autocompleteMode: true,
@@ -2638,6 +2810,14 @@ if(msgBody) {
 function scrollToBottom(el) {
 	el.scrollTop = el.scrollHeight;
 }
+
+// 
+$('#msg-new-button').on('click', function () {
+	$('#modalMsgAdd .modal-title').html('New Message');
+});
+$('#msg-new-people').on('click', function () {
+	$('#modalMsgAdd .modal-title').html('Add People');
+});
 
 // dummy for send chat
 //let msgBody = document.querySelectorAll('.msg-window-body');

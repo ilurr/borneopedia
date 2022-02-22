@@ -101,6 +101,7 @@ body.mobile {
 }
 
 // override dari buatan dev
+.modal-compose .modal-dialog,
 .modal-confirm .modal-dialog {
 	@include min-responsive(768px) {
 		width: 460px;

@@ -14,9 +14,20 @@
 		<div class="people-info">
 			<h4 class="people-name"><a href="profile.html">{{first_name}} {{last_name}}</a></h4>
 			<div class="people-bio">{{bio}}</div>
+			{{#if ../message}}
+			{{#eq @index compare=0}}
+			<div class="people-bio">Admin</div>
+			{{/eq}}
+			{{/if}}
 		</div>
 	</div>
 	<div class="people-action">
+		{{#if ../message}}
+		{{#eq @index compare=0}}
+		{{else}}
+		{{>component/feed/option type="msg-group" dropup=true}}
+		{{/eq}}
+		{{else}}
 		{{#if ../request}}
 		{{>component/button type="button" name="btn-requst-confirm" class="-primary" label="Confirm"}}
 		{{>component/button type="button" name="btn-requst-delete" label="Delete"}}
@@ -30,6 +41,7 @@
 		{{>component/button type="follow" name="btn-follow" label="Follow"}}
 		{{/eq}}
 		{{/eq}}
+		{{/if}}
 		{{/if}}
 	</div>
 </div>

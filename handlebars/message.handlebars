@@ -31,7 +31,7 @@
 								{{>component/message/side}}
 							</section>
 							<section class="msg-board">
-								{{>component/message/board channel=people index_start=0 index_end=8}}
+								{{>component/message/board channel=people index_start=0 index_end=9}}
 							</section>
 						</div>
 					</div>
@@ -58,7 +58,7 @@
 													<div class="msg-compose-user" id="msg-compose-user"></div>
 												</div>
 											</div>
-											<div class="msg-modal-row">
+											{{!-- <div class="msg-modal-row">
 												<div class="msg-compose-message">
 													<textarea name="msg-compose-text" id="msg-compose-text" placeholder="Write your message..."></textarea>
 												</div>
@@ -68,17 +68,17 @@
 													<span aria-hidden="true">&times;</span>
 												</button>
 												<img src="" alt="">
-											</div>
+											</div> --}}
 										</div>
 									</div>
 									<div class="modal-footer">
-										<div class="msg-compose-picture">
+										{{!-- <div class="msg-compose-picture">
 											<label class="msg-picture" for="msg-picture">
 												<input type="file" class="msg-file" aria-label="Send a picture" onchange="readURL(this, '.modal', '.msg-compose-preview')">
 												<span class="icon-general icon-picture"></span>
 											</label>
-										</div>
-										<button class="button -primary" name="msg-compose-send" id="msg-compose-send" disabled="disabled">Send</button>
+										</div> --}}
+										<button class="button -primary" name="msg-compose-group" id="msg-compose-group">Next</button>
 									</div>
 								</div>
 							</div>
@@ -133,7 +133,7 @@ var tributeUser = new Tribute({
 	],
     selectTemplate: function(item) {
     return (
-      '<span class="to" contenteditable="false">' + item.original.value + '</span>'
+      '<span class="to" contenteditable="false">' + item.original.value + '</span>,'
     );
   },
   autocompleteMode: true,
@@ -206,6 +206,14 @@ if(msgBody) {
 function scrollToBottom(el) {
 	el.scrollTop = el.scrollHeight;
 }
+
+// 
+$('#msg-new-button').on('click', function () {
+	$('#modalMsgAdd .modal-title').html('New Message');
+});
+$('#msg-new-people').on('click', function () {
+	$('#modalMsgAdd .modal-title').html('Add People');
+});
 
 // dummy for send chat
 //let msgBody = document.querySelectorAll('.msg-window-body');

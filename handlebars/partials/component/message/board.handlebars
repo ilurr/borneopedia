@@ -6,16 +6,37 @@
 {{#or neoblog qna}}
 <div class="msg-window" id="msgWindow{{@index}}">
 	<div class="msg-window-header">
+		{{#eq @index compare=0}}
+		<div class="msg-avatar-group">
+			<div class="msg-avatar">
+				<img src="{{comments.[0].avatars.[0].url}}" alt="">	
+			</div>
+			<div class="msg-avatar">
+				<img src="{{comments.[1].avatars.[0].url}}" alt="">	
+			</div>
+		</div>
+		<div class="msg-col">
+			<div class="msg-name"><a href="#" class="msg-link" role="button" data-toggle="modal" data-target="#modalMsgGroup{{@index}}">{{comments.[0].first_name}}, {{comments.[1].first_name}}, and 2 others</a></div>
+		</div>
+		{{else}}
 		<div class="msg-avatar">
 			<img src="{{avatars.[0].url}}" alt="">	
 		</div>
 		<div class="msg-col">
 			<div class="msg-name"><a href="profile.html" class="msg-link">{{first_name}} {{last_name}}</a></div>
 		</div>
-		{{>component/feed/option}}
+		{{/eq}}
+		{{#eq @index compare=0}}
+		{{>component/feed/option type="msg-option" group=true}}
+		{{else}}
+		{{>component/feed/option type="msg-option"}}
+		{{/eq}}
 	</div>
 	<div class="msg-window-body">
 		{{#if comments}}
+		<div class="msg-bubble more">
+			{{>component/button type="button" name="btn-bubble-more" class="-transparent" label="Older Messages" jsloading=true}}
+		</div>
 		<div class="msg-bubble">
 			<span>
 				<div class="msg-img">
@@ -40,12 +61,20 @@
 			<span>Iya kan?</span>
 			{{/eq}}
 			{{/eq}}
+			<div class="msg-sender">{{first_name}} {{last_name}}</div>
 			<span>{{comment}}</span>
 			<div class="msg-time">11:30 PM</div>
 		</div>
 		{{/if}}
 		{{/each}}
 		{{/if}}
+		{{#eq @index compare=0}}
+		<div class="msg-bubble info">
+			<div class="msg-info">
+				<strong>{{comments.[0].first_name}}</strong> added <strong>{{comments.[1].first_name}}</strong> to the group
+			</div>
+		</div>
+		{{/eq}}
 		<div class="msg-bubble reply">
 			<span>Oke 😇</span>
 			<div class="msg-time">11:20 PM <span class="msg-status"></span></div>
@@ -66,6 +95,43 @@
 		</button>
 	</div>
 </div>
+{{#eq @index compare=0}}
+<!-- modal message group -->
+<div id="modalMsgGroup{{@index}}" class="modal modal-msg-group fade" tabindex="-1" role="dialog" aria-labelledby="MsgGroup" aria-hidden="true">
+	<div class="modal-dialog -small">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="icon-close" aria-hidden="true"></span></button>
+			<div class="modal-header">
+				<h5 class="modal-title">Details</h5>
+			</div>
+			<div class="modal-body">
+				<div class="msg-modal">
+					<div class="msg-group-row">
+						<h6 class="modal-subtitle">Group Name</h6>
+						<div class="msg-group-info">
+							{{>component/input type="text" nolabel=true name="msg-group-name" jsmsggroupname=true}}
+							{{>component/button type="button" label="Save" name="msg-group-name-save" class="-transparent" disabled="true"}}
+						</div>
+					</div>
+					<div class="msg-group-row">
+						<div class="msg-group-top">
+							<h6 class="modal-subtitle">Members</h6>
+							<a id="msg-new-people" href="#" class="button -transparent" role="button" data-toggle="modal" data-target="#modalMsgAdd">Add People</a>
+						</div>
+						<div class="msg-group-list">
+							<div class="people-block">
+								<div class="people-list">
+									{{>module/people_list channel=comments index_start=0 index_end=3 message=true}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{/eq}}
 {{/or}}
 {{/gte}}
 {{/gte}}

@@ -30,6 +30,15 @@
 		flex-grow: 1;
 		flex-basis: 0;
 	}
+	&-action {
+		// position: relative;
+		.option {
+			position: relative;
+			top: auto;
+			right: auto;
+			z-index: auto;
+		}
+	}
 	&-info {
 		flex-basis: 0;
 		flex-grow: 1;

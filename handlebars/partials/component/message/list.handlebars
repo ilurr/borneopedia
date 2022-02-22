@@ -3,10 +3,43 @@
 {{#gte @index compare=../index_end}}
 {{else}}
 {{#or neoblog qna}}
+{{#eq @index compare=0}}
 <div class="msg-item">
 	<a href="#" data-href="msgWindow{{@index}}" class="msg-link" role="button" data-toggle="message">
-		<div class="msg-row{{#eq @index compare=0}} unread{{/eq}}">
+		<div class="msg-row{{#if unread}} unread{{/if}}">
+			<div class="msg-avatar-group">
+				<div class="msg-avatar">
+					<img src="{{comments.[0].avatars.[0].url}}" alt="">	
+				</div>
+				<div class="msg-avatar">
+					<img src="{{comments.[1].avatars.[0].url}}" alt="">	
+				</div>
+			</div>
+			<div class="msg-col">
+				<div class="msg-name">{{comments.[0].first_name}}, {{comments.[1].first_name}}, dan 2 orang lainnya</div>
+				<div class="msg-teaser">
+					{{truncateWords (sanitize post) 20}}
+					{{#if question}}
+					{{truncateWords (sanitize question) 20}}
+					{{else}}
+					{{truncateWords (sanitize answer) 20}}
+					{{/if}}
+				</div>
+				{{#if unread}}
+				<div class="msg-badge">{{unread}}</div>
+				{{/if}}
+				<div class="msg-time">2:34 PM</div>
+			</div>
+		</div>
+	</a>
+</div>
+{{else}}
+<div class="msg-item">
+	<a href="#" data-href="msgWindow{{@index}}" class="msg-link" role="button" data-toggle="message">
+		<div class="msg-row{{#if unread}} unread{{/if}}">
+			{{#if qna}}
 			<span class="msg-online"></span>
+			{{/if}}
 			<div class="msg-avatar">
 				<img src="{{avatars.[0].url}}" alt="">	
 			</div>
@@ -20,14 +53,15 @@
 					{{truncateWords (sanitize answer) 20}}
 					{{/if}}
 				</div>
-				{{#eq @index compare=0}}
-				<div class="msg-badge">2</div>
-				{{/eq}}
+				{{#if unread}}
+				<div class="msg-badge">{{unread}}</div>
+				{{/if}}
 				<div class="msg-time">2:34 PM</div>
 			</div>
 		</div>
 	</a>
 </div>
+{{/eq}}
 {{/or}}
 {{/gte}}
 {{/gte}}
